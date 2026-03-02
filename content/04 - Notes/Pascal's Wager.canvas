@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"48b68f13b6a21791","type":"text","text":"## Pascal's Wager\n\n|               | God Exists                  | God Doesn't Exist |\n| ------------- | --------------------------- | ----------------- |\n| Believe       | Eternal Happiness           | Doesn't Matter    |\n| Don't Believe | Potential Eternal Damnation | Doesn't Matter    |\nIf God exists then there is an objective purpose in the Universe - that is to achieve communion with God. If God doesn't exist, there is no objective purpose, everything is material, so nothing ultimately matters","x":-352,"y":-385,"width":560,"height":300},
+		{"id":"e9b00a8fa1ebc95d","type":"text","text":"If God doesn't exist, can there be meaning?","x":-322,"y":-29,"width":250,"height":60},
+		{"id":"61d8139469922992","type":"text","text":"Well you can't have a firm life goal, at least you wouldn't know whether such a goal is a good one or not. Although perhaps your lifelong goal can be to try to understand the Universe","x":-843,"y":-105,"width":351,"height":153},
+		{"id":"33d950f99924c351","type":"text","text":"Is Agnosticism viable? Does it necessarily lead to a worse life?","x":-771,"y":-286,"width":264,"height":97},
+		{"id":"e5723534a0d38905","type":"text","text":"If eventually everything culminates in a heat death, does the events that happened in the past still matter at all? It seems so even if those events don't lead anywhere","x":-525,"y":255,"width":362,"height":131},
+		{"id":"04960b90cc6d182c","type":"text","text":"Not objective meaning most likely since everything is impartial, however temporary subjective meaning could exist","x":-492,"y":96,"width":296,"height":123},
+		{"id":"773349d2683c6830","type":"text","text":"If God is dead, everything is permitted (no moral arbiter)\nIf God exists, some actions are neutral or evil","x":288,"y":-235,"width":556,"height":91}
+	],
+	"edges":[
+		{"id":"3f43bd59e45674f4","fromNode":"48b68f13b6a21791","fromSide":"bottom","toNode":"e9b00a8fa1ebc95d","toSide":"top"},
+		{"id":"78be73e68a69599d","fromNode":"48b68f13b6a21791","fromSide":"right","toNode":"773349d2683c6830","toSide":"left"},
+		{"id":"a4f508c81f6a19c6","fromNode":"48b68f13b6a21791","fromSide":"left","toNode":"33d950f99924c351","toSide":"right"},
+		{"id":"f5d0f640f0d4baf0","fromNode":"e9b00a8fa1ebc95d","fromSide":"bottom","toNode":"04960b90cc6d182c","toSide":"top"},
+		{"id":"bc2ed1cd72ed35bd","fromNode":"33d950f99924c351","fromSide":"bottom","toNode":"61d8139469922992","toSide":"top"},
+		{"id":"d75415f928b1038b","fromNode":"04960b90cc6d182c","fromSide":"bottom","toNode":"e5723534a0d38905","toSide":"top"}
+	]
+}

@@ -1,0 +1,4 @@
+- education (factor style, overpriced)
+- healthcare (overpriced, common case of bankruptcy)
+- tipping (NRA)
+- fare beaters/homeless (city gov wants more money)

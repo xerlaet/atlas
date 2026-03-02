@@ -1,0 +1,30 @@
+# To Learn
+---
+
+- [ ] **Fundamentals**
+	- How to learn and remember
+	- High school classes
+	- Advanced physics (quantum & relativity)
+- [ ] **Engineering**
+	- How things work
+	- Computers from the ground up
+	- AI, RL
+	- Quaternions
+	- Info-ee.surrey.ac.uk/Teaching/Unix
+- [ ] **Philosophy**
+	- Standard arguments about God
+	- The Bible
+	- Epistemology
+- [ ] **Music**
+	- Music theory
+	- Improvisation
+- [ ] **Life Hacks**
+	- How to be charismatic and articulate
+	- Sleep in REM intervals, Lucid dreaming?
+	- Side hustles
+	- What to set up in life
+- [ ] **Skills**
+	- How to spin a pen
+- [ ] **Miscellaneous**
+	- Impactful people
+- [ ] Stanford Encyclopedia of Philosophy
