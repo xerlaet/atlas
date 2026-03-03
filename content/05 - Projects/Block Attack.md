@@ -8,6 +8,6 @@ This is a basic platformer game that developed my skills in python. Later on I a
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" 
   allowfullscreen
-  style="display: block; margin: 0 auto; width: 80%; max-width: 600px; aspect-ratio: 16 / 9; border: none; border-radius: 8px;">
+  style="display: block; margin: 0 auto; aspect-ratio: 16 / 9; border: none; border-radius: 8px;">
 </iframe>
 [GitHub](https://github.com/xerlaet/Block-Attack)

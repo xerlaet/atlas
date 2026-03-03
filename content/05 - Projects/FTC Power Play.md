@@ -12,7 +12,7 @@ We advanced to state and probably could have gone on to worlds except I made sev
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" 
   allowfullscreen
-  style="display: block; margin: 0 auto; width: 80%; max-width: 600px; aspect-ratio: 16 / 9; border: none; border-radius: 8px;">
+  style="display: block; margin: 0 auto; aspect-ratio: 16 / 9; border: none; border-radius: 8px;">
 </iframe>
 [3708 Iron Eagles Optimus | FTCScout](https://ftcscout.org/teams/3708?season=2022)
 [GitHub](https://github.com/IronEaglesRobotics/PowerPlay/tree/optimus)

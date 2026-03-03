@@ -10,7 +10,7 @@ My favorite feature of the robot was the OpenCV-based auto-aiming system
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" 
   allowfullscreen
-  style="display: block; margin: 0 auto; width: 80%; max-width: 600px; aspect-ratio: 16 / 9; border: none; border-radius: 8px;">
+  style="display: block; margin: 0 auto; aspect-ratio: 16 / 9; border: none; border-radius: 8px;">
 </iframe>
 [3708 Iron Eagles Optimus | FTCScout](https://ftcscout.org/teams/3708?season=2020)
 [GitHub](https://github.com/IronEaglesRobotics/UltimateGoal/tree/robby_branch)

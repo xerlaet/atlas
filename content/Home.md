@@ -3,7 +3,7 @@
 
 Howdy, I'm **Robert Teal**.
 
-I study Computer Science at UT Dallas (MS '27) focused on the intersection of [[Computation]], [[Robotics]], and [[Philosophy]]. I practice an intentional minimalism where simplicity always serves both purpose and beauty.
+I study Computer Science at UT Dallas (MS '27) focused on the intersection of [[Computation]], [[Robotics]], and [[Philosophy]].
 
 Away from the keyboard, I'm likely at the gym, refining my daily systems, or working through a growing [[Reading List]].
 

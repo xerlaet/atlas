@@ -13,3 +13,19 @@ FROM       <table list>
 When selecting multiple tables, the cross product is computed first (every row in the first database is joined with every row in the second database)
 
 <> vs not in? logically different
+
+count(x)
+correlated vs non-correlated subquery
+having sum
+exists
+
+## Nested Queries
+Queries can be nested for more advanced information
+
+Here's an example to get the largest salary
+```sql
+SELECT Fname, Lname
+FROM Employee
+WHERE salary >= ALL (SELECT salary
+					 FROM Employee)
+```
