@@ -4,7 +4,7 @@
   /* Teal-based Dark Palette */
   --background: #020617;
   --background-darker: #01040a;
-  --foreground: #f8fafc;
+  --foreground: #94a3b8; /* Soft Slate 400 for lower contrast */
   
   --color1: #2dd4bf; /* Teal 400 - H1, Bold, Italic */
   --color2: #5eead4; /* Teal 300 - H2 */
@@ -22,7 +22,7 @@
 
 body {
   background: var(--background);
-  color: #cbd5e1; /* Soft Slate 300 instead of bright white */
+  color: var(--foreground);
 }
 
 /* Custom Horizontal Line Gradient from your theme */
@@ -35,6 +35,10 @@ hr {
 
 /* Typography Spacing & Centering from your theme */
 /* Aggressive reset of prose margins */
+.prose {
+  color: var(--foreground) !important;
+}
+
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
   margin-bottom: 0 !important;
   margin-top: 0.8em !important;
@@ -87,7 +91,7 @@ hr {
 /* Code Blocks */
 .prose code:not(pre code) {
   background-color: var(--background-darker) !important;
-  color: var(--foreground) !important;
+  color: var(--color15) !important; /* Keep inline code slightly brighter */
   padding: 0.2em 0.4em !important;
   border-radius: 4px !important;
   font-weight: 400 !important;
@@ -105,7 +109,7 @@ hr {
   background: rgba(2, 6, 23, 0.8);
   border: 1px solid var(--color4);
   border-radius: 4px;
-  color: var(--foreground);
+  color: var(--color15);
   pointer-events: none;
   box-shadow: 0 0 10px rgba(20, 184, 166, 0.3);
 }

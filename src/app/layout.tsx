@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Serif } from "next/font/google";
 import InitialRedirect from "@/components/InitialRedirect";
 import SplashScreen from "@/components/SplashScreen";
+import GraphUI from "@/components/GraphUI";
+import { getGraphData } from "@/lib/notes";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -38,13 +40,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   graph,
 }: Readonly<{
   children: React.ReactNode;
   graph: React.ReactNode;
 }>) {
+  const { notes } = await getGraphData();
+  const searchIndex = Object.values(notes).map((n) => ({ title: n.title, slug: n.slug }));
+
   return (
     <html lang="en" className="dark">
       <body
@@ -52,11 +57,20 @@ export default function RootLayout({
       >
         <SplashScreen />
         <InitialRedirect />
+        
+        {/* Layer 0: Background Graph */}
         <div className="fixed inset-0 z-0 pointer-events-auto">
           {graph}
         </div>
-        <div className="relative z-10 h-full w-full pointer-events-none font-sans">
+
+        {/* Layer 1: Note Panels (children) */}
+        <div className="fixed inset-0 z-10 pointer-events-none font-sans">
           {children}
+        </div>
+
+        {/* Layer 2: Global UI (Search, Buttons, Controls) */}
+        <div className="fixed inset-0 z-20 pointer-events-none">
+          <GraphUI searchIndex={searchIndex} />
         </div>
       </body>
     </html>

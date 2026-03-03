@@ -7,7 +7,6 @@ import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
 import remarkWikiLink from "remark-wiki-link";
 import Link from "next/link";
-import TikZWrapper from "./TikZWrapper";
 import "katex/dist/katex.min.css";
 
 interface Props {
@@ -62,14 +61,6 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
               />
             );
           },
-          code: ({ node, inline, className, children, ...props }: any) => {
-            const match = /language-(\w+)/.exec(className || "");
-            const language = match ? match[1] : "";
-            if (!inline && language === "tikz") {
-              return <TikZWrapper code={String(children).replace(/\n$/, "")} />;
-            }
-            return <code className={className} {...props}>{children}</code>;
-          },
           img: ({ node, ...props }) => {
             let src = props.src || "";
             if (src.startsWith("attachments/")) src = `/${src}`;
@@ -77,7 +68,7 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
               <img 
                 {...props} 
                 src={src} 
-                className="rounded-lg shadow-2xl mx-auto border border-slate-800 my-8 block max-w-full" 
+                className={props.className || "rounded-lg shadow-2xl mx-auto border border-slate-800 my-8 block max-w-full"} 
                 alt={props.alt || "Image"} 
               />
             );

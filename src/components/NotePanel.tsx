@@ -62,8 +62,8 @@ export default function NotePanel({ title, children }: Props) {
         ref={panelRef}
         style={{ width: `${panelWidth}px` }}
         className={cn(
-          "fixed top-6 bottom-6 bg-slate-900/90 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-50 overflow-hidden pointer-events-auto transition-all duration-500 ease-in-out",
-          isPanelHidden ? "right-[-100%] opacity-0" : "right-6 opacity-100"
+          "fixed top-6 bottom-6 right-6 bg-slate-900/80 backdrop-blur-2xl border border-white/10 rounded-[22px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-50 overflow-hidden pointer-events-auto transition-all duration-300 ease-out origin-top-right",
+          isPanelHidden ? "opacity-0 scale-95 pointer-events-none translate-x-4" : "opacity-100 scale-100 translate-x-0"
         )}
       >
         <div 
@@ -75,17 +75,7 @@ export default function NotePanel({ title, children }: Props) {
            </div>
         </div>
 
-        <div className="relative h-full overflow-y-auto px-8 py-8">
-          <div className="absolute top-6 right-6 z-20">
-            <button
-              onClick={() => setPanelHidden(true)}
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/10 backdrop-blur-md hover:bg-teal-500/20 hover:text-teal-400 transition-all duration-300 border border-white/20 hover:border-teal-500/50 pointer-events-auto cursor-pointer"
-              title="Hide Note"
-            >
-              <Minimize2 size={18} />
-            </button>
-          </div>
-          
+        <div className="relative h-full overflow-y-auto p-8">
           <div className="pb-24">
             {children}
           </div>

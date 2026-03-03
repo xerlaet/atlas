@@ -52,18 +52,14 @@ export default function Search({ items }: SearchProps) {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
-        e.preventDefault();
-        setSearchOpen(true);
-      } else if (e.key === "/" && !isSearchOpen && document.activeElement?.tagName !== "INPUT") {
-        e.preventDefault();
-        setSearchOpen(true);
-      } else if (e.key === "Escape") {
+      if (e.key === "Escape") {
         setSearchOpen(false);
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
+    if (isSearchOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isSearchOpen, setSearchOpen]);
 
@@ -103,7 +99,7 @@ export default function Search({ items }: SearchProps) {
       />
 
       {/* Search Box */}
-      <div className="relative w-full max-w-2xl bg-slate-900/80 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-[0_30px_100px_rgba(0,0,0,0.7)] overflow-hidden animate-in zoom-in-95 fade-in duration-200">
+      <div className="relative w-full max-w-2xl bg-slate-900/80 backdrop-blur-2xl border border-white/10 rounded-[22px] shadow-[0_30px_100px_rgba(0,0,0,0.7)] overflow-hidden animate-in zoom-in-95 fade-in duration-200">
         <div className="flex items-center px-5 py-4 border-b border-white/5">
           <SearchIcon className="w-5 h-5 text-slate-400" />
           <input

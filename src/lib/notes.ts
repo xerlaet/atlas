@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import GithubSlugger from "github-slugger";
+import crypto from "crypto";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
@@ -26,6 +27,10 @@ export interface GraphLink {
 export interface GraphData {
   nodes: GraphNode[];
   links: GraphLink[];
+}
+
+function getHash(text: string) {
+  return crypto.createHash("md5").update(text).digest("hex");
 }
 
 /**
@@ -143,11 +148,19 @@ export async function getNoteBySlug(slug: string) {
   const content = rawContent.replace(/\r\n/g, "\n");
   const { data, content: markdownBody } = matter(content);
 
+  // Pre-process TikZ blocks to use pre-generated SVGs
+  const processedBody = markdownBody.replace(/```tikz\n([\s\S]*?)```/g, (_match, code) => {
+    const hash = getHash(code.trim());
+    // invert(1) flips Black to White, but also Blue to Yellow.
+    // hue-rotate(180deg) flips the colors back to their original hue.
+    return `<img src="/tikz-assets/${hash}.svg" alt="TikZ Diagram" class="tikz-diagram my-12 mx-auto block max-w-full invert hue-rotate-180 opacity-90 brightness-110" />\n\n`;
+  });
+
   return {
     metadata: {
       ...noteMetadata,
       ...data,
     },
-    content: markdownBody,
+    content: processedBody,
   };
 }

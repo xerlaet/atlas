@@ -8,8 +8,7 @@ interface GraphStore {
   isCameraDirty: boolean; // True if user moved the camera
   uplinkDepth: number;
   backlinkDepth: number;
-  showSettings: boolean;
-  showHelp: boolean;
+  showControls: boolean;
   isPanelHidden: boolean;
   isReady: boolean;
   isSearchOpen: boolean;
@@ -21,8 +20,7 @@ interface GraphStore {
   triggerCamera: () => void;
   setUplinkDepth: (depth: number) => void;
   setBacklinkDepth: (depth: number) => void;
-  setShowSettings: (show: boolean) => void;
-  setShowHelp: (show: boolean) => void;
+  setShowControls: (show: boolean) => void;
   setPanelHidden: (hidden: boolean) => void;
   setReady: (ready: boolean) => void;
   setSearchOpen: (open: boolean) => void;
@@ -36,8 +34,7 @@ export const useGraphStore = create<GraphStore>((set) => ({
   isCameraDirty: false,
   uplinkDepth: 1,
   backlinkDepth: 1,
-  showSettings: false,
-  showHelp: false,
+  showControls: false,
   isPanelHidden: false,
   isReady: false,
   isSearchOpen: false,
@@ -49,8 +46,7 @@ export const useGraphStore = create<GraphStore>((set) => ({
   triggerCamera: () => set((state) => ({ cameraTrigger: state.cameraTrigger + 1, isCameraDirty: false })),
   setUplinkDepth: (depth) => set({ uplinkDepth: depth }),
   setBacklinkDepth: (depth) => set({ backlinkDepth: depth }),
-  setShowSettings: (show) => set((state) => ({ showSettings: show, showHelp: show ? false : state.showHelp })),
-  setShowHelp: (show) => set((state) => ({ showHelp: show, showSettings: show ? false : state.showSettings })),
+  setShowControls: (show) => set({ showControls: show }),
   setPanelHidden: (hidden) => set({ isPanelHidden: hidden }),
   setReady: (ready) => set({ isReady: ready }),
   setSearchOpen: (open) => set({ isSearchOpen: open }),

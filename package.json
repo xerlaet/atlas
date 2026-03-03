@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run generate:tikz && next dev",
+    "build": "npm run generate:tikz && next build",
+    "generate:tikz": "node scripts/generate-tikz.mjs",
     "start": "next start",
     "lint": "eslint"
   },

@@ -60,7 +60,7 @@ export default function Graph({ data }: Props) {
   // Handle camera movement
   useEffect(() => {
     // Only move camera if engine is ready (has positions)
-    if (!isReady) return;
+    if (!isReady || !fgRef.current) return;
 
     const targetSlug = slug || "home";
     const node = data.nodes.find((n) => n.path === targetSlug);
@@ -134,6 +134,38 @@ export default function Graph({ data }: Props) {
     }
     return info;
   }, [data.links, selectedNodeId, uplinkDepth, backlinkDepth]);
+
+  // Precise helper to determine if a link is part of the active flow
+  const getLinkType = useCallback((link: any) => {
+    if (!selectedNodeId) return 'inactive';
+    
+    const s = typeof link.source === 'object' ? (link.source as any).id : link.source;
+    const t = typeof link.target === 'object' ? (link.target as any).id : link.target;
+
+    const sInfo = highlightedInfo.get(s);
+    const tInfo = highlightedInfo.get(t);
+
+    // 1. Primary Uplink (from selection)
+    if (s === selectedNodeId && tInfo?.type === 'uplink' && tInfo.depth === 1) return 'active-uplink';
+    
+    // 2. Secondary Uplink (between highlighted nodes)
+    if (sInfo?.type === 'uplink' && tInfo?.type === 'uplink' && tInfo.depth === sInfo.depth + 1) return 'active-uplink';
+
+    // 3. Primary Backlink (to selection)
+    if (t === selectedNodeId && sInfo?.type === 'backlink' && sInfo.depth === 1) return 'active-backlink';
+
+    // 4. Secondary Backlink (between highlighted nodes)
+    if (tInfo?.type === 'backlink' && sInfo?.type === 'backlink' && sInfo.depth === tInfo.depth + 1) return 'active-backlink';
+
+    return 'inactive';
+  }, [selectedNodeId, highlightedInfo]);
+
+  // Force refresh the graph when highlighting parameters change
+  useEffect(() => {
+    if (fgRef.current) {
+      fgRef.current.refresh();
+    }
+  }, [selectedNodeId, uplinkDepth, backlinkDepth, highlightedInfo, getLinkType]);
 
   const updateLabelTexture = useCallback((nodeId: string, title: string, color: string) => {
     const cached = spriteCache.current.get(nodeId);
@@ -279,27 +311,24 @@ export default function Graph({ data }: Props) {
         nodeThreeObjectExtend={true}
 
         linkColor={(link: any) => {
-          const s = typeof link.source === 'object' ? (link.source as any).id : link.source;
-          const t = typeof link.target === 'object' ? (link.target as any).id : link.target;
-          if (s === selectedNodeId && uplinkDepth > 0) return 'rgba(56, 189, 248, 1)'; 
-          if (t === selectedNodeId && backlinkDepth > 0) return 'rgba(217, 70, 239, 1)'; 
-          const sHighlight = highlightedInfo.get(s);
-          const tHighlight = highlightedInfo.get(t);
-          if (sHighlight?.type === 'uplink' && tHighlight?.type === 'uplink') return 'rgba(56, 189, 248, 0.6)';
-          if (sHighlight?.type === 'backlink' && tHighlight?.type === 'backlink') return 'rgba(217, 70, 239, 0.6)';
+          const type = getLinkType(link);
+          if (type === 'active-uplink') return 'rgba(56, 189, 248, 0.8)';
+          if (type === 'active-backlink') return 'rgba(217, 70, 239, 0.8)';
           return 'rgba(148, 163, 184, 0.4)';
         }}
+        linkDirectionalArrowColor={(link: any) => {
+          const type = getLinkType(link);
+          if (type === 'active-uplink') return 'rgba(56, 189, 248, 0.8)';
+          if (type === 'active-backlink') return 'rgba(217, 70, 239, 0.8)';
+          return 'transparent';
+        }}
         linkWidth={(link: any) => {
-          const s = typeof link.source === 'object' ? (link.source as any).id : link.source;
-          const t = typeof link.target === 'object' ? (link.target as any).id : link.target;
-          const isHighlightedUplink = s === selectedNodeId && uplinkDepth > 0;
-          const isHighlightedBacklink = t === selectedNodeId && backlinkDepth > 0;
-          return (isHighlightedUplink || isHighlightedBacklink) ? 4 : 1.5;
+          const type = getLinkType(link);
+          return type === 'inactive' ? 1.5 : 4;
         }}
         linkDirectionalArrowLength={(link: any) => {
-          const s = typeof link.source === 'object' ? (link.source as any).id : link.source;
-          const isHighlightedUplink = s === selectedNodeId && uplinkDepth > 0;
-          return isHighlightedUplink ? 8 : 0;
+          const type = getLinkType(link);
+          return type === 'inactive' ? 0 : 8;
         }}
         linkDirectionalArrowRelPos={1}
 
