@@ -53,13 +53,22 @@ function normalizeWikiLink(link: string): string {
   return base.split("#")[0].trim();
 }
 
+let cachedData: { 
+  notes: Record<string, NoteMetadata>, 
+  graph: GraphData 
+} | null = null;
+
 /**
- * Builds the note map and graph data
+ * Builds the note map and graph data with simple memoization
  */
 export async function getGraphData(): Promise<{ 
   notes: Record<string, NoteMetadata>, 
   graph: GraphData 
 }> {
+  if (cachedData && process.env.NODE_ENV === 'production') {
+    return cachedData;
+  }
+  
   const files = getAllMarkdownFiles(CONTENT_DIR);
   const notes: Record<string, NoteMetadata> = {};
   const titleToId: Record<string, string> = {};
@@ -115,7 +124,9 @@ export async function getGraphData(): Promise<{
     });
   });
 
-  return { notes, graph: { nodes, links } };
+  const result = { notes, graph: { nodes, links } };
+  cachedData = result;
+  return result;
 }
 
 export async function getNoteBySlug(slug: string) {

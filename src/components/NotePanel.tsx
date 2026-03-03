@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useGraphStore } from "@/lib/store";
 import Link from "next/link";
-import { X, GripVertical } from "lucide-react";
+import { GripVertical, Minimize2 } from "lucide-react";
 import PanelController from "./PanelController";
 
 interface Props {
@@ -12,19 +12,19 @@ interface Props {
 }
 
 export default function NotePanel({ title, children }: Props) {
-  const { panelWidth, setPanelWidth } = useGraphStore();
+  const { panelWidth, setPanelWidth, isPanelHidden, setPanelHidden } = useGraphStore();
   const [isResizing, setIsResizing] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
 
-  // Set initial width only if it hasn't been customized/set yet or is the default
-  // Actually, setting it here might be triggering re-renders that break transitions.
-  // Let's ensure it's stable.
+  // Helper to join classes
+  const cn = (...classes: (string | boolean | undefined)[]) => classes.filter(Boolean).join(" ");
+
   useEffect(() => {
-    if (panelWidth === 700) { // Only if it's the store's default
+    if (panelWidth === 700) {
       const idealWidth = Math.min(700, window.innerWidth * 0.4);
       if (idealWidth !== 700) setPanelWidth(idealWidth);
     }
-  }, []); // Only once on mount
+  }, []);
 
   const startResizing = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
@@ -61,26 +61,29 @@ export default function NotePanel({ title, children }: Props) {
       <div 
         ref={panelRef}
         style={{ width: `${panelWidth}px` }}
-        className="fixed top-0 right-0 h-full bg-slate-900/90 backdrop-blur-xl border-l border-slate-800 shadow-2xl z-50 overflow-y-auto pointer-events-auto"
+        className={cn(
+          "fixed top-6 bottom-6 bg-slate-900/90 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-50 overflow-hidden pointer-events-auto transition-all duration-500 ease-in-out",
+          isPanelHidden ? "right-[-100%] opacity-0" : "right-6 opacity-100"
+        )}
       >
         <div 
           onMouseDown={startResizing}
-          className="absolute top-0 left-0 w-1.5 h-full cursor-col-resize hover:bg-teal-500/50 transition-colors z-50 flex items-center justify-center group/handle"
+          className="absolute top-0 left-0 w-3 h-full cursor-col-resize hover:bg-teal-500/10 transition-colors z-50 flex items-center justify-center group/handle"
         >
-           <div className="hidden group-hover/handle:block text-teal-400">
-             <GripVertical size={14} />
+           <div className="hidden group-hover/handle:block text-teal-400 opacity-50">
+             <GripVertical size={16} />
            </div>
         </div>
 
-        <div className="relative p-8 pt-6">
-          <div className="absolute top-4 right-4 z-20">
-            <Link 
-              href="/" 
-              className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-800/40 backdrop-blur-md hover:bg-teal-500/20 hover:text-teal-400 transition-all border border-slate-700/50 hover:border-teal-500/50 pointer-events-auto"
-              title="Close Note"
+        <div className="relative h-full overflow-y-auto px-8 py-8">
+          <div className="absolute top-6 right-6 z-20">
+            <button
+              onClick={() => setPanelHidden(true)}
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/10 backdrop-blur-md hover:bg-teal-500/20 hover:text-teal-400 transition-all duration-300 border border-white/20 hover:border-teal-500/50 pointer-events-auto cursor-pointer"
+              title="Hide Note"
             >
-              <X size={16} />
-            </Link>
+              <Minimize2 size={18} />
+            </button>
           </div>
           
           <div className="pb-24">

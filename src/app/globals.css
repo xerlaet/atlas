@@ -36,8 +36,8 @@ hr {
 /* Typography Spacing & Centering from your theme */
 /* Aggressive reset of prose margins */
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-  margin-bottom: 0.25em !important;
-  margin-top: 1em !important;
+  margin-bottom: 0 !important;
+  margin-top: 0.8em !important;
   padding: 0 !important;
   line-height: 1.2 !important;
   font-family: var(--font-noto-serif), serif !important;
@@ -61,14 +61,16 @@ hr {
 .prose em { color: var(--color1) !important; }
 
 .prose a {
-  color: var(--color12) !important; /* Sky 400 for links */
-  font-weight: 600 !important;
-  text-decoration: none !important;
+  color: #7dd3fc !important; /* Brighter Sky 300 */
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-decoration-color: rgba(125, 211, 252, 0.3) !important;
+  text-underline-offset: 4px;
 }
 
 .prose a:hover {
-  text-decoration: underline !important;
-  color: var(--color2) !important; /* Brighter teal on hover */
+  color: #2dd4bf !important; /* Bright Teal 400 */
+  text-decoration-color: #2dd4bf !important;
 }
 
 .prose p, .prose ul, .prose ol, .prose blockquote, .prose pre {

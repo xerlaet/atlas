@@ -6,12 +6,26 @@ interface GraphStore {
   panelWidth: number;
   cameraTrigger: number; // Increment to trigger camera moves
   isCameraDirty: boolean; // True if user moved the camera
+  uplinkDepth: number;
+  backlinkDepth: number;
+  showSettings: boolean;
+  showHelp: boolean;
+  isPanelHidden: boolean;
+  isReady: boolean;
+  isSearchOpen: boolean;
   
   setSelectedNode: (id: string | null) => void;
   setPanelOpen: (isOpen: boolean) => void;
   setPanelWidth: (width: number) => void;
   setCameraDirty: (isDirty: boolean) => void;
   triggerCamera: () => void;
+  setUplinkDepth: (depth: number) => void;
+  setBacklinkDepth: (depth: number) => void;
+  setShowSettings: (show: boolean) => void;
+  setShowHelp: (show: boolean) => void;
+  setPanelHidden: (hidden: boolean) => void;
+  setReady: (ready: boolean) => void;
+  setSearchOpen: (open: boolean) => void;
 }
 
 export const useGraphStore = create<GraphStore>((set) => ({
@@ -20,10 +34,24 @@ export const useGraphStore = create<GraphStore>((set) => ({
   panelWidth: 700, // Default width in px
   cameraTrigger: 0,
   isCameraDirty: false,
+  uplinkDepth: 1,
+  backlinkDepth: 1,
+  showSettings: false,
+  showHelp: false,
+  isPanelHidden: false,
+  isReady: false,
+  isSearchOpen: false,
   
   setSelectedNode: (id) => set({ selectedNode: id }),
   setPanelOpen: (isOpen) => set({ isPanelOpen: isOpen }),
   setPanelWidth: (width) => set({ panelWidth: width }),
   setCameraDirty: (isDirty) => set({ isCameraDirty: isDirty }),
   triggerCamera: () => set((state) => ({ cameraTrigger: state.cameraTrigger + 1, isCameraDirty: false })),
+  setUplinkDepth: (depth) => set({ uplinkDepth: depth }),
+  setBacklinkDepth: (depth) => set({ backlinkDepth: depth }),
+  setShowSettings: (show) => set((state) => ({ showSettings: show, showHelp: show ? false : state.showHelp })),
+  setShowHelp: (show) => set((state) => ({ showHelp: show, showSettings: show ? false : state.showSettings })),
+  setPanelHidden: (hidden) => set({ isPanelHidden: hidden }),
+  setReady: (ready) => set({ isReady: ready }),
+  setSearchOpen: (open) => set({ isSearchOpen: open }),
 }));

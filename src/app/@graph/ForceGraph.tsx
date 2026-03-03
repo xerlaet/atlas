@@ -19,12 +19,26 @@ export default function Graph({ data }: Props) {
   const fgRef = useRef<any>(null);
   const router = useRouter();
   const params = useParams();
-  const { setSelectedNode, cameraTrigger, triggerCamera, setCameraDirty } = useGraphStore();
+  const { 
+    setSelectedNode, 
+    cameraTrigger, 
+    triggerCamera, 
+    setCameraDirty,
+    uplinkDepth,
+    backlinkDepth,
+    setReady,
+    isReady
+  } = useGraphStore();
   
   const [hoverNodeId, setHoverNodeId] = useState<string | null>(null);
   const slug = params?.slug as string;
 
-  const spriteCache = useRef<Map<string, THREE.Sprite>>(new Map());
+  const spriteCache = useRef<Map<string, { sprite: THREE.Sprite, canvas: HTMLCanvasElement, context: CanvasRenderingContext2D, texture: THREE.CanvasTexture }>>(new Map());
+  const nodeTypeCache = useRef<Map<string, string>>(new Map());
+
+  const selectedNodeId = useMemo(() => {
+    return data.nodes.find(n => n.path === (slug || 'home'))?.id;
+  }, [data.nodes, slug]);
 
   const flyToNode = useCallback((nodeId: string, duration = 2000) => {
     if (!fgRef.current) return;
@@ -40,19 +54,26 @@ export default function Graph({ data }: Props) {
       duration
     );
     setSelectedNode(node.id);
-    
-    // Immediately clear dirty flag when we start a focus move
     setCameraDirty(false);
   }, [data.nodes, setSelectedNode, setCameraDirty]);
 
+  // Handle camera movement
   useEffect(() => {
+    // Only move camera if engine is ready (has positions)
+    if (!isReady) return;
+
     const targetSlug = slug || "home";
     const node = data.nodes.find((n) => n.path === targetSlug);
-    if (node) {
-      const timer = setTimeout(() => flyToNode(node.id, 2000), 500);
-      return () => clearTimeout(timer);
+    if (node && node.x !== undefined) {
+      flyToNode(node.id, 2000);
     }
-  }, [slug, flyToNode, data.nodes, cameraTrigger]);
+  }, [slug, isReady, cameraTrigger, flyToNode, data.nodes]);
+
+  // Safety fallback for splash screen
+  useEffect(() => {
+    const timer = setTimeout(() => setReady(true), 5000);
+    return () => clearTimeout(timer);
+  }, [setReady]);
 
   const handleNodeClick = useCallback((node: any) => {
     if (node && node.path) {
@@ -64,76 +85,172 @@ export default function Graph({ data }: Props) {
     }
   }, [router, slug, triggerCamera]);
 
-  const selectedNodeId = useMemo(() => {
-    return data.nodes.find(n => n.path === (slug || 'home'))?.id;
-  }, [data.nodes, slug]);
+  // Calculate highlighted nodes and links based on depth
+  const highlightedInfo = useMemo(() => {
+    const info = new Map<string, { type: 'uplink' | 'backlink', depth: number }>();
+    if (!selectedNodeId) return info;
 
-  const neighbors = useMemo(() => {
-    if (!selectedNodeId) return new Set();
-    return new Set(
-      data.links
-        .filter(l => {
-          const s = typeof l.source === 'object' ? (l.source as any).id : l.source;
-          return s === selectedNodeId;
-        })
-        .map(l => typeof l.target === 'object' ? (l.target as any).id : l.target)
-    );
-  }, [data.links, selectedNodeId]);
-
-  useEffect(() => {
-    spriteCache.current.forEach((sprite, nodeId) => {
-      const isSelected = nodeId === selectedNodeId;
-      const isHovered = nodeId === hoverNodeId;
-      const isNeighbor = neighbors.has(nodeId);
-      const isActive = isSelected || isHovered || isNeighbor;
-      sprite.visible = isActive;
-      if (isActive) {
-        sprite.material.opacity = isHovered ? 1 : 0.9;
+    if (uplinkDepth > 0) {
+      const queue: { id: string, d: number }[] = [{ id: selectedNodeId, d: 0 }];
+      const visited = new Set([selectedNodeId]);
+      while (queue.length > 0) {
+        const { id, d } = queue.shift()!;
+        if (d > 0) info.set(id, { type: 'uplink', depth: d });
+        if (d < uplinkDepth) {
+          data.links.forEach(l => {
+            const s = typeof l.source === 'object' ? (l.source as any).id : l.source;
+            const t = typeof l.target === 'object' ? (l.target as any).id : l.target;
+            if (s === id && !visited.has(t)) {
+              visited.add(t);
+              queue.push({ id: t, d: d + 1 });
+            }
+          });
+        }
       }
-    });
-  }, [selectedNodeId, hoverNodeId, neighbors]);
+    }
 
-  const getLabelSprite = useCallback((node: any) => {
-    if (spriteCache.current.has(node.id)) return spriteCache.current.get(node.id)!;
+    if (backlinkDepth > 0) {
+      const queue: { id: string, d: number }[] = [{ id: selectedNodeId, d: 0 }];
+      const visited = new Set([selectedNodeId]);
+      while (queue.length > 0) {
+        const { id, d } = queue.shift()!;
+        if (d > 0) {
+          const existing = info.get(id);
+          if (!existing || d < existing.depth || (d === existing.depth && existing.type === 'backlink')) {
+            info.set(id, { type: 'backlink', depth: d });
+          }
+        }
+        if (d < backlinkDepth) {
+          data.links.forEach(l => {
+            const s = typeof l.source === 'object' ? (l.source as any).id : l.source;
+            const t = typeof l.target === 'object' ? (l.target as any).id : l.target;
+            if (t === id && !visited.has(s)) {
+              visited.add(s);
+              queue.push({ id: s, d: d + 1 });
+            }
+          });
+        }
+      }
+    }
+    return info;
+  }, [data.links, selectedNodeId, uplinkDepth, backlinkDepth]);
+
+  const updateLabelTexture = useCallback((nodeId: string, title: string, color: string) => {
+    const cached = spriteCache.current.get(nodeId);
+    if (!cached) return;
+    const { context, canvas, texture } = cached;
     
-    const canvas = document.createElement('canvas');
-    const context = canvas.getContext('2d')!;
-    const fontSize = 40; // Increased font size
-    context.font = `bold ${fontSize}px sans-serif`;
-    const textWidth = context.measureText(node.title).width;
-    canvas.width = textWidth + 40;
-    canvas.height = fontSize + 30;
+    const displayTitle = title === "Home" ? "/" : title;
     
+    context.clearRect(0, 0, canvas.width, canvas.height);
     context.fillStyle = 'rgba(2, 6, 23, 0.95)';
+    context.beginPath();
     context.roundRect(0, 0, canvas.width, canvas.height, 15);
     context.fill();
-    context.strokeStyle = 'rgba(45, 212, 191, 0.4)';
-    context.lineWidth = 3;
+    context.strokeStyle = color;
+    context.lineWidth = 4;
     context.stroke();
     
     context.fillStyle = '#f8fafc';
-    context.font = `bold ${fontSize}px sans-serif`;
+    context.font = 'bold 40px sans-serif';
     context.textAlign = 'center';
     context.textBaseline = 'middle';
-    context.fillText(node.title, canvas.width / 2, canvas.height / 2);
+    context.fillText(displayTitle, canvas.width / 2, canvas.height / 2);
+    texture.needsUpdate = true;
+  }, []);
+
+  useEffect(() => {
+    spriteCache.current.forEach((cached, nodeId) => {
+      const isSelected = nodeId === selectedNodeId;
+      const isHovered = nodeId === hoverNodeId;
+      const highlight = highlightedInfo.get(nodeId);
+      const isActive = isSelected || isHovered || !!highlight;
+      
+      cached.sprite.visible = isActive;
+      
+      if (isActive) {
+        cached.sprite.material.opacity = isHovered ? 1 : 0.9;
+        
+        let type = 'default';
+        let color = 'rgba(148, 163, 184, 0.4)';
+        
+        if (isSelected) {
+          type = 'selected';
+          color = '#2dd4bf';
+        } else if (highlight?.type === 'uplink') {
+          type = 'uplink';
+          color = '#38bdf8';
+        } else if (highlight?.type === 'backlink') {
+          type = 'backlink';
+          color = '#d946ef';
+        }
+        
+        if (nodeTypeCache.current.get(nodeId) !== type) {
+          const node = data.nodes.find(n => n.id === nodeId);
+          if (node) {
+            updateLabelTexture(nodeId, node.title, color);
+            nodeTypeCache.current.set(nodeId, type);
+          }
+        }
+      }
+    });
+  }, [selectedNodeId, hoverNodeId, highlightedInfo, data.nodes, updateLabelTexture]);
+
+  const getLabelSprite = useCallback((node: any) => {
+    if (spriteCache.current.has(node.id)) return spriteCache.current.get(node.id)!.sprite;
+    
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d')!;
+    const fontSize = 40;
+    context.font = `bold ${fontSize}px sans-serif`;
+    
+    const displayTitle = node.title === "Home" ? "/" : node.title;
+    const textWidth = context.measureText(displayTitle).width;
+    canvas.width = textWidth + 40;
+    canvas.height = fontSize + 30;
+    
+    const isSelected = node.id === selectedNodeId;
+    const highlight = highlightedInfo.get(node.id);
+    let color = 'rgba(148, 163, 184, 0.4)';
+    let type = 'default';
+    
+    if (isSelected) {
+      color = '#2dd4bf';
+      type = 'selected';
+    } else if (highlight?.type === 'uplink') {
+      color = '#38bdf8';
+      type = 'uplink';
+    } else if (highlight?.type === 'backlink') {
+      color = '#d946ef';
+      type = 'backlink';
+    }
+    
+    context.fillStyle = 'rgba(2, 6, 23, 0.95)';
+    context.beginPath();
+    context.roundRect(0, 0, canvas.width, canvas.height, 15);
+    context.fill();
+    context.strokeStyle = color;
+    context.lineWidth = 4;
+    context.stroke();
+    
+    context.fillStyle = '#f8fafc';
+    context.font = 'bold 40px sans-serif';
+    context.textAlign = 'center';
+    context.textBaseline = 'middle';
+    context.fillText(displayTitle, canvas.width / 2, canvas.height / 2);
 
     const texture = new THREE.CanvasTexture(canvas);
-    const spriteMaterial = new THREE.SpriteMaterial({ 
-      map: texture, 
-      transparent: true,
-      depthTest: false 
-    });
+    const spriteMaterial = new THREE.SpriteMaterial({ map: texture, transparent: true, depthTest: false });
     const sprite = new THREE.Sprite(spriteMaterial);
-    
-    const img = texture.image as HTMLCanvasElement;
-    // Larger scaling for better visibility
-    sprite.scale.set(img.width / 8, img.height / 8, 1);
+    sprite.scale.set(canvas.width / 8, canvas.height / 8, 1);
     sprite.position.set(0, 18, 0);
-    sprite.visible = false;
+    sprite.visible = isSelected || !!highlight;
 
-    spriteCache.current.set(node.id, sprite);
+    spriteCache.current.set(node.id, { sprite, canvas, context, texture });
+    nodeTypeCache.current.set(node.id, type);
+    
     return sprite;
-  }, []);
+  }, [selectedNodeId, highlightedInfo]);
 
   return (
     <div 
@@ -152,7 +269,9 @@ export default function Graph({ data }: Props) {
         nodeColor={(node: any) => {
           if (node.id === selectedNodeId) return '#2dd4bf';
           if (node.id === hoverNodeId) return '#5eead4';
-          if (neighbors.has(node.id)) return '#38bdf8';
+          const highlight = highlightedInfo.get(node.id);
+          if (highlight?.type === 'uplink') return '#38bdf8';
+          if (highlight?.type === 'backlink') return '#d946ef';
           return '#475569';
         }}
         nodeRelSize={5}
@@ -161,20 +280,32 @@ export default function Graph({ data }: Props) {
 
         linkColor={(link: any) => {
           const s = typeof link.source === 'object' ? (link.source as any).id : link.source;
-          return s === selectedNodeId ? 'rgba(56, 189, 248, 1)' : 'rgba(148, 163, 184, 0.6)';
+          const t = typeof link.target === 'object' ? (link.target as any).id : link.target;
+          if (s === selectedNodeId && uplinkDepth > 0) return 'rgba(56, 189, 248, 1)'; 
+          if (t === selectedNodeId && backlinkDepth > 0) return 'rgba(217, 70, 239, 1)'; 
+          const sHighlight = highlightedInfo.get(s);
+          const tHighlight = highlightedInfo.get(t);
+          if (sHighlight?.type === 'uplink' && tHighlight?.type === 'uplink') return 'rgba(56, 189, 248, 0.6)';
+          if (sHighlight?.type === 'backlink' && tHighlight?.type === 'backlink') return 'rgba(217, 70, 239, 0.6)';
+          return 'rgba(148, 163, 184, 0.4)';
         }}
         linkWidth={(link: any) => {
           const s = typeof link.source === 'object' ? (link.source as any).id : link.source;
-          return s === selectedNodeId ? 4 : 2.5;
+          const t = typeof link.target === 'object' ? (link.target as any).id : link.target;
+          const isHighlightedUplink = s === selectedNodeId && uplinkDepth > 0;
+          const isHighlightedBacklink = t === selectedNodeId && backlinkDepth > 0;
+          return (isHighlightedUplink || isHighlightedBacklink) ? 4 : 1.5;
         }}
         linkDirectionalArrowLength={(link: any) => {
           const s = typeof link.source === 'object' ? (link.source as any).id : link.source;
-          return s === selectedNodeId ? 8 : 6;
+          const isHighlightedUplink = s === selectedNodeId && uplinkDepth > 0;
+          return isHighlightedUplink ? 8 : 0;
         }}
         linkDirectionalArrowRelPos={1}
 
         warmupTicks={150}
         cooldownTicks={0}
+        onEngineStop={() => setReady(true)}
       />
     </div>
   );
