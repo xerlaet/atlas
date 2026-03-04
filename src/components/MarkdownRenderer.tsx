@@ -67,8 +67,8 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
     // Fix: Ensure content after </iframe> is on a new line so markdown can parse it
     .replace(/<\/iframe>/g, "</iframe>\n\n")
     // Fix: Aggressive Math Block Normalization
-    // 1. Find every $$ ... $$ block (using 's' flag for multi-line dot matching)
-    .replace(/\$\$(.*?)\$\$/gs, (match, inner) => {
+    // 1. Find every $$ ... $$ block (using [\s\S] for multi-line matching)
+    .replace(/\$\$([\s\S]*?)\$\$/g, (match, inner) => {
       // 2. Clean up the environments inside the block
       const cleanedInner = inner
         .replace(/\\begin\s*?\{(align|equation|alignat)\*?\}\s*?(\{[0-9]+\})?/g, "\\begin{aligned}")

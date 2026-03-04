@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Noto_Serif } from "next/font/google";
 import InitialRedirect from "@/components/InitialRedirect";
 import SplashScreen from "@/components/SplashScreen";
@@ -27,7 +27,6 @@ export const metadata: Metadata = {
   title: "Atlas",
   description: "Atlas: A 3D Digital Garden",
   keywords: ["Robert Teal", "Robert Teal Digital Garden", "Digital Garden", "Obsidian", "3D Force Graph", "Personal Wiki", "Knowledge Base", "Next.js", "TypeScript"],
-  themeColor: "#2dd4bf",
   openGraph: {
     title: "Atlas",
     description: "Atlas: A 3D Digital Garden",
@@ -41,6 +40,10 @@ export const metadata: Metadata = {
     title: "Atlas",
     description: "Atlas: A 3D Digital Garden",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2dd4bf",
 };
 
 export default async function RootLayout({
