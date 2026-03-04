@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run generate:tikz && next dev",
-    "build": "npm run generate:tikz && next build",
-    "generate:tikz": "node scripts/generate-tikz.mjs",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -20,13 +19,13 @@
     "react-dom": "19.2.3",
     "react-force-graph-3d": "^1.29.1",
     "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
     "rehype-katex": "^7.0.1",
     "rehype-raw": "^7.0.0",
     "remark-breaks": "^4.0.0",
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "remark-unwrap-images": "^4.0.1",
-    "remark-wiki-link": "^2.0.1",
     "tailwind-merge": "^3.5.0",
     "three": "^0.183.2",
     "zustand": "^5.0.11"

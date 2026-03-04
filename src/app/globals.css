@@ -90,16 +90,67 @@ hr {
 
 /* Code Blocks */
 .prose code:not(pre code) {
-  background-color: var(--background-darker) !important;
-  color: var(--color15) !important; /* Keep inline code slightly brighter */
-  padding: 0.2em 0.4em !important;
-  border-radius: 4px !important;
-  font-weight: 400 !important;
+  background-color: rgba(30, 41, 59, 0.5) !important; /* Slate 800/50 */
+  color: var(--color2) !important; /* Bright Teal */
+  padding: 0.2rem 0.4rem !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  font-size: 0.9em !important;
+  border: 1px solid rgba(45, 212, 191, 0.1) !important;
 }
 
 .prose pre {
-  background-color: var(--background-darker) !important;
-  border: 1px solid var(--color8);
+  background-color: rgba(1, 4, 10, 0.6) !important; 
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 8px !important;
+  padding: 0 !important;
+  margin: 1.25rem 0 !important;
+  box-shadow: none !important;
+  overflow-x: auto;
+}
+
+.prose pre code {
+  display: block;
+  background-color: transparent !important;
+  padding: 1rem !important;
+  color: #94a3b8 !important; /* Soft Slate 400 */
+  border: none !important;
+  font-size: 0.85rem !important;
+  line-height: 1.6 !important;
+  font-family: var(--font-geist-mono), monospace !important;
+}
+
+/* Tables */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0 !important;
+  border: 1px solid var(--color8) !important;
+  background-color: rgba(1, 4, 10, 0.4);
+}
+
+.prose thead {
+  background-color: rgba(20, 184, 166, 0.1);
+  border-bottom: 2px solid var(--color4) !important;
+}
+
+.prose th {
+  color: var(--color1) !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  padding: 0.4rem 0.6rem !important;
+  border: 1px solid var(--color8) !important;
+}
+
+.prose td {
+  padding: 0.4rem 0.6rem !important;
+  border: 1px solid var(--color8) !important;
+  color: var(--foreground) !important;
+  line-height: 1.5;
+}
+
+.prose tr:nth-child(even) {
+  background-color: rgba(1, 4, 10, 0.2);
 }
 
 /* Force Graph Node Labels */

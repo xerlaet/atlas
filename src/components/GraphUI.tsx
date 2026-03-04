@@ -59,8 +59,8 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
         return;
       }
 
-      // Ignore single-letter binds if an input is focused
-      if (isInputFocused) return;
+      // Ignore single-letter binds if an input is focused OR a modifier key is pressed
+      if (isInputFocused || e.ctrlKey || e.metaKey || e.altKey) return;
 
       switch (e.key.toLowerCase()) {
         case "/":

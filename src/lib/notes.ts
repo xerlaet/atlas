@@ -17,6 +17,9 @@ export interface GraphNode {
   id: string;
   title: string;
   path: string;
+  x?: number;
+  y?: number;
+  z?: number;
 }
 
 export interface GraphLink {
@@ -81,6 +84,7 @@ export async function getGraphData(): Promise<{
   const slugger = new GithubSlugger();
 
   // First pass: Build metadata
+  const slugToTitle: Record<string, string> = {};
   files.forEach((filePath) => {
     const relativePath = path.relative(CONTENT_DIR, filePath);
     const fileName = path.basename(filePath, ".md");
@@ -100,14 +104,26 @@ export async function getGraphData(): Promise<{
       links: [],
     };
 
+    // 1. Detect WikiLinks [[Note Name]]
     const wikiLinkRegex = /\[\[(.*?)\]\]/g;
     let match;
     while ((match = wikiLinkRegex.exec(content)) !== null) {
       metadata.links.push(normalizeWikiLink(match[1]));
     }
 
+    // 2. Detect standard Markdown links [Alias](/notes/slug)
+    const markdownLinkRegex = /\[.*?\]\((\/notes\/([^\s\)]+))\)/g;
+    while ((match = markdownLinkRegex.exec(content)) !== null) {
+      const linkSlug = match[2].split("#")[0];
+      // We'll resolve these to titles in the second pass since we need all metadata first
+      if (!metadata.links.includes(linkSlug)) {
+        metadata.links.push(linkSlug);
+      }
+    }
+
     notes[slug] = metadata;
     titleToId[title] = slug;
+    slugToTitle[slug] = title;
   });
 
   // Second pass: Build graph
@@ -119,11 +135,19 @@ export async function getGraphData(): Promise<{
 
   const links: GraphLink[] = [];
   Object.values(notes).forEach((note) => {
-    note.links.forEach((linkTitle) => {
-      if (titleToId[linkTitle]) {
+    note.links.forEach((linkIdentifier) => {
+      // It could be a title (from WikiLink) or a slug (from Markdown link)
+      let targetTitle = "";
+      if (titleToId[linkIdentifier]) {
+        targetTitle = linkIdentifier;
+      } else if (slugToTitle[linkIdentifier]) {
+        targetTitle = slugToTitle[linkIdentifier];
+      }
+
+      if (targetTitle && targetTitle !== note.title) {
         links.push({
           source: note.title,
-          target: linkTitle,
+          target: targetTitle,
         });
       }
     });
@@ -148,19 +172,11 @@ export async function getNoteBySlug(slug: string) {
   const content = rawContent.replace(/\r\n/g, "\n");
   const { data, content: markdownBody } = matter(content);
 
-  // Pre-process TikZ blocks to use pre-generated SVGs
-  const processedBody = markdownBody.replace(/```tikz\n([\s\S]*?)```/g, (_match, code) => {
-    const hash = getHash(code.trim());
-    // invert(1) flips Black to White, but also Blue to Yellow.
-    // hue-rotate(180deg) flips the colors back to their original hue.
-    return `<img src="/tikz-assets/${hash}.svg" alt="TikZ Diagram" class="tikz-diagram my-12 mx-auto block max-w-full invert hue-rotate-180 opacity-90 brightness-110" />\n\n`;
-  });
-
   return {
     metadata: {
       ...noteMetadata,
       ...data,
     },
-    content: processedBody,
+    content: markdownBody,
   };
 }

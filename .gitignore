@@ -42,3 +42,4 @@ next-env.d.ts
 
 # tikz
 /scripts/.temp_tikz/
+/scripts

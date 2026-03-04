@@ -42,11 +42,11 @@ export default function Graph({ data }: Props) {
 
   const flyToNode = useCallback((nodeId: string, duration = 2000) => {
     if (!fgRef.current) return;
-    const node = data.nodes.find((n: any) => n.id === nodeId);
-    if (!node || node.x === undefined) return;
+    const node = data.nodes.find((n) => n.id === nodeId);
+    if (!node || node.x === undefined || node.y === undefined || node.z === undefined) return;
 
     const distance = 400;
-    const distRatio = 1 + distance / Math.hypot(node.x || 1, node.y || 1, node.z || 1);
+    const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
 
     fgRef.current.cameraPosition(
       { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, 
