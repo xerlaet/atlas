@@ -66,11 +66,17 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
   const processedContent = content
     // Fix: Ensure content after </iframe> is on a new line so markdown can parse it
     .replace(/<\/iframe>/g, "</iframe>\n\n")
-    // Fix: Convert align/equation environments to aligned to disable numbering globally (Obsidian parity)
-    .replace(/\\begin\{align\}/g, "\\begin{aligned}")
-    .replace(/\\end\{align\}/g, "\\end{aligned}")
-    .replace(/\\begin\{equation\}/g, "\\begin{aligned}")
-    .replace(/\\end\{equation\}/g, "\\end{aligned}");
+    // Fix: Aggressive Math Block Normalization
+    // 1. Find every $$ ... $$ block (using 's' flag for multi-line dot matching)
+    .replace(/\$\$(.*?)\$\$/gs, (match, inner) => {
+      // 2. Clean up the environments inside the block
+      const cleanedInner = inner
+        .replace(/\\begin\s*?\{(align|equation|alignat)\*?\}\s*?(\{[0-9]+\})?/g, "\\begin{aligned}")
+        .replace(/\\end\s*?\{(align|equation|alignat)\*?\}/g, "\\end{aligned}");
+      
+      // 3. Return the block wrapped in newlines to guarantee remark-math identifies it
+      return `\n\n$$\n${cleanedInner.trim()}\n$$\n\n`;
+    });
 
   return (
     <div className="prose prose-invert prose-slate max-w-none font-sans">
