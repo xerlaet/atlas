@@ -9,9 +9,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const note = await getNoteBySlug(slug);
   
   if (!note) return { title: "Atlas" };
+
+  // Extract a clean description from the content (remove markdown formatting)
+  const description = note.content
+    .replace(/[#*`[\]]/g, '') // Basic markdown strip
+    .split('\n')
+    .find(line => line.trim().length > 10) // Find first meaningful line
+    ?.slice(0, 160) || "A 3D Digital Garden";
   
   return {
-    title: `Atlas | ${note.metadata.title}`,
+    title: `${note.metadata.title} | Atlas`,
+    description: description,
+    openGraph: {
+      title: `${note.metadata.title} | Atlas`,
+      description: description,
+    },
+    twitter: {
+      title: `${note.metadata.title} | Atlas`,
+      description: description,
+    }
   };
 }
 

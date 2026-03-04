@@ -23,12 +23,17 @@ const notoSerif = Noto_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
+  metadataBase: new URL('https://robertteal.dev'),
   title: "Atlas",
   description: "Atlas: A 3D Digital Garden",
+  keywords: ["Digital Garden", "Obsidian", "3D Force Graph", "Personal Wiki", "Knowledge Base", "Next.js", "TypeScript"],
+  themeColor: "#2dd4bf",
   openGraph: {
     title: "Atlas",
     description: "Atlas: A 3D Digital Garden",
+    url: "https://robertteal.dev",
+    siteName: "Atlas",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
