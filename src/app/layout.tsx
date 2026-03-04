@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://robertteal.dev'),
   title: "Atlas",
   description: "Atlas: A 3D Digital Garden",
-  keywords: ["Digital Garden", "Obsidian", "3D Force Graph", "Personal Wiki", "Knowledge Base", "Next.js", "TypeScript"],
+  keywords: ["Robert Teal", "Robert Teal Digital Garden", "Digital Garden", "Obsidian", "3D Force Graph", "Personal Wiki", "Knowledge Base", "Next.js", "TypeScript"],
   themeColor: "#2dd4bf",
   openGraph: {
     title: "Atlas",
