@@ -103,7 +103,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
   return (
     <>
       {/* Top Left: Trigger Icons and Bubble Panel */}
-      <div className="fixed top-6 left-6 flex flex-col gap-3">
+      <div className="fixed top-6 left-6 flex flex-col gap-6">
         <div className="flex items-center gap-3 pointer-events-auto">
           {/* 1. Search Button */}
           <button
