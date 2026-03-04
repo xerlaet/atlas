@@ -1,5 +1,6 @@
 # Eigenvalues and Eigenvectors
 ---
+
 A matrix $A$ is **diagonalizable** if $A$ can be rewritten $A=X\Lambda X^{-1}$ where
 $$
 \Lambda =\begin{bmatrix}
@@ -11,7 +12,6 @@ $$
 
 It makes finding large powers of a matrix very easy because $A^{n}=X\Lambda^{n}X^{-1}$
 
-```ad-important
 The reason that this can work is because any continuous function can be represented as a Taylor series
 $$
 f(x)=\sum _{n=0}^{\infty } \frac{f^{n}(0)}{n!}x^{n}
@@ -32,8 +32,6 @@ $$
 With this idea, you can take any function and apply it to a diagonalizable matrix
 - the inverse of a matrix
 - the square root of a matrix (we will get at least one possible solution)
-```
-
 
 Matrices $A$ and $B$ are **similar** if for some $X$, $A=XBX^{-1}$
 
@@ -89,8 +87,6 @@ p_{1}y_{1}^{2}+\dots+p_{n}y_{n}^{2}&>0 \\
 p_{1}\dots p_{n}&>0
 \end{align}
 $$
-
-```ad-example
 Show that the matrix is not positive symmetric in three different ways
 
 $$
@@ -110,7 +106,6 @@ x^{2}+4xy+3y^{2}=(x+2y)^{2}-y^{2} \\
 \end{bmatrix}
 \end{align}
 $$
-```
 
 ## Finding Eigenvalues and Eigenvectors
 $$
@@ -121,7 +116,7 @@ $$
 &\text{det}(A-\lambda I)=0
 \end{align}
 $$
-```ad-example
+
 $$
 \begin{align}
 A&=\begin{bmatrix}
@@ -175,7 +170,6 @@ A=\begin{bmatrix}
 -\frac{5}{12} & \frac{7}{12}
 \end{bmatrix}
 $$
-```
 
 The **characteristic polynomial** (polynomial of degree d) is found from the solution of $\text{det}(A-\lambda I)=0$ which is the **characteristic equation**
 

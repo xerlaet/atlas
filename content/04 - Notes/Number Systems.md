@@ -1,5 +1,6 @@
 # Number Systems
 ---
+
 A **number system** is a mathematical notation for expressing numbers in a consistent and convenient manner
 
 The base is often denoted with a subscript, e.g. $453_{10}$ or $1011_{2}$
@@ -32,16 +33,11 @@ The base is often denoted with a subscript, e.g. $453_{10}$ or $1011_{2}$
 ### Decimal to Base N
 To convert between decimal and another base, it is often helpful to use a table of place values in that other base, below is an example for binary
 
-add more examples to and from
-
-```ad-example
-
 | Base        | $2^{7}$ | $2^{6}$ | $2^{5}$ | $2^{4}$ | $2^{3}$ | $2^{2}$ | $2^{1}$ | $2^{0}$ |
 | ----------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | Place Value | 128     | 64      | 32      | 16      | 8       | 4       | 2       | 1       |
 | Number      | 0       | 0       | 1       | 0       | 0       | 0       | 1       | 1       |
 $35_{10}=00100011_{2}$
-```
 
 ### Binary to Octal or Hex
 To convert between binary, octal, and hexadecimal, it is often helpful to convert to binary and use that as an intermediary. Every octal digit can be replaced with three binary digits, and every hex digit can be replaced with four binary digits

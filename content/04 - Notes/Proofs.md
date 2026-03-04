@@ -1,5 +1,6 @@
 # Proofs
 ---
+
 A **valid** proof or argument consists of a series of **premises** that lead to a **conclusion**
 ex.
 $$
@@ -41,7 +42,7 @@ p\to (p\lor q) & \text{Addition} \\ \\
 \end{array}
 $$
 
-```ad-example
+## Example
 Show that the premises
 1. "It is not sunny this afternoon and it is colder than yesterday"
 2. "We will go swimming only if it is sunny"
@@ -70,7 +71,6 @@ $$
 8. t & \text{Modus ponens using (6) and (7)}
 \end{array}
 $$
-```
 
 In addition to those rules of inference, there are similar rules for quantified statements
 
@@ -84,7 +84,6 @@ $$
 \end{array}
 $$
 
-```ad-example
 Show that the premises
 1. Everyone in this discrete mathematics class has taken a course in computer science
 2. Marla is a student in this class
@@ -104,7 +103,6 @@ $$
 4. C(\text{Marla}) & \text{Modus ponens from (2) and (3)}
 \end{array}
 $$
-```
 
 ## Types of Proofs
 There are various proof methods that can be used

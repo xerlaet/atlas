@@ -10,20 +10,7 @@ A **Turing Machine** (TM) is a 7-tuple $(Q,\Sigma,\Gamma,\delta,q_{0},q_{accept}
 6. $q_{accept}\in Q$ is the accept state
 7. $q_{reject}\in Q$ is the reject state
 
-```tikz
-\usetikzlibrary{positioning}
-\begin{document}
-\begin{tikzpicture}
-\tikzset{
-	block/.style={draw, minimum height=7em, minimum width=7em},
-	state/.style={draw, circle, inner sep=0, minimum size=1cm},
-	arrow/.style={>=latex}
-}
-\node[block] (contro) at (0,0) {$q$ finite control};
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-064f07830b4ceba978f76c3ae16453f5.svg)
 
 
 A TM has 3 possible outcomes for each input $w$:

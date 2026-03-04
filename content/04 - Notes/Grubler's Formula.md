@@ -10,7 +10,7 @@ $$
 \end{align*}
 $$
 
-```ad-example
+## Example
 ![Pasted image 20250827140037.png](/attachments/Pasted%20image%2020250827140037.png)
 $$
 \text{DOFs} = 3(4-1-4)+\sum_{i=1}^{4}1=1
@@ -19,4 +19,3 @@ $$
 $$
 \text{DOFs} = 3(8-1-9)+\sum_{i=1}^{9}1=3
 $$
-```

@@ -15,23 +15,7 @@ This entire process is often modeled as a [Markov Decision Process](/notes/marko
 
 Often this is done in a simulation first to save time and then deploy the model into the real world
 
-```tikz
-\usetikzlibrary{positioning}
-\begin{document}
-\begin{tikzpicture}
-\tikzset{
-	block/.style={draw, minimum height=3em, minimum width=7em},
-	state/.style={draw, circle, inner sep=0, minimum size=1cm},
-	arrow/.style={>=latex}
-}
-\node[block] (agent) at (0,0) {Agent};
-\node[block, right=3cm of agent] (env) {Environment};
-\path[draw, arrow, ->] (agent) to[bend left] node[above]{$a_t$} (env);
-\path[draw, arrow, ->] (env) to[bend left] node[below]{$s_{t+1},r_t$} (agent);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-26c1ac60595ff7133cdc517fd4738a57.svg)
 
 
 Discrete vs Continuous action (simple search vs deep learning)

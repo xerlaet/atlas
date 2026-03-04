@@ -8,7 +8,7 @@ P_{h}=P_{0}P^h
 $$
 where $P_{h}$ is the set of probabilities at time $h$, $P_{0}$ is the set of probabilities at time $0$, and $P$ is the transition matrix
 
-```ad-example
+## Example
 **Problem** 
 In some town, each day is either sunny or rainy. A sunny day is followed by another sunny day with probability 0.7, whereas a rainy day is followed by a sunny day with probability 0.4.
 
@@ -26,7 +26,6 @@ $$
 &P_{3}=P_{0}\cdot P^{3}=\begin{bmatrix}0.556 & 0.444\end{bmatrix} \\
 \end{align}
 $$
-```
 
 A Markov chain is considered **regular** if $P_{ij}^{h}>0$ for some $h$ and all $i,j$, else it is considered **irregular**
 
@@ -50,7 +49,6 @@ $$
 \end{align}
 $$
 
-```ad-example
 **Problem** 
 For the following matrices, state whether they are regular or irregular, and find the steady state distribution (if it exists)
 $$
@@ -122,4 +120,3 @@ P_{3}^T-I & 0 \\
 \end{bmatrix}
 $$
 The steady state distribution does not exist, as $P_3$ is periodic
-```

@@ -1,5 +1,6 @@
 # Context-Free Languages
 ---
+
 A language is **context-free** if a non-deterministic pushdown automaton recognizes it
 
 A **context-free grammar** is a 4-tuple $(V,\Sigma,R,S)$ where
@@ -8,7 +9,6 @@ A **context-free grammar** is a 4-tuple $(V,\Sigma,R,S)$ where
 3. $R$ is a finite set of rules consisting of a variable and a string of variables and terminals $V \to (V \cup \Sigma)^{*}$
 4. $S \in V$ is the start variable
 
-```ad-example
 An example context-free grammar, derivation, and parse tree
 $$\begin{align}
 A &\to 0A 1 \\
@@ -50,4 +50,3 @@ Regular closure properties can also be used to prove non-regularity
 
 ## Similar
 Backus-Naur Form (BNF) was created to describe the syntax of Algol 58, and is equivalent to CFGs
-

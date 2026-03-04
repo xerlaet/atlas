@@ -1,5 +1,6 @@
 # Vector Subspaces
 ---
+
 ## Subspaces
 A **vector subspace** is a set that is closed under vector addition and scalar multiplication where $(t\in\mathbb{R})$
 
@@ -36,7 +37,7 @@ C(A^T)&\perp N(A)
 \end{align}
 $$
 
-```ad-example
+## Example
 **Problem**
 Given a matrix $A$
 $$
@@ -77,4 +78,3 @@ N(A^T)=\text{span}
 \end{bmatrix}
 \end{align}
 $$
-```

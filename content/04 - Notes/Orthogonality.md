@@ -41,7 +41,7 @@ If the matrix $A$ was invertible, then $p=b$, which makes sense because the proj
 
 As long as the columns of $A$ are linearly independent, $A^TA$ will be invertible, so the first step should be to filter out dependent columns if they exist
 
-```ad-example
+## Example
 Ex. find projection of $(1,2,3)$ on $\text{span}\{ (1,0,0),(0,1,0) \}$
 $$
 A=\begin{bmatrix}
@@ -99,9 +99,7 @@ y \\
 0
 \end{bmatrix}
 $$
-```
 
-```ad-example
 Ex. find projection of $(6,0,0)$ on $\text{span}\{ (1,1,1),(0,1,2) \}$
 $$
 A=\begin{bmatrix}
@@ -163,7 +161,6 @@ p=Pb=\frac{1}{6}\begin{bmatrix}
 1
 \end{bmatrix}
 $$
-```
 
 ## Least Squares Approximation
 The goal of the Least Squares Approximation is to find a polynomial of degree $n$ that best represents some given data
@@ -196,7 +193,6 @@ q_{n}
 \end{bmatrix}
 $$
 
-```ad-example
 In general:
 $$
 A=\begin{bmatrix}
@@ -237,9 +233,7 @@ y
 \end{bmatrix}
 =(A^TA)^{-1}(A^Tq),q(t)=xt+y
 $$
-```
 
-```ad-example
 ex.
 $$
 \begin{bmatrix}
@@ -330,7 +324,6 @@ e=\begin{bmatrix}
 1
 \end{bmatrix},\lvert e \rvert=\sqrt{ 6 } 
 $$
-```
 
 ## Creating an Orthonormal Basis (Gram-Schmidt Process)
 Permutation matrices and rotation matrices are good examples of orthogonal matrices
@@ -358,5 +351,3 @@ $$
 $$
 
 If A has linearly independent orthonormal columns, then $A^TA=I$ and the projection onto $C(A)$ is $p=A(A^TA)^{-1}A^Tb=A^Tb$ and $a_{i}^Tp=x_{j}$ because stuff cancels out
-
-PUT EXAMPLE HERE!!!!!!!
