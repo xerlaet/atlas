@@ -27,7 +27,8 @@ export default function Graph({ data }: Props) {
     uplinkDepth,
     backlinkDepth,
     setReady,
-    isReady
+    isReady,
+    theme
   } = useGraphStore();
   
   const [hoverNodeId, setHoverNodeId] = useState<string | null>(null);
@@ -175,7 +176,7 @@ export default function Graph({ data }: Props) {
     const displayTitle = title === "Home" ? "/" : title;
     
     context.clearRect(0, 0, canvas.width, canvas.height);
-    context.fillStyle = 'rgba(2, 6, 23, 0.95)';
+    context.fillStyle = theme === "dark" ? 'rgba(2, 6, 23, 0.95)' : 'rgba(255, 255, 255, 0.95)';
     context.beginPath();
     context.roundRect(0, 0, canvas.width, canvas.height, 15);
     context.fill();
@@ -183,13 +184,13 @@ export default function Graph({ data }: Props) {
     context.lineWidth = 4;
     context.stroke();
     
-    context.fillStyle = '#f8fafc';
+    context.fillStyle = theme === "dark" ? '#f8fafc' : '#0f172a';
     context.font = 'bold 40px sans-serif';
     context.textAlign = 'center';
     context.textBaseline = 'middle';
     context.fillText(displayTitle, canvas.width / 2, canvas.height / 2);
     texture.needsUpdate = true;
-  }, []);
+  }, [theme]);
 
   useEffect(() => {
     spriteCache.current.forEach((cached, nodeId) => {
@@ -204,7 +205,7 @@ export default function Graph({ data }: Props) {
         cached.sprite.material.opacity = isHovered ? 1 : 0.9;
         
         let type = 'default';
-        let color = 'rgba(148, 163, 184, 0.4)';
+        let color = theme === "dark" ? 'rgba(148, 163, 184, 0.4)' : 'rgba(100, 116, 139, 0.4)';
         
         if (isSelected) {
           type = 'selected';
@@ -217,7 +218,8 @@ export default function Graph({ data }: Props) {
           color = '#d946ef';
         }
         
-        if (nodeTypeCache.current.get(nodeId) !== type) {
+        // Force redraw if theme changed even if type is the same
+        if (nodeTypeCache.current.get(nodeId) !== type || true) { 
           const node = data.nodes.find(n => n.id === nodeId);
           if (node) {
             updateLabelTexture(nodeId, node.title, color);
@@ -226,7 +228,7 @@ export default function Graph({ data }: Props) {
         }
       }
     });
-  }, [selectedNodeId, hoverNodeId, highlightedInfo, data.nodes, updateLabelTexture]);
+  }, [selectedNodeId, hoverNodeId, highlightedInfo, data.nodes, updateLabelTexture, theme]);
 
   const getLabelSprite = useCallback((node: any) => {
     if (spriteCache.current.has(node.id)) return spriteCache.current.get(node.id)!.sprite;
@@ -243,7 +245,7 @@ export default function Graph({ data }: Props) {
     
     const isSelected = node.id === selectedNodeId;
     const highlight = highlightedInfo.get(node.id);
-    let color = 'rgba(148, 163, 184, 0.4)';
+    let color = theme === "dark" ? 'rgba(148, 163, 184, 0.4)' : 'rgba(100, 116, 139, 0.4)';
     let type = 'default';
     
     if (isSelected) {
@@ -257,7 +259,7 @@ export default function Graph({ data }: Props) {
       type = 'backlink';
     }
     
-    context.fillStyle = 'rgba(2, 6, 23, 0.95)';
+    context.fillStyle = theme === "dark" ? 'rgba(2, 6, 23, 0.95)' : 'rgba(255, 255, 255, 0.95)';
     context.beginPath();
     context.roundRect(0, 0, canvas.width, canvas.height, 15);
     context.fill();
@@ -265,7 +267,7 @@ export default function Graph({ data }: Props) {
     context.lineWidth = 4;
     context.stroke();
     
-    context.fillStyle = '#f8fafc';
+    context.fillStyle = theme === "dark" ? '#f8fafc' : '#0f172a';
     context.font = 'bold 40px sans-serif';
     context.textAlign = 'center';
     context.textBaseline = 'middle';
@@ -282,7 +284,7 @@ export default function Graph({ data }: Props) {
     nodeTypeCache.current.set(node.id, type);
     
     return sprite;
-  }, [selectedNodeId, highlightedInfo]);
+  }, [selectedNodeId, highlightedInfo, theme]);
 
   return (
     <div 
@@ -295,7 +297,7 @@ export default function Graph({ data }: Props) {
         graphData={data}
         onNodeClick={handleNodeClick}
         onNodeHover={(node) => setHoverNodeId(node ? (node as any).id : null)}
-        backgroundColor="#020617"
+        backgroundColor={theme === "dark" ? "#020617" : "#f8fafc"}
         showNavInfo={false}
         
         nodeColor={(node: any) => {
@@ -304,7 +306,7 @@ export default function Graph({ data }: Props) {
           const highlight = highlightedInfo.get(node.id);
           if (highlight?.type === 'uplink') return '#38bdf8';
           if (highlight?.type === 'backlink') return '#d946ef';
-          return '#475569';
+          return theme === "dark" ? '#475569' : '#cbd5e1';
         }}
         nodeRelSize={5}
         nodeThreeObject={getLabelSprite}
@@ -314,7 +316,7 @@ export default function Graph({ data }: Props) {
           const type = getLinkType(link);
           if (type === 'active-uplink') return 'rgba(56, 189, 248, 0.8)';
           if (type === 'active-backlink') return 'rgba(217, 70, 239, 0.8)';
-          return 'rgba(148, 163, 184, 0.4)';
+          return theme === "dark" ? 'rgba(148, 163, 184, 0.4)' : 'rgba(100, 116, 139, 0.2)';
         }}
         linkDirectionalArrowColor={(link: any) => {
           const type = getLinkType(link);

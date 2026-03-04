@@ -99,12 +99,12 @@ export default function Search({ items }: SearchProps) {
       />
 
       {/* Search Box */}
-      <div className="relative w-full max-w-2xl bg-slate-900/80 backdrop-blur-2xl border border-white/10 rounded-[22px] shadow-[0_30px_100px_rgba(0,0,0,0.7)] overflow-hidden animate-in zoom-in-95 fade-in duration-200">
-        <div className="flex items-center px-5 py-4 border-b border-white/5">
-          <SearchIcon className="w-5 h-5 text-slate-400" />
+      <div className="relative w-full max-w-2xl bg-[var(--background-panel)] backdrop-blur-2xl border border-[var(--color8)] rounded-[22px] shadow-[0_30px_100px_rgba(0,0,0,0.7)] overflow-hidden animate-in zoom-in-95 fade-in duration-200">
+        <div className="flex items-center px-5 py-4 border-b border-[var(--color8)]/30">
+          <SearchIcon className="w-5 h-5 text-[var(--color7)]" />
           <input
             ref={inputRef}
-            className="flex-1 bg-transparent border-none outline-none px-4 text-slate-100 placeholder-slate-500 text-lg font-light"
+            className="flex-1 bg-transparent border-none outline-none px-4 text-[var(--foreground)] placeholder-[var(--color7)] text-lg font-light"
             placeholder="Search notes... (↑↓ to navigate, ↵ to open)"
             value={query}
             onChange={(e) => {
@@ -113,7 +113,7 @@ export default function Search({ items }: SearchProps) {
             }}
             onKeyDown={onKeyDown}
           />
-          <div className="hidden sm:flex items-center gap-1.5 px-2 py-1 rounded-md bg-white/5 border border-white/10 text-[10px] text-slate-400 font-mono">
+          <div className="hidden sm:flex items-center gap-1.5 px-2 py-1 rounded-md bg-[var(--background-darker)] border border-[var(--color8)]/30 text-[10px] text-[var(--color7)] font-mono">
             ESC
           </div>
         </div>
@@ -128,16 +128,19 @@ export default function Search({ items }: SearchProps) {
                     "w-full flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-150 text-left group",
                     index === selectedIndex 
                       ? "bg-teal-500/20 text-teal-200 border border-teal-500/30" 
-                      : "text-slate-400 hover:bg-white/5 border border-transparent"
+                      : "text-[var(--color7)] hover:bg-[var(--color8)]/20 border border-transparent"
                   )}
                   onClick={() => handleSelect(index)}
                   onMouseEnter={() => setSelectedIndex(index)}
                 >
                   <FileText className={cn(
                     "w-4 h-4 transition-colors",
-                    index === selectedIndex ? "text-teal-400" : "text-slate-500"
+                    index === selectedIndex ? "text-teal-400" : "text-[var(--color7)]"
                   )} />
-                  <span className="flex-1 font-medium truncate">{item.title}</span>
+                  <span className={cn(
+                    "flex-1 font-medium truncate",
+                    index === selectedIndex ? "text-[var(--color15)]" : "text-[var(--foreground)]"
+                  )}>{item.title}</span>
                   {index === selectedIndex && (
                     <div className="flex items-center gap-1 text-[10px] text-teal-500/60 uppercase tracking-widest font-bold">
                       <span className="mr-1">Open</span>
@@ -149,26 +152,26 @@ export default function Search({ items }: SearchProps) {
             </div>
           ) : (
             <div className="px-10 py-20 text-center flex flex-col items-center gap-3">
-              <div className="p-4 rounded-full bg-white/5 text-slate-600">
+              <div className="p-4 rounded-full bg-[var(--background-darker)] text-[var(--color7)]">
                 <SearchIcon className="w-8 h-8" />
               </div>
-              <p className="text-slate-500 font-light">
-                No notes found for "<span className="text-slate-300 italic">{query}</span>"
+              <p className="text-[var(--color7)] font-light">
+                No notes found for "<span className="text-[var(--foreground)] italic">{query}</span>"
               </p>
             </div>
           )}
         </div>
 
-        <div className="px-5 py-3 border-t border-white/5 bg-slate-900/40 flex justify-between items-center text-[10px] uppercase tracking-wider font-bold text-slate-500">
+        <div className="px-5 py-3 border-t border-[var(--color8)]/30 bg-[var(--background-darker)]/40 flex justify-between items-center text-[10px] uppercase tracking-wider font-bold text-[var(--color7)]">
           <div className="flex gap-4">
             <span className="flex items-center gap-1.5">
-              <kbd className="px-1 py-0.5 rounded bg-white/5 border border-white/10">↑↓</kbd> Navigate
+              <kbd className="px-1 py-0.5 rounded bg-[var(--background-darker)] border border-[var(--color8)]/30 text-[var(--color-kbd-text)]">↑↓</kbd> Navigate
             </span>
             <span className="flex items-center gap-1.5">
-              <kbd className="px-1 py-0.5 rounded bg-white/5 border border-white/10">↵</kbd> Select
+              <kbd className="px-1 py-0.5 rounded bg-[var(--background-darker)] border border-[var(--color8)]/30 text-[var(--color-kbd-text)]">↵</kbd> Select
             </span>
             <span className="flex items-center gap-1.5">
-              <kbd className="px-1 py-0.5 rounded bg-white/5 border border-white/10">Tab</kbd> Complete
+              <kbd className="px-1 py-0.5 rounded bg-[var(--background-darker)] border border-[var(--color8)]/30 text-[var(--color-kbd-text)]">Tab</kbd> Complete
             </span>
           </div>
           <span>{items.length} Total Notes</span>

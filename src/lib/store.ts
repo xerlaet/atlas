@@ -12,6 +12,7 @@ interface GraphStore {
   isPanelHidden: boolean;
   isReady: boolean;
   isSearchOpen: boolean;
+  theme: "dark" | "light";
   
   setSelectedNode: (id: string | null) => void;
   setPanelOpen: (isOpen: boolean) => void;
@@ -24,6 +25,7 @@ interface GraphStore {
   setPanelHidden: (hidden: boolean) => void;
   setReady: (ready: boolean) => void;
   setSearchOpen: (open: boolean) => void;
+  toggleTheme: () => void;
 }
 
 export const useGraphStore = create<GraphStore>((set) => ({
@@ -38,6 +40,7 @@ export const useGraphStore = create<GraphStore>((set) => ({
   isPanelHidden: false,
   isReady: false,
   isSearchOpen: false,
+  theme: "dark",
   
   setSelectedNode: (id) => set({ selectedNode: id }),
   setPanelOpen: (isOpen) => set({ isPanelOpen: isOpen }),
@@ -50,4 +53,5 @@ export const useGraphStore = create<GraphStore>((set) => ({
   setPanelHidden: (hidden) => set({ isPanelHidden: hidden }),
   setReady: (ready) => set({ isReady: ready }),
   setSearchOpen: (open) => set({ isSearchOpen: open }),
+  toggleTheme: () => set((state) => ({ theme: state.theme === "dark" ? "light" : "dark" })),
 }));

@@ -122,18 +122,14 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
           },
           img: ({ node, ...props }) => {
             let src = props.src || "";
-            
-            // Fix: ensure src is a string before calling startsWith (satisfies TS for Blob types)
-            if (typeof src === "string") {
-              if (src.startsWith("attachments/")) {
-                src = `/${src}`;
-              }
+            if (typeof src === "string" && src.startsWith("attachments/")) {
+              src = `/${src}`;
             }
             
-            // TikZ diagrams have a special class for visibility and contrast
             const isTikz = props.alt === "TikZ Diagram";
-            const tikzClasses = "tikz-diagram my-12 mx-auto block max-w-full invert hue-rotate-180 opacity-90 brightness-110";
-            const standardClasses = "rounded-lg shadow-2xl mx-auto border border-slate-800 my-8 block max-w-full";
+            // Use a stable class that we will control via CSS
+            const tikzClasses = "tikz-diagram-auto my-12 mx-auto block max-w-full transition-all duration-300";
+            const standardClasses = "rounded-lg shadow-2xl mx-auto border border-[var(--color8)] my-8 block max-w-full";
 
             return (
               <img 
@@ -152,11 +148,8 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
             );
           },
           blockquote: ({ node, children }) => {
-            // Find the first paragraph
             const childrenArray = Array.isArray(children) ? children : [children];
             const firstChild = childrenArray[0] as any;
-            
-            // Check if the first child is a paragraph and has content
             const pChildren = firstChild?.props?.children;
             const pChildrenArray = Array.isArray(pChildren) ? pChildren : [pChildren];
             const firstText = pChildrenArray[0];
@@ -168,13 +161,8 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
                 const title = match[2];
                 const config = calloutConfig[type] || calloutConfig.default;
                 const Icon = config.icon;
-
-                // Create a copy of children to modify the first paragraph's text
                 const updatedChildren = [...childrenArray];
-                
-                // If there's content after the title on the same line, or other children in the P
                 const remainingPChildren = pChildrenArray.slice(1);
-                
                 updatedChildren[0] = {
                   ...firstChild,
                   props: {
@@ -182,12 +170,9 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
                     children: remainingPChildren.length > 0 ? remainingPChildren : []
                   }
                 };
-
-                // If the first paragraph is now empty, remove it
                 if (updatedChildren[0].props.children.length === 0) {
                   updatedChildren.shift();
                 }
-
                 return (
                   <div className={`my-6 border rounded-xl overflow-hidden ${config.color}`}>
                     <div className="flex items-center gap-2.5 px-4 py-3 border-b border-inherit/10 font-bold tracking-tight">
@@ -201,7 +186,6 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
                 );
               }
             }
-
             return <blockquote className="border-l-4 border-teal-500/30 bg-teal-500/5 pl-6 py-1 my-8 italic">{children}</blockquote>;
           }
         }}

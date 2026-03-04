@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Noto_Serif } from "next/font/google";
 import InitialRedirect from "@/components/InitialRedirect";
 import SplashScreen from "@/components/SplashScreen";
 import GraphUI from "@/components/GraphUI";
+import ThemeInitializer from "@/components/ThemeInitializer";
 import { getGraphData } from "@/lib/notes";
 import "./globals.css";
 
@@ -57,10 +58,11 @@ export default async function RootLayout({
   const searchIndex = Object.values(notes).map((n) => ({ title: n.title, slug: n.slug }));
 
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} antialiased bg-slate-950 text-slate-50 overflow-hidden h-screen w-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} antialiased bg-slate-950 text-slate-50 overflow-hidden h-screen w-screen transition-colors duration-300`}
       >
+        <ThemeInitializer />
         <SplashScreen />
         <InitialRedirect />
         

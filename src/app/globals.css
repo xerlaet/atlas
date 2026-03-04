@@ -3,6 +3,7 @@
 :root {
   /* Teal-based Dark Palette */
   --background: #020617;
+  --background-panel: rgba(15, 23, 42, 0.8); /* Restored original slate-900/80 approximate */
   --background-darker: #01040a;
   --foreground: #94a3b8; /* Soft Slate 400 for lower contrast */
   
@@ -17,6 +18,31 @@
   --color12: #38bdf8; /* Sky 400 - External Links */
   --color15: #f1f5f9; /* Slate 100 - Active items */
 
+  --color-kbd-text: var(--color1);
+  --color-ui-accent: var(--color1);
+  --interactive-accent: var(--color4);
+}
+
+.light {
+  /* Soft Light Palette - More integrated, better contrast */
+  --background: #f1f5f9; /* Slate 100 */
+  --background-panel: rgba(255, 255, 255, 0.85);
+  --background-darker: #e2e8f0; /* Slate 200 */
+  --foreground: #1e293b; /* Slate 800 */
+  
+  --color1: #0f766e; /* Teal 700 - H1, Bold, Italic (Darker) */
+  --color2: #115e59; /* Teal 800 - H2 (Darker) */
+  --color3: #134e4a; /* Teal 900 - H3 (Darker) */
+  --color4: #0f766e; /* Teal 700 - Accent, Links, H4 (Darker) */
+  --color5: #042f2e; /* Teal 950 - H5 */
+  --color6: #020617; /* Slate 950 - H6 */
+  --color7: #475569; /* Slate 600 - Muted */
+  --color8: #cbd5e1; /* Slate 300 - Faint */
+  --color12: #0369a1; /* Sky 700 - External Links (Darker) */
+  --color15: #020617; /* Slate 950 - Active items */
+
+  --color-kbd-text: var(--color1);
+  --color-ui-accent: var(--color4);
   --interactive-accent: var(--color4);
 }
 
@@ -65,16 +91,18 @@ hr {
 .prose em { color: var(--color1) !important; }
 
 .prose a {
-  color: #7dd3fc !important; /* Brighter Sky 300 */
+  color: var(--color12) !important;
   font-weight: 700 !important;
   text-decoration: underline !important;
-  text-decoration-color: rgba(125, 211, 252, 0.3) !important;
+  text-decoration-color: var(--color12) !important;
+  opacity: 0.8;
   text-underline-offset: 4px;
 }
 
 .prose a:hover {
-  color: #2dd4bf !important; /* Bright Teal 400 */
-  text-decoration-color: #2dd4bf !important;
+  color: var(--color1) !important;
+  text-decoration-color: var(--color1) !important;
+  opacity: 1;
 }
 
 .prose p, .prose ul, .prose ol, .prose blockquote, .prose pre {
@@ -106,18 +134,18 @@ hr {
 
 /* Code Blocks */
 .prose code:not(pre code) {
-  background-color: rgba(30, 41, 59, 0.5) !important; /* Slate 800/50 */
+  background-color: var(--background-darker) !important;
   color: var(--color2) !important; /* Bright Teal */
   padding: 0.2rem 0.4rem !important;
   border-radius: 6px !important;
   font-weight: 500 !important;
   font-size: 0.9em !important;
-  border: 1px solid rgba(45, 212, 191, 0.1) !important;
+  border: 1px solid var(--color8) !important;
 }
 
 .prose pre {
-  background-color: rgba(1, 4, 10, 0.6) !important; 
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  background-color: var(--background-darker) !important; 
+  border: 1px solid var(--color8) !important;
   border-radius: 8px !important;
   padding: 0 !important;
   margin: 1.25rem 0 !important;
@@ -129,7 +157,7 @@ hr {
   display: block;
   background-color: transparent !important;
   padding: 1rem !important;
-  color: #94a3b8 !important; /* Soft Slate 400 */
+  color: var(--foreground) !important;
   border: none !important;
   font-size: 0.85rem !important;
   line-height: 1.6 !important;
@@ -169,6 +197,16 @@ hr {
   background-color: rgba(1, 4, 10, 0.2);
 }
 
+/* TikZ Auto-Theming */
+.tikz-diagram-auto {
+  opacity: 1;
+}
+
+.dark .tikz-diagram-auto {
+  filter: invert(1) hue-rotate(180deg) brightness(1.1) contrast(0.9);
+  opacity: 0.9;
+}
+
 /* Force Graph Node Labels */
 .node-label {
   font-size: 12px;
@@ -179,6 +217,19 @@ hr {
   color: var(--color15);
   pointer-events: none;
   box-shadow: 0 0 10px rgba(20, 184, 166, 0.3);
+}
+
+/* Range Input Styling */
+input[type="range"] {
+  background: var(--background-darker) !important;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--background-darker) !important;
+}
+
+input[type="range"]::-moz-range-track {
+  background: var(--background-darker) !important;
 }
 
 /* Scrollbar Hiding from your theme */
