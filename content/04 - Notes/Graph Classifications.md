@@ -1,7 +1,7 @@
 # Graph Classifications
 ---
 
-[[Common Simple Graphs]]
+[Common Simple Graphs](/notes/common-simple-graphs)
 
 A **simple graph** is where each edge connects two vertices and no two vertices are connected more than once. A **multigraph** may contain multiple edges between vertices denoted as multiplicity $m$. A **pseudograph** may contain edges that connect one vertex to itself
 
@@ -157,6 +157,6 @@ A graph is **bipartite** if the set of vertices can be divided into two disjoint
 \end{document}
 ```
 
-[[Trees]] are connected undirected graphs with no simple circuits
+[Trees](/notes/trees) are connected undirected graphs with no simple circuits
 
-[[Planar Graphs]] can be drawn on a plane without any lines crossing
+[Planar Graphs](/notes/planar-graphs) can be drawn on a plane without any lines crossing

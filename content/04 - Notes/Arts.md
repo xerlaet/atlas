@@ -1,4 +1,4 @@
 # Arts
 ---
 
-[[Music Theory]]
+[Music Theory](/notes/music-theory)

@@ -20,12 +20,12 @@ $$
 $$
 
 $\dot{p}$ describes linear velocity of the body frame origin in terms of the fixed frame origin
-![[Pasted image 20250924132345.png|500]]
+![Pasted image 20250924132345.png](/attachments/Pasted%20image%2020250924132345.png)
 
 $\dot{R}$ describes the rate of change of the rotation matrix $\dot{R}=w_{s}\times R$
-![[Pasted image 20250924132420.png|500]]
+![Pasted image 20250924132420.png](/attachments/Pasted%20image%2020250924132420.png)
 
-Replacing $w$ with a [[Skew Symmetric Matrices]] $[w]$ allows for direct multiplication:
+Replacing $w$ with a [Skew Symmetric Matrices](/notes/skew-symmetric-matrices) $[w]$ allows for direct multiplication:
 $$
 \dot{R}=[w_{s}]R,\dot{R}=R[w_{b}],
 $$

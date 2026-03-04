@@ -1,10 +1,10 @@
 # Logical Agents
 ---
 
-[[Propositional Logic]]
+[Propositional Logic](/notes/propositional-logic)
 
 ## Knowledge-Based Agents
-A **knowledge-based agent** represents what it knows about the world in a [[Knowledge Base]], and uses [[Modes of Reasoning|inference]] to derive new facts from what it knows and deduces what actions to take
+A **knowledge-based agent** represents what it knows about the world in a [Knowledge Base](/notes/knowledge-base), and uses [inference](/notes/modes-of-reasoning) to derive new facts from what it knows and deduces what actions to take
 
 Given a percept, add it to the knowledge base, ask for the best action, and tell the knowledge it took that action
 

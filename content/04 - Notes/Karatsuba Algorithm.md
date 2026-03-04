@@ -3,7 +3,7 @@
 
 Take two $n$ bit integers $x$ and $y$, and compute the product $x\cdot y$. The old school algorithm to beat is $\Theta(n^{2})$. The current state of the art is $O(n\log n)$
 
-The **Karatsuba algorithm** is a fast multiplication algorithm utilizing [[Divide and Conquer]] to achieve a runtime of $n^{\log_{2}3}\approx n^{1.58}$ compared with the traditional algorithm's $n^{2}$ runtime
+The **Karatsuba algorithm** is a fast multiplication algorithm utilizing [Divide and Conquer](/notes/divide-and-conquer) to achieve a runtime of $n^{\log_{2}3}\approx n^{1.58}$ compared with the traditional algorithm's $n^{2}$ runtime
 
 Idea:
 $x=A\cdot2^{n/2}+B$

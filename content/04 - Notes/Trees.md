@@ -17,22 +17,22 @@ The **subtree** with a vertex $v$ as its root is the tree consisting of $v$ and 
 The **level** of a vertex is the length of the unique path from the root to that vertex, and the **height** of a tree is the maximum of the levels of the vertices
 
 ## Types of Trees
-[[Binary Search Trees]] are trees which have at most two children, and children in the left subtree must be less than the value of the node, and children in the right subtree must be greater than the value of the node
+[Binary Search Trees](/notes/binary-search-trees) are trees which have at most two children, and children in the left subtree must be less than the value of the node, and children in the right subtree must be greater than the value of the node
 
-[[AVL Trees]] are binary search trees where the height of each subtree at any node can differ by at most one
+[AVL Trees](/notes/avl-trees) are binary search trees where the height of each subtree at any node can differ by at most one
 
-[[B Trees]] are trees which are guaranteed to be wider than binary trees
+[B Trees](/notes/b-trees) are trees which are guaranteed to be wider than binary trees
 
-[[Splay Trees]] are trees in which the the last accessed node is always the root
+[Splay Trees](/notes/splay-trees) are trees in which the the last accessed node is always the root
 
-A [[Heaps]] is something
+A [Heaps](/notes/heaps) is something
 
 
 ### M-ary Trees
 A tree is an **m-ary tree** if each internal vertex has no more than $m$ children, and a **full m-ary tree** if each internal vertex has exactly $m$ children
 
 A m-ary tree of height $h$ is **balanced** if all leaves are at levels $h$ or $h-1$
-![[Pasted image 20231210234734.png]]
+![Pasted image 20231210234734.png](/attachments/Pasted%20image%2020231210234734.png)
 
 **Binary trees** are 2-ary trees. **Binary search trees** have an additional property that every left child is less than the parent, and every right child is greater than the parent. This property allows for an efficient binary search algorithm
 
@@ -59,7 +59,7 @@ PreOrder, InOrder, and PostOrder are all different ways to traverse a tree
 - PostOrder traversed each node after its descendants, useful for computing space used by a directory
 - InOrder visits each node after the left children and before the right children, useful for binary search trees
 
-![[Pasted image 20231210164504.png]]
+![Pasted image 20231210164504.png](/attachments/Pasted%20image%2020231210164504.png)
 
 ## Applications
 Trees are a very useful type of graph
@@ -78,14 +78,14 @@ Decision trees, Huffman encoding, game trees, certain chemical compounds
 Build a tree with each left edge a 0 and each right edge a 1, making the leaves letters
 
 The encoding of each letter is its path from the root to the leaf (note: it doesn't have to be linear like this example)
-![[Pasted image 20231210235311.png]]
+![Pasted image 20231210235311.png](/attachments/Pasted%20image%2020231210235311.png)
 
-[[Huffman Encoding]]
+[Huffman Encoding](/notes/huffman-encoding)
 
 #### Game Trees
 In this case the tree represents the sequence of moves made during a game where the initial state is the root
 
 vertices at *even* levels correspond to the game before player 1 makes a move
-![[Pasted image 20231210235608.png]]
+![Pasted image 20231210235608.png](/attachments/Pasted%20image%2020231210235608.png)
 
 The **min-max** strategy is to always choose the moves that results in the maximum label

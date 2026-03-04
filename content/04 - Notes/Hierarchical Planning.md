@@ -7,7 +7,7 @@ This reduces the search complexity by creating an abstract plan first before wor
 
 A **refinement** is a specific implementation of a HLA, defining the sequence of steps to achieve it
 
-[[Hierarchical Search]] is a basic search algorithm for this:
+[Hierarchical Search](/notes/hierarchical-search) is a basic search algorithm for this:
 repeatedly choose an HLA in the current plan and replace it with a refinement until the plan consists only of primitive actions
 
 The **downward refinement property** is the idea that the plan must have at least one primitive implementation that actually achieves the goal. If it doesn't, the plan won't work

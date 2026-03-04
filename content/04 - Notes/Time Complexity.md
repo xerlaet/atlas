@@ -3,7 +3,7 @@
 
 **Time Complexity** analyzes how the runtime of an algorithm scales with its input $n$
 
-The growth rates are often described using [[Asymptotic Notation]]
+The growth rates are often described using [Asymptotic Notation](/notes/asymptotic-notation)
 
 ```tikz
 \usepackage{pgfplots}

@@ -186,7 +186,7 @@ clean:
 
 ## Editors
 ### Vim
-[[Vim]]
+[Vim](/notes/vim)
 ### Emacs
 ## Shells
 

@@ -15,14 +15,14 @@ A **binary constraint** relates two variables. In this case the problem can be r
 
 A constraint involving an arbitrary number of variables is a **global constraint** (e.g. Alldiff)
 
-**Preference constraints** indicate solutions that are preferred making the problem a [[Constrained Optimization Problem]] (COP)
+**Preference constraints** indicate solutions that are preferred making the problem a [Constrained Optimization Problem](/notes/constrained-optimization-problem) (COP)
 
 ## Inference
 CSPs have the advantage that as soon as a partial assignment is inconsistent, any further refinements can be discarded speeding up the search process
 
 **Constraint Propagation** is the process of using constraints to reduce the legal values for a variable
 
-A variable in a CSP is **arc-consistent** if every value in the domain satisfies the binary constraints. This can be found with [[AC-3]]
+A variable in a CSP is **arc-consistent** if every value in the domain satisfies the binary constraints. This can be found with [AC-3](/notes/ac-3)
 
 This can tighten the domains, however it doesn't always solve the problem outright. A CSP is **k-consistent** if any $k$ variables can have consistent assignments, and **strongly k-consistent** if it is also $(k-n)$-consistent
 
@@ -80,7 +80,7 @@ The only way to hope to deal with the real world is to decompose it into subprob
 Independent subproblems can be found by finding connected components of the constraint graph. Dividing a boolean CSP with 100 variables into four subproblems reduces the worst-case solution from the lifetime of the universe to less than a second
 
 **Directional arch consistency** (DAC) is when every x_i is arc-consistent with every x_j for i < j
-[[Topological Sort]]
+[Topological Sort](/notes/topological-sort)
 
 Cutset conditioning is when a subset $S$ is removed such that the constraint graph becomes a tree and will be much faster to solve - perhaps this has to do with network flows for the minimum cut?
 

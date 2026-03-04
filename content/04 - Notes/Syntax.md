@@ -1,7 +1,7 @@
 # Syntax
 ---
 
-**Syntax** is the form of the expressions, statements, and program units, as opposed to the [[Semantics]] which is the meaning
+**Syntax** is the form of the expressions, statements, and program units, as opposed to the [Semantics](/notes/semantics) which is the meaning
 
 "Colorless green ideas sleep furiously" is syntactically correct, yet seems meaningless
 

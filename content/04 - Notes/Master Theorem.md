@@ -1,7 +1,7 @@
 # Master Theorem
 ---
 
-The **Master Theorem** is a shortcut for solving [[Recurrence Relations]] given they meet the following requirements
+The **Master Theorem** is a shortcut for solving [Recurrence Relations](/notes/recurrence-relations) given they meet the following requirements
 $$\begin{align}
 &T(n)=aT\left( \frac{n}{b} \right)+f(n) \\
 &\text{ where } a\in \mathbb{Z}^{+},b>1, \text{ and }f(n) \text{ is asymptotically postive}

@@ -8,14 +8,14 @@
 
 Specific outliers: nebraska gov, texas and oklahoma gov, dillons rule
 Texas has 254 counties
-[[State and Local Government Relations]]
+[State and Local Government Relations](/notes/state-and-local-government-relations)
 
 1. The most direct cause of urban sprawl is the uncoordinated decisions of real estate developers acting in their own self-interest
 # Socioeconomic and Political Context
 ## Three Levels of Government
 The US has a **federal** structure (national government) with 50 state governments. Having both national and state governments is a **dual sovereignty** system. Each state also has local governments which will provide most public services.
 
-![[Pasted image 20240911145217.png]]
+![Pasted image 20240911145217.png](/attachments/Pasted%20image%2020240911145217.png)
 
 Federal Government Responsibilities
 - national defense
@@ -152,5 +152,5 @@ Due to urban centers often crossing county barriers, a large amount of local gov
 
 **Zoning** laws regulate what types of buildings can be built on what property, and are a key factor in the ever growing expense of housing
 
-[[Political Parties and Voting]]
+[Political Parties and Voting](/notes/political-parties-and-voting)
 

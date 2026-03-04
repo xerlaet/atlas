@@ -1,5 +1,5 @@
 # Modern Physics
 ---
 
-[[Quantum Physics]]
+[Quantum Physics](/notes/quantum-physics)
 

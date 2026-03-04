@@ -3,4 +3,4 @@ alexander.rodriguez@utdallas.edu
 
 career services can offer resume help
 
-![[Pasted image 20241113184437.png]]
+![Pasted image 20241113184437.png](/attachments/Pasted%20image%2020241113184437.png)

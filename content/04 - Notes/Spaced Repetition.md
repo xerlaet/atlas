@@ -3,8 +3,8 @@
 
 Spaced Repetition is a technique to aid in remembering
 The perfect time to test your recall is just before you forget, this time will increase with each recall
-[[04 - Notes/Forgetting Curve|Forgetting Curve]]
-[[Progressive Overload]]
+[Forgetting Curve](/notes/forgetting-curve)
+[Progressive Overload](/notes/progressive-overload)
 
 Data to store:
 - card ID

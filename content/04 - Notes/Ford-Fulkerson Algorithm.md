@@ -7,7 +7,7 @@
 4. Calculate the new **residual capacity**
 5. Repeat until there are no more augmented paths
 
-The searching algorithm isn't specified, common approaches would be [[Depth First Search|DFS]] and [[Breadth First Search|BFS]]
+The searching algorithm isn't specified, common approaches would be [DFS](/notes/depth-first-search) and [BFS](/notes/breadth-first-search)
 
 ## Analysis
 The searching methods are $O(E)$, and for each augmenting path the flow increases by at least one, so the overall complexity is $O(EF)$ where $F$ is the maximal flow of the network

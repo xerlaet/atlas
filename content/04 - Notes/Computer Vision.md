@@ -49,7 +49,7 @@ If the kernel is symmetric, correlation will be the same as convolution
 
 Convolutions are associative where correlations are not
 
-## Example
+### Example
 $$
 \begin{array}{ccc}
 \begin{array}{|c|c|c|}
@@ -78,34 +78,7 @@ $$
 $$
 
 ## Convolutional Neural Networks
-Image -> Neural network -> Useful information
+[Convolutional Neural Networks](/notes/convolutional-neural-networks)
 
-x -> f(x) -> y
-
-Non-linearity is important - allows the final function to be non linear
-
-### Fully Connected Layer
-$$
-y=Wx+b
-$$
-![[Pasted image 20260210122625.png|center|332]]
-
-For images this will be really large (640x480 images will be 300K weights)
-
-Convolutions are a solution to this weight problem
-
-Input Image -> Convolutional layer -> ReLU layer -> Pooling layer (down-sampling)
-
-channel determined by number of convolutions per layer
-
-$$
-\text{Output size}=\frac{P+N-F}{\text{stride}}+1
-$$
-Pooling (max, average, ...) layers use larger strides to down-sample
-
-Use a [[Softmax Function]] or one-hot encoding for the final classification
-
-[[Cross Entropy]]
-
-[[Gradient Descent]] vs Adam or other optimization techniques
-
+## Object Detection
+[Object Detection](/notes/object-detection)

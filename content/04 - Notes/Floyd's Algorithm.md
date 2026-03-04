@@ -23,5 +23,5 @@ The time complexity is $\Theta(n^{3})$
 The space complexity is $\Theta(n^{2})$
 
 > [!example]
-![[Pasted image 20250422121832.png|500]]
-![[Pasted image 20250422121850.png|500]]
+![Pasted image 20250422121832.png](/attachments/Pasted%20image%2020250422121832.png)
+![Pasted image 20250422121850.png](/attachments/Pasted%20image%2020250422121850.png)

@@ -5,4 +5,4 @@
 
 Usually there will be a **fixed frame** (space frame) that is stationary, and some **body frame** attached to a moving rigid body
 
-By convention all frames should follow the [[Right Hand Rule]]
+By convention all frames should follow the [Right Hand Rule](/notes/right-hand-rule)

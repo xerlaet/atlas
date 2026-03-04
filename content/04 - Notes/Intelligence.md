@@ -5,6 +5,6 @@ Definitions for **intelligence** are widely debated, but generally include some 
 
 Another definition is the ability to acquire knowledge (learn) and apply that knowledge (reason)
 
-[[Knowledge Base]] vs [[Database]]
+[Knowledge Base](/notes/knowledge-base) vs [Database](/notes/database)
 
-[[Modes of Reasoning]]
+[Modes of Reasoning](/notes/modes-of-reasoning)

@@ -105,7 +105,7 @@ s_{j}&=s_{j-2}-q_{j-1}s_{j-1} \\
 t_{j}&=t_{j-2}-q_{j-1}t_{j-1}
 \end{align}
 $$
-![[Pasted image 20240221150410.png]]
+![Pasted image 20240221150410.png](/attachments/Pasted%20image%2020240221150410.png)
 
 A final theorem is that if $ac\equiv bc (\text{mod }m)$ and $\text{gcd}(c,m)=1$, then $a\equiv b(\text{mod }m)$
 

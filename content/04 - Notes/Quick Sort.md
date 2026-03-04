@@ -1,7 +1,7 @@
 # Quick Sort
 ---
 
-**Quick Sort** is a [[Divide and Conquer]] technique that is often the method of choice due to being fast on average, stable, and easy to implement
+**Quick Sort** is a [Divide and Conquer](/notes/divide-and-conquer) technique that is often the method of choice due to being fast on average, stable, and easy to implement
 
 1. Partition the array into two subarrays based on a pivot element
 2. Recursively sort both sides
@@ -19,4 +19,4 @@ The average case is $O(n\log n)$
 > add proof from class (calc version is cooler)
 
 ## Example Trace
-![[Quick Sort Trace|600]]
+![Quick Sort Trace](/attachments/Quick%20Sort%20Trace)

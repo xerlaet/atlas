@@ -6,16 +6,16 @@ tags:
 ---
 
 ## Science & Systems
-[[Math]]
-[[Science]]
-[[Technology]]
+[Math](/notes/math)
+[Science](/notes/science)
+[Technology](/notes/technology)
 
 ## People & Thought
-[[History]]
-[[Philosophy]]
-[[Society]]
+[History](/notes/history)
+[Philosophy](/notes/philosophy)
+[Society](/notes/society)
 
 ## Creation & Culture
-[[Language]]
-[[Arts]]
-[[Media]]
+[Language](/notes/language)
+[Arts](/notes/arts)
+[Media](/notes/media)

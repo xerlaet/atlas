@@ -5,9 +5,9 @@
 - unreliable, unordered delivery
 - no connection establishment
 
-This is useful for streaming, [[DNS]], [[SNMP]]
+This is useful for streaming, [DNS](/notes/dns), [SNMP](/notes/snmp)
 
-Modern HTTP3 [[QUIC]] is built on top of UDP with extra stuff at the application layer
+Modern HTTP3 [QUIC](/notes/quic) is built on top of UDP with extra stuff at the application layer
 
 ## Structure
 A UDP packet is made up of a 8 byte header plus the payload. The length is in bytes and includes the size of the header.

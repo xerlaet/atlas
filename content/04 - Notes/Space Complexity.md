@@ -3,7 +3,7 @@
 
 **Space Complexity** analyzes how the memory used by an algorithm scales with its input $n$
 
-Like [[Time Complexity]], the growth rates are often described using [[Asymptotic Notation]]
+Like [Time Complexity](/notes/time-complexity), the growth rates are often described using [Asymptotic Notation](/notes/asymptotic-notation)
 
 ## Input Space vs. Auxiliary Space
 **Input Space** is the space required to store the input itself

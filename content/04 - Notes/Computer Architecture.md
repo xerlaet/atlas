@@ -2,9 +2,9 @@
 ---
 
 ## Computer Organization
-![[Pasted image 20250327130615.png]]
+![Pasted image 20250327130615.png](/attachments/Pasted%20image%2020250327130615.png)
 
-![[Pasted image 20250327130834.png|150]]
+![Pasted image 20250327130834.png](/attachments/Pasted%20image%2020250327130834.png)
 
 ### Hierarchy
 #### Application Software
@@ -23,7 +23,7 @@ Cache Memory
 there is just memory, it can mean anything
 ### MIPS vs RISC-v
 MIPS is simple and cheap
-[[MIPS]]
+[MIPS](/notes/mips)
 
 ## Computer Abstractions and Technology
 computers have been a third revolution for civilization, following the agricultural and industrial revolutions, filling in thousands of applications in our lives
@@ -40,7 +40,7 @@ the performance of a program depends on the algorithm, the language/compiler, th
 as resources grew the design time would also grow so simplifying the design by abstracting different levels was a large time saver
 #### Make the Common Case Fast
 optimizing the most common case usually is the easiest way to gain performance, and is often easier than optimizing the rarer case
-#### [[Parallelism]]
+#### [Parallelism](/notes/parallelism)
 more performance can be gained by running independent processes at the same time
 #### Pipelining
 pipelines can also increase performance, similar to a bucket brigade (are bucket brigades actually faster?)
@@ -59,12 +59,12 @@ compilers are important to translate the sophisticated programming languages int
 computers understand electrical signals, and we denote the presence of a signal as "1" and the absence as "0"
 an assembler is a program to translate symbolic binary code into actual binary code
 the binary numbers are `machine language` and the symbolic language is `assembly language` 
-![[Pasted image 20240128140718.png]]
+![Pasted image 20240128140718.png](/attachments/Pasted%20image%2020240128140718.png)
 the above image is shown in two steps, although some compilers convert directly from the high level language to machine language
 
 high level languages allow the programmer to think in a more natural way, with an increased productivity, and have the programs be hardware independent
 
-![[Pasted image 20240128143352.png]]
+![Pasted image 20240128143352.png](/attachments/Pasted%20image%2020240128143352.png)
 
 a common goal is to decrease the response time of a system and to increase the throughput of a system, and usually those two are correlated together
 $$
@@ -72,7 +72,7 @@ $$
 $$
 
 ## Instructions: Language of the Computer
-![[Pasted image 20240212132612.png]]
+![Pasted image 20240212132612.png](/attachments/Pasted%20image%2020240212132612.png)
 
 most instructions take in three parameters as that makes it easy for the hardware
 often more complex programs will have more variables than registers in memory, so the compiler will keep the most frequently used variables in registers and store the rest in memory which is called *spilling*

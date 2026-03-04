@@ -1,7 +1,7 @@
 # Reinforcement Learning
 ---
 
-**Reinforcement Learning** (RL) is a paradigm of [[Machine Learning]] where an agent learns to make optimal decisions by interacting with an environment. The agent learns from the consequences of its actions, rather than from explicit instruction
+**Reinforcement Learning** (RL) is a paradigm of [Machine Learning](/notes/machine-learning) where an agent learns to make optimal decisions by interacting with an environment. The agent learns from the consequences of its actions, rather than from explicit instruction
 
 The goal is to learn a **policy** that maximizes a cumulative **reward** signal over time
 
@@ -11,7 +11,7 @@ The goal is to learn a **policy** that maximizes a cumulative **reward** signal 
 3.  The **environment** receives the action, transitions to a new **state** ($s'$), and provides a scalar **reward** ($r$) to the agent
 4.  The agent uses this feedback ($s, a, r, s'$) to update its policy to make better decisions in the future
 
-This entire process is often modeled as a [[Markov Decision Process]]
+This entire process is often modeled as a [Markov Decision Process](/notes/markov-decision-process)
 
 Often this is done in a simulation first to save time and then deploy the model into the real world
 
@@ -59,14 +59,14 @@ $\mu_{\theta}(s)$
 $\log \sigma_{\theta}(s)$ is used to transform a $>0$ value into a range from $(-\infty,\infty)$
 
 ## Related Concepts
-[[Agent]]
-[[Environment]]
-[[Policy]]
-[[Reward]]
-[[State]]
-[[Q-Learning]]
-[[Exploration vs. Exploitation Trade-off]]
+[Agent](/notes/agent)
+[Environment](/notes/environment)
+[Policy](/notes/policy)
+[Reward](/notes/reward)
+[State](/notes/state)
+[Q-Learning](/notes/q-learning)
+[Exploration vs. Exploitation Trade-off](/notes/exploration-vs-exploitation-trade-off)
 
 Taxonomy of RL!
 
-[[Policy Gradient]]
+[Policy Gradient](/notes/policy-gradient)

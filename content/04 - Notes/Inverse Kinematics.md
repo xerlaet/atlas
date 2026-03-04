@@ -1,7 +1,7 @@
 # Inverse Kinematics
 ---
 
-Unlike FK, IK can have multiple solutions [[Loss of Information]]
+Unlike FK, IK can have multiple solutions [Loss of Information](/notes/loss-of-information)
 
 $$
 \text{End effector Transformation}\begin{bmatrix}

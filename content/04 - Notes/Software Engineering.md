@@ -15,14 +15,14 @@ There are many different software development processes, the goal being to have 
 - validate the system based on the customer criteria
 - evolve the system in response to changing needs
 
-[[ACM Code of Ethics]]
+[ACM Code of Ethics](/notes/acm-code-of-ethics)
 
 ## Software Processes
-Software development is a [[Wicked Problem]]
+Software development is a [Wicked Problem](/notes/wicked-problem)
 
-![[Pasted image 20250325121120.png]]
+![Pasted image 20250325121120.png](/attachments/Pasted%20image%2020250325121120.png)
 
-[[Plan-driven Development]] vs [[Agile Development]]
+[Plan-driven Development](/notes/plan-driven-development) vs [Agile Development](/notes/agile-development)
 
 ## Class Methodology
 Requirements Elicitation
@@ -50,9 +50,9 @@ Each sentence is declarative consisting of a subject, an action, an object acted
 ---
 
 Various models:
-[[Waterfall Model]]
-[[Incremental Development Model]]
-[[Integration and Configuration Model]]
+[Waterfall Model](/notes/waterfall-model)
+[Incremental Development Model](/notes/incremental-development-model)
+[Integration and Configuration Model](/notes/integration-and-configuration-model)
 Prototyping Process Model
 Evolutionary Process Model
 Spiral Process Model- & RUP
@@ -62,6 +62,6 @@ Team Software Process Model-
 Agile Process Models-
 
 
-[[Software Quality Assurance]]
-[[Software Testing]]
+[Software Quality Assurance](/notes/software-quality-assurance)
+[Software Testing](/notes/software-testing)
 

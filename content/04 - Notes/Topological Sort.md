@@ -1,7 +1,7 @@
 # Topological Sort
 ---
 
-**Topological Sort** sorts a directed acyclic graph by "topology", which is defined as the order that [[Depth First Search|DFS]] finishes them
+**Topological Sort** sorts a directed acyclic graph by "topology", which is defined as the order that [DFS](/notes/depth-first-search) finishes them
 
 ```python
 def TOPOLOGICAL_SORT(G,s):

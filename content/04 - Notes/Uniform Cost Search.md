@@ -14,7 +14,7 @@ The algorithm might be incorrect with negative edges
 
 One problem with continual application is that when the weights are similar, small changes can make the best path oscillate. A potential solution is to wait before updating the path
 
-Used for [[OSPF]] in networking
+Used for [OSPF](/notes/ospf) in networking
 
 ## Algorithm
 ```python
@@ -27,7 +27,7 @@ while not Q.empty():
 		RELAX(u,v)
 ```
 
-![[Pasted image 20250422114632.png|500]]
+![Pasted image 20250422114632.png](/attachments/Pasted%20image%2020250422114632.png)
 
 ## Analysis
 Space Complexity is: $O(b^{1+\left\lfloor C^{*}/\epsilon \right\rfloor})$

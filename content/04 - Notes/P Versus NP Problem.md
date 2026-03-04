@@ -10,7 +10,7 @@ $$
 \mathbb{P}\subseteq \mathbb{NP}
 $$
 
-[[Polynomial Time Bounded Reducibilities]]
+[Polynomial Time Bounded Reducibilities](/notes/polynomial-time-bounded-reducibilities)
 
 **P** is the set of all problems that can be solved in polynomial time or better
 

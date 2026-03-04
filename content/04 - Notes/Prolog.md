@@ -93,8 +93,8 @@ Variables such as in `foo(X)` are **nonground**, whereas `foo(a,b)` is **ground*
 ### Rules
 Rules are a way of abstracting complex relations into simpler ideas
 
-[[Execution of Prolog]]
-[[Prolog Built-ins]]
+[Execution of Prolog](/notes/execution-of-prolog)
+[Prolog Built-ins](/notes/prolog-built-ins)
 
 ## Examples
 

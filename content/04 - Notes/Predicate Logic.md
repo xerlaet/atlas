@@ -7,7 +7,7 @@ aliases:
 
 **Propositional functions** (also known as Predicates) are a generalization of propositions, containing both variables and a predicate, e.g. $P(x)$
 
-[[Quantifiers]]
+[Quantifiers](/notes/quantifiers)
 
 
 Propositional functions become propositions with truth values when their variables are replaced by a value from the **domain** or quantifier

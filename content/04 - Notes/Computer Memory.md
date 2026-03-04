@@ -33,14 +33,14 @@ Static partitioning is easier to implement although dynamic partitioning can acc
 
 ### Non Contiguous
 **Segmentation** is when a program is partitioned into multiple segments such as a code, stack, data, or heap segment. Those segments are then allocated using contiguous allocation. A **segment table** is used to store information of each segment such as the base address and length of the segment (limit) as well as attributes
-![[Pasted image 20241204190803.png]]
+![Pasted image 20241204190803.png](/attachments/Pasted%20image%2020241204190803.png)
 
 In address translation, a logical address is a tuple with a segment number $s$ and an offset $d$. $s$ is used to retrieve the base address $b$ and length $l$ of a segment, and then the physical address is $d+b$ as long as $d<l$. So accessing memory now requires two accesses, first the to segment table and the second to where the data is actually stored
 
 Overall there is no internal fragmentation and has a higher degree of multiprogramming, and multiple processes can share address spaces. However every memory reference requires two memory accesses and it is still vulnerable to external fragmentation
 
 **Paging** is when a process is divided into a number of fixed sized blocks called pages, of the same size as the fixed blocks in main memory called frames. Pages are tracked using a page table with frame number and other attributes.
-![[Pasted image 20241204191017.png]]
+![Pasted image 20241204191017.png](/attachments/Pasted%20image%2020241204191017.png)
 
 A logical address contains a page number $p$ and an offset $d$. A physical address contains the frame number $f$ and the offset $d$
 

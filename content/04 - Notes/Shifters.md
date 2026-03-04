@@ -28,6 +28,6 @@ Shifting left and right $n$ bits is the same as multiplying or dividing by $2^{n
 ## Circuit Design
 The idea for shifters is to use multiplexors based on the shift amount
 
-![[Pasted image 20250417131837.png|600]]
+![Pasted image 20250417131837.png](/attachments/Pasted%20image%2020250417131837.png)
 
-![[Pasted image 20250417131848.png|600]]
+![Pasted image 20250417131848.png](/attachments/Pasted%20image%2020250417131848.png)

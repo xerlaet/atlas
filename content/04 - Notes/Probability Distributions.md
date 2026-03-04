@@ -164,4 +164,4 @@ $$
 \text{Binomial}(n,p)\sim \text{Normal}\left( \mu=np,\sigma=\sqrt{ np(1-p) } \right)
 $$
 
-![[Pasted image 20240308174051.png|500]]
+![Pasted image 20240308174051.png](/attachments/Pasted%20image%2020240308174051.png)

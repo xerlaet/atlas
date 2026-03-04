@@ -11,11 +11,11 @@ $$
 $$
 
 ```ad-example
-![[Pasted image 20250827140037.png|300]]
+![Pasted image 20250827140037.png](/attachments/Pasted%20image%2020250827140037.png)
 $$
 \text{DOFs} = 3(4-1-4)+\sum_{i=1}^{4}1=1
 $$
-![[Pasted image 20250827140248.png|300]]
+![Pasted image 20250827140248.png](/attachments/Pasted%20image%2020250827140248.png)
 $$
 \text{DOFs} = 3(8-1-9)+\sum_{i=1}^{9}1=3
 $$

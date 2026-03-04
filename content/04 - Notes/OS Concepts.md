@@ -7,16 +7,16 @@ Components include the actual hardware from the CPU to memory and IO devices, an
 **Embedded Systems** are generally a self contained system serving a specific purpose
 
 ## Processes
-[[Processes]] are a program that the OS is currently executing
+[Processes](/notes/processes) are a program that the OS is currently executing
 
-Any good OS should have efficient [[Process Synchronization]]
+Any good OS should have efficient [Process Synchronization](/notes/process-synchronization)
 
 ## Memory
-[[Computer Memory]] is stored in a variety of ways and many algorithms exist for how to allocate and deallocate memory
+[Computer Memory](/notes/computer-memory) is stored in a variety of ways and many algorithms exist for how to allocate and deallocate memory
 
-[[File Systems]] are a way of organizing computer memory that is convenient for users
+[File Systems](/notes/file-systems) are a way of organizing computer memory that is convenient for users
 
-[[Mass Storage]] is utilized for redundancy and speed up in accessing large amounts of data
+[Mass Storage](/notes/mass-storage) is utilized for redundancy and speed up in accessing large amounts of data
 
 A program is linked to combine pieces of code into a single executable, such as combining required libraries and object files together. It is also bound which is when symbolic references are replaced with actual memory addresses, this can happen at different times using the **memory management unit** (MMU) for address translation:
 - if at compile time the compiler can generate absolute code, otherwise relocatable code

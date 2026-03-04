@@ -12,5 +12,5 @@ heap = []
 heapify(list)
 ```
 
-The [[Heap Sort]] algorithm utilizes heaps
+The [Heap Sort](/notes/heap-sort) algorithm utilizes heaps
 

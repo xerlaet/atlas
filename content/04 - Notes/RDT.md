@@ -16,14 +16,14 @@ deliver_data()
 reliable transfer over a reliable channel (easy)
 
 no bit errors, no loss of packets
-![[Pasted image 20251006140836.png|500]]
+![Pasted image 20251006140836.png](/attachments/Pasted%20image%2020251006140836.png)
 
 ## RDT 2.0
 now the channel has bit errors
 
 To recover from errors, send **acknowledgements** (ACKs) to say a packet was received and **negative acknowledgements** (NAKs) to say it had errors, and the sender will then re transmit
 
-![[Pasted image 20251006141350.png|500]]
+![Pasted image 20251006141350.png](/attachments/Pasted%20image%2020251006141350.png)
 
 An issue is that the ACK/NAK could be corrupted. The sender will add a sequence number to each packet and the receiver discards duplicates
 

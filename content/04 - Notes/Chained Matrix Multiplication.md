@@ -1,7 +1,7 @@
 # Chained Matrix Multiplication
 ---
 
-[[Dynamic Programming]]
+[Dynamic Programming](/notes/dynamic-programming)
 
 S[i,j] = k if max
 

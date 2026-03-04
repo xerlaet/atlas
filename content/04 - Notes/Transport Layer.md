@@ -1,14 +1,14 @@
 # Transport Layer
 ---
 
-The **Transport Layer** provides communication between processes by breaking messages into **segments** and passing those onto the [[Network Layer]]
+The **Transport Layer** provides communication between processes by breaking messages into **segments** and passing those onto the [Network Layer](/notes/network-layer)
 
-[[UDP]] is used for fast communication with minimal reliability guarantees
-[[TCP]] is used when reliability is desired
+[UDP](/notes/udp) is used for fast communication with minimal reliability guarantees
+[TCP](/notes/tcp) is used when reliability is desired
 
 If the channel was reliable UDP would be just fine, however since channels aren't always reliable something like TCP makes it so
 
-[[RDT]] is the protocol?
+[RDT](/notes/rdt) is the protocol?
 
 **Multiplexing** is grouping messages from multiple sockets together to send as a unit
 **Demultiplexing** is undoing the grouping to deliver segments to correct sockets

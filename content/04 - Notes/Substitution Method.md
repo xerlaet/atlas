@@ -1,7 +1,7 @@
 # Substitution Method
 ---
 
-To use the **Substitution Method**, guess a solution (e.g. $O(n\log n)$) and use [[Induction]] to prove it
+To use the **Substitution Method**, guess a solution (e.g. $O(n\log n)$) and use [Induction](/notes/induction) to prove it
 
 ## Example
 $$

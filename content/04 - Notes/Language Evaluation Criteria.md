@@ -6,7 +6,7 @@
 - Reliability - does it perform to specifications
 - Cost - the cost for development
 
-![[Pasted image 20250129121547.png]]
+![Pasted image 20250129121547.png](/attachments/Pasted%20image%2020250129121547.png)
 
 - Overall simplicity
 	- a manageable set of features and constructs

@@ -7,5 +7,5 @@ Electric is best for precision and control
 Hydraulic is best for power and stiffness
 Pneumatic is best for speed, simplicity, and soft interaction
 
-[[Electric Motors]]
-[[Mass-Spring-Damper Dynamics]]
+[Electric Motors](/notes/electric-motors)
+[Mass-Spring-Damper Dynamics](/notes/mass-spring-damper-dynamics)

@@ -21,11 +21,11 @@ $$
 least action?
 
 Physics is commonly subdivided into the following sections
-[[Mechanics]]
-[[Electromagnetism]]
-[[Thermodynamics]]
-[[Waves and Optics]]
-[[Modern Physics]]
+[Mechanics](/notes/mechanics)
+[Electromagnetism](/notes/electromagnetism)
+[Thermodynamics](/notes/thermodynamics)
+[Waves and Optics](/notes/waves-and-optics)
+[Modern Physics](/notes/modern-physics)
 
 ## Energy
 
@@ -61,4 +61,4 @@ $$
 Pascal's Law for Hydrostatic pressure  $\Delta P=\rho g\Delta h$
 
 Lagrangian for different physics?
-![[Pasted image 20250306211246.png]]
+![Pasted image 20250306211246.png](/attachments/Pasted%20image%2020250306211246.png)

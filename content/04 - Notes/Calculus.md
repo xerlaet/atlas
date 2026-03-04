@@ -29,10 +29,10 @@ $$
 $$
 
 ## Differential Calculus
-[[Derivatives]]
+[Derivatives](/notes/derivatives)
 
 ## Integral Calculus
-[[Integrals]]
+[Integrals](/notes/integrals)
 
 partial fractions
 u-sub and reverse substitution

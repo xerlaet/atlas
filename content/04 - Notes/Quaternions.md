@@ -1,7 +1,7 @@
 # Quaternions
 ---
 
-**Quaternions** extend [[Complex Numbers]] to represent rotation in 3D space that avoids gimbal lock that [[Euler Angles]] suffer from
+**Quaternions** extend [Complex Numbers](/notes/complex-numbers) to represent rotation in 3D space that avoids gimbal lock that [Euler Angles](/notes/euler-angles) suffer from
 
 A quaternion is defined by
 $$
@@ -66,7 +66,7 @@ $$
 q_{new}=q_{2}\otimes q_{1}
 $$
 
-Convert to [[Rotation Matrices]] with the following formula
+Convert to [Rotation Matrices](/notes/rotation-matrices) with the following formula
 $$
 R = \begin{bmatrix}
 1 - 2(y^2 + z^2) & 2(xy - wz) & 2(xz + wy) \\

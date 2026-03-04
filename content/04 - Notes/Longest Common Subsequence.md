@@ -11,5 +11,5 @@ for x,y:
 		l[i,j]=max(l[i-1,j],l[i,j-1])
 ```
 
-![[Pasted image 20250429101445.png|400]]
+![Pasted image 20250429101445.png](/attachments/Pasted%20image%2020250429101445.png)
 

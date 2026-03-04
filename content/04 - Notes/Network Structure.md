@@ -11,6 +11,6 @@ Network core (interconnected routers)
 Physical media (communication links)
 
 
-![[Pasted image 20250828101520.png|500]]
+![Pasted image 20250828101520.png](/attachments/Pasted%20image%2020250828101520.png)
 
-![[Pasted image 20250828104259.png|500]]
+![Pasted image 20250828104259.png](/attachments/Pasted%20image%2020250828104259.png)

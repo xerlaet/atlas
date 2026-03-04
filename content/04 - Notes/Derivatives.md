@@ -50,5 +50,5 @@ $$
 =\lim_{ h \to 0 } \frac{f(a+h,a_{2},\dots,an)-f(a,\dots,a_{n})}{h}
 $$
 
-[[Gradients]]
+[Gradients](/notes/gradients)
 

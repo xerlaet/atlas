@@ -3,7 +3,7 @@
 
 **Software quality assurance** encompasses a set of activities that ensures the software being developed will meet the requirements
 
-![[Pasted image 20250427203544.png]]
+![Pasted image 20250427203544.png](/attachments/Pasted%20image%2020250427203544.png)
 
 Verification: are we building the product right?
 Validation: are we building the right product?
@@ -23,7 +23,7 @@ Failure Cost:
 - liability, lawsuits, increased insurance premiums
 - damage to company's reputation
 
-![[Pasted image 20250427204015.png|400]]
+![Pasted image 20250427204015.png](/attachments/Pasted%20image%2020250427204015.png)
 
 It's always a tradeoff
 
@@ -31,7 +31,7 @@ It's always a tradeoff
 Software should be reliable, robust, efficient, testable, maintainable, reusable, portable, interoperable, modular, cohesive (everything in the module does related things), and have low coupling (minimal dependencies)
 
 ### Requirements
-![[Pasted image 20250427215049.png|500]]
+![Pasted image 20250427215049.png](/attachments/Pasted%20image%2020250427215049.png)
 
 ### Design
 **Fan in** refers to the number of incoming messages or dependences on a module. Too much fan in signifies a "god module" with too many responsibilities
@@ -46,13 +46,13 @@ Modularity can be measured by $\frac{a\cdot \text{cohesion}+b\cdot \text{couplin
 
 ### Complexity
 Module design complexity is the number of integration tests required to call all subordinate modules
-![[Pasted image 20250428010246.png|500]]
+![Pasted image 20250428010246.png](/attachments/Pasted%20image%2020250428010246.png)
 
 ### Implementation
-![[Pasted image 20250428010332.png|500]]
+![Pasted image 20250428010332.png](/attachments/Pasted%20image%2020250428010332.png)
 
 ### System
-![[Pasted image 20250428010402.png|500]]
+![Pasted image 20250428010402.png](/attachments/Pasted%20image%2020250428010402.png)
 
 ### Object-Oriented Quality
 Weighted Methods per Class

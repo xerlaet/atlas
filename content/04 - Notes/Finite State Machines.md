@@ -4,16 +4,16 @@
 **Finite State Machines** in general are a model of computation
 
 ## Language Recognizers
-[[Finite Automata]]
+[Finite Automata](/notes/finite-automata)
 
-[[DFA]]
-[[NFA]]
-[[ε-NFA]]
+[DFA](/notes/dfa)
+[NFA](/notes/nfa)
+[ε-NFA](/notes/nfa)
 
-[[PDA]]
-[[Turing Machines]]
+[PDA](/notes/pda)
+[Turing Machines](/notes/turing-machines)
 
 ## Output Generators
-[[Moore FSM]]
-[[Mealy FSM]]
-![[Pasted image 20250313140603.png]]
+[Moore FSM](/notes/moore-fsm)
+[Mealy FSM](/notes/mealy-fsm)
+![Pasted image 20250313140603.png](/attachments/Pasted%20image%2020250313140603.png)

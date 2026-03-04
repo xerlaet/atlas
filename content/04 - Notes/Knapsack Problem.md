@@ -10,7 +10,7 @@ T(i-1,j-w_{i}) \text{ if } j\geq w_{i}
 \end{cases}
 $$
 
-![[Knapsack Problem 2025-04-03 11.45.28|center|800]]
+![Knapsack Problem 2025-04-03 11.45.28](/attachments/Knapsack%20Problem%202025-04-03%2011.45.28)
 
 $T(i,j)=T(5,5)=17$ so the maximum value possible within weight is 17
 

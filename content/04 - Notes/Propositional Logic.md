@@ -40,4 +40,4 @@ $$\begin{align}
 \bigwedge_{j=1}^np_j = p_1 \land p_2 \land \ldots \land p_n
 \end{align}$$
 
-[[Logical Equivalences]]
+[Logical Equivalences](/notes/logical-equivalences)

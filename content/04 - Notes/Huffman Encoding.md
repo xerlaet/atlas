@@ -6,7 +6,7 @@ A **Huffman Encoding** is used to encode a set of items such at each item will b
 Input: set of items and their corresponding probabilities
 Output: encoding tree
 
-The idea is to start by combining the nodes with the smallest probabilities using a [[Greedy Algorithms|greedy approach]] and build the encoding tree from the bottom up
+The idea is to start by combining the nodes with the smallest probabilities using a [greedy approach](/notes/greedy-algorithms) and build the encoding tree from the bottom up
 
 The complexity is $O(n\log n)$ because a min heap needs to be created along with deletion of the minimal element $n$ times
 

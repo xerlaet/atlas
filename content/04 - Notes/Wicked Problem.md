@@ -1,7 +1,7 @@
 # Wicked Problem
 ---
 
-Opposite of a [[Tame Problem]]
+Opposite of a [Tame Problem](/notes/tame-problem)
 
 1. Cannot be completely specified
 2. The specification and solution cannot be separated

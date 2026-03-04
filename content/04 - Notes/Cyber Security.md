@@ -3,7 +3,7 @@
 
 The internet wasn't originally designed with security in mind, protocol designers play catch-up
 
-[[CIA Triangle]]
+[CIA Triangle](/notes/cia-triangle)
 Confidentiality <-> Availability <-> Integrity
 
 **Packet sniffing** is reading the packets sent across a network. This is somewhat solved with encryption

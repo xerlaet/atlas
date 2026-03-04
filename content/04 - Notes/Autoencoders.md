@@ -12,7 +12,7 @@ $$
 
 The point of an autoencoder is to generate the latent space which contains the most important information
 
-![[Pasted image 20241031013750.png]]
+![Pasted image 20241031013750.png](/attachments/Pasted%20image%2020241031013750.png)
 
 ## Applications
 Generation (sample a new point in the sample space and apply the decoder)

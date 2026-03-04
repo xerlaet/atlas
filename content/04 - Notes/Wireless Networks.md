@@ -24,11 +24,11 @@ There is a trade-off as SNR and BER are inversely related
 
 **Hidden terminals** is a problem where say A and B hear each other, B and C hear each other, but A and C don't hear each other and can interfere at B. This can be caused by objects blocking the space or just attenuation
 
-[[Code Division Multiple Access]]
+[Code Division Multiple Access](/notes/code-division-multiple-access)
 
 ## WiFi
-[[WiFi]]
-[[Bluetooth]]
+[WiFi](/notes/wifi)
+[Bluetooth](/notes/bluetooth)
 
 ## Cellular Networks
-[[Cellular Networks]]
+[Cellular Networks](/notes/cellular-networks)

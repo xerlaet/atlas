@@ -1,11 +1,11 @@
 # Von Neumann Architecture
 ---
 
-![[Pasted image 20250305015518.png]]
+![Pasted image 20250305015518.png](/attachments/Pasted%20image%2020250305015518.png)
 
-Developed by [[John von Neumann]], the idea was that programs and data are both stored in memory. Data is piped from the memory to the CPU to be executed and the results are moved back into memory.
+Developed by [John von Neumann](/notes/john-von-neumann), the idea was that programs and data are both stored in memory. Data is piped from the memory to the CPU to be executed and the results are moved back into memory.
 
-The execution of machine code is the [[fetch-execute-cycle]], where the address of the next instruction is stored in a register called the **program counter**
+The execution of machine code is the [fetch-execute-cycle](/notes/fetch-execute-cycle), where the address of the next instruction is stored in a register called the **program counter**
 
 These programs are called **imperative**
 

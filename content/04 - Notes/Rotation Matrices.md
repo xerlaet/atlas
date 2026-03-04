@@ -1,11 +1,11 @@
 # Rotation Matrices
 ---
 
-**Rotation Matrices** are useful tools for describing rotations in $n$ dimensional space. Typically this is with frames following the [[Right Hand Rule]]
+**Rotation Matrices** are useful tools for describing rotations in $n$ dimensional space. Typically this is with frames following the [Right Hand Rule](/notes/right-hand-rule)
 $$
 v_{B}=Rv_{A}
 $$
-3D rotations can also be represented with [[Quaternions]] or [[Euler Angles]]
+3D rotations can also be represented with [Quaternions](/notes/quaternions) or [Euler Angles](/notes/euler-angles)
 
 ## 2D Rotation
 Given a rotation, the new coordinate frame can be expressed as

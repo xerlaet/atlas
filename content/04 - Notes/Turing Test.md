@@ -1,7 +1,7 @@
 # Turing Test
 ---
 
-Proposed by [[Alan Turing]] as a thought experiment that if a computer can pass as a human would it then be considered intelligent?
+Proposed by [Alan Turing](/notes/alan-turing) as a thought experiment that if a computer can pass as a human would it then be considered intelligent?
 
 The consensus is no because the Turing Test has already been passed and computer intelligence is still being debated
 

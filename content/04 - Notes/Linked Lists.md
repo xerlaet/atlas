@@ -54,7 +54,7 @@ void displayRecursively(node<T> *temp) {
 }
 ```
 ### PreOrder vs InOrder vs PostOrder Traversal
-![[Pasted image 20231210164504.png]]
+![Pasted image 20231210164504.png](/attachments/Pasted%20image%2020231210164504.png)
 The main idea is that PreOrder prints a node on the first touch, InOrder prints a node on the second touch, and PostOrder prints a node on the third touch
 ## Doubly Linked Lists
 something

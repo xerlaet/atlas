@@ -38,7 +38,7 @@ Command Mode
 	- % in :%s will check every line in the file
 	- :n, m s/... will replace only within the lines (0 is first line, m is exclusive)
 	- :s/.../.../\<options\> n will apply to this and n-1 lines after
-- See [[Regex]] for more
+- See [Regex](/notes/regex) for more
 
 ex. :%s/search/replace/gi
 

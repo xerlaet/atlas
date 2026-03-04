@@ -34,7 +34,7 @@
 - Backreferences
 	- Anytime you make a group ( ) you can then reference it later on with a \\n
 	- ex. \\(foo\\)\\(bar\\) \\1\\2 is the same as foobar foobar
-	- \\0 or & will match the entire regex match (only really useful using substitute in [[Vim]])
+	- \\0 or & will match the entire regex match (only really useful using substitute in [Vim](/notes/vim))
 - Look ahead and look behind
 	- \\ze looks ahead ex. foo\\zebar will match foobar, but select foo
 		- Same thing as before you can also ex. \\(foo\\)\\@<=bar

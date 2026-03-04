@@ -12,13 +12,13 @@ fun heapsort(A)
 		maxheapify(A,1)
 ```
 
-1. Create a [[Max Heap]] -> $O(n)$
+1. Create a [Max Heap](/notes/max-heap) -> $O(n)$
 2. Swap the root with the last element in the heap and decrement the size of the heap -> $O(n)$
 	1. run heapify each time -> $O(\log n)$
 
-This process is an optimization of [[Selection Sort]] where the selection process turns from $O(n)$ to $O(1)$ with an added $O(\log n)$
+This process is an optimization of [Selection Sort](/notes/selection-sort) where the selection process turns from $O(n)$ to $O(1)$ with an added $O(\log n)$
 
 ## Complexity
 $O(n\log n)$
 
-![[Pasted image 20250307130415.png]]
+![Pasted image 20250307130415.png](/attachments/Pasted%20image%2020250307130415.png)

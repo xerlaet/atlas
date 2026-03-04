@@ -14,4 +14,4 @@ Does the principle of sufficient reason hold (that everything which exists needs
 
 Does the grim reaper paradox hold? It is an interesting setup - one that perhaps could be said to be impossible to exist?
 
-Also see [[Fine-Tuning of Life]], as the multiverse response works here as well
+Also see [Fine-Tuning of Life](/notes/fine-tuning-of-life), as the multiverse response works here as well

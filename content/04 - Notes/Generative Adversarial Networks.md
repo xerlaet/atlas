@@ -2,7 +2,7 @@
 ---
 GANs consist of two models, a producer and a discriminator that work in tandem to create output that is realistic
 
-![[Pasted image 20241031013723.png]]
+![Pasted image 20241031013723.png](/attachments/Pasted%20image%2020241031013723.png)
 
 
 ## Pitfalls

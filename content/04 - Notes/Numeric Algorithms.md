@@ -3,20 +3,20 @@
 
 Algorithms for solving mathematical problems
 
-[[Product of Polynomials]]
+[Product of Polynomials](/notes/product-of-polynomials)
 
 ## Number Theory
-[[Karatsuba Algorithm]]
-[[Euclidean Algorithm]]
-[[Sieve of Eratosthenes]]
-[[Modular Exponentiation]]
+[Karatsuba Algorithm](/notes/karatsuba-algorithm)
+[Euclidean Algorithm](/notes/euclidean-algorithm)
+[Sieve of Eratosthenes](/notes/sieve-of-eratosthenes)
+[Modular Exponentiation](/notes/modular-exponentiation)
 
 ## Linear Algebra
-[[Strassen's Matrix Multiplication]] NOT ON EXAM
-[[Boolean Matrix Multiplication]]
-[[Chained Matrix Multiplication]]
-[[Gaussian Elimination]]
+[Strassen's Matrix Multiplication](/notes/strassens-matrix-multiplication) NOT ON EXAM
+[Boolean Matrix Multiplication](/notes/boolean-matrix-multiplication)
+[Chained Matrix Multiplication](/notes/chained-matrix-multiplication)
+[Gaussian Elimination](/notes/gaussian-elimination)
 
 ## Analysis
-[[Discrete Fourier Transform]]
-[[Fast Fourier Transform]]
+[Discrete Fourier Transform](/notes/discrete-fourier-transform)
+[Fast Fourier Transform](/notes/fast-fourier-transform)

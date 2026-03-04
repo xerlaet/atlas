@@ -104,7 +104,7 @@ $$
 
 A matrix is known as **symmetric** if $A^T=A$, and **skew-symmetric** if $A^T=-A$ (for a skew symmetric matrix, the diagonal must be 0)
 
-Any matrix can be written as a sum of a symmetric and skew-symmetric matrix, similar to [[Even and Odd Functions]]
+Any matrix can be written as a sum of a symmetric and skew-symmetric matrix, similar to [Even and Odd Functions](/notes/even-and-odd-functions)
 
 ## Other Forms
 A matrix can be rewritten in various different forms, each of which can provide a certain advantage when working with it

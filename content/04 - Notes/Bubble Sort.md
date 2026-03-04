@@ -1,7 +1,7 @@
 # Bubble Sort
 ---
 
-**Bubble Sort** repeatedly swaps adjacent elements if they are in the wrong order. The total number of swaps equals the number of [[Inversion]] in the original array
+**Bubble Sort** repeatedly swaps adjacent elements if they are in the wrong order. The total number of swaps equals the number of [Inversion](/notes/inversion) in the original array
 
 ```tikz
 \usetikzlibrary{matrix, positioning}

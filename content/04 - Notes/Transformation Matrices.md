@@ -116,10 +116,10 @@ $$
 
 Each column vector in the rotation matrix should have a unit length and be orthogonal to one another $R^{T}R=I$
 
-Additionally the vectors should follow the [[Right Hand Rule]], so $\hat{x}_{b}\times \hat{y}_{b}=\hat{z}_{b}$, $\text{det}(R)=1$
+Additionally the vectors should follow the [Right Hand Rule](/notes/right-hand-rule), so $\hat{x}_{b}\times \hat{y}_{b}=\hat{z}_{b}$, $\text{det}(R)=1$
 
 Rotation matrices have closure, associativity, are NOT commutative, and a cool fact is that $R^{-1}=R^{T}$ because they are orthogonal
 
 $R_{sc}$ means frame $c$ relative to frame $s$
 
-[[Rodrigues' Rotation Formula]] is an efficient way to rotate a vector given an axis and angle of rotation
+[Rodrigues' Rotation Formula](/notes/rodrigues-rotation-formula) is an efficient way to rotate a vector given an axis and angle of rotation

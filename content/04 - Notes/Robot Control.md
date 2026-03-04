@@ -1,6 +1,6 @@
 # Robot Control
 ---
-Task specifications -> controller -> joint velocities (forces and torques for the [[Actuators]])
+Task specifications -> controller -> joint velocities (forces and torques for the [Actuators](/notes/actuators))
 
 ## Task Specification
 Follow a given trajectory
@@ -16,13 +16,13 @@ Impedance Control
 - act like a spring with damping properties
 
 A human controlled car is open loop, a self driving car is closed loop
-[[Closed Loop Control]]
-[[Open Loop Control]]
+[Closed Loop Control](/notes/closed-loop-control)
+[Open Loop Control](/notes/open-loop-control)
 
 ## Trajectory Following
-[[Trajectory Following]]
-[[Grasp Planning]]
+[Trajectory Following](/notes/trajectory-following)
+[Grasp Planning](/notes/grasp-planning)
 
-[[Motors]]
+[Motors](/notes/motors)
 
-[[Single Link Control]]
+[Single Link Control](/notes/single-link-control)

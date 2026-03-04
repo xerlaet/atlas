@@ -49,10 +49,10 @@ $$
 An important thing to note is that if $r>n$, then both $P(n,r)$ and $C(n,r)$ are $0$
 
 ## Probability Distributions
-[[Probability Distributions]] are functions that describe the probabilities that a random variable has
+[Probability Distributions](/notes/probability-distributions) are functions that describe the probabilities that a random variable has
 
 ## Stochastic Processes
-[[Stochastic Processes]] are random variables which evolve and change through time
+[Stochastic Processes](/notes/stochastic-processes) are random variables which evolve and change through time
 
 ## Statistical Inference
-[[Statistical Inference]] is a method of estimating parameters of a population and using that estimate to construct confidence intervals and test hypotheses
+[Statistical Inference](/notes/statistical-inference) is a method of estimating parameters of a population and using that estimate to construct confidence intervals and test hypotheses

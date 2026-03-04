@@ -11,14 +11,14 @@ Input = value: valid partition at that value, two invalid partitions on either s
 Input = set: valid partition in the set, invalid partition outside the set
 Input = boolean: valid partition at that value, invalid partition as the negation
 
-![[Pasted image 20250428122151.png|500]]
+![Pasted image 20250428122151.png](/attachments/Pasted%20image%2020250428122151.png)
 
 ### Boundary Value Analysis
 Complements equivalence partitioning by selecting test cases at the edges of partitions
 
-![[Pasted image 20250428122128.png|500]]
+![Pasted image 20250428122128.png](/attachments/Pasted%20image%2020250428122128.png)
 
 ### Cause-effect Testing
 Analyzes the functionality to identify causes and effects, and then constructs a decision table, the rules of which are used to derive test cases
 
-![[Pasted image 20250428122916.png|500]]
+![Pasted image 20250428122916.png](/attachments/Pasted%20image%2020250428122916.png)

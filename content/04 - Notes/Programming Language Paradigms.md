@@ -23,10 +23,10 @@ Natural human languages and programming languages are both languages. The only s
 - Gaming - render real time graphics with user input (C++, C#)
 
 ### Language Design
-[[Language Evaluation Criteria]]
+[Language Evaluation Criteria](/notes/language-evaluation-criteria)
 How readable, writeable, and reliable is a programming language
 
-[[von Neumann Architecture]]
+[von Neumann Architecture](/notes/von-neumann-architecture)
 
 In the 1960's and 70's, there was a shift in the major cost of computing from hardware to software. With the boom in software methodology, deficiencies were discovered such as incompleteness of type checking and inadequacy of control statements (instead using gotos)
 
@@ -39,14 +39,14 @@ SIMULA 67 was the first language to provide some support for data abstraction. S
 ### Language Categories
 There are four primary paradigms:
 1. Imperative (procedural/object oriented) (operational semantics)
-2. [[Functional Programming|Functional]] (denotational semantics)
-3. [[Logical Programming|Logic]] (axiomatic semantics)
+2. [Functional](/notes/functional-programming) (denotational semantics)
+3. [Logic](/notes/logical-programming) (axiomatic semantics)
 4. Quantum (quantum mechanics)
 
 ### Implementation Methods
-[[Compilation]] is when programs are translated into machine language to be executed directly on the computer with fast execution times (C, COBOL, C++)
-[[Pure Interpretation]] is when an interpreter program decodes the high level language statements at runtime. Statement decoding is often the bottleneck, and it will require more space and be slower.
-[[Hybrid Compilation Interpretation]] is where the high level language is translated into an intermediate language (Perl, Java - although now Java byte code is sometimes translated into machine code)
+[Compilation](/notes/compilation) is when programs are translated into machine language to be executed directly on the computer with fast execution times (C, COBOL, C++)
+[Pure Interpretation](/notes/pure-interpretation) is when an interpreter program decodes the high level language statements at runtime. Statement decoding is often the bottleneck, and it will require more space and be slower.
+[Hybrid Compilation Interpretation](/notes/hybrid-compilation-interpretation) is where the high level language is translated into an intermediate language (Perl, Java - although now Java byte code is sometimes translated into machine code)
 
 Sometimes a program is interpreted for debugging, and compiled for a final product.
 
@@ -54,17 +54,17 @@ Basically everything is a tradeoff!
 
 ## Evolution of Major Programming Languages
 
-[[Evolution of Programming Languages]]
-[[Influential People]]
+[Evolution of Programming Languages](/notes/evolution-of-programming-languages)
+[Influential People](/notes/influential-people)
 
 Roles of older languages
 
 ## Syntax and Semantics
 
-[[Syntax]]
-[[Semantics]]
-[[Parse Tree]]
-[[Grammar]]
+[Syntax](/notes/syntax)
+[Semantics](/notes/semantics)
+[Parse Tree](/notes/parse-tree)
+[Grammar](/notes/grammar)
 
 A **sentence** is a string of characters over some alphabet
 A **language** is a set of sentences
@@ -94,12 +94,12 @@ Syntactic parses goes next to check grammar
 
 bottom up parser
 top down parser 
-A [[Shift Reduce Parser]] is a bottom up parser
+A [Shift Reduce Parser](/notes/shift-reduce-parser) is a bottom up parser
 
-[[Expressions and Assignment Statements]]
-[[Control Structures]]
+[Expressions and Assignment Statements](/notes/expressions-and-assignment-statements)
+[Control Structures](/notes/control-structures)
 
-[[Language Based Security]]
+[Language Based Security](/notes/language-based-security)
 
 ---
 around 33,000 languages

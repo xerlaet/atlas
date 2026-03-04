@@ -10,7 +10,7 @@ It provides an IP address given a hostname, with some nuances
 - some servers have multiple IP addresses for one name to distribute loads
 - aliasing for mail servers
 
-Under the hood it uses [[UDP]] because it needs to be fast and scaleable for everyone, and all that the user is trying to retrieve is a small IP address
+Under the hood it uses [UDP](/notes/udp) because it needs to be fast and scaleable for everyone, and all that the user is trying to retrieve is a small IP address
 
 DNS records are stored using a RR format (name, value, type, ttl)
 - type=A `name` is hostname, `value` is IP address
@@ -18,4 +18,4 @@ DNS records are stored using a RR format (name, value, type, ttl)
 - type=CNAME `name` is an alias, `value` is canonical name
 - type=MX `value` is SMTP mail server associated with `name`
 
-[[DNS Cache Poisoning]] was an issue where the cache can be replaced with bogus data. To fix this, **DNSSEC** is an updated RFC that has authentication services but isn't fully implemented as of yet
+[DNS Cache Poisoning](/notes/dns-cache-poisoning) was an issue where the cache can be replaced with bogus data. To fix this, **DNSSEC** is an updated RFC that has authentication services but isn't fully implemented as of yet

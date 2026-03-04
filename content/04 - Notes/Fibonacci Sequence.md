@@ -13,7 +13,7 @@ $$
 T(n)=T(n-1)+T(n-2)+1
 $$
 
-[[Dynamic Programming]] allows for linear time and even linear space (if you only care about calculating one value since you just need current, previous, and previous previous!)
+[Dynamic Programming](/notes/dynamic-programming) allows for linear time and even linear space (if you only care about calculating one value since you just need current, previous, and previous previous!)
 $$
 F(n)=F(n-1)+F(n-2)
 $$

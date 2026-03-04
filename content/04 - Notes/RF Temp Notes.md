@@ -1,7 +1,7 @@
 # RF Temp Notes
 ---
 The Hard Problem
-![[Pasted image 20250225191210.png]]
+![Pasted image 20250225191210.png](/attachments/Pasted%20image%2020250225191210.png)
 
 Free will - perhaps a quantum mechanism there
 
@@ -34,7 +34,7 @@ you are not your brain
 ## Near Death Experiences
 - evidence for something that is beyond this world
 - how would an non theist explain that?
-![[Pasted image 20250225193333.png]]
+![Pasted image 20250225193333.png](/attachments/Pasted%20image%2020250225193333.png)
 - pam reynolds - example of not having blood in her brain but still had a NDE - how?
 
 
@@ -43,6 +43,6 @@ you are not your brain
 stab in the brain, affect consciousness <- question for later
 how does the soul interact with the brain or embryo/fetus
 
-![[Pasted image 20250225194524.png]]
+![Pasted image 20250225194524.png](/attachments/Pasted%20image%2020250225194524.png)
 
 an immaterial substance containing a substance enlivening the body

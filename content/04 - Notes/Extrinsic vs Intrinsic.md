@@ -7,4 +7,4 @@ In terms of motivation, extrinsic motivation like money or fame ebbs and flows, 
 
 Chase mastery over money, purpose over position, auto telicity over applause, curiosity over conformity, and autonomy over approval
 
-[[Flow]]
+[Flow](/notes/flow)

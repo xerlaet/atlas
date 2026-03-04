@@ -5,7 +5,7 @@
 
 It moves from a general rule to a specific conclusion
 
-Deduction is built on top of [[Logical Equivalences]]
+Deduction is built on top of [Logical Equivalences](/notes/logical-equivalences)
 
 ## Example
 All planets orbit the sun

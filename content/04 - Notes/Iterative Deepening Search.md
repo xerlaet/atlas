@@ -1,7 +1,7 @@
 # Iterative Deepening Search
 ---
 
-A **Depth Limited Search** is a [[Depth First Search]] that will stop at a depth $l$.
+A **Depth Limited Search** is a [Depth First Search](/notes/depth-first-search) that will stop at a depth $l$.
 
 The choice of $l$ is important (if it's known the diameter of a graph would be a good choice)
 

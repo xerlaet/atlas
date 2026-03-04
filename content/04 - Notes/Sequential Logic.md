@@ -2,23 +2,23 @@
 ---
 
 State elements store 1-bit of state:
-[[Bistable Circuit]]
-[[SR Latch]]
-[[D Latch]] captures the input when the clock is 1 and holds otherwise
+[Bistable Circuit](/notes/bistable-circuit)
+[SR Latch](/notes/sr-latch)
+[D Latch](/notes/d-latch) captures the input when the clock is 1 and holds otherwise
 
-[[D Flip-flop]] captures the input on the rising clock edge
+[D Flip-flop](/notes/d-flip-flop) captures the input on the rising clock edge
 Variations:
-[[Enable Flip-flop]]
-[[Resettable Flip-flop]]
-[[Settable Flip-flop]]
-[[Toggle Flip-flop]]
-[[JK Flip-flop]]
+[Enable Flip-flop](/notes/enable-flip-flop)
+[Resettable Flip-flop](/notes/resettable-flip-flop)
+[Settable Flip-flop](/notes/settable-flip-flop)
+[Toggle Flip-flop](/notes/toggle-flip-flop)
+[JK Flip-flop](/notes/jk-flip-flop)
 
 ```verilog
 always @(sensitivity_list)
 	statement;
 ```
 
-[[Parallel Load Register]]
+[Parallel Load Register](/notes/parallel-load-register)
 
-[[Counter]]
+[Counter](/notes/counter)

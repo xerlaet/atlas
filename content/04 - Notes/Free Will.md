@@ -1,7 +1,7 @@
 # Free Will
 ---
 
-![[Pasted image 20250313153835.png|600]]
+![Pasted image 20250313153835.png](/attachments/Pasted%20image%2020250313153835.png)
 
 So God is the first primary cause of our actions, but our free will is the second primary cause?
 
@@ -23,4 +23,4 @@ It's still something else though right?
 
 Also what about how you can change your conscious state by doing physical things, like eating food (remember judge pardon example), essentially the chemicals in your brain influence your mood - how does that work? Is it still the car is damaged example when chemicals to influence mood is kinda how it is supposed to be?
 
-See also: [[Chinese Room Argument]] [[Shade of Blue]]
+See also: [Chinese Room Argument](/notes/chinese-room-argument) [Shade of Blue](/notes/shade-of-blue)

@@ -1,4 +1,4 @@
 # Algebra
 ---
 
-[[Logarithms]]
+[Logarithms](/notes/logarithms)

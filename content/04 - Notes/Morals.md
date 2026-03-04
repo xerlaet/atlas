@@ -8,4 +8,4 @@ Morals that can be determined from the natural world:
 - **pursuit of truth and knowledge**
 - natural purpose and design (everything created has a purpose)
 
-[[Cheating]]
+[Cheating](/notes/cheating)

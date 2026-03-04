@@ -1,7 +1,7 @@
 # Guarded Commands
 ---
 
-Proposed by [[Edsger Dijkstra]], **Guarded Commands** aim to provide control statements that ensure correctness.
+Proposed by [Edsger Dijkstra](/notes/edsger-dijkstra), **Guarded Commands** aim to provide control statements that ensure correctness.
 
 An if statement has the form:
 ```

@@ -6,7 +6,7 @@ A **strongly connected component** (SCC) of a directed graph is a maximal subset
 A directed graph can be decomposed into a set of its strongly connected components. This decomposition forms a Directed Acyclic Graph (DAG) of the SCCs.
 
 ## Kosaraju's Algorithm
-Kosaraju's algorithm is an efficient method for finding all strongly connected components in a directed graph. It works by running two passes of [[Depth First Search|DFS]]
+Kosaraju's algorithm is an efficient method for finding all strongly connected components in a directed graph. It works by running two passes of [DFS](/notes/depth-first-search)
 
 ```python
 def SCC(G):

@@ -6,7 +6,7 @@ Wireless is important due to the massive demand (10 to 1 wireless/wired ratio in
 **Wireless** entails communication over a wireless link, **mobility** is handling a user changing points of attachment in the network
 
 ## Wireless
-[[Wireless Networks]]
+[Wireless Networks](/notes/wireless-networks)
 
 ## Mobility
-[[Wireless Mobility]]
+[Wireless Mobility](/notes/wireless-mobility)

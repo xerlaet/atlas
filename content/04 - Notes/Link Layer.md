@@ -7,11 +7,11 @@ It is primarily implemented on a network adapter chip, known as the **network in
 
 It is in charge of flow control, error detection and correction, and half-duplex or full-duplex communication
 
-[[Error Corrections]]
+[Error Corrections](/notes/error-corrections)
 - single bit parity - detect an odd number of errors - bursts of errors can make P(undetected errors) ~~ 50%
 - 2D bit parity (even or odd) can detect and correct 1 bit errors
 - internet checksum
-- [[Cyclic Redundancy Check]]
+- [Cyclic Redundancy Check](/notes/cyclic-redundancy-check)
 
 ## Multiple Access Channel Access Protocols
 **Channel Partitioning** partitions a channel for different traffic (best at high loads)
@@ -31,12 +31,12 @@ collision detection is fine for wired, collision avoidance is needed for wireles
 Cable access network
 
 ## LANs
-[[MAC Address]]
-[[ARP]]
+[MAC Address](/notes/mac-address)
+[ARP](/notes/arp)
 
-[[Ethernet]]
+[Ethernet](/notes/ethernet)
 
-[[VLANs]]
+[VLANs](/notes/vlans)
 
 A general rule of thumb is for every 10 switches have a router
 
@@ -44,11 +44,11 @@ A general rule of thumb is for every 10 switches have a router
 Both are store and forward (routers are network layer and switches are link layer)
 Both have forwarding tables. Switches are self learning while routers compute the forwarding table with algorithms and IP addresses
 
-[[Switches]]
-[[Routers]]
+[Switches](/notes/switches)
+[Routers](/notes/routers)
 
 ## Data Centers
-![[Pasted image 20251028104836.png|500]]
+![Pasted image 20251028104836.png](/attachments/Pasted%20image%2020251028104836.png)
 
 Increased reliability via redundancy
 

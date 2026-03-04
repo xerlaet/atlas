@@ -58,7 +58,7 @@ Doing this on a large scale is highly subjective and imperfect requiring **ontol
 \end{document}
 ```
 
-This is similar to [[Object-Oriented Programming]]
+This is similar to [Object-Oriented Programming](/notes/object-oriented-programming)
 
 Organization of objects into **categories** is important. Turning a proposition into an object is **reification**
 

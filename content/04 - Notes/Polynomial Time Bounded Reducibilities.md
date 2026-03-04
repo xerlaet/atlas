@@ -1,7 +1,7 @@
 # Polynomial Time Bounded Reducibilities
 ---
 
-A function $f:\{ 0,1 \}^{*}$ is **polynomially time computation** if there is a polynomially time bounded [[Turing Machines|DTM]] $M$ that on input $w$ outputs $f(w)$
+A function $f:\{ 0,1 \}^{*}$ is **polynomially time computation** if there is a polynomially time bounded [DTM](/notes/turing-machines) $M$ that on input $w$ outputs $f(w)$
 
 ```tikz
 \usetikzlibrary{positioning}

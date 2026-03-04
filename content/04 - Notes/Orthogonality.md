@@ -15,9 +15,9 @@ A matrix $A$ can also be orthogonal if $A^T=A^{-1}$ if it is made up of orthonor
 ## Projections
 One useful application of orthogonality is with projections
 
-![[Pasted image 20240410153013.png]]
+![Pasted image 20240410153013.png](/attachments/Pasted%20image%2020240410153013.png)
 
-![[Pasted image 20240410153036.png]]
+![Pasted image 20240410153036.png](/attachments/Pasted%20image%2020240410153036.png)
 
 
 An important idea when solving $A\vec{x}=\vec{b}$ is that if $\vec{b}$ is not in the column space of $A$, then there is no solution, however we can project $\vec{b}$ onto the column space of $A$ such that we solve for this new $\vec{b}$, which is going to be as good of a solution as we can get

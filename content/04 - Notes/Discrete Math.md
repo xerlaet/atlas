@@ -6,30 +6,30 @@ Discrete math is the study of mathematical structures that are considered "discr
 These concepts are fundamental for solving problems in computer science and creating algorithms
 
 ## Logic and Proofs
-[[Propositional Logic]]
-[[Proofs]]
-[[Induction]]
+[Propositional Logic](/notes/propositional-logic)
+[Proofs](/notes/proofs)
+[Induction](/notes/induction)
 
 ## Sets and Functions
-[[Sets]]
-[[Functions]]
+[Sets](/notes/sets)
+[Functions](/notes/functions)
 
 ## Algorithms
-[[Algorithms]]
-[[Number Theory]]
+[Algorithms](/notes/algorithms)
+[Number Theory](/notes/number-theory)
 
 ## Probability
-[[Probability]]
-[[Counting Principles]]
-[[Selections]]
+[Probability](/notes/probability)
+[Counting Principles](/notes/counting-principles)
+[Selections](/notes/selections)
 
 ## Relations
-[[Relations]]
-[[Recurrence Relations]]
+[Relations](/notes/relations)
+[Recurrence Relations](/notes/recurrence-relations)
 
 ## Graphs
-[[Graphs]]
-[[Trees]]
+[Graphs](/notes/graphs)
+[Trees](/notes/trees)
 
 ## Modeling Computation
-[[Finite State Machines]]
+[Finite State Machines](/notes/finite-state-machines)

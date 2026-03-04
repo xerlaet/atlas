@@ -3,7 +3,7 @@
 
 **Problem** find the subarray which has the largest sum of all its elements
 
-The [[Brute Force]] solution is to find every possible subarray $O(n^{2})$ and calculate the sum of that subarray $O(n)$, meaning the overall runtime is $O(n^{3})$
+The [Brute Force](/notes/brute-force) solution is to find every possible subarray $O(n^{2})$ and calculate the sum of that subarray $O(n)$, meaning the overall runtime is $O(n^{3})$
 
 ```python
 ans = A[0]
@@ -15,13 +15,13 @@ for i in range(len(A)):
 		ans = max(ans, total)
 ```
 
-The [[Divide and Conquer]] solution is to split the array into halves recursively, and then work back upwards where at each step selecting the max of the left subarray sum, right subarray sum, and crossing subarray sum
+The [Divide and Conquer](/notes/divide-and-conquer) solution is to split the array into halves recursively, and then work back upwards where at each step selecting the max of the left subarray sum, right subarray sum, and crossing subarray sum
 
-![[Pasted image 20250311011440.png]]
+![Pasted image 20250311011440.png](/attachments/Pasted%20image%2020250311011440.png)
 
 The recurrence relation is $T(n)=2T\left( \frac{n}{2} \right)+O(n)$ meaning the overall runtime is $O(n\log n)$
 
-The [[Dynamic Programming]] solution is to calculate the maximum subarray sum up to a certain point, and check if it is larger than the best solution so far
+The [Dynamic Programming](/notes/dynamic-programming) solution is to calculate the maximum subarray sum up to a certain point, and check if it is larger than the best solution so far
 
 ```python
 M = [0]*len(A)

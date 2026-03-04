@@ -5,7 +5,7 @@
 RAID achieves strong performance due to concurrency of accessing data and improved fault tolerance due to multiple independent disks
 
 **Data striping** is when sequential data is segmented and stored consecutively on different disks
-![[Pasted image 20241204181641.png]]
+![Pasted image 20241204181641.png](/attachments/Pasted%20image%2020241204181641.png)
 
 ### Configurations
 Standard configurations for RAID are referred to as levels (ex. RAID 6) and configurations can be nested (ex. RAID 10)
@@ -13,25 +13,25 @@ Standard configurations for RAID are referred to as levels (ex. RAID 6) and conf
 The metrics to keep in mind are storage efficiency, reliability during failures, and speed in accessing compared to a single disk
 
 RAID 0 simply utilizes striping to improve performance
-![[Pasted image 20241204182234.png]]
+![Pasted image 20241204182234.png](/attachments/Pasted%20image%2020241204182234.png)
 
 RAID 1 simply duplicates disks for reliability
-![[Pasted image 20241204182315.png]]
+![Pasted image 20241204182315.png](/attachments/Pasted%20image%2020241204182315.png)
 
 RAID 2 uses striping with ECC on parity disks
-![[Pasted image 20241204182402.png]]
+![Pasted image 20241204182402.png](/attachments/Pasted%20image%2020241204182402.png)
 
 RAID 3 uses bit or byte striping with one parity disk
-![[Pasted image 20241204182440.png]]
+![Pasted image 20241204182440.png](/attachments/Pasted%20image%2020241204182440.png)
 
 RAID 4 uses block striping with one parity disk
-![[Pasted image 20241204182505.png]]
+![Pasted image 20241204182505.png](/attachments/Pasted%20image%2020241204182505.png)
 
 RAID 5 is like RAID 4 except it distributes the parity blocks
-![[Pasted image 20241204182605.png]]
+![Pasted image 20241204182605.png](/attachments/Pasted%20image%2020241204182605.png)
 
 RAID 6 is like RAID 5 except with two parity blocks
-![[Pasted image 20241204182658.png]]
+![Pasted image 20241204182658.png](/attachments/Pasted%20image%2020241204182658.png)
 
 | RAID | Storage Efficiency            | Reliability | Read Boost          | Write Boost         |
 | ---- | ----------------------------- | ----------- | ------------------- | ------------------- |

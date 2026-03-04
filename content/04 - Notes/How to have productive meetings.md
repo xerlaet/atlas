@@ -2,6 +2,6 @@
 ---
 
 - create an agenda beforehand
-- limit the time allocated [[Parkinson's Law]]
+- limit the time allocated [Parkinson's Law](/notes/parkinsons-law)
 - set goals with clear assignments at the end
 - follow up

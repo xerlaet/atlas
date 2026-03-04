@@ -27,7 +27,7 @@ Human communication
 
 esolangs.org
 
-## [[Programming Language Paradigms]]
+## [Programming Language Paradigms](/notes/programming-language-paradigms)
 
-## [[Programming Languages]]
+## [Programming Languages](/notes/programming-languages)
 Not all are turing complete (such as HTML or SQL)

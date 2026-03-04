@@ -35,8 +35,8 @@ reg [7:0] w = 3`b1011; // w=00000011
 
 ## Types of Descriptions
 
-![[Pasted image 20250130131936.png]]
-![[Pasted image 20250130131943.png]]
+![Pasted image 20250130131936.png](/attachments/Pasted%20image%2020250130131936.png)
+![Pasted image 20250130131943.png](/attachments/Pasted%20image%2020250130131943.png)
 
 Behavioral description (highest abstraction capturing the behavior)
 ```verilog

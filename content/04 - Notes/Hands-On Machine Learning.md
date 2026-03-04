@@ -41,7 +41,7 @@ For figuring out what model works best, split the data into a `train`, `dev`, an
 
 You could perform *cross-validation* in which you use many small validation sets and the average performance is what you look at. This can more accurate measurements of a models performance however the training time will increase
 
-![[Pasted image 20231206182559.png]]
+![Pasted image 20231206182559.png](/attachments/Pasted%20image%2020231206182559.png)
 
 ## 2. End-to-End Machine Learning Project
 These are the main steps we will follow

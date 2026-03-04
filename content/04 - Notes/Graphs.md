@@ -3,11 +3,11 @@
 
 A **graph** $G=(V,E)$ consists of a nonempty set $V$ of **vertices** (nodes) and a set $E$ of **edges** (links)
 
-Graphs can be [[Representations of Graphs|represented]] in many ways
+Graphs can be [represented](/notes/representations-of-graphs) in many ways
 
-[[Graph Properties]]
-[[Graph Classifications]]
+[Graph Properties](/notes/graph-properties)
+[Graph Classifications](/notes/graph-classifications)
 
-[[Graph Dynamics]]
+[Graph Dynamics](/notes/graph-dynamics)
 
-[[Paths]] are sequences of edges along a graph
+[Paths](/notes/paths) are sequences of edges along a graph

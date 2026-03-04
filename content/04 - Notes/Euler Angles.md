@@ -7,4 +7,4 @@
 **Pitch** is rotation in the transverse axis (usually y)
 **Roll** is rotation in the longitudinal axis (usually x)
 
-![[Pasted image 20250915141116.png]]
+![Pasted image 20250915141116.png](/attachments/Pasted%20image%2020250915141116.png)

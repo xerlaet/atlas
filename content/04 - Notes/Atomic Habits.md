@@ -14,10 +14,10 @@ All habits follow a four-step neurological loop:
 
 ## The Four Labs of Behavior Change
 To build a good habit:
-1. [[Make it Obvious]] (cue)
-2. [[Make it Attractive]] (craving)
-3. [[Make it Easy]] (response)
-4. [[Make it Satisfying]] (reward)
+1. [Make it Obvious](/notes/make-it-obvious) (cue)
+2. [Make it Attractive](/notes/make-it-attractive) (craving)
+3. [Make it Easy](/notes/make-it-easy) (response)
+4. [Make it Satisfying](/notes/make-it-satisfying) (reward)
 
 To break a bad habit:
 1. Make it **Invisible**
@@ -35,12 +35,12 @@ One of the best breakdowns of personality traits is the OCEAN (openness, conscie
 
 In the beginning of a new activity, there should be exploration to try out many possibilities. Over time, shift focus to the best solution but keep experimenting occasionally
 
-What is fun to you that seems like work to others? What lets you get into [[Flow]]?
+What is fun to you that seems like work to others? What lets you get into [Flow](/notes/flow)?
 
 When you can't win by being better, win by being different. Also the more specialized you become the harder it is for others to compete
 
 ### Progressive Overload
-We experience peak motivation when working on tasks right at the edge of our current abilities -Goldilocks rule or [[Progressive Overload]]. So start with an easy behavior, and over time keep advancing it in small ways
+We experience peak motivation when working on tasks right at the edge of our current abilities -Goldilocks rule or [Progressive Overload](/notes/progressive-overload). So start with an easy behavior, and over time keep advancing it in small ways
 
 Increasing difficulty like this can also keep things interesting. One of the greatest threats to success is not failure, but boredom. Increasing difficulty just enough so you have to keep working can keep things engaging
 

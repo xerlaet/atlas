@@ -5,7 +5,7 @@ aliases:
 # Depth First Search
 ---
 
-**Depth First Search** traverses a graph depth first, making it ideal for [[Cycle Detection|detecting cycles]] and identifying [[Strongly Connected Components]]
+**Depth First Search** traverses a graph depth first, making it ideal for [detecting cycles](/notes/cycle-detection) and identifying [Strongly Connected Components](/notes/strongly-connected-components)
 
 ## Algorithm
 ```python

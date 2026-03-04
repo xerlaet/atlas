@@ -12,7 +12,7 @@ The expected insertion time is $O(\log n)$, worst case is $O(n^{2})$ if the tree
 
 To build the search tree, the left subtree contains $j-1$ elements, and the right subtree contains $n-j$ elements
 
-The running time is similar to [[Quick Sort]]
+The running time is similar to [Quick Sort](/notes/quick-sort)
 
 ## Example
 $$

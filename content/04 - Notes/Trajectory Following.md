@@ -16,7 +16,7 @@ Errors arise from multiple factors
 
 This necessitates a closed loop
 
-[[PIDF Control]]
+[PIDF Control](/notes/pidf-control)
 
 
 ## Motion Planning
@@ -26,7 +26,7 @@ treat the joint limits as obstacles
 rapidly exploring random trees
 
 rrt* continuously rewires the search tree to ensure that it always encodes the shortest path from start to each node
-![[Pasted image 20251105132506.png|500]]
+![Pasted image 20251105132506.png](/attachments/Pasted%20image%2020251105132506.png)
 
 probabilistic roadmaps build a map first and then query it
 

@@ -2,9 +2,9 @@
 ---
 
 ## Books
-[[Books]]
+[Books](/notes/books)
 
 ## Visual
-[[Film]]
-[[Podcasts]]
-[[Movie Ranking]]
+[Film](/notes/film)
+[Podcasts](/notes/podcasts)
+[Movie Ranking](/notes/movie-ranking)

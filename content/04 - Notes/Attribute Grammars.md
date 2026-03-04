@@ -21,7 +21,7 @@ Attribute grammars are useful
 <var>    -> a | b | c
 ```
 
-![[Pasted image 20250212122900.png]]
+![Pasted image 20250212122900.png](/attachments/Pasted%20image%2020250212122900.png)
 
-![[Pasted image 20250212122929.png]]
+![Pasted image 20250212122929.png](/attachments/Pasted%20image%2020250212122929.png)
 

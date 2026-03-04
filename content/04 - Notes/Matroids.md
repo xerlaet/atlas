@@ -9,4 +9,4 @@ $E$ must satisfy two key properties:
 
 If a problem can be shown to have an underlying matroid structure, a greedy algorithm is guaranteed to be successful
 
-Similar concepts include [[Graphic Matroids]] and [[Matric Matroids]] which contain independent subsets if a graph has no cycles and if a matrix has linear independent columns
+Similar concepts include [Graphic Matroids](/notes/graphic-matroids) and [Matric Matroids](/notes/matric-matroids) which contain independent subsets if a graph has no cycles and if a matrix has linear independent columns

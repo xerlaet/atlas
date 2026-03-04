@@ -119,7 +119,7 @@ Assume the theorem is false and show that this assumption leads to a false conse
 ### Proof by Induction
 Assume a base case, and show that assuming some general state $k$ it holds true for $k+1$ meaning that it will always hold
 
-See [[Induction]]
+See [Induction](/notes/induction)
 
 - Trivial Proof
 - Vacuous Proof

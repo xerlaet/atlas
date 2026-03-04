@@ -5,4 +5,4 @@ In my robotics class my group was given an SO-101 arm and told to make it do som
 
 See the code here: [GitHub](https://github.com/Optimax14/CS-6341-Project)
 
-![[armor.jpg]]
+![armor.jpg](/attachments/armor.jpg)

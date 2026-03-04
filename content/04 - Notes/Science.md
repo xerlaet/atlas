@@ -1,14 +1,14 @@
 # Science
 ---
 
-## [[Physics]]
+## [Physics](/notes/physics)
 Interactions of particles
 
-## [[Chemistry]]
+## [Chemistry](/notes/chemistry)
 Combinations of particles
 
 ## Biology
 Living organisms
 
-## [[Psychology]]
+## [Psychology](/notes/psychology)
 The human brain

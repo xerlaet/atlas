@@ -21,7 +21,7 @@ R = R'
 ```
 
 ## Parallel Divider
-![[Pasted image 20250417140658.png]]
+![Pasted image 20250417140658.png](/attachments/Pasted%20image%2020250417140658.png)
 
 ## Serial Divider
-![[Pasted image 20250417140712.png]]
+![Pasted image 20250417140712.png](/attachments/Pasted%20image%2020250417140712.png)

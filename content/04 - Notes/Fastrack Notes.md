@@ -11,11 +11,11 @@ cumulative gpa of 3.0
 maximum of 15 semester credit hours in total at the graduate level
 
 ## Program Requirements
-![[Pasted image 20240912184157.png]]
-![[Pasted image 20240912185155.png]]
+![Pasted image 20240912184157.png](/attachments/Pasted%20image%2020240912184157.png)
+![Pasted image 20240912185155.png](/attachments/Pasted%20image%2020240912185155.png)
 
 ## Contact Info
-![[Pasted image 20240912185221.png]]
+![Pasted image 20240912185221.png](/attachments/Pasted%20image%2020240912185221.png)
 
 Also look at career center, some employers may offer financial assistance if you have a job set up
 

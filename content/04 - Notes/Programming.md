@@ -1,11 +1,11 @@
 # Programming
 ---
 
-[[Programming Languages]] exist to be good at different things
-[[Programming Language Paradigms]] are those trade-offs
+[Programming Languages](/notes/programming-languages) exist to be good at different things
+[Programming Language Paradigms](/notes/programming-language-paradigms) are those trade-offs
 
-[[Programming Paradigms]]
+[Programming Paradigms](/notes/programming-paradigms)
 
-[[Computation]]
-[[Data Structures]] are used to store data
-[[Algorithms]] are used to manipulate data
+[Computation](/notes/computation)
+[Data Structures](/notes/data-structures) are used to store data
+[Algorithms](/notes/algorithms) are used to manipulate data

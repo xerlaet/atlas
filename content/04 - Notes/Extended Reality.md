@@ -5,7 +5,7 @@ aliases:
 # Extended Reality
 ---
 
-[[Virtual Reality]] (VR) replaces reality
+[Virtual Reality](/notes/virtual-reality) (VR) replaces reality
 **Augmented Reality** (AR) enhances reality
 
 >[!abstract] Definitions

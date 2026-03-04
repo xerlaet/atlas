@@ -2,4 +2,4 @@
 ---
 previous state is kept and handed on to the next operation
 
-![[Pasted image 20241031015102.png]]
+![Pasted image 20241031015102.png](/attachments/Pasted%20image%2020241031015102.png)

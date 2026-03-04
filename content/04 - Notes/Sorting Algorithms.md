@@ -1,34 +1,34 @@
 # Sorting Algorithms
 ---
 
-Algorithms for arranging elements in an [[Arrays|array]]
+Algorithms for arranging elements in an [array](/notes/arrays)
 
-An [[Inversion]] occurs when any two elements are out of order
+An [Inversion](/notes/inversion) occurs when any two elements are out of order
 An algorithm is **stable** if it preserves the ordering of equal elements
 
 ## Non Comparison Based
-[[Counting Sort]]
-[[Radix Sort]]
-[[Bucket Sort]]
-[[Joke Sorting Algorithms]]
+[Counting Sort](/notes/counting-sort)
+[Radix Sort](/notes/radix-sort)
+[Bucket Sort](/notes/bucket-sort)
+[Joke Sorting Algorithms](/notes/joke-sorting-algorithms)
 
 ## Comparison Based
 Simple $O(n^{2})$ algorithms
-[[Selection Sort]]
-[[Insertion Sort]]
-[[Bubble Sort]]
+[Selection Sort](/notes/selection-sort)
+[Insertion Sort](/notes/insertion-sort)
+[Bubble Sort](/notes/bubble-sort)
 
 Efficient $O(n\log n)$ algorithms
-[[Merge Sort]]
-[[Quick Sort]]
-[[Heap Sort]]
+[Merge Sort](/notes/merge-sort)
+[Quick Sort](/notes/quick-sort)
+[Heap Sort](/notes/heap-sort)
 
 ### Complexity
 For a **comparison based algorithm**, the situation can be modeled with a decision tree where each internal node is a comparison and each leaf is a permutation. There will be $n!$ leaves
 
 Any algorithm will at best logarithmically compare between each permutation which is $\log n!$
 
-Using the [[Stirling Approximation]], this reduces to $n\log n$
+Using the [Stirling Approximation](/notes/stirling-approximation), this reduces to $n\log n$
 
 $$
 \begin{align}

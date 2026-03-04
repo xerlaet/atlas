@@ -4,7 +4,7 @@
 Relations are generalized functions
 ## Types of Relations
 ### Recurrence Relations
-[[Recurrence Relations]] are a way of describing terms in a sequence based on the previous terms
+[Recurrence Relations](/notes/recurrence-relations) are a way of describing terms in a sequence based on the previous terms
 
 ### Binary Relations
 A **binary relation** from $A$ to $B$ is a set of ordered pairs where the first element comes from $A$ and the second element comes from $B$, or more mathematically as $R\subseteq A \times B$

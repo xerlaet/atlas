@@ -6,10 +6,10 @@
 ## Monotonic Reasoning
 Adding new premises cannot invalidate a previous conclusion hence being monotonic
 
-[[Deductive Reasoning]] proves a specific case based on general premises
+[Deductive Reasoning](/notes/deductive-reasoning) proves a specific case based on general premises
 
 ## Non Monotonic Reasoning
 Adding new premises can invalidate previous conclusions
 
-[[Inductive Reasoning]] predicts broad rules based on specific premises
-[[Abductive Reasoning]] infers the most plausible explanation for an observation
+[Inductive Reasoning](/notes/inductive-reasoning) predicts broad rules based on specific premises
+[Abductive Reasoning](/notes/abductive-reasoning) infers the most plausible explanation for an observation

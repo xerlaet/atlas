@@ -34,12 +34,12 @@ One of the largest bottlenecks in speed is HOL blocking from the input to output
 
 ### Control Plane
 network-wide logic
-routing protocols like [[OSPF]], [[BGP]], EIGRP to learn about the network's layout, build and maintain routing tables, rules for traffic like QoS policies, session management
+routing protocols like [OSPF](/notes/ospf), [BGP](/notes/bgp), EIGRP to learn about the network's layout, build and maintain routing tables, rules for traffic like QoS policies, session management
 
 
 traditional routing algorithms vs software defined networking (SDN)
-- link state [[Uniform Cost Search]]
-- distance vector [[Bellman-Ford Algorithm]]
+- link state [Uniform Cost Search](/notes/uniform-cost-search)
+- distance vector [Bellman-Ford Algorithm](/notes/bellman-ford-algorithm)
 
 In SDN, a remote controller installs forwarding tables in routers
 
@@ -63,7 +63,7 @@ For scheduling policies, WFQ is most used today
 ICMP can be exploited to map out networks, sometimes is disabled
 
 ## IP
-![[Pasted image 20251009103259.png]]
+![Pasted image 20251009103259.png](/attachments/Pasted%20image%2020251009103259.png)
 
 Any packets that are larger from upper layers are fragmented at this point
 
@@ -78,9 +78,9 @@ IPv6 adoption is taking a very long time
 A **subnet** is a set of device interfaces that can reach each other with just one router?/not going beyond it
 
 CIDR
-Use [[DHCP]] to dynamically obtain an IP address 
+Use [DHCP](/notes/dhcp) to dynamically obtain an IP address 
 
 Hierarchical addressing - tradeoff between consistency and fragmentation when organizations move to different ISPs (just like moving emails, switch over time)
 
-[[NAT]] uses port numbers to differentiate addresses from both sides. Controversial because it breaks the layering principle by using the port numbers - inspiration for mixing layers in general
+[NAT](/notes/nat) uses port numbers to differentiate addresses from both sides. Controversial because it breaks the layering principle by using the port numbers - inspiration for mixing layers in general
 

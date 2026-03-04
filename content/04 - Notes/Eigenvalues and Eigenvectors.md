@@ -37,7 +37,7 @@ With this idea, you can take any function and apply it to a diagonalizable matri
 
 Matrices $A$ and $B$ are **similar** if for some $X$, $A=XBX^{-1}$
 
-This happens to be an equivalence relation because it satisfies the three fundamental properties! [[Relations]]
+This happens to be an equivalence relation because it satisfies the three fundamental properties! [Relations](/notes/relations)
 
 If two matrices are similar, they share the same determinant, so $A\sim \Lambda \to \text{det}(A)=\text{det}(\Lambda)=\lambda_{1}\dots \lambda_{d}$
 
@@ -183,7 +183,7 @@ There will be d roots of said equation, some real and some imaginary, and imagin
 
 To find the set of vectors $\{ v_{i} \}$, solve for the null space of $A-\lambda_{i}I$, and then $X=[v_{1}\dots v_{d}]$ 
 
-This also is related to [[Markov Chains]]
+This also is related to [Markov Chains](/notes/markov-chains)
 
 A matrix $A$ is non diagonalizable when
 - there are no real roots

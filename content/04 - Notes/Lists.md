@@ -3,9 +3,9 @@
 
 A **list** is an ordered collection of objects
 
-Lists are similar to [[Arrays]], except instead of accessing elements with their index, elements are accessed using pointers
+Lists are similar to [Arrays](/notes/arrays), except instead of accessing elements with their index, elements are accessed using pointers
 
-[[Linked Lists]]
+[Linked Lists](/notes/linked-lists)
 
 A **Singly Linked List** are simple and easy to work with, but accessing elements at the end take more time
 
@@ -44,7 +44,7 @@ len(list1)
 # List Comprehension
 list4 = [x**2 for x in range(10) if x % 2 == 0]
 
-matrix = [[1,2], [3,4], [5,6]]
+matrix = [1,2], [3,4], [5,6](/notes/12-34-56)
 print(matrix[1][1])
 
 list5 = [1,2,3]

@@ -17,8 +17,8 @@
 
 ## Social Psychology
 
-## [[Personality]]
+## [Personality](/notes/personality)
 
-## [[Psychological Disorders]]
+## [Psychological Disorders](/notes/psychological-disorders)
 
-## [[Therapy and Treatment]]
+## [Therapy and Treatment](/notes/therapy-and-treatment)

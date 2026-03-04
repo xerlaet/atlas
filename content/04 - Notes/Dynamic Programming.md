@@ -3,12 +3,12 @@
 
 **Dynamic Programming** is a technique that breaks a problem down into overlapping sub-problems, stores the solutions, and then uses those solutions to solve the problem without redundant calculations
 
-A great example is the [[Fibonacci Sequence]]
+A great example is the [Fibonacci Sequence](/notes/fibonacci-sequence)
 $$
 F(n)=F(n-1)+F(n-2)
 $$
 
-Note that the overlapping subproblems need to have [[Optimal Substructure]] for it to work
+Note that the overlapping subproblems need to have [Optimal Substructure](/notes/optimal-substructure) for it to work
 
 There are two primary approaches:
 

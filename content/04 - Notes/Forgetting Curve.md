@@ -5,7 +5,7 @@ https://ncase.me/remember/
 
 There is a pattern to how you forget information. Hermann Ebbinghaus was the first to do actual experiments by memorizing thousands of nonsense words and recording how much he forgot over time.
 
-![[Pasted image 20250211001509.png]]
+![Pasted image 20250211001509.png](/attachments/Pasted%20image%2020250211001509.png)
 
 You forget most of what you learn in the first 24 hours and the rest decays exponentially if you don't practice recall.
 

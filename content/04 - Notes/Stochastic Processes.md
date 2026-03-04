@@ -5,7 +5,7 @@
 Possible values of $X(t)$ are called **states** and depending on the nature of the function, $X(t)$ can be a **discrete-state** and **discrete-time** process or a **continuous-state** and **continuous-time** process
 
 ## Markov Chains
-[[Markov Chains]] are stochastic processes that are discrete-time and discrete-state
+[Markov Chains](/notes/markov-chains) are stochastic processes that are discrete-time and discrete-state
 
 ## Counting Processes
 A stochastic process $X$ is **counting** if $X(t)$ is the number of items counted by the time $t$

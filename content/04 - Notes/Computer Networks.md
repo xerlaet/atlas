@@ -1,23 +1,23 @@
 # Computer Networks
 ---
 
-**Computer Networks** are sets of interconnected devices, the [[Internet]] being the largest in existence
+**Computer Networks** are sets of interconnected devices, the [Internet](/notes/internet) being the largest in existence
 
 They are able to provide services like web and video streaming, email, etc
 
 ## Concepts
-[[Network Structure]]
-[[Protocols]]
-[[Packet Delay]]
+[Network Structure](/notes/network-structure)
+[Protocols](/notes/protocols)
+[Packet Delay](/notes/packet-delay)
 
 ## Network Layers
-[[Network Layers]]
+[Network Layers](/notes/network-layers)
 
 ## Wireless and Mobile Networks
-[[Wireless and Mobile Networks]]
+[Wireless and Mobile Networks](/notes/wireless-and-mobile-networks)
 
 ## Security
-[[Cyber Security]]
+[Cyber Security](/notes/cyber-security)
 
 
 > [!important]

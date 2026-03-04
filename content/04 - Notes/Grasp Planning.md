@@ -15,7 +15,7 @@ Contact Modeling
 - point-on-line
 - point-on-plane (most useful)
 
-[[Point-on-Plane Contact Models]]
+[Point-on-Plane Contact Models](/notes/point-on-plane-contact-models)
 
 
 ## Learning Based Methods

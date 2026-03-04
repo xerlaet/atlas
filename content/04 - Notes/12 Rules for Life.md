@@ -35,7 +35,7 @@ Order is typically understood as masculine and the hierarchical structure of soc
 
 > Order is not enough. You can't just be stable, and secure, and unchanging, because there are still vital and important new things to be learned. Nonetheless, chaos can be too much. You can't long tolerate being swamped and overwhelmed beyond your capacity to cope while you are learning what you still need to know. Thus, you need to place one foot in what you have mastered and understood and the other in what you are currently exploring and mastering. Then you have positioned yourself where the terror of existence is under control and you are secure, but where you are also alert and engaged. That is where there is something new to master and some way that you can be improved. That is where meaning is to be found.
 
-Connection: straddling the edge, [[Test yourself at your Limit]] to grow (muscles, remembering)
+Connection: straddling the edge, [Test yourself at your Limit](/notes/test-yourself-at-your-limit) to grow (muscles, remembering)
 
 The story of the Garden of Eden is about as old as stories go. A man is spurned by a woman, grows resentful and blames her, they are kicked out and have to mature like a child who grows up.
 

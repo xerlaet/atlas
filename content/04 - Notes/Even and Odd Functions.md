@@ -14,4 +14,4 @@ $$
 \end{align}
 $$
 
-This idea is related to symmetrical and skew-symmetrical matrices in [[Linear Algebra]]
+This idea is related to symmetrical and skew-symmetrical matrices in [Linear Algebra](/notes/linear-algebra)

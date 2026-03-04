@@ -1,7 +1,7 @@
 # Tame Problem
 ---
 
-Opposite of a [[Wicked Problem]]
+Opposite of a [Wicked Problem](/notes/wicked-problem)
 
 1. Can be completely specified
 2. The specification and solution can be separated

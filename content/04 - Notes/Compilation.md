@@ -4,7 +4,7 @@
 
 The compiler reads the **source language** and creates the compiled result
 
-![[Pasted image 20250305021332.png]]
+![Pasted image 20250305021332.png](/attachments/Pasted%20image%2020250305021332.png)
 
 Compilers might use **optimization** which improves programs by making them smaller or faster
 

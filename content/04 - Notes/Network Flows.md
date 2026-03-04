@@ -18,5 +18,5 @@ The **Max Flow Min Cut Theorem** states that the following three statements are 
 How 2 implies 3?
 
 ## Algorithms
-[[Ford-Fulkerson Algorithm]]
-[[Edmonds-Karp Algorithm]]
+[Ford-Fulkerson Algorithm](/notes/ford-fulkerson-algorithm)
+[Edmonds-Karp Algorithm](/notes/edmonds-karp-algorithm)

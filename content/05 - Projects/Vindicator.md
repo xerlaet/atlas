@@ -5,4 +5,4 @@ In this project I learned to solder and wire together custom components. The end
 
 See it in action here: [youtube](https://youtu.be/WHLbwqPn1DI?t=3990)
 
-![[vindicator_v2.jpg|300]]![[vindicator_v2_internals.jpg|300]]
+![vindicator_v2.jpg](/attachments/vindicator_v2.jpg)![vindicator_v2_internals.jpg](/attachments/vindicator_v2_internals.jpg)

@@ -27,7 +27,7 @@ Automated Reasoning is Undecidable - because of Gödel's Proof
 
 Undecidability, Incompleteness, Non monotonicity
 
-[[Peano's Axioms]]
+[Peano's Axioms](/notes/peanos-axioms)
 
 closed world vs open world assumptions
 
@@ -45,15 +45,15 @@ $$
 
 Types of Reasoning (inductive, deductive, etc)
 
-[[Prolog]]
-[[List Processing]]
-[[Non Deterministic Programming]]
-[[Constrained Logical Programming]]
-[[Answer Set Programming]]
-[[Human Thought]]
+[Prolog](/notes/prolog)
+[List Processing](/notes/list-processing)
+[Non Deterministic Programming](/notes/non-deterministic-programming)
+[Constrained Logical Programming](/notes/constrained-logical-programming)
+[Answer Set Programming](/notes/answer-set-programming)
+[Human Thought](/notes/human-thought)
 
 dual rule
-Definite Clause Grammars - like [[Context-Free Languages]] CFGs then recursive descent parsers - parser generators (LYACC, BISON, ANTLR)
+Definite Clause Grammars - like [Context-Free Languages](/notes/context-free-languages) CFGs then recursive descent parsers - parser generators (LYACC, BISON, ANTLR)
 
 ```prolog
 send(A,B) :- np(N,A,C), vp(N,C,B).
@@ -67,7 +67,7 @@ domain specific language, write an interpreter for it really fast
 
 The **Herbrand Universe** is the set of all constants that can be defined by the set of rules
 
-[[Fibonacci Sequence]]
+[Fibonacci Sequence](/notes/fibonacci-sequence)
 
 Left vs Right recursive (prolog uses DFS instead of BFS)
 Meta Interpreters are really easy in prolog
@@ -89,4 +89,4 @@ p -> Q;R :- P,!,Q.
 P -> Q;R :- R.
 ```
 
-Application: [[Logical Chatbots]]
+Application: [Logical Chatbots](/notes/logical-chatbots)

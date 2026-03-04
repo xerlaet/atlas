@@ -1,7 +1,7 @@
 # Quantifiers
 ---
 
-**Quantifiers** are symbols used in [[Predicate Logic]] that specify the number of elements that a statement applies to, enabling generalization about sets
+**Quantifiers** are symbols used in [Predicate Logic](/notes/predicate-logic) that specify the number of elements that a statement applies to, enabling generalization about sets
 
 The **universal quantifier** $\forall$ expresses for all
 The **existential quantifier** $\exists$ expresses there exists

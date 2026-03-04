@@ -7,4 +7,4 @@ Transformers consist of 4 main parts:
 - transformer block
 - softmax
 
-![[Pasted image 20241031131447.png]]
+![Pasted image 20241031131447.png](/attachments/Pasted%20image%2020241031131447.png)

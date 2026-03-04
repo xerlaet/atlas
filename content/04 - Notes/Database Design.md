@@ -1,7 +1,7 @@
 # Database Design
 ---
 
-A [[Database]] is a collection of related data (facts that can be recorded and have inherent meaning)
+A [Database](/notes/database) is a collection of related data (facts that can be recorded and have inherent meaning)
 
 A **database management system** (DBMS) is a general purpose software system that facilitates the creation and maintenance of a database
 
@@ -43,7 +43,7 @@ A **database management system** (DBMS) is a general purpose software system tha
 DBMS's are unnecessary when the situation requires a simple non-changing database, perhaps with stringent real-time requirements and limited storage
 
 ## Entity Relationship Model
-[[Entity Relationship Model]]
+[Entity Relationship Model](/notes/entity-relationship-model)
 
 ## UML Diagrams
 
@@ -58,4 +58,4 @@ A **superkey** is a combination of attributes that can uniquely identify a recor
 A **key** is a minimal superkey of R
 
 ## SQL
-[[SQL]]
+[SQL](/notes/sql)

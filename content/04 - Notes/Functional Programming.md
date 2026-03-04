@@ -4,7 +4,7 @@ Only recursion
 
 inherently more secure
 
-Based on [[Lambda Calculus]] of Alonzo Church
+Based on [Lambda Calculus](/notes/lambda-calculus) of Alonzo Church
 
 Functions are "first class citizens", so a function can be passed as an argument to another function, and return a function
 
@@ -20,7 +20,7 @@ Based on LISP:
 - Common LISP
 - Scheme
 - PLT Scheme
-- [[Racket]]
+- [Racket](/notes/racket)
 - Clojure (runs in JVM)
 Based on ML (no parentheses):
 - Haskell

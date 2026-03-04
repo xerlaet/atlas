@@ -9,10 +9,10 @@
 5. Derive test cases to exercise the basis paths
 
 **Flow Graph Notation**
-![[Pasted image 20250428123209.png|400]]
+![Pasted image 20250428123209.png](/attachments/Pasted%20image%2020250428123209.png)
 
-[[Cyclomatic Complexity]]
-![[Pasted image 20250428123249.png|400]]
+[Cyclomatic Complexity](/notes/cyclomatic-complexity)
+![Pasted image 20250428123249.png](/attachments/Pasted%20image%2020250428123249.png)
 
 A **basis path** is a path from the start node to the end node and it traverses a cycles either zero times or exactly once. Basic path coverage ensures that every basis path is executed at least once
 
@@ -22,4 +22,4 @@ Derive test cases either for full node coverage or full edge coverage. Full node
 Test the logical conditions in the program
 
 ### Loop Testing
-![[Pasted image 20250428135241.png|600]]
+![Pasted image 20250428135241.png](/attachments/Pasted%20image%2020250428135241.png)

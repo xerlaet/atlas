@@ -1,14 +1,14 @@
 # Client Server Architectures
 ---
 
-[[TCP]]
-[[UDP]]
+[TCP](/notes/tcp)
+[UDP](/notes/udp)
 
 Web Protocols
-[[HTTP]]
+[HTTP](/notes/http)
 
 Mail Protocols
-[[SMTP]]
+[SMTP](/notes/smtp)
 
 DHCP
-[[DNS]]
+[DNS](/notes/dns)

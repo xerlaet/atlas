@@ -12,7 +12,7 @@ A solution is **Planning Domain Definition Language** (PDDL) which is a factored
 
 **Backward State-Space Search** starts with the goal and works backward
 
-Another approach is to transform the planning problem into a [[Constraint Satisfaction Problems|SAT problem]] and use a SAT solver. While the translation is much larger, efficiency of modern SAT solvers make up for the size - alternatively make it a [[Constraint Satisfaction Problems]]
+Another approach is to transform the planning problem into a [SAT problem](/notes/constraint-satisfaction-problems) and use a SAT solver. While the translation is much larger, efficiency of modern SAT solvers make up for the size - alternatively make it a [Constraint Satisfaction Problems](/notes/constraint-satisfaction-problems)
 
 Also **partial-order planning** - it isn't used as much but the idea is to represent the plan as a graph instead of a linear sequence
 
@@ -38,7 +38,7 @@ Domain independent pruning includes symmetry reduction to prune symmetric branch
 Decomposition can be important and subgoal independence is when subgoals can be solved independently decreasing the search size
 
 ## Hierarchical Planning
-[[Hierarchical Planning]]
+[Hierarchical Planning](/notes/hierarchical-planning)
 
 Contingent plans allow the agent to sense the world and decide what branch of the plan to follow as opposed to sensorless or conformant planning which rely on **belief states**
 

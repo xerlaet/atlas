@@ -1,7 +1,7 @@
 # Kruskal's Algorithm
 ---
 
-**Kruskal's Algorithm** is a greedy algorithm to find a MST for an undirected graph. It works by repeatedly choosing the cheapest edge that doesn't create a cycle (using [[Disjoint Sets]])
+**Kruskal's Algorithm** is a greedy algorithm to find a MST for an undirected graph. It works by repeatedly choosing the cheapest edge that doesn't create a cycle (using [Disjoint Sets](/notes/disjoint-sets))
 
 ## Algorithm
 ```python
@@ -25,7 +25,7 @@ def Kruskal(G,w):
 ## Analysis
 Sorting the edges takes $O(E\log E)=O(E\log V)$ time which is the bottleneck
 
-A sequence of $m$ operations on $n$ elements takes nearly constant time on average. Technically $O(m\cdot \alpha(n))$ where $\alpha(n)$ is the inverse [[Ackermann Function]]
+A sequence of $m$ operations on $n$ elements takes nearly constant time on average. Technically $O(m\cdot \alpha(n))$ where $\alpha(n)$ is the inverse [Ackermann Function](/notes/ackermann-function)
 
 There are $V$ `MAKE_SET` operations, $2E$ `FIND_SET` operations, and $V-1$ `UNION` operations
 

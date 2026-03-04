@@ -1,6 +1,6 @@
 # Semantics
 ---
-**Semantics** are the meaning of the expressions, statements, and program units, as opposed to the [[Syntax]] which is the form
+**Semantics** are the meaning of the expressions, statements, and program units, as opposed to the [Syntax](/notes/syntax) which is the form
 
 "The man saw a boy in the park with a telescope"
 ```python

@@ -36,4 +36,4 @@ An **elementary subdivision** is removing an edge $\{ u,v \}$ and adding a verte
 
 Two graphs are **homeomorphic** if they can be obtained from a sequence of elementary subdivisions
 
-A [[Graph Coloring]] is where each vertex of a graph is assigned a color such that neighbors will not share colors. The **chromatic number** is the least number of colors needed, and for a planar graph this number is no greater than 4
+A [Graph Coloring](/notes/graph-coloring) is where each vertex of a graph is assigned a color such that neighbors will not share colors. The **chromatic number** is the least number of colors needed, and for a planar graph this number is no greater than 4

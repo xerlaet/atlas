@@ -1,7 +1,7 @@
 # Simultaneous Min Max
 ---
 
-![[Pasted image 20250311011304.png]]
+![Pasted image 20250311011304.png](/attachments/Pasted%20image%2020250311011304.png)
 
 The recurrence relation is
 $$

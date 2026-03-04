@@ -12,7 +12,7 @@ Disadvantages of human reasoning:
 - humans can only handle so much information at once (i.e. 4 variables)
 
 ex of a circular statement
-![[Pasted image 20250113151306.png]]
+![Pasted image 20250113151306.png](/attachments/Pasted%20image%2020250113151306.png)
 
 Commonsense reasoning requires
 - non-monotonicity: the system can revise earlier conclusions in light of new information

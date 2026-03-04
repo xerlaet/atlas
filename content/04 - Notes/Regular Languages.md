@@ -50,11 +50,11 @@ to construct an intersection, construct complement of (complement union compleme
 
 
 
-![[Pasted image 20241001144202.png]]
+![Pasted image 20241001144202.png](/attachments/Pasted%20image%2020241001144202.png)
 
-![[Pasted image 20241001144214.png]]
+![Pasted image 20241001144214.png](/attachments/Pasted%20image%2020241001144214.png)
 
-![[Pasted image 20241001144230.png]]
+![Pasted image 20241001144230.png](/attachments/Pasted%20image%2020241001144230.png)
 
 
 ## Proving non-regularity

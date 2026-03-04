@@ -99,6 +99,6 @@ Given a simple graph $G$ with $n$ vertices where $n\geq 3$, $G$ will have a Hami
 (Ore's Theorem) $\text{deg}(u)+\text{deg}(v)\geq n$ for every pair of nonadjacent vertices $u$ and $v$
 
 ## Shortest Paths
-[[Uniform Cost Search|Dijkstra's Algorithm]] finds the shortest path between an initial node $a$ and any other node $v$ through a series of iterations
+[Dijkstra's Algorithm](/notes/uniform-cost-search) finds the shortest path between an initial node $a$ and any other node $v$ through a series of iterations
 
-[[Traveling Salesperson Problem]] asks for a Hamiltonian circuit with total minimum weight
+[Traveling Salesperson Problem](/notes/traveling-salesperson-problem) asks for a Hamiltonian circuit with total minimum weight

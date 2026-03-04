@@ -25,7 +25,7 @@
 	- query key value (more dimensions)
 	- self vs cross attention (attention to self vs self, compared to self vs another sequence, in transformers attend to input sequence to help with translation)
 	- encoder-predictor-decoder architecture in a transformer
-![[Pasted image 20241205002727.png]]
+![Pasted image 20241205002727.png](/attachments/Pasted%20image%2020241205002727.png)
 
 ---
 **Machine Learning** is a set of algorithms that can learn from experience. Machine Learning is useful for tasks which follow a pattern that changes over time, or a understand a relationship requiring thousands or millions of computations with unknown principles
@@ -55,7 +55,7 @@ The goal is to minimize average error of the loss function, and this is achieved
 
 **Stochastic Gradient Descent** is the idea of traveling in the direction of greatest "downward slope" to achieve a local minimum the fastest - this is from a subset of the training data so it will include noise/be a little random
 
-[[Back Propagation]] is the process in which the function is adjusted based on the error in the loss function
+[Back Propagation](/notes/back-propagation) is the process in which the function is adjusted based on the error in the loss function
 
 The sigmoid function can result in the saturation problem, where large differences in values result in small differences in a cost making it harder for the model to learn and train
 
@@ -131,10 +131,10 @@ Diffusion Models
 Reasoning, LSTM, RNNs
 Transformer Architecture
 
-[[Autoencoders]]
-[[Generative Adversarial Networks]]
-[[Recurrent Neural Networks]]
-[[Transformers]]
+[Autoencoders](/notes/autoencoders)
+[Generative Adversarial Networks](/notes/generative-adversarial-networks)
+[Recurrent Neural Networks](/notes/recurrent-neural-networks)
+[Transformers](/notes/transformers)
 
 
 ---
@@ -204,7 +204,7 @@ W_{\text{new}}=W_{\text{old}}-\eta  \frac{\delta \text{loss}}{\delta W}
 $$
 
 
-![[Pasted image 20240926145100.png]]
+![Pasted image 20240926145100.png](/attachments/Pasted%20image%2020240926145100.png)
 
 ---
 review

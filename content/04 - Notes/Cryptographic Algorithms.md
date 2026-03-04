@@ -4,12 +4,12 @@
 Algorithms for secure communication
 
 ## Symmetric Key
-[[AES]]
-[[DES]]
+[AES](/notes/aes)
+[DES](/notes/des)
 
 ## Asymmetric Key
-[[RSA]]
+[RSA](/notes/rsa)
 
 ## Hashing Functions
-[[MD5]] (broken)
-[[SHA-256]]
+[MD5](/notes/md5) (broken)
+[SHA-256](/notes/sha-256)

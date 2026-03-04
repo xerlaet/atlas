@@ -66,4 +66,4 @@ $$
 \end{document}
 ```
 
-![[Pasted image 20241130223207.png]]
+![Pasted image 20241130223207.png](/attachments/Pasted%20image%2020241130223207.png)

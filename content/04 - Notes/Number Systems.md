@@ -25,7 +25,7 @@ The base is often denoted with a subscript, e.g. $453_{10}$ or $1011_{2}$
 
 ## Use Cases
 - Decimal is largely used by us
-- [[Binary]] is useful for representing the state of transistors in computers
+- [Binary](/notes/binary) is useful for representing the state of transistors in computers
 	- Octal and Hex are useful shorthand representations of Binary
 
 ## Conversions

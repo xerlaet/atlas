@@ -1,7 +1,7 @@
 # MIPS
 ---
 
-**MIPS** is a low level assembly language for the [[MIPS Processor]] and is an example of [[RISC]]
+**MIPS** is a low level assembly language for the [MIPS Processor](/notes/mips-processor) and is an example of [RISC](/notes/risc)
 
 MIPS has 32 registers all starting with a `$`
 $$
@@ -73,7 +73,7 @@ $$
 
 
 ## Instructions
-![[Pasted image 20240212132612.png]]
+![Pasted image 20240212132612.png](/attachments/Pasted%20image%2020240212132612.png)
 
 `sllv` is useful for creating a mask
 

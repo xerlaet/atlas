@@ -4,10 +4,10 @@
 Books are great, and often overlooked in the modern era
 
 ## In Progress
-[[The Bible]]
-[[12 Rules for Life]]
-[[Make It Stick]]
-[[The Well-Spoken Thesaurus]]
+[The Bible](/notes/the-bible)
+[12 Rules for Life](/notes/12-rules-for-life)
+[Make It Stick](/notes/make-it-stick)
+[The Well-Spoken Thesaurus](/notes/the-well-spoken-thesaurus)
 The Well of Ascension
 Thinking Fast and Slow
 Gödel, Escher, Bach
@@ -15,7 +15,7 @@ Deep Utopia
 Crime and Punishment
 
 ## Completed
-[[Atomic Habits]]
+[Atomic Habits](/notes/atomic-habits)
 The Foundation Series
 Eragon
 Mistborn
@@ -27,4 +27,4 @@ Eucharistic Miracles
 Reflections on the Existence of God
 
 ## To Read
-[[Reading List]]
+[Reading List](/notes/reading-list)

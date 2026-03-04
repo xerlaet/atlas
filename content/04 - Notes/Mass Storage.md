@@ -9,7 +9,7 @@ Mass storage devices typically consist of magnetic tapes, magnetic disks, or SSD
 
 **Solid State Drives** are increasingly replacing hard disks due to lower latency from being all electronic using less power and are more reliable
 
-![[Pasted image 20241204171349.png]]
+![Pasted image 20241204171349.png](/attachments/Pasted%20image%2020241204171349.png)
 $$\text{The structure of a disk}$$
 Disk access overhead consists of the following components:
 - **Seek time** is the time to locate the disk arm to a specified track
@@ -36,4 +36,4 @@ Circular LOOK
 - like look but only works one way, giving consistent performance
 
 ## RAID
-**[[RAID]]** stands for redundant array of inexpensive/independent disks and does what it's name implies
+**[RAID](/notes/raid)** stands for redundant array of inexpensive/independent disks and does what it's name implies

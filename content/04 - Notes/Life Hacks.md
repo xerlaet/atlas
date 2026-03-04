@@ -1,9 +1,9 @@
 # Life Hacks
 ---
 
-1. [[Generalize First]] when trying to decide what to focus on
-2. Be productive [[Productivity]]
-3. Learn effectively [[How to Learn]]
+1. [Generalize First](/notes/generalize-first) when trying to decide what to focus on
+2. Be productive [Productivity](/notes/productivity)
+3. Learn effectively [How to Learn](/notes/how-to-learn)
 
 Don't tie your self worth to how smart you are
 

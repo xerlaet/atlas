@@ -9,4 +9,4 @@ Does that mean aliens exist? Probably not. It's almost certain that a large majo
 
 Below is a map from the reporting center's website to give a visual for the number of reports processed and their distribution
 
-![[Pasted image 20250203191548.png]]
+![Pasted image 20250203191548.png](/attachments/Pasted%20image%2020250203191548.png)

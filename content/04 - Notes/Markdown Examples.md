@@ -11,14 +11,14 @@ tags:
 ##### Heading 5
 ###### Heading 6
 
-[[Temp]]
+[Temp](/notes/temp)
 [Also Temp](Temp.md)
 
 ## Links and Tags
 tags: #markdown
 external link: [Link to Obsidian Help](https://help.obsidian.md/)
-internal link: [[Markdown Examples]]
-broken link: [[Ghost Page]]
+internal link: [Markdown Examples](/notes/markdown-examples)
+broken link: [Ghost Page](/notes/ghost-page)
 
 ## Text
 normal text

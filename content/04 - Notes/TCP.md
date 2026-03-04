@@ -8,7 +8,7 @@
 - connection setup
 
 ## Structure
-![[Pasted image 20251006225315.png]]
+![Pasted image 20251006225315.png](/attachments/Pasted%20image%2020251006225315.png)
 
 ## Reliable Data Transfer
 RTT is estimated using a exponential weighted moving average:
@@ -16,7 +16,7 @@ RTT is estimated using a exponential weighted moving average:
 $$
 RTT_{\text{estimated}}=(1-\alpha )RTT_{\text{estimated}}+\alpha RTT_{\text{sample}}
 $$
-![[Pasted image 20251006225956.png]]
+![Pasted image 20251006225956.png](/attachments/Pasted%20image%2020251006225956.png)
 
 the receiver should send cumulative ACKs
 
@@ -32,7 +32,7 @@ TCP uses a triple handshake to establish a connection (a two way handshake can r
 FIN bit closes a connection
 
 ## Congestion Control
-![[Pasted image 20251006232416.png|500]]
+![Pasted image 20251006232416.png](/attachments/Pasted%20image%2020251006232416.png)
 
 
 **Additive Increase, Multiplicative Decrease** (AIMD) is used to probe for bandwidth

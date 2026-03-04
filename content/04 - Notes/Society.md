@@ -1,12 +1,12 @@
 # Society
 ---
 
-[[Professional Responsibility]]
+[Professional Responsibility](/notes/professional-responsibility)
 
 ## US Government
 National Decisions
 
-## [[State Government]]
+## [State Government](/notes/state-government)
 Local Decisions
 
 ## Economics

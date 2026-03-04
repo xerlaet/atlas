@@ -6,7 +6,7 @@ Select the $i$th smallest element of an array $A$
 ## Randomized Selection / Quickselect
 quicksort but just traverse one side
 
-expected running time is $O(n)$, worst case is $O(n^{2})$ like [[Quick Sort]]
+expected running time is $O(n)$, worst case is $O(n^{2})$ like [Quick Sort](/notes/quick-sort)
 
 ## Median of Medians
 
