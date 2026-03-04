@@ -29,14 +29,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Atlas",
     description: "Atlas: A 3D Digital Garden",
-    images: ["/opengraph-image.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Atlas",
     description: "Atlas: A 3D Digital Garden",
-    images: ["/opengraph-image.png"],
   },
 };
 
