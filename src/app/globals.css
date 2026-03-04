@@ -221,15 +221,23 @@ hr {
 
 /* Range Input Styling */
 input[type="range"] {
-  background: var(--background-darker) !important;
+  background: var(--color7) !important;
+  opacity: 0.8;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-  background: var(--background-darker) !important;
+  background: var(--color7) !important;
 }
 
 input[type="range"]::-moz-range-track {
+  background: var(--color7) !important;
+}
+
+.light input[type="range"],
+.light input[type="range"]::-webkit-slider-runnable-track,
+.light input[type="range"]::-moz-range-track {
   background: var(--background-darker) !important;
+  opacity: 1;
 }
 
 /* Scrollbar Hiding from your theme */

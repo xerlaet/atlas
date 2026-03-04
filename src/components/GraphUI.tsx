@@ -77,7 +77,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
           e.preventDefault();
           setPanelHidden(!isPanelHidden);
           break;
-        case "m":
+        case "t":
           e.preventDefault();
           toggleTheme();
           break;
@@ -116,7 +116,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
             onClick={() => setSearchOpen(true)}
             className="p-3 rounded-full transition-all duration-300 backdrop-blur-xl border bg-slate-900/10 border-white/20 text-[var(--color7)] hover:border-[var(--color4)]/40 hover:bg-slate-900/40 flex items-center justify-center group cursor-pointer"
             style={{ color: isSearchOpen ? 'var(--color1)' : 'inherit' }}
-            title="Search (Ctrl+K or /)"
+            title="Search (/)"
           >
             <SearchIcon size={20} className="transition-transform" />
           </button>
@@ -131,7 +131,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
                 : "bg-slate-900/10 border-white/20 text-[var(--color7)] hover:border-[var(--color4)]/40 hover:bg-slate-900/40"
             )}
             style={{ color: showControls ? 'var(--color1)' : 'inherit' }}
-            title="Toggle Controls"
+            title="Toggle Controls (C)"
           >
             <SlidersHorizontal size={20} />
           </button>
@@ -146,7 +146,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
                 : "bg-slate-900/10 border-white/20 text-[var(--color7)] hover:border-[var(--color4)]/40 hover:bg-slate-900/40"
             )}
             style={{ color: !isPanelHidden ? 'var(--color1)' : 'inherit' }}
-            title={isPanelHidden ? "Show Note Panel" : "Hide Note Panel"}
+            title="Toggle Notes (N)"
           >
             <FileText size={20} />
           </button>
@@ -168,7 +168,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
                     onClick={toggleTheme}
                     style={{ color: 'var(--color-ui-accent)' }}
                     className="p-1.5 rounded-lg transition-all cursor-pointer hover:bg-teal-500/10"
-                    title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode (M)`}
+                    title="Toggle Theme (T)"
                   >
                     {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
                   </button>
@@ -180,7 +180,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
                       "p-1.5 rounded-lg transition-all cursor-pointer",
                       !isHome && "hover:bg-teal-500/10"
                     )}
-                    title="Go to Home"
+                    title="Go to Home (H)"
                   >
                     <Home size={16} />
                   </button>
@@ -192,7 +192,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
                       "p-1.5 rounded-lg transition-all cursor-pointer",
                       isCameraDirty && "hover:bg-teal-500/10"
                     )}
-                    title="Reset Camera"
+                    title="Reset Camera (R)"
                   >
                     <RotateCcw size={16} />
                   </button>
@@ -253,13 +253,13 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
                   <span style={{ color: 'var(--color-ui-accent)', opacity: 0.6 }}>
                     Shortcuts
                   </span>
-                  <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-3">
                     {/* Column 1: Search, Controls, Notes */}
                     <div className="flex flex-col gap-3">
                       {[
                         { key: "/", action: "Search" },
-                        { key: "C", action: "Controls" },
-                        { key: "N", action: "Notes" },
+                        { key: "C", action: "Toggle Controls" },
+                        { key: "N", action: "Toggle Notes" },
                         { key: "Esc", action: "Close" }
                       ].map((item) => (
                         <div key={item.key} className="flex justify-between items-center text-[11px]">
@@ -273,9 +273,9 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
                     {/* Column 2: Home, Reset View, Theme */}
                     <div className="flex flex-col gap-3">
                       {[
-                        { key: "H", action: "Home" },
-                        { key: "R", action: "Reset View" },
-                        { key: "M", action: "Theme" },
+                        { key: "H", action: "Go to Home" },
+                        { key: "R", action: "Reset Camera" },
+                        { key: "T", action: "Toggle Theme" },
                       ].map((item) => (
                         <div key={item.key} className="flex justify-between items-center text-[11px]">
                           <kbd className="px-1.5 py-0.5 rounded bg-[var(--background-darker)] border border-[var(--color8)] text-[var(--color-kbd-text)] font-mono text-[9px] min-w-[24px] text-center">
