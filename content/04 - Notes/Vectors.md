@@ -53,17 +53,7 @@ A set of vectors is **linearly independent** if no individual vector can be expr
 The **magnitude** of a vector is the length which can be found as
 $$\lVert v \rVert=\sqrt{v_1^2+v_2^2\ldots}$$
 This can be viewed as taking the vector and slicing it with the unit circle
-```tikz
-\begin{document}
-\begin{tikzpicture}[>=latex]
-\draw (0,0) circle (2cm);
-\draw[<->] (-2.5,0) -- (2.5,0) node[right] {$x$};
-\draw[<->] (0,-2.5) -- (0,2.5) node[above] {$y$};
-\draw[->,red,thick] (0,0) -- (2,2) node[above right] {$v$};
-\filldraw (1.414,1.414) circle (2pt) node[right] {$\frac{v}{||v||}=\vec{u}$};
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-d6ac7b261aaf06c8be0f4a6c20ee9096.svg)
 
 Additionally, the angle between any two vectors can be found with
 $$\cos\theta=\frac{v\cdot w}{\lVert v \rVert\lVert w \rVert}$$

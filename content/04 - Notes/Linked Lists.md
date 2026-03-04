@@ -1,27 +1,7 @@
 # Linked Lists
 ---
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[
-main/.style={draw, rectangle, minimum size=0.5cm},
-arrow/.style={->,thick,>=latex},
-]
-\def\w{0.8cm}
-\node[] (H) at (-2,0) {head};
-\node[main] (A1) at (0,0) {};
-\node[main] (A2) at (0.5,0) {};
-\node[main] (B1) at (2,0) {};
-\node[main] (B2) at (2.5,0) {};
-\node[main] (C1) at (4,0) {};
-\node[main] (C2) at (4.5,0) {};
-\node[] (N) at (6,0) {null};
-
-\path[draw, arrow, ->] (H) to (A1);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-99ec08ce6d6ffb8ca4813159125eb1fb.svg)
 
 ## Implementation
 A **linked list** is a collection of nodes containing *data* and an *address* of the next node

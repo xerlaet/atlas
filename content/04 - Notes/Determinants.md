@@ -17,31 +17,7 @@ So for a 2 dimensional matrix, the determinant is $ad-bc$
 ```
 
 
-```tikz
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
-\usetikzlibrary{calc}
-\begin{document}
-\begin{tikzpicture}
-
-\begin{axis}[axis lines=middle, xlabel={$x$}, ylabel={$y$}, xmin=-5, xmax=10, ymin=-5, ymax=10,grid=none]
-
-\node[] (ac) at (axis cs:2,1) {$ac$};
-\node[] (bd) at (axis cs:1,3) {$bd$};
-\node[] (acbd) at ($(ac)+(bd)$) {$ac+bd$};
-\path[->, draw] (ac) to (acbd);
-
-
-
-%\path[->, draw] (axis cs:0,0) to (axis cs:2,1) node[above] (A) {$ac$};
-%\path[->, draw] (axis cs:2,2) to (A);
-
-
-\end{axis}
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-2fe3d32ebf13a86630cbd134567339d1.svg)
 
 
 convention is that area is positive if second leg goes to first in the counter clockwise direction

@@ -17,38 +17,7 @@ B &\to \#
 \end{align}$$
 $$A \to 0A 1 \to 00A 11 \to 000A 111 \to 000B 111 \to 000\# 111$$
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[main/.style={fill, circle, inner sep=0, minimum size=0.15cm},arrow/.style={->,thick,>=latex}]
-\node[] (A) at (0,0) {A};
-\node[] (B) at (0,-1) {A};
-\node[] (C) at (0,-2) {A};
-\node[] (D) at (0,-3) {A};
-\node[] (E) at (0,-4) {B};
-\node[] (F) at (0,-5) {\#};
-\node[] (a) at (-3,-5) {0};
-\node[] (b) at (-2,-5) {0};
-\node[] (c) at (-1,-5) {0};
-\node[] (d) at (1,-5) {1};
-\node[] (e) at (2,-5) {1};
-\node[] (f) at (3,-5) {1};
-
-\path[draw, arrow, -] (A) to[bend right] (a);
-\path[draw, arrow, -] (B) to[bend right] (b);
-\path[draw, arrow, -] (C) to[bend right] (c);
-\path[draw, arrow, -] (A) to[bend left] (f);
-\path[draw, arrow, -] (B) to[bend left] (e);
-\path[draw, arrow, -] (C) to[bend left] (d);
-
-\path[draw, arrow, -] (A) to (B);
-\path[draw, arrow, -] (B) to (C);
-\path[draw, arrow, -] (C) to (D);
-\path[draw, arrow, -] (D) to (E);
-\path[draw, arrow, -] (E) to (F);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-b56e329bdbd0396e8707856ff18f40d6.svg)
 
 
 It is often convenient to have grammars in a simplified form, one of which is known as the **Chomsky normal form** -> which is if every rule is of the form

@@ -51,19 +51,6 @@ M=&\text{ On input }w \\
 \end{align}
 $$
 
-```tikz
-\begin{document}
-\begin{tikzpicture}
-    \draw[thick] (0, 0) ellipse (1 and 1) node[align=center] {Regular};
-
-    \draw[thick] (0, 0.75) ellipse (1.5 and 2) node[above=1cm, align=center] {Context-Free};
-
-    \draw[thick] (0, 2) ellipse (3.5 and 4.5) node[below=2.6cm, align=center] {Decidable};
-
-    \draw[thick] (0, 3) ellipse (4.5 and 5.5) node[below=3.6cm, align=center] {Turing-Recognizable};
-\end{tikzpicture}
-
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-7e3c4f8325f2f6d5035f3497e3030713.svg)
 
 ![Pasted image 20241130223207.png](/attachments/Pasted%20image%2020241130223207.png)

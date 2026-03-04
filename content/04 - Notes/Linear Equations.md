@@ -21,24 +21,7 @@ Else if there are rows in the form $[0\,\,0\,\,0\,\,0]$, then these are infinite
 $$
 \vec{x}=\vec{p}+N(A)
 $$
-```tikz
-\begin{document}
-\begin{tikzpicture}[scale=1.5, thick, >=stealth] 
-% Axes
-\draw[->] (0,0,0) -- (2,0,0) node[anchor=north east]{$x$};
-\draw[->] (0,0,0) -- (0,2,0) node[anchor=north west]{$y$};
-\draw[->] (0,0,0) -- (0,0,2) node[anchor=south]{$z$};
-% Plane on x-z axes
-\filldraw[opacity=0.3, blue] (0,0,0) -- (2,0,0) -- (2,0,2) -- (0,0,2) -- cycle;
-% Offset plane
-\pgfmathsetmacro{\p}{0.5}
-\filldraw[opacity=0.3, red] (0,\p,0) -- (2,\p,0) -- (2,\p,2) -- (0,\p,2) -- cycle;
-% Labels \node[below] at (1,0,0) {$p$};
-%\node[above right] at (1,1,1) {Offset Plane};
-%\node[above right] at (1,0.5,1) {Original Plane};
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-1a3a0f5d81cc9191280529620bed3c0a.svg)
 
 Where $N(A)$ is the subspace of $A\vec{x}=0$ also known as the **null space**
 

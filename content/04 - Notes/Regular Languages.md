@@ -26,27 +26,7 @@ to construct a union, connect final state of 1 to initial state of 2
 to construct an intersection, construct complement of (complement union complement)
 
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[main/.style={draw, circle, inner sep=0, minimum size=1cm},arrow/.style={->,thick,>=latex}]
-
-\node[main] (S) at (0,0) {};
-
-\path[draw, opacity=1] (2,0) rectangle (6,3);
-\node[main] (S1) at (3,1.5) {};
-\node[main] (F1) at (5,0.75) {};
-\node[main] (F2) at (5,2.25) {};
-\path[draw, opacity=1] (5,0.75) circle [radius=0.4];
-\path[draw, opacity=1] (5,2.25) circle [radius=0.4];
-
-
-\path[draw, opacity=1] (2,-1) rectangle (6,-3.5);
-
-\path[draw, arrow, ->] (-1,0) to (S);
-\path[draw, arrow, ->] (S) to[bend left] node[]{$\epsilon$} (S1);
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-27372d8cda7edb749f07ee680feb3691.svg)
 
 
 

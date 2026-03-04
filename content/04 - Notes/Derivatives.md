@@ -10,24 +10,7 @@ $$
 \end{align}
 $$
 
-```tikz
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
-\begin{document}
-\begin{tikzpicture}
-\begin{axis}[
-xmin=-1,
-xmax=4,
-axis lines=middle]
-
-\addplot[domain=0:4, thick, green] {x^2};
-\addplot[domain=0:5, thick, red] {4*x-4};
-\path[fill, draw, color=red] (2,4) circle [radius=2pt];
-
-\end{axis}
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-b20792879b7bedf32465ab87367f454d.svg)
 
 
 ## Derivative Rules

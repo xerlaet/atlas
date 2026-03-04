@@ -19,19 +19,7 @@ Add individual recurrence relation sizes to cancel the $cn$ value
 \node[fill=blue!20,draw,fit=(0,0) (0,2)] {};
 \end{tikzpicture}
 
-```tikz
-\usepackage{array}
-\usepackage{amsmath}
-\begin{document}
-\begin{tikzpicture}
-\node at (0,0) {
-	$\begin{array}{ccc}
-	1 & 2 & 3
-	\end{array}$
-};
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-d316c64631201cc1f210d7867bb4b47e.svg)
 
 $$
 

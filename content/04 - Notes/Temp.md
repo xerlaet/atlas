@@ -1,45 +1,11 @@
 # Temp
 ---
 
-```tikz
-\begin{document}
-\begin{tikzpicture}
-\path[draw] (0,0) grid (4,4);
-\draw (0,0) circle [radius=2];
-\draw (0,0) circle [x radius=3, y radius=1.5];
-\node[green] (A) at (0,0) {Text};
-\foreach \x in {0,...,9}
-	\draw (\x,0) circle [radius=0.4];
+![TikZ Diagram](/attachments/tikz-41da26ba48e1e85cde56057df758470e.svg)
 
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-a336585649f0432de7dfddcafa2e7adf.svg)
 
-```tikz
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
-\begin{document}
-\begin{tikzpicture}
-\begin{axis}[title=, xlabel=$x$, ylabel=$y$, zlabel=$z$, domain=, grid=none, axis lines=none]
-\addplot3[mesh, domain=, colormap/viridis] {x^2+y^2};
-
-\end{axis}
-\end{tikzpicture}
-\end{document}
-```
-
-```tikz
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
-\begin{document}
-\begin{tikzpicture}
-\begin{axis}[title=Normal Distribution, xlabel=, ylabel=, zlabel=, domain=-4:4, grid=minor, axis lines=middle, ymin=0, ymax=0.5, samples=100, width=12cm, height=5cm]
-\addplot[color=red, thick, fill=red, opacity=0.25] {1/(sqrt(2*pi))*exp(-(1/2)*(x^2))} \closedcycle;
-
-\end{axis}
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-33d2da8e956dcf0d3f4feaf5764ec460.svg)
 
 $$
 f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left( (x-\mu)/\sigma \right) ^{2}}

@@ -3,51 +3,7 @@
 
 **Transformation Matrices** can be used to transform points in $n$ dimensional space
 
-```tikz
-\usetikzlibrary{positioning}
-\begin{document}
-\begin{tikzpicture}[>=stealth, thick]
-
-
-    % --- FRAME 1 (Origin at 0,0) ---
-    \draw[->, blue!50] (0,0) -- (1.8,0) node[right, text=black] {$x_1$};
-    \draw[->, blue!50] (0,0) -- (0,1.8) node[above, text=black] {$y_1$};
-    \filldraw[blue!50] (0,0) circle (1.5pt) node[below left, text=black] {$O_1$};
-
-
-    % --- FRAME 2 (At (2,1), rotated 60 degrees) ---
-    \begin{scope}[shift={(4,2)}]
-
-        % 1. Visualizing the Rotation
-        % Draw a faint reference line parallel to the original x1 axis
-        \draw[gray, dashed] (0,0) -- (1.5,0);
-
-        % Draw the rotation arc and label
-        % Arc from angle 0 to 60 at radius 0.8cm
-        \draw[->, gray] (0.8,0) arc (0:60:0.8);
-        % Place the label at 30 degrees, slightly further out
-        \node[] at (30:1.1) {$\theta$};
-
-
-        % 2. Drawing the Rotated Frame
-        % Apply rotation inside this nested scope
-        \begin{scope}[rotate=60]
-             % Using red!50 for axes, keeping text black
-            \draw[->, red!50] (0,0) -- (1.8,0) node[right, text=black] {$x_2$};
-            \draw[->, red!50] (0,0) -- (0,1.8) node[above, text=black] {$y_2$};
-            \filldraw[red!50] (0,0) circle (1.5pt);
-        \end{scope}
-        % Label O2 outside the rotation scope so it doesn't rotate awkwardly
-        \node[below, text=black, yshift=-3pt] at (0,0) {$O_2$};
-
-    \end{scope}
-
-    % Translation vector showing the shift from O1 to O2
-    \draw[dashed, ->, gray] (0,0) -- (4,2);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-2ff12074f912f0f2977cb07f75b52bc6.svg)
 
 
 

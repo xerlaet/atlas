@@ -8,39 +8,11 @@ A **finite automaton** is a 5-tuple $(Q,\Sigma,\delta,q_{0},F)$ where
 5. $F\subseteq Q$ is the set of accept states
 
 In a **deterministic finite automata** (DFA) each transition from one state to another is unique, meaning there is only one path given a certain input and every input will have a path to follow
-```tikz
-\begin{document}
-\begin{tikzpicture}[main/.style={draw, circle, inner sep=0, minimum size=1cm},arrow/.style={->,thick,>=latex}]
-\node[main] (q1) at (0,0) {$q_1$};
-\node[main] (q2) at (3,0) {$q_2$};
-\path[draw, opacity=1] (q2) circle [radius=0.4];
-
-\path[draw, arrow, ->] (-1,0) to[] (q1);
-\path[draw, arrow, ->] (q1) to[bend left] node[above]{1} (q2);
-\path[draw, arrow, ->] (q1) to[looseness=3] node[above]{0} (q1);
-\path[draw, arrow, ->] (q2) to[looseness=3] node[above]{1} (q2);
-\path[draw, arrow, ->] (q2) to[bend left] node[below]{0} (q1);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-9b3b5c352c4358b820ef102c5e450816.svg)
 $$\text{DFA recognizing } \{ w \mid w \text{ ends with a 1} \}$$
 
 A **nondeterministic finite automata** (NFA) does not have this rule for the transitions. Additionally, $\epsilon$ is allowed and denotes an empty string
-```tikz
-\begin{document}
-\begin{tikzpicture}[main/.style={draw, circle, inner sep=0, minimum size=1cm},arrow/.style={->,thick,>=latex}]
-\node[main] (q1) at (0,0) {$q_1$};
-\node[main] (q2) at (3,0) {$q_2$};
-\path[draw, opacity=1] (q2) circle [radius=0.4];
-
-\path[draw, arrow, ->] (-1,0) to[] (q1);
-\path[draw, arrow, ->] (q1) to node[above]{1} (q2);
-\path[draw, arrow, ->] (q1) to[looseness=3] node[above]{0,1} (q1);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-4969a8a582bb3a737699b09df92fcf6a.svg)
 $$\text{NFA recognizing } \{ w \mid w \text{ ends with a 1} \}$$
 
 A **generalized NFA** is similar to an NFA, except the transition states are labeled by regular expressions. This provides an added layer of abstraction and ease of design

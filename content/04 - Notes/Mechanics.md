@@ -6,33 +6,7 @@ Position, velocity, and acceleration are all related
 $$
 x=\int v \,dt =\iint a \,dt
 $$
-```tikz
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
-\begin{document}
-
-% 1. Position vs. Time (for constant acceleration)
-\begin{tikzpicture}
-\begin{axis}[ width=4cm, height=4cm, xlabel={Time (t)}, ylabel={Position (x)}, xmin=0, xmax=4, ymin=0, ymax=8, domain=0:4, samples=100, grid=major, xticklabels=\empty, yticklabels=\empty]
-\addplot[blue!75, thick, fill=blue!75, fill opacity=0.2] {0.5 * 1 * x^2} \closedcycle;
-\end{axis}
-\end{tikzpicture}
-
-% 2. Velocity vs. Time (for constant acceleration)
-\begin{tikzpicture}
-\begin{axis}[ width=4cm, height=4cm, xlabel={Time (t)}, ylabel={Velocity (v)}, xmin=0, xmax=4, ymin=0, ymax=8, domain=0:4, samples=100, grid=major, xticklabels=\empty, yticklabels=\empty]
-\addplot[red!75, thick, fill=red!75, fill opacity=0.2] {1 * x} \closedcycle;
-\end{axis}
-\end{tikzpicture}
-
-% 3. Acceleration vs. Time (constant acceleration)
-\begin{tikzpicture}
-\begin{axis}[ width=4cm, height=4cm, xlabel={Time (t)}, ylabel={Acceleration (a)}, xmin=0, xmax=4, ymin=0, ymax=8, domain=0:4, samples=100, grid=major, xticklabels=\empty, yticklabels=\empty]
-\addplot[green!75, thick, fill=green!75, fill opacity=0.2] {1} \closedcycle;
-\end{axis}
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-fd4f463dab5b77822e3808c581c0dbff.svg)
 
 When acceleration is constant the following equations apply
 $$

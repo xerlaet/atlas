@@ -5,58 +5,7 @@
 
 Doing this on a large scale is highly subjective and imperfect requiring **ontological engineering**
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[
-  font=\sffamily\scriptsize,
-  every node/.style={align=center, text width=1.25cm},
-  level 1/.style={sibling distance=7cm},
-  level 2/.style={sibling distance=1.5cm},
-  level 3/.style={sibling distance=2.5cm},
-  level 4/.style={sibling distance=1cm}
-]
-
-\node {Anything}
-  child { node {Abstract Objects}
-    child { node {Sets}
-      child { node {Categories} }
-    }
-    child { node {Numbers} }
-    child { node {Representational Objects}
-      child { node {Sentences} }
-      child { node {Measurements}
-	    child { node {Times} }
-        child { node {Weights} }
-      }
-    }
-  }
-  child { node {Generalized Events}
-    child { node {Intervals}
-      child { node {Moments} }
-    }
-    child { node {Places} }
-    child { node {Physical Objects}
-      child { node {Things}
-        child { node (anim) {Animals} }
-        child { node (agnt) {Agents} }
-      }
-      child { node {Stuff}
-	    child { node {Solid} }
-	    child { node {Liquid} }
-	    child { node {Gas} }
-      }
-    }
-    child { node {Processes} }
-  };
-
-% Manual placement for "Humans" to show dual inheritance
-\path (anim) -- (agnt) node [midway, below=1.31cm] (hum) {Humans};
-\draw[] (anim) -- (hum);
-\draw[] (agnt) -- (hum);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-2e7b52ea1bec061df5d85555cb31e7ab.svg)
 
 This is similar to [Object-Oriented Programming](/notes/object-oriented-programming)
 

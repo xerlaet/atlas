@@ -20,35 +20,7 @@ The **process table** is an array of PCBs. The max number of processes that can 
 
 The **scheduler** will maintain the status of each process that has been created. The diagram below shows a common convention for states and transitions
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[main/.style={draw, circle, inner sep=0, minimum size=2cm, text width=1.7cm, align=center}, arrow/.style={->, thick, >=latex}]
-\node[main] (new) at (-5,0) {New};
-\node[main] (run) at (0,0) {Running};
-\node[main] (ter) at (5,0) {Terminated};
-\node[main] (rea) at (-2.5,-2.5) {Ready};
-\node[main] (blo) at (2.5,-2.5) {Blocked};
-\node[main] (srea) at (-2.5,-6) {Suspended (Ready)};
-\node[main] (sblo) at (2.5,-6) {Suspended (Blocked)};
-
-\draw[arrow] (new) to[bend right] node[below left] {admitted} (rea);
-\draw[arrow, main] (rea) to[bend left] node[above left] {scheduler dispatch} (run);
-\draw[arrow] (run) to[bend left] node[right=0.35cm] {interrupt} (rea);
-
-\draw[arrow] (run) to[bend left] node[above right] {event wait} (blo);
-\draw[arrow] (run) to[bend left] node[above] {exit} (ter);
-
-\draw[arrow, main] (blo) to[bend left] node[right] {swapped out} (sblo);
-\draw[arrow, main] (rea) to[bend left] node[right] {swapped out} (srea);
-\draw[arrow, main] (sblo) to[bend left] node[left] {swapped in} (blo);
-\draw[arrow, main] (srea) to[bend left] node[left] {swapped in} (rea);
-
-\draw[arrow] (blo) to[] node[below] {event complete} (rea);
-\draw[arrow] (sblo) to[] node[below] {event complete} (srea);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-742a8ca9b8b27d2604a368371636c5c6.svg)
 
 There are three types of schedulers:
 1. Long Term: decides which processes should be admitted

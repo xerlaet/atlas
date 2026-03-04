@@ -17,22 +17,7 @@ A **subgraph** of a graph $G=(V,E)$ is $H=(W,F)$ where $W\subseteq V$ and $F\sub
 
 An **elementary subdivision** is removing an edge $\{ u,v \}$ and adding a vertex $w$ with edges $\{ u,w \}$ and $\{ w,v \}$. This subdivision does not affect whether a graph is planar or not
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[main/.style={fill, circle, inner sep=0, minimum size=0.15cm}]
-
-\node[main, label=above:$a$] (a) at (0,0) {};
-\node[main, label=above:$b$] (b) at (2,0) {};
-\path[draw] (a) to (b);
-
-\node[main, label=above:$a$] (c) at (4,0) {};
-\node[main, label=above:$c$] (d) at (5,0) {};
-\node[main, label=above:$b$] (e) at (6,0) {};
-\path[draw] (c) to (d) to (e);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-13019b9809ad792cf178539f5a103a48.svg)
 
 Two graphs are **homeomorphic** if they can be obtained from a sequence of elementary subdivisions
 

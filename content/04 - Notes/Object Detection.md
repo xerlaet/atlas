@@ -9,6 +9,6 @@ Using a sliding window and picking the one with the highest score will solve the
 
 Size can be solved with multiple boxes of different sizes and perhaps aspect ratios or rescaling the image to multiple sizes
 
-Localization can also be solve with segmentation methods to give regions with a high likelihood of containing objects
+Localization can also be solved with segmentation methods to give regions with a high likelihood of containing objects
 
 Fast R-CNN just runs the CNN once instead of thousands of times

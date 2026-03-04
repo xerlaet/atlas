@@ -18,25 +18,4 @@ The receiver will perform a similar process except also add the checksum as well
 
 This checksum doesn't catch every error, but works well enough to be useful
 
-```tikz
-\begin{document}
-\begin{tikzpicture}
-    \def\fieldW{5}
-    \def\fieldH{0.7}
-
-    % Optional: Add a label for the entire header (32 bits wide)
-    % \node at (\fieldW, 0.4) {\textbf{32-bit Word}};
-    
-    % Row 1 (Source and Destination Port)
-    \draw (0, 0) rectangle (\fieldW, -\fieldH) node[midway] {\textbf{Source Port} (16 bits)};
-    \draw (\fieldW, 0) rectangle (2*\fieldW, -\fieldH) node[midway] {\textbf{Destination Port} (16 bits)};
-    
-    % Row 2 (Length and Checksum)
-    \draw (0, -\fieldH) rectangle (\fieldW, -2*\fieldH) node[midway] {\textbf{Length} (16 bits)};
-    \draw (\fieldW, -\fieldH) rectangle (2*\fieldW, -2*\fieldH) node[midway] {\textbf{Checksum} (16 bits)};
-    
-    % Data (Payload) - Spanning both columns
-    \draw (0, -2*\fieldH) rectangle (2*\fieldW, -4*\fieldH) node[midway] {\textbf{Data (Payload)}};
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-535d5f520bce3f79a9daaed419c8bd98.svg)

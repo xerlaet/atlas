@@ -21,19 +21,7 @@ Deadlocks can be handled in several ways:
 ## Dining Philosophers Problem
 In this scenario, there is a circular table with 5 dining philosophers. In front of each philosopher is a plate with spaghetti, and there are 5 forks arranged between each plate. Each philosopher can only eat when they have two forks, and they can only think when they are not thinking.
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[main/.style={fill, circle, inner sep=0, minimum size=0.15cm}]
-\path[draw, opacity=1] (0,0) circle [radius=2];
-\foreach \x in {1,2,3,4,5} {
-	\path[draw] (\x*72+90:3) circle [radius=0.5];
-	\path[fill] (\x*72+90:1.25) circle [radius=0.4];
-	\path[-, draw] (\x*72+36+90:0.8) to (\x*72+36+90:1.4);
-}
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-0c429382dc6509625cb6d869bb069c6e.svg)
 
 The question is how to design an optimal algorithm to allow every philosopher to alternate between eating and thinking indefinitely. Additionally, no philosopher can know when others may want to eat or think
 

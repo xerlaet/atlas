@@ -24,29 +24,7 @@ Since the Constitution doesn't mention elections at all with the exception of ca
 
 A common two dimensional spectrum is the Nolan chart pictured below:
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[main/.style={fill, circle, inner sep=0, minimum size=0.15cm},arrow/.style={->,thick,>=latex}]
-
-\node[] at (-2.5,0) {Liberal};
-\node[] at (2.5,0) {Conservative};
-\node[] at (0,-2.5) {Authoritarian};
-\node[] at (0,2.5) {Libertarian};
-\node[] at (0,0) {Centrist};
-
-\path[draw, opacity=1] (-4,0) -- (0,4) -- (4,0) -- (0,-4) -- cycle;
-\path[draw, opacity=1] (-1,-1) rectangle (1,1);
-
-\node[] at (-3,3) {Left};
-\node[] at (3,3) {Right};
-\node[] at (-3,-3) {Personal};
-\node[] at (3,-3) {Economic};
-\path[draw, arrow, ->] (-3,-3) to[] (-4,-2);
-\path[draw, arrow, ->] (3,-3) to[] (4,-2);
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-6eb03315b124c400f93a048bf061e9d2.svg)
 
 
 endogenous vs exogenous influences

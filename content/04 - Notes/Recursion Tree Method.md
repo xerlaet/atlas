@@ -18,47 +18,4 @@ T(n)&\leq n^{2}\left( 1+2\left( \frac{1}{2} \right)^{2}+4\left( \frac{1}{4} \rig
 \end{align}
 $$
 
-```tikz
-\begin{document}
-
-\begin{tikzpicture}[
-  level 1/.style={sibling distance=5cm, level distance=2cm},
-  level 2/.style={sibling distance=2.5cm, level distance=2cm},
-  level 3/.style={sibling distance=1.25cm, level distance=2cm},
-  every node/.style={circle,draw,align=center}
-]
-  \node {$n^2$}
-  child {
-    node {$(n/2)^2$}
-    child {
-      node {$(n/4)^2$}
-      child {
-        node {$\cdots$}
-      }
-    }
-    child {
-      node {$(n/4)^2$}
-      child {
-        node {$\cdots$}
-      }
-    }
-  }
-  child {
-    node {$(n/2)^2$}
-    child {
-      node {$(n/4)^2$}
-      child {
-        node {$\cdots$}
-      }
-    }
-    child {
-      node {$(n/4)^2$}
-      child {
-        node {$\cdots$}
-      }
-    }
-  };
-\end{tikzpicture}
-
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-93789275ed359336c6d91dd609617fa5.svg)

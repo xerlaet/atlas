@@ -47,34 +47,7 @@ Online planning can recover as needed with monitoring
 Many actions consume resources such as money, gas, or raw materials. Often it is easier to think of these as a pool to take from
 
 ## Example
-```tikz
-\usetikzlibrary{positioning}
-\begin{document}
-\begin{tikzpicture}[
-    block/.style={draw, minimum width=1.5em, minimum height=1.5em},
-    table/.style={draw, minimum width=6em, minimum height=0.5em}
-]
-
-% Start State
-\node[table] (Table_Start) at (0, 0) {};
-\node[below=0.3em of Table_Start] {Start State};
-
-\node[block, above=0.1em of Table_Start] (A_start) {A};
-\node[block, above=0.1em of A_start] (C_start) {C};
-\node[block, left=0.5em of A_start] (B_start) {B};
-
-% Goal State
-\node[table] (Table_Goal) at (5, 0) {};
-\node[below=0.3em of Table_Goal] {Goal State};
-
-\node[block, above=0.1em of Table_Goal, draw=none] (Ghost) {};
-\node[block, right=0.5em of Ghost] (C_goal) {C};
-\node[block, above=0.1em of C_goal] (B_goal) {B};
-\node[block, above=0.1em of B_goal] (A_goal) {A};
-
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-634b9f2c61ecdd4f35a218c62e4e187c.svg)
 $$
 \begin{align}
 &\textbf{Init}( \\

@@ -6,17 +6,7 @@ $$
 z=x+iy, \text{where } i^{2}=-1
 $$
 
-```tikz
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
-\begin{document}
-\begin{tikzpicture}
-\begin{axis}[title=, xlabel=$Re$, ylabel=$Im$, zlabel=$z$, domain=, grid=none, axis lines=middle, ymin=-2, ymax=2, xmin=-2, xmax=2]
-
-\end{axis}
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-61e3a4eeaa42ad90e4225e32c23fde2a.svg)
 
 ## Properties
 $$

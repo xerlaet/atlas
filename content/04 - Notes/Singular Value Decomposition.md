@@ -103,22 +103,7 @@ $$
 
 
 
-```tikz
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.16}
-\begin{document}
-\begin{tikzpicture}
-\begin{axis}[
-xmin=-5,xmax=5,xtick={-5,5},
-ymin=-5,ymax=5,ytick={},
-zmin=-5,zmax=5,ztick={},
-axis lines=middle,
-]
-
-\end{axis}
-\end{tikzpicture}
-\end{document}
-```
+![TikZ Diagram](/attachments/tikz-91768891fd32fc346b81ff57353ca5d6.svg)
 
 $$
 \begin{align}
