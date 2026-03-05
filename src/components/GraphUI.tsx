@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useGraphStore } from "@/lib/store";
-import { RotateCcw, Home, SlidersHorizontal, Search as SearchIcon, FileText, Sun, Moon } from "lucide-react";
+import { RotateCcw, Home, SlidersHorizontal, Search as SearchIcon, FileText, Sun, Moon, ArrowLeft } from "lucide-react";
 import { useRouter, useParams } from "next/navigation";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -263,24 +263,39 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
                         { key: "Esc", action: "Close" }
                       ].map((item) => (
                         <div key={item.key} className="flex justify-between items-center text-[11px]">
-                          <kbd className="px-1.5 py-0.5 rounded bg-[var(--background-darker)] border border-[var(--color8)] text-[var(--color-kbd-text)] font-mono text-[9px] min-w-[24px] text-center">
-                            {item.key}
-                          </kbd>
+                          <div className="flex items-center gap-1">
+                            {item.key.split(" + ").map((k, i, arr) => (
+                              <div key={i} className="flex items-center gap-1">
+                                <kbd className="px-1.5 h-[18px] rounded bg-[var(--background-darker)] border border-[var(--color8)] text-[var(--color-kbd-text)] font-mono text-[9px] min-w-[24px] text-center flex items-center justify-center">
+                                  {k}
+                                </kbd>
+                                {i < arr.length - 1 && <span className="text-[10px] text-slate-600">+</span>}
+                              </div>
+                            ))}
+                          </div>
                           <span className="text-slate-500 font-mono tracking-tighter italic ml-2">{item.action}</span>
                         </div>
                       ))}
                     </div>
-                    {/* Column 2: Home, Reset View, Theme */}
+                    {/* Column 2: Theme, Home, Reset, Back */}
                     <div className="flex flex-col gap-3">
                       {[
+                        { key: "T", action: "Toggle Theme" },
                         { key: "H", action: "Go to Home" },
                         { key: "R", action: "Reset Camera" },
-                        { key: "T", action: "Toggle Theme" },
+                        { key: "Alt + Left", action: "Back" },
                       ].map((item) => (
                         <div key={item.key} className="flex justify-between items-center text-[11px]">
-                          <kbd className="px-1.5 py-0.5 rounded bg-[var(--background-darker)] border border-[var(--color8)] text-[var(--color-kbd-text)] font-mono text-[9px] min-w-[24px] text-center">
-                            {item.key}
-                          </kbd>
+                          <div className="flex items-center gap-1">
+                            {item.key.split(" + ").map((k, i, arr) => (
+                              <div key={i} className="flex items-center gap-1">
+                                <kbd className="px-1.5 h-[18px] rounded bg-[var(--background-darker)] border border-[var(--color8)] text-[var(--color-kbd-text)] font-mono text-[9px] min-w-[24px] text-center flex items-center justify-center">
+                                  {k === "Left" ? <ArrowLeft size={10} strokeWidth={2.5} /> : k}
+                                </kbd>
+                                {i < arr.length - 1 && <span className="text-[10px] text-slate-600">+</span>}
+                              </div>
+                            ))}
+                          </div>
                           <span className="text-slate-500 font-mono tracking-tighter italic ml-2">{item.action}</span>
                         </div>
                       ))}
