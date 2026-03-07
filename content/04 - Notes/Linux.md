@@ -1,6 +1,8 @@
 # Linux
 ---
 
+[UNIX Programming](/notes/unix-programming)
+
 Preliminaries
 1. Download iso from a mirror: https://archlinux.org/download/#http-downloads
 2. Install onto a flash drive: https://wiki.archlinux.org/title/USB_flash_installation_medium

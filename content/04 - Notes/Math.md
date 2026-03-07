@@ -4,35 +4,27 @@ $$
 e^{\pi i}+1=0
 $$
 
-## [Algebra](/notes/algebra)
-Numbers and counting
+## Foundations & Logic
+- [Algebra](/notes/algebra) - Numbers, arithmetic, and counting
+- [Number Theory](/notes/number-theory) - Properties of integers and primes
+- [Discrete Math](/notes/discrete-math) - Sets, graphs, and logic
+- [Boolean Algebra](/notes/boolean-algebra) - Logic and binary systems
 
-## [Linear Algebra](/notes/linear-algebra)
-Vector spaces and linear transformations
+## Change & Continuity
+- [Calculus](/notes/calculus) - Limits, derivatives, and integrals
+- [Linear Algebra](/notes/linear-algebra) - Vectors, matrices, and transformations
+- [Optimization](/notes/optimization) - Finding extrema and efficient paths
 
-## [Boolean Algebra](/notes/boolean-algebra)
-Logic
+## Space & Shape
+- [Geometry](/notes/geometry) - Shapes and spatial relationships
+- [Trigonometry](/notes/trigonometry) - Periodic functions and triangles
+- [Complex Numbers](/notes/complex-numbers) - Extension to the complex plane
 
-## [Geometry](/notes/geometry)
-Shapes, spaces, and patterns
+## Chance & Data
+- [Probability](/notes/probability) - Modeling randomness and uncertainty
+- [Statistics](/notes/statistics) - Analysis and interpretation of data
 
-## [Calculus](/notes/calculus)
-Limits and properties of functions
-
-## [Discrete Math](/notes/discrete-math)
-Sets, graphs, and probability
-
-
----
-
-[Representations of Integers](/notes/representations-of-integers)
-[Complex Numbers](/notes/complex-numbers)
-
-### Sequences
-a structure used to represent an ordered list
-common ones are arithmetic and geometric sequences
-$$\sum_{j=m}^na_j$$
-![Pasted image 20240410181204.png](/attachments/Pasted%20image%2020240410181204.png)
-Complex numbers are the only complete number in math?
-
-wedge product, quaternion, etc.
+## Computational Math
+- [Asymptotic Notation](/notes/asymptotic-notation) - Scaling and complexity
+- [Discrete Fourier Transform](/notes/discrete-fourier-transform) - Signal decomposition
+- [Numerical Methods](/notes/numerical-methods) - Approximation and algorithms

@@ -1,34 +1,13 @@
 # State Government
 ---
-1. According to the Census Bureau: about 40% of the US was urban in 1900, while currently over 80% are in an urban area
-2. What is the difference between a ballot initiative and a popular referendum? A popular referendum concerns a law that has been adopted by the legislature, while a ballot initiative concerns a law which has not
-3. Article VI of the Constitution (Supremacy Clause) holds that federal law takes precedence over state law in which will be enforced
-4. In Houston, the mayor is in charge of the Mayor-Council
-5. A roll off is when voters only pick the "more important" offices on the ballot and leave the rest blank
 
-Specific outliers: nebraska gov, texas and oklahoma gov, dillons rule
-Texas has 254 counties
 [State and Local Government Relations](/notes/state-and-local-government-relations)
 
-1. The most direct cause of urban sprawl is the uncoordinated decisions of real estate developers acting in their own self-interest
-# Socioeconomic and Political Context
-## Three Levels of Government
-The US has a **federal** structure (national government) with 50 state governments. Having both national and state governments is a **dual sovereignty** system. Each state also has local governments which will provide most public services.
+The most direct cause of urban sprawl is the uncoordinated decisions of real estate developers acting in their own self-interest
 
-![Pasted image 20240911145217.png](/attachments/Pasted%20image%2020240911145217.png)
-
-Federal Government Responsibilities
-- national defense
-- foreign relations
-- domestic regulations
-- power to tax and spend
-- regulates interstate commerce
-
-All states have the basic tripartite structure of government however they vary in implementation
-
-The overall idea of states is **laboratories of democracy** where states will try things out and ideally the best ideas are implemented by other states. Ex. California curtailed smoking
-
-**Dillon's Rule** is the idea that local governments derive authority from and are subject to the state government
+## Socioeconomic and Political Context
+- [Levels of Government](/notes/levels-of-government)
+- [Branches of Government](/notes/branches-of-government)
 
 ## Texas Constitution
 There have been 5 different constitutions over the history of Texas
@@ -58,24 +37,7 @@ Progressive Era (1890s-1920s)
 Civil Rights (1960s)
 - states had to abolish legal discriminations
 
-### Branches
-#### Executive Branch
-Consists of six main officers including the governor. The governor has the ability to **line item veto** and just cross something off the budget
 
-Lieutenant Governor (VP) controls appointments to all legislative committees
-
-Texas doesn't have term limits for its governor
-#### Legislative Branch
-House of Representatives
-Senate
-
-49 states allow for **legislative referendum**, where the legislature passes a law and then refers it to voters. A **popular referendum** is when a law is put in place by the legislature but voters challenge it. A **ballot initiative** is when registered voters petition to have a proposal placed on the ballet
-
-#### Judicial Branch
-Civil Supreme Court
-Criminal Supreme Court
-
-Only Massachusetts, New Jersey, and Rhode Island give justices life appointments
 
 ## Population Dynamics
 The US has a population of 335 million people. California has approximately 39 million and Texas has an estimated 30.5 million. Comparatively, Wyoming has under 600,000 people.

@@ -2,7 +2,6 @@
 ---
 
 [Transhumanism](/notes/transhumanism)
-
 [Pace of Change](/notes/pace-of-change)
 [Privacy](/notes/privacy)
 [Freedom of Speech](/notes/freedom-of-speech)

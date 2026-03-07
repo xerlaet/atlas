@@ -1,32 +1,33 @@
 # Vim
 ---
+
 An improved version of the vi editor
 
-General Keybinds
+## General Keybinds
 - prefix a number to do that command multiple times
 - Undo: **u**
 - Redo: **ctrl + r**
 
-Last Line Mode
+## Last Line Mode
 - Quit without saving: **:q!**
 
-Visual Mode
+## Visual Mode
 - Enter visual mode: **v**
 - Enter block-visual mode: **ctrl + v**
 - Enter linewise-visual mode: **V** 
 
-Normal Mode
+## Normal Mode
 - Movement: **h, j, k, l**
 - Top or bottom of document: **gg, G**
 - Beginning or end of line: **0, $**
 - Beginning, previous beginning, or end of word: **w, b, e** (W, B, E for whitespace)
 
-Insert Mode
+## Insert Mode
 - Insert where you are or at beginning of line: **i, I**
 - Append where you are or at end of line: **a, A**
 - Insert on a line above or below: **O, o**
 
-Command Mode
+## Command Mode
 - Enter command mode: **:**
 - Find text: **:/text**
 - Go to the next or previous occurrence: **n, N**
@@ -42,5 +43,5 @@ Command Mode
 
 ex. :%s/search/replace/gi
 
-Replace Mode
+## Replace Mode
 - Enter replace mode: **R**

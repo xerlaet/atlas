@@ -16,8 +16,12 @@ Crime and Punishment
 
 ## Completed
 [Atomic Habits](/notes/atomic-habits)
+
+## To Read
+[Reading List](/notes/reading-list)
+
+## To Add?
 The Foundation Series
-Eragon
 Mistborn
 There are Two Errors in the the Title of This Book*
 Life 3.0
@@ -25,6 +29,3 @@ The Case for Jesus
 The Question of God
 Eucharistic Miracles
 Reflections on the Existence of God
-
-## To Read
-[Reading List](/notes/reading-list)

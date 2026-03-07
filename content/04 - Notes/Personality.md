@@ -1,5 +1,6 @@
 # Personality
 ---
+
 ## What is Personality?
 
 **Personality** refers to the long-standing traits and patterns that propel individuals to consistently think, feel, and behave in specific ways

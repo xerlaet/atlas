@@ -1,13 +1,11 @@
 # Music Library
 ---
 
-Creep
-Take Me to Church
 Brother
 Chasing the Sun
 Waiting for Love
-
 Nuvole Bianche
+
 ## Christmas
 [You're a Mean One, Mr. Grinch](https://musescore.com/user/19233641/scores/5360095)
 [All I Want For Christmas Is You](https://musescore.com/official_author/scores/6920081)

@@ -10,7 +10,7 @@
 	- why scaled for dot-product attention (dk) <- to help softmax
 	- why multihead for attention <- interpret different meanings of the words
 	- memorize time complexity of various models
-- object detection (YOLO paper)
+- object detection ([YOLO](/notes/yolo) paper)
 	- IOU (intersection over union)
 	- how to assign labels to boxes
 	- region of interest (ROI) pooling <- cuts any box into nxm size for cnn
@@ -203,8 +203,7 @@ $$
 W_{\text{new}}=W_{\text{old}}-\eta  \frac{\delta \text{loss}}{\delta W}
 $$
 
-
-![Pasted image 20240926145100.png](/attachments/Pasted%20image%2020240926145100.png)
+[Precision Recall](/notes/precision-recall)
 
 ---
 review

@@ -1,10 +1,21 @@
 # Media
 ---
 
-## Books
-[Books](/notes/books)
+## Written Works
+- [Books](/notes/books) - Catalog of read and referenced texts
+- [Reading List](/notes/reading-list) - Queue of future literature
+- [Poetry](/notes/poetry) - Rhythmic and evocative writing
+- [News & Journalism](/notes/news-journalism) - Reporting and current events
 
-## Visual
-[Film](/notes/film)
-[Podcasts](/notes/podcasts)
-[Movie Ranking](/notes/movie-ranking)
+## Cinema & Television
+- [Film](/notes/film) - Analysis and history of motion pictures
+- [Movie Ranking](/notes/movie-ranking) - Personal tier list
+
+## Audio & Speech
+- [Podcasts](/notes/podcasts) - Long-form discussions and interviews
+- [Music Library](/notes/music-library) - Collections and genre exploration
+
+## Interactive & Digital
+- [Gaming](/notes/gaming) - Interactive systems and narrative
+- [YouTube](/notes/youtube) - Video essays and educational content
+- [Social Media](/notes/social-media) - Analysis of digital platforms

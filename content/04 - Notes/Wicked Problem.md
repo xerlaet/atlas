@@ -16,4 +16,3 @@ Opposite of a [Tame Problem](/notes/tame-problem)
 
 ## Examples
 urban planning, policy making, economic reforms, software development
-

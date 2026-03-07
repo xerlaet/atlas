@@ -1,5 +1,6 @@
 # State and Local Government Relations
 ---
+
 Since the U.S. Constitution doesn't mention local governments, it is up to the states to decide and various methods are currently implemented
 
 States have **unitary government** where the central government has the power for revoke or override actions taken by local governments. Local governments are commonly organized into counties and municipalities

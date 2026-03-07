@@ -1,4 +1,7 @@
-Morals that can be determined from the natural world:
+# Morals
+---
+
+Morals that can (maybe) be determined from the natural world:
 
 - respect for (human) life
 	- in self defense scenarios, killing is allowed

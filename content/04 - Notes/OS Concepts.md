@@ -1,5 +1,6 @@
 # OS Concepts
 ---
+
 An **Operating System** is an intermediary between the user and the computer hardware and acts as an environment to execute programs from and control resources. The main goal is to make the system convenient and efficient
 
 Components include the actual hardware from the CPU to memory and IO devices, and the software including different applications and the actual OS itself

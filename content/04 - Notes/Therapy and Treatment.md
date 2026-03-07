@@ -1,5 +1,6 @@
 # Therapy and Treatment
 ---
+
 ## Types of Treatment
 ### Psychoanalysis
 In **free association** the patient relaxes and says whatever comes to mind

@@ -1,5 +1,6 @@
 # Number Theory
 ---
+
 ## Division
 $a$ divides $b$ ($a\mid b$) if $ac=b$ or $\frac{b}{a}$ is an integer
 
@@ -62,6 +63,9 @@ $$
 \end{align}
 $$
 ## Representation of Integers
+
+[Representations of Integers](/notes/representations-of-integers)
+
 decimal, hexadecimal, octal, binary
 ## Primes
 **Prime** numbers are numbers whose only factors are 1 and itself (note: 1 is not prime)

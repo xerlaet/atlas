@@ -16,3 +16,5 @@ It will take time and you won't see a lot of progress at first, but when it star
 To form a new habit: repeat the task consistently, and reward yourself afterwards so its strengthened by dopamine
 
 To remove a habit: when the cue occurs have a replacement activity or habit
+
+Related: [Atomic Habits](/notes/atomic-habits)

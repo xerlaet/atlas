@@ -6,4 +6,3 @@ Difference Engine
 Curta
 
 Charles Babbage, Ada Lovelace
-

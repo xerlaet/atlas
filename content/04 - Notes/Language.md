@@ -1,33 +1,25 @@
 # Language
 ---
 
-## Properties
-- grammar -> set of rules to define a syntax
-- syntax
-- semantics
-	- operational semantics ()
-	- declarative semantics (finding the equivalent mathematical formula)
-	- axiomatic semantics ()
-- lexicon
-- alphabet
-- typology
-- orthography
-- morphology
-- phonology
+## Linguistic Foundations
+- [Grammar](/notes/grammar) - Systems of rules and structures
+- [Syntax](/notes/syntax) - Formal arrangement of signs and symbols
+- [Semantics](/notes/semantics) - The study of meaning and interpretation
+- [Lexicon](/notes/lexicon) - Vocabulary and word-level properties
+- [Phonology](/notes/phonology) - Systems of sound and speech
 
-### Natural Languages
-- English, French, Chinese, etc
+## Natural & Human
+- [English](/notes/english) - Global communication and development
+- [New Words](/notes/new-words) - Neologisms and evolving vocabulary
 
-### Constructed Languages (Conlangs)
-Human communication
-- Sociological/Political: Esperanto, Toki Pona, Interlingua
-- Fiction: Klingon, Sindarin, Na'vi, Dothraki
-- Research: loglan, lojban
-- Signed: ASL, etc
+## Constructed & Formal
+- [Conlangs](/notes/conlangs) - Human communication systems (Esperanto, Toki Pona)
+- [Regex](/notes/regex) - Regular expressions and pattern matching
+- [Formal Languages](/notes/formal-languages) - Mathematical models of communication
+- [Logic](/notes/logic) - Propositional and predicate systems as language
 
-esolangs.org
-
-## [Programming Language Paradigms](/notes/programming-language-paradigms)
-
-## [Programming Languages](/notes/programming-languages)
-Not all are turing complete (such as HTML or SQL)
+## Computational & Programming
+- [Programming Languages](/notes/programming-languages) - Formal systems for machine instruction
+- [Programming Paradigms](/notes/programming-paradigms) - Functional, imperative, and logical
+- [Natural Language Processing](/notes/natural-language-processing) - Machine analysis of human speech
+- [Tokenization](/notes/tokenization) - Breaking language into processing units

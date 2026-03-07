@@ -26,3 +26,8 @@ R_{\phi }=\begin{bmatrix}
 \end{bmatrix}
 , R_{\phi }R_{\psi }=R_{\phi +\psi }
 $$
+
+![Pasted image 20240410181204.png](/attachments/Pasted%20image%2020240410181204.png)
+Complex numbers are the only complete number in math?
+
+wedge product, quaternion, etc.

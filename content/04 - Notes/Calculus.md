@@ -39,6 +39,8 @@ u-sub and reverse substitution
 trig integrals (and derivatives)
 
 ## Sequences and Series
+[Sequences](/notes/sequences)
+
 A **sequence** is a list of numbers in a specific order $\{ a_{n} \}$
 
 If $\lim_{ n \to \infty } a_{n}$ exists then the sequence is **convergent**, otherwise it is **divergent** (to $\infty$ or $-\infty$)

@@ -3,7 +3,7 @@
 
 1. [Generalize First](/notes/generalize-first) when trying to decide what to focus on
 2. Be productive [Productivity](/notes/productivity)
-3. Learn effectively [How to Learn](/notes/how-to-learn)
+3. Learn effectively [Learning](/notes/learning)
 
 Don't tie your self worth to how smart you are
 

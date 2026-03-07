@@ -1,5 +1,6 @@
 # Robot Control
 ---
+
 Task specifications -> controller -> joint velocities (forces and torques for the [Actuators](/notes/actuators))
 
 ## Task Specification
@@ -16,6 +17,7 @@ Impedance Control
 - act like a spring with damping properties
 
 A human controlled car is open loop, a self driving car is closed loop
+
 [Closed Loop Control](/notes/closed-loop-control)
 [Open Loop Control](/notes/open-loop-control)
 
