@@ -7,6 +7,7 @@ import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
 import Link from "next/link";
+import { useMemo } from "react";
 import { 
   Info, 
   AlertCircle, 
@@ -27,7 +28,7 @@ import "highlight.js/styles/tokyo-night-dark.css";
 
 interface Props {
   content: string;
-  slugMap: Record<string, string>; // Maps note titles to slugs
+  validSlugs?: string[]; // Array of all valid slugs for existence check
 }
 
 const calloutConfig: Record<string, { icon: any, color: string, label: string }> = {
@@ -61,7 +62,10 @@ const calloutConfig: Record<string, { icon: any, color: string, label: string }>
   ai: { icon: Sparkles, color: "text-fuchsia-400 border-fuchsia-500/30 bg-fuchsia-500/5", label: "AI" },
 };
 
-export default function MarkdownRenderer({ content, slugMap }: Props) {
+export default function MarkdownRenderer({ content, validSlugs }: Props) {
+  // Memoize the slug set for O(1) lookups
+  const slugSet = useMemo(() => new Set(validSlugs || []), [validSlugs]);
+
   // Pre-process content safely
   const processedContent = content
     // Fix: Ensure content after </iframe> is on a new line so markdown can parse it
@@ -108,7 +112,26 @@ export default function MarkdownRenderer({ content, slugMap }: Props) {
           a: ({ node, ...props }) => {
             const href = props.href || "";
             const isExternal = href.startsWith("http");
+            
             if (!isExternal) {
+              // Internal link: check if it points to an existing note
+              // Extract slug from /notes/slug
+              const slugMatch = href.match(/\/notes\/([^#?]+)/);
+              const slug = slugMatch ? slugMatch[1] : null;
+              
+              const exists = slug && slugSet.size > 0 ? slugSet.has(slug) : true;
+              
+              if (!exists) {
+                return (
+                  <span 
+                    className="text-slate-500/50 cursor-help border-b border-dotted border-slate-500/30 font-medium italic" 
+                    title={`The note "${slug}" hasn't been created yet`}
+                  >
+                    {props.children}
+                  </span>
+                );
+              }
+              
               return <Link href={href} className="text-teal-400 no-underline hover:underline font-bold" {...props} />;
             }
             return (

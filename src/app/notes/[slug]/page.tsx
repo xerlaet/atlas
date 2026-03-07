@@ -40,14 +40,14 @@ export default async function NotePage({ params }: { params: Promise<{ slug: str
     notFound();
   }
 
-  const slugMap: Record<string, string> = {};
-  Object.values(notes).forEach((n) => {
-    slugMap[n.title] = n.slug;
-  });
+  const validSlugs = Object.keys(notes);
 
   return (
     <NotePanel title={note.metadata.title}>
-      <MarkdownRenderer content={note.content} slugMap={slugMap} />
+      <MarkdownRenderer 
+        content={note.content} 
+        validSlugs={validSlugs} 
+      />
     </NotePanel>
   );
 }
