@@ -9,20 +9,17 @@ A **database management system** (DBMS) is a general purpose software system tha
 
 DBMS's are unnecessary when the situation requires a simple non-changing database, perhaps with stringent real-time requirements and limited storage
 
-## Entity Relationship Model
-[Entity Relationship Model](/notes/entity-relationship-model)
-
-## UML Diagrams
-
-## Relational Model Concepts
-Domains consist of a set of relations
-
-A **tuple** is a set of attribute and value pairs
-
-null can mean unknown, exists but not available, attribute doesn't apply
-
-A **superkey** is a combination of attributes that can uniquely identify a record
-A **key** is a minimal superkey of R
+## Data Modeling
+- [ER Model](/notes/entity-relationship-model) - A basic relationship model
+- [EER Model](/notes/enhanced-entity-relationship-model) - An extended relationship model
+- [Relational Data Modeling](/notes/relational-data-modeling) - Data modeling concepts
 
 ## SQL
-[SQL](/notes/sql)
+- [SQL](/notes/sql) - Language to work with databases
+
+## Exam Format
+1. Multiple Choice (20 or so)
+2. Draw an (E)ER Diagram for a given description
+3. Draw a relational database schema given an (E)ER Diagram
+4. Draw an (E)ER Diagram given a relational database schema
+5. SQL Assignment #3

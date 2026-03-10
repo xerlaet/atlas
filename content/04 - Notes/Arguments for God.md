@@ -6,9 +6,9 @@
 
 ## Empirical / Historical
 [Miracles](/notes/miracles) (strong)
-[Scriptural Reliability](/notes/scriptural-reliability) (idk)
+[Scriptural Reliability](/notes/scriptural-reliability) (strong, but doesn't account for earlier)
 [Archeological Evidence](/notes/archeological-evidence) (idk)
-[Prophecies Coming True](/notes/prophecies-coming-true) (idk)
+[Fulfilled Prophecies](/notes/fulfilled-prophecies) (strong)
 [The Resurrection](/notes/the-resurrection) (idk)
 
 ## Immaterial / Consciousness

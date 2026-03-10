@@ -1,6 +1,9 @@
 # Arguments against God
 ---
 
+[Composite Historical Critical Model](/notes/composite-historical-critical-model)
+[RHBS Model](/notes/rhbs-model)
+
 ## Logical / Metaphysical
 [Sovereignty vs Free Will](/notes/sovereignty-vs-free-will) (mid)
 [Divine Simplicity](/notes/divine-simplicity) (idk)
