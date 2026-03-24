@@ -14,6 +14,11 @@ The **Entity-Relationship (ER) Model** is a conceptual way to describe a databas
 
 ![TikZ Diagram](/attachments/tikz-cf408b8a8a87722127ee85f2e6a2054d.svg)
 
+Super Key
+Candidate Key
+Primary Key
+Foreign Key
+
 **Attributes** are properties that describe an entity
 - A **key** attribute (underlined) uniquely identities an entity
 - A **partial key** (dashed underline) is used in weak entities to differentiate between instances with the same strong entity

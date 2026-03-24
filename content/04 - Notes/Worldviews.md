@@ -22,3 +22,5 @@
 From this, God chooses to create with His will and power because it is better than not creating something, and He makes something that perfectly optimizes His goodness/perfect love. Meaning (syn. purpose) is the fact that everything has a purpose that God gave to them which they aim to achieve. The ultimate goal is to unite a finite creation back with Him at the end of time.
 
 Things that are to be taken on faith are the trinity, the incarnation, transubstantiation in the eucharist, divine revelation through the historicity of Jesus, papal infallibility and the magisterium, heaven/hell/purgatory, resurrection of the dead, efficacy of the sacraments, immaculate conception, assumption of Mary, moral truths
+
+[Islam](/notes/islam)

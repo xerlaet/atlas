@@ -1,43 +1,43 @@
 # Propositional Logic
 ---
 
-## Propositions
-A proposition is a **declarative sentence** that is either **true (T)** or **false (F)**
-	Ex. the moon is made of cheese and $1+1=0$
+**Propositional Logic** (or zeroth-order logic) is the foundational branch of logic dealing with propositions—declarative statements that are strictly **true** or **false**—and their combination using logical operators.
 
-Variables representing propositions are known as **propositional variables**, and if they are constructed from one or more propositions they are known as **compound propositions**, else they are **atomic propositions**
+## Core Terminology
+- **Atomic Propositions**: Indivisible foundational statements (e.g., $1+1=0$). Represented by propositional variables ($p, q$).
+- **Compound Propositions**: Constructed by combining atomic propositions using logical operators.
+- **Tautology**: A proposition that is always true under any truth assignment (e.g., $p \lor \neg p$).
+- **Contradiction**: A proposition that is always false (e.g., $p \land \neg p$).
+- **Contingency**: A proposition that is neither a tautology nor a contradiction.
+- **Consistency**: A set of propositions is consistent if they are all satisfiable (can be true) simultaneously.
 
-The precedence of operators are
-1. Parenthesis $()$
-2. Negation $\neg$
-3. Conjunction $\land$
-4. Disjunction $\lor$
-5. Implication $\to$
-6. Biconditional $\leftrightarrow$
-Exclusive or $\oplus$ can be thought of the negation of the biconditional operator
-disjunction
+## Operators & Precedence
+Logical operators follow a strict order of operations when evaluating compound propositions:
+1. **Parentheses**: $()$
+2. **Negation** (NOT): $\neg$
+3. **Conjunction** (AND): $\land$
+4. **Disjunction** (OR): $\lor$
+5. **Implication** (IF-THEN): $\to$
+6. **Biconditional** (IF-AND-ONLY-IF): $\leftrightarrow$
 
-A **clause** is a group of predicates composed of literals (positive or negative)
+*Note: **Exclusive OR** ($\oplus$) evaluates to true only when inputs differ, acting as the negation of the biconditional.*
+
+### Implication Variations
+Given a standard implication $p \to q$:
+- **Converse**: $q \to p$
+- **Inverse**: $\neg p \to \neg q$
+- **Contrapositive**: $\neg q \to \neg p$ (Logically equivalent to the original implication)
+
+## Clauses & Equivalence
+- **Clause**: A disjunction connected strictly by OR operations, composed of positive or negative literals (e.g., $\neg p \lor \neg q \lor r$).
+- **Horn Clause**: A specific type of clause containing at most *one* positive literal, heavily used in logic programming and [First-Order Logic](/notes/first-order-logic).
+- **Logical Equivalence**: Two propositions $p$ and $q$ are equivalent if $p \leftrightarrow q$ is a tautology. See [Logical Equivalences](/notes/logical-equivalences) for standard transformation rules.
+
+## Generalized Operations
+For large sets of propositions, generalized conjunction and disjunction use notation similar to mathematical summations:
 $$
-\neg p \lor  \neg  q \lor  r
+\begin{aligned}
+\bigvee_{j=1}^n p_j &= p_1 \lor p_2 \lor \dots \lor p_n \\
+\bigwedge_{j=1}^n p_j &= p_1 \land p_2 \land \dots \land p_n
+\end{aligned}
 $$
-A **horn clause** is a clause with at most one positive literal
-
-### Truth Tables
-
-### Definitions
-Given $p\to q$, the **converse** is $q\to p$, the **contrapositive** is $\neg q\to \neg p$, and the **inverse** is $\neg p\to \neg q$
-
-Similarly, a list of propositions is **consistent** if they are all satisfiable together
-
-A **tautology** is a proposition which is always true such as $p \lor \neg p$
-A **contradiction** is a proposition which is always false such as $p \land \neg p$
-A **contingency** is a proposition which is neither a tautology nor a contradiction such as $p$
-
-Two propositions $p$ and $q$ are **logically equivalent** if $p\leftrightarrow q$ is a tautology
-$$\begin{align}
-\bigvee_{j=1}^np_j = p_1 \lor p_2 \lor \ldots \lor p_n \\
-\bigwedge_{j=1}^np_j = p_1 \land p_2 \land \ldots \land p_n
-\end{align}$$
-
-[Logical Equivalences](/notes/logical-equivalences)

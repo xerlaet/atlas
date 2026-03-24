@@ -13,13 +13,7 @@ DBMS's are unnecessary when the situation requires a simple non-changing databas
 - [ER Model](/notes/entity-relationship-model) - A basic relationship model
 - [EER Model](/notes/enhanced-entity-relationship-model) - An extended relationship model
 - [Relational Data Modeling](/notes/relational-data-modeling) - Data modeling concepts
+- [EER to Schema Conversion](/notes/eer-to-schema-conversion)
 
 ## SQL
 - [SQL](/notes/sql) - Language to work with databases
-
-## Exam Format
-1. Multiple Choice (20 or so)
-2. Draw an (E)ER Diagram for a given description
-3. Draw a relational database schema given an (E)ER Diagram
-4. Draw an (E)ER Diagram given a relational database schema
-5. SQL Assignment #3

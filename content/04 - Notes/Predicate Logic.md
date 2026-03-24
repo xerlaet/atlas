@@ -72,38 +72,3 @@ resolution is sound and refutation complete
 
 A horn clause is a disjunction of literals with at most one positive literal. A definite clause is a horn clause with exactly one positive literal
 conjuctive normal form (CNF) is what's used for SAT solvers, DNF is the opposite and not standardly used
-
-
-## People
-
-Alain Colmerauer - developed prolog
-		
-David and Putman developed davis putnam DP algorithm for checking satisfiability
-		
-Cordell Green - develoepd one of the earliest general purpose theorem proving systems in AI with resolution
-		
-Gottlob Frege - father of modern mathematical logic, developed first-order logic
-		
-Kurt Gödel - completeness theorem for FOL and incompleteness theorems
-		
-Jacques Herbrand - herbrand universe base and theorem
-		
-Alfred Horn - horn clauses for efficient inference with modus ponens
-		
-J. Jaffar - co creator of constraint logic programming
-		
-John McCarthy - a founder of AI invented lisp
-		
-Marvin Minsky - a founder of ai, knowledge representation via frames and structural approaches
-		
-Emil Post and Ludwig Wittgenstein - completeness/decidability, influences the truth-tabular view of propositional logic
-		
-J. A. Robinson - resolution principle which is sound and complete
-		
-Terry Winograd - SHRDLU and early natural language system
-		
-Patrick Winston - early work on learning and analogy in AI
-		
-Gregory Yob - created first recognized text-based adventure game, Adventure
-		
-Thoralf Skolem - concepts of skolemization (eliminate existential quantifiers), and skolem normal form

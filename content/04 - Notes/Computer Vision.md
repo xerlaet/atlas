@@ -1,45 +1,25 @@
 # Computer Vision
 ---
 
-Face detection
-Optical Character Recognition (OCR)
-Image Classification
-Surveillance
-Segmentation
-3D Reconstruction/Estimation
+**Computer Vision** is a field of [AI](/notes/artificial-intelligence) that trains computers to interpret and understand information from digital images and videos, treating them as numerical grids (e.g., Height x Width x 3 Channels for RGB).
 
-David Marr Theory of Vision:
-1. input image
-2. primal sketch
-3. 2 1/2-d sketch
-4. 3D model representation
+## Foundational Concepts
+- [Images as Functions](/notes/images-as-functions) - The mathematical view of an image
+- [Image Filtering](/notes/image-filtering) - Modifying pixels with kernels
+- [Image Gradients](/notes/image-gradients) - Measuring directional intensity change
+- [Color Spaces](/notes/color-spaces) - Representing color data (RGB, HSV)
+- [Marr's Theory of Vision](/notes/marrs-theory-of-vision) - A computational model of vision
 
-Image Data (HxWx3)
+## Core Tasks & Applications
+- [Image Classification](/notes/image-classification) - Assigning a single label to an image
+- [Object Detection](/notes/object-detection) - Locating objects with bounding boxes
+- [Semantic Segmentation](/notes/semantic-segmentation) - Pixel-level classification of an image
+- [Instance Segmentation](/notes/instance-segmentation) - Identifying individual object instances
+- [OCR](/notes/optical-character-recognition) - Extracting text from images
+- [3D Reconstruction](/notes/3d-reconstruction) - Inferring 3D models from 2D images
+- [Video Analysis](/notes/video-analysis) - Interpreting sequences of images
 
-## Images as Functions
-The function $I(x,y)$ will return the value of the pixel at $(x,y)$
-
-The Image gradient can be calculated as follows
-$$
-\begin{align}
-I_{x}=\frac{ \partial }{ \partial x } I(x,y)=\frac{I(x+1,y)-I(x-1,y)}{2}\\
-I_{y}=\frac{ \partial }{ \partial y } I(x,y)=\frac{I(x,y+1)-I(x,y-1)}{2}
-\end{align}
-$$
-$$
-\nabla I = \begin{bmatrix}
-\frac{ \partial I }{ \partial x } \\
-\frac{ \partial I }{ \partial y } 
-\end{bmatrix}
-$$
-
-## Image Filtering
-[Image Filtering](/notes/image-filtering)
-
-## Convolutional Neural Networks
-[Convolutional Neural Networks](/notes/convolutional-neural-networks)
-
-## Object Detection
-[Object Detection](/notes/object-detection)
-[Semantic Segmentation](/notes/semantic-segmentation)
-Instance Segmentation
+## Deep Learning Architectures
+- [Convolutional Neural Networks](/notes/convolutional-neural-networks) - The foundational CV architecture
+- [Vision Transformers](/notes/vision-transformers) - Attention-based models for vision tasks
+- [GANs](/notes/generative-adversarial-networks) - Generating novel images
