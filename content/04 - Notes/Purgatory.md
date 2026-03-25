@@ -1,21 +1,22 @@
 # Purgatory
 ---
 
-**Purgatory** is a state of final purification for those who die in God's grace and friendship but still retain attachments to sin or imperfections
+**Purgatory** is a state of final purification for individuals who die in God's grace and friendship but retain attachments to sin or imperfections. It is not a second chance at salvation, but a preparation for the absolute perfection of Heaven.
 
-## Reasons to believe
-One reason to think for why it would exist is that Heaven is a place of absolute perfection, and it seems to be the case that many people die generally oriented toward God, but with minor sins still attached to them
+## Primary Arguments
+- **Theological Necessity:** Heaven requires absolute perfection (Rev 21:27). Since many die oriented toward God but with minor sins or attachments, a transitional state of purification is logically necessary.
+- **Testing by Fire:** Paul describes a post-death judgment where a believer's imperfect works are burned away. The believer suffers loss but is ultimately saved "as through fire" (1 Cor 3:14-15).
+- **Forgiveness in the Age to Come:** Jesus implies that certain sins can be forgiven in the afterlife by stating that sins against the Holy Spirit will not be forgiven "in this age or in the age to come" (Matt 12:32).
 
-> "But nothing unclean will enter it, nor any\[one\] who does abominable things or tells lies. Only those will enter whose names are written in the Lamb’s book of life." — Revelation 21:27
+## Historical & Tradition Basis
+- **Jewish Practice:** Judas Maccabeus prayed and made atonement for dead soldiers to absolve them of sin (2 Maccabees 12:46). Even for those who reject [Maccabees](/notes/maccabees) as inspired, it proves praying for the dead was a standard, uncondemned Jewish practice during the time of Christ.
+- **Early Church Evidence:** 2nd and 3rd-century Roman catacombs feature inscriptions praying for the deceased. The practice was also endorsed heavily by early Church Fathers, including [St. John Chrysostom](/notes/st-john-chrysostom) and [St. Augustine](/notes/st-augustine).
 
-> "Thus he made atonement for the dead that they might be absolved from their sin." — 2 Maccabees 12:46
+## Objections & Responses
+> **Objection (Finished Work):** On the cross, Jesus said "tetelestai" (it is finished). Therefore, no further purification is required because His atonement is absolute.
 
-Judas Maccabeus and his men pray for the dead soldiers. Even if this book isn't inspired (even though it was around for 1500 years before the reformation), it shows praying for souls was a practice and Jesus and the Apostles never condemned it
+**Response:** The objective work of [Redemption](/notes/redemption) is complete, but the subjective *application* of that grace is ongoing.
 
-> "If the work which any man has built on the foundation survives, he will receive a reward. If any man's work is burned up, he will suffer loss, though he himself will be saved, but only as through fire." — 1 Corinthians 3:14-15
+> **Objection (Sufficiency of Christ):** Believing in Purgatory implies Christ's sacrifice was insufficient.
 
-It seems like it would be hard to separate a person from their life's work
-
-> "And whoever speaks a word against the Son of Man will be forgiven; but whoever speaks against the Holy Spirit will not be forgiven, either in this age or in the age to come." — Matthew 12:32
-
-Early Christian tombs in Rome feature inscriptions with prayers for the dead, Christian liturgies from the 2nd and 3rd centuries include prayers for the dead, Church fathers wrote about purgatory (St. John Chrysostom and St. Augustine)
+**Response:** Purgatory does not add to Christ's sacrifice; it is the *application* of it. The "fire" of purification is the overwhelming presence of God's love burning away remaining selfishness.

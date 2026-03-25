@@ -36,3 +36,5 @@ Do conjoined twins pose any problems for Catholic teachings?
 [Godel's Incompleteness Theorem](/notes/godels-incompleteness-theorem) along with self-reference seem to be powerful ideas
 
 Much of my previous thinking has assumed standard logic as a base, what about a four point logical system where a proposition can be true and false at the same time - it escapes the self-defeating aspect of many claims. Need to look into this further
+
+[Purgatory](/notes/purgatory)
