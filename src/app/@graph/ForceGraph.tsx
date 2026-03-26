@@ -9,7 +9,8 @@ import * as THREE from "three";
 
 const ForceGraph3D = dynamic(() => import("react-force-graph-3d"), {
   ssr: false,
-});
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+}) as any;
 
 type NodeObj = { id?: string | number; title?: string; path?: string; isStub?: boolean; x?: number; y?: number; z?: number; [key: string]: unknown };
 
