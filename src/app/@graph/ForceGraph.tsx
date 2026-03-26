@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useCallback, useState, useMemo } from "react";
+import { useEffect, useRef, useCallback, useState, useMemo, useLayoutEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import dynamic from "next/dynamic";
 import { useGraphStore } from "@/lib/store";
@@ -11,11 +11,21 @@ const ForceGraph3D = dynamic(() => import("react-force-graph-3d"), {
   ssr: false,
 });
 
+type NodeObj = { id?: string | number; title?: string; path?: string; isStub?: boolean; x?: number; y?: number; z?: number; [key: string]: unknown };
+
+function getLinkId(val: string | number | NodeObj | undefined): string {
+  if (!val) return "";
+  if (typeof val === "string") return val;
+  if (typeof val === "number") return String(val);
+  return String(val.id ?? "");
+}
+
 interface Props {
   data: GraphData;
 }
 
 export default function Graph({ data }: Props) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const fgRef = useRef<any>(null);
   const router = useRouter();
   const params = useParams();
@@ -30,6 +40,18 @@ export default function Graph({ data }: Props) {
     isReady,
     theme
   } = useGraphStore();
+
+  // Keep spin values in refs so callbacks don't change reference
+  const spinRef = useRef({ 
+    isSpinning: useGraphStore.getState().isSpinning, 
+    spinSpeed: useGraphStore.getState().spinSpeed 
+  });
+  useLayoutEffect(() => {
+    spinRef.current = { 
+      isSpinning: useGraphStore.getState().isSpinning, 
+      spinSpeed: useGraphStore.getState().spinSpeed 
+    };
+  });
   
   const [hoverNodeId, setHoverNodeId] = useState<string | null>(null);
   const slug = params?.slug as string;
@@ -70,14 +92,28 @@ export default function Graph({ data }: Props) {
     }
   }, [slug, isReady, cameraTrigger, flyToNode, data.nodes]);
 
+  // Slow spin effect — only runs once when engine starts
+  // Speed changes are picked up by onRender via spinRef
+  useEffect(() => {
+    if (!fgRef.current) return;
+    const controls = fgRef.current.controls();
+    if (controls) {
+      const { isSpinning, spinSpeed } = spinRef.current;
+      controls.autoRotate = isSpinning;
+      controls.autoRotateSpeed = spinSpeed * 0.5;
+    }
+  }, [isReady]); // isReady ensures it runs after engine is stable
+
   // Safety fallback for splash screen
   useEffect(() => {
     const timer = setTimeout(() => setReady(true), 5000);
     return () => clearTimeout(timer);
   }, [setReady]);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleNodeClick = useCallback((node: any) => {
     if (node && node.path) {
+      if (node.isStub) return;
       if (node.path === (slug || 'home')) {
         triggerCamera();
       } else {
@@ -99,8 +135,8 @@ export default function Graph({ data }: Props) {
         if (d > 0) info.set(id, { type: 'uplink', depth: d });
         if (d < uplinkDepth) {
           data.links.forEach(l => {
-            const s = typeof l.source === 'object' ? (l.source as any).id : l.source;
-            const t = typeof l.target === 'object' ? (l.target as any).id : l.target;
+            const s = getLinkId(l.source);
+            const t = getLinkId(l.target);
             if (s === id && !visited.has(t)) {
               visited.add(t);
               queue.push({ id: t, d: d + 1 });
@@ -123,8 +159,8 @@ export default function Graph({ data }: Props) {
         }
         if (d < backlinkDepth) {
           data.links.forEach(l => {
-            const s = typeof l.source === 'object' ? (l.source as any).id : l.source;
-            const t = typeof l.target === 'object' ? (l.target as any).id : l.target;
+            const s = getLinkId(l.source);
+            const t = getLinkId(l.target);
             if (t === id && !visited.has(s)) {
               visited.add(s);
               queue.push({ id: s, d: d + 1 });
@@ -137,11 +173,12 @@ export default function Graph({ data }: Props) {
   }, [data.links, selectedNodeId, uplinkDepth, backlinkDepth]);
 
   // Precise helper to determine if a link is part of the active flow
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const getLinkType = useCallback((link: any) => {
     if (!selectedNodeId) return 'inactive';
     
-    const s = typeof link.source === 'object' ? (link.source as any).id : link.source;
-    const t = typeof link.target === 'object' ? (link.target as any).id : link.target;
+    const s = getLinkId(link.source);
+    const t = getLinkId(link.target);
 
     const sInfo = highlightedInfo.get(s);
     const tInfo = highlightedInfo.get(t);
@@ -168,7 +205,7 @@ export default function Graph({ data }: Props) {
     }
   }, [selectedNodeId, uplinkDepth, backlinkDepth, highlightedInfo, getLinkType]);
 
-  const updateLabelTexture = useCallback((nodeId: string, title: string, color: string) => {
+  const updateLabelTexture = useCallback((nodeId: string, title: string, color: string, isStub?: boolean) => {
     const cached = spriteCache.current.get(nodeId);
     if (!cached) return;
     const { context, canvas, texture } = cached;
@@ -184,7 +221,9 @@ export default function Graph({ data }: Props) {
     context.lineWidth = 4;
     context.stroke();
     
-    context.fillStyle = theme === "dark" ? '#f8fafc' : '#0f172a';
+    context.fillStyle = isStub 
+      ? (theme === "dark" ? '#475569' : '#94a3b8')
+      : (theme === "dark" ? '#f8fafc' : '#0f172a');
     context.font = 'bold 40px sans-serif';
     context.textAlign = 'center';
     context.textBaseline = 'middle';
@@ -222,7 +261,7 @@ export default function Graph({ data }: Props) {
         if (nodeTypeCache.current.get(nodeId) !== type || true) { 
           const node = data.nodes.find(n => n.id === nodeId);
           if (node) {
-            updateLabelTexture(nodeId, node.title, color);
+            updateLabelTexture(nodeId, node.title, color, node.isStub);
             nodeTypeCache.current.set(nodeId, type);
           }
         }
@@ -230,6 +269,7 @@ export default function Graph({ data }: Props) {
     });
   }, [selectedNodeId, hoverNodeId, highlightedInfo, data.nodes, updateLabelTexture, theme]);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const getLabelSprite = useCallback((node: any) => {
     if (spriteCache.current.has(node.id)) return spriteCache.current.get(node.id)!.sprite;
     
@@ -267,7 +307,9 @@ export default function Graph({ data }: Props) {
     context.lineWidth = 4;
     context.stroke();
     
-    context.fillStyle = theme === "dark" ? '#f8fafc' : '#0f172a';
+    context.fillStyle = node.isStub 
+      ? (theme === "dark" ? '#475569' : '#94a3b8')
+      : (theme === "dark" ? '#f8fafc' : '#0f172a');
     context.font = 'bold 40px sans-serif';
     context.textAlign = 'center';
     context.textBaseline = 'middle';
@@ -286,6 +328,39 @@ export default function Graph({ data }: Props) {
     return sprite;
   }, [selectedNodeId, highlightedInfo, theme]);
 
+  // Library callback wrappers (library types require `any`)
+  /* eslint-disable @typescript-eslint/no-explicit-any */
+  const nodeColorCb = (node: any) => {
+    if (node.isStub) return theme === "dark" ? '#1e293b' : '#e2e8f0';
+    if (node.id === selectedNodeId) return '#2dd4bf';
+    if (node.id === hoverNodeId) return '#5eead4';
+    const highlight = highlightedInfo.get(node.id);
+    if (highlight?.type === 'uplink') return '#38bdf8';
+    if (highlight?.type === 'backlink') return '#d946ef';
+    return theme === "dark" ? '#475569' : '#cbd5e1';
+  };
+  const linkColorCb = (link: any) => {
+    const type = getLinkType(link);
+    if (type === 'active-uplink') return 'rgba(56, 189, 248, 0.8)';
+    if (type === 'active-backlink') return 'rgba(217, 70, 239, 0.8)';
+    return theme === "dark" ? 'rgba(148, 163, 184, 0.4)' : 'rgba(100, 116, 139, 0.2)';
+  };
+  const linkArrowColorCb = (link: any) => {
+    const type = getLinkType(link);
+    if (type === 'active-uplink') return 'rgba(56, 189, 248, 0.8)';
+    if (type === 'active-backlink') return 'rgba(217, 70, 239, 0.8)';
+    return 'transparent';
+  };
+  const linkWidthCb = (link: any) => {
+    const type = getLinkType(link);
+    return type === 'inactive' ? 1.5 : 4;
+  };
+  const linkArrowLenCb = (link: any) => {
+    const type = getLinkType(link);
+    return type === 'inactive' ? 0 : 8;
+  };
+  /* eslint-enable @typescript-eslint/no-explicit-any */
+
   return (
     <div 
       className="h-full w-full" 
@@ -294,49 +369,47 @@ export default function Graph({ data }: Props) {
     >
       <ForceGraph3D
         ref={fgRef}
+        controlType="orbit"
         graphData={data}
         onNodeClick={handleNodeClick}
-        onNodeHover={(node) => setHoverNodeId(node ? (node as any).id : null)}
+        onNodeHover={(node: NodeObj | null) => setHoverNodeId(node ? String(node.id ?? "") : null)}
         backgroundColor={theme === "dark" ? "#020617" : "#f8fafc"}
         showNavInfo={false}
         
-        nodeColor={(node: any) => {
-          if (node.id === selectedNodeId) return '#2dd4bf';
-          if (node.id === hoverNodeId) return '#5eead4';
-          const highlight = highlightedInfo.get(node.id);
-          if (highlight?.type === 'uplink') return '#38bdf8';
-          if (highlight?.type === 'backlink') return '#d946ef';
-          return theme === "dark" ? '#475569' : '#cbd5e1';
-        }}
+        nodeColor={nodeColorCb}
+        nodeVal={1}
         nodeRelSize={5}
         nodeThreeObject={getLabelSprite}
         nodeThreeObjectExtend={true}
 
-        linkColor={(link: any) => {
-          const type = getLinkType(link);
-          if (type === 'active-uplink') return 'rgba(56, 189, 248, 0.8)';
-          if (type === 'active-backlink') return 'rgba(217, 70, 239, 0.8)';
-          return theme === "dark" ? 'rgba(148, 163, 184, 0.4)' : 'rgba(100, 116, 139, 0.2)';
-        }}
-        linkDirectionalArrowColor={(link: any) => {
-          const type = getLinkType(link);
-          if (type === 'active-uplink') return 'rgba(56, 189, 248, 0.8)';
-          if (type === 'active-backlink') return 'rgba(217, 70, 239, 0.8)';
-          return 'transparent';
-        }}
-        linkWidth={(link: any) => {
-          const type = getLinkType(link);
-          return type === 'inactive' ? 1.5 : 4;
-        }}
-        linkDirectionalArrowLength={(link: any) => {
-          const type = getLinkType(link);
-          return type === 'inactive' ? 0 : 8;
-        }}
+        linkColor={linkColorCb}
+        linkDirectionalArrowColor={linkArrowColorCb}
+        linkWidth={linkWidthCb}
+        linkDirectionalArrowLength={linkArrowLenCb}
         linkDirectionalArrowRelPos={1}
 
         warmupTicks={150}
         cooldownTicks={0}
-        onEngineStop={() => setReady(true)}
+        onEngineStop={() => {
+          setReady(true);
+          const { isSpinning, spinSpeed } = spinRef.current;
+          const controls = fgRef.current?.controls();
+          if (controls) {
+            controls.autoRotate = isSpinning;
+            controls.autoRotateSpeed = spinSpeed * 0.5;
+          }
+        }}
+        onRender={() => {
+          const { isSpinning, spinSpeed } = spinRef.current;
+          const controls = fgRef.current?.controls();
+          if (controls) {
+            controls.autoRotate = isSpinning;
+            if (isSpinning) {
+              controls.autoRotateSpeed = spinSpeed * 0.5;
+              controls.update();
+            }
+          }
+        }}
       />
     </div>
   );

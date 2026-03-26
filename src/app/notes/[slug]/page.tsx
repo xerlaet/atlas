@@ -40,14 +40,11 @@ export default async function NotePage({ params }: { params: Promise<{ slug: str
     notFound();
   }
 
-  const validSlugs = Object.keys(notes);
+  const validSlugs: string[] = Object.keys(notes);
 
   return (
-    <NotePanel title={note.metadata.title}>
-      <MarkdownRenderer 
-        content={note.content} 
-        validSlugs={validSlugs} 
-      />
+    <NotePanel>
+      <MarkdownRenderer content={note.content} validSlugs={validSlugs} />
     </NotePanel>
   );
 }

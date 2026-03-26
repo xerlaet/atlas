@@ -2,17 +2,15 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useGraphStore } from "@/lib/store";
-import Link from "next/link";
-import { GripVertical, Minimize2 } from "lucide-react";
+import { GripVertical } from "lucide-react";
 import PanelController from "./PanelController";
 
 interface Props {
-  title: string;
   children: React.ReactNode;
 }
 
-export default function NotePanel({ title, children }: Props) {
-  const { panelWidth, setPanelWidth, isPanelHidden, setPanelHidden } = useGraphStore();
+export default function NotePanel({ children }: Props) {
+  const { panelWidth, setPanelWidth, isPanelHidden } = useGraphStore();
   const [isResizing, setIsResizing] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -24,6 +22,7 @@ export default function NotePanel({ title, children }: Props) {
       const idealWidth = Math.min(700, window.innerWidth * 0.4);
       if (idealWidth !== 700) setPanelWidth(idealWidth);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const startResizing = useCallback((e: React.MouseEvent) => {
@@ -62,7 +61,7 @@ export default function NotePanel({ title, children }: Props) {
         ref={panelRef}
         style={{ '--panel-width': `${panelWidth}px` } as React.CSSProperties}
         className={cn(
-          "fixed top-[94px] md:top-6 bottom-6 bg-[var(--background-panel)] backdrop-blur-3xl border border-[var(--color8)] rounded-[22px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-50 overflow-hidden pointer-events-auto transition-all duration-300 ease-out origin-top-right",
+          "fixed top-[94px] md:top-6 bottom-6 bg-[var(--background-panel)] backdrop-blur-3xl border border-[var(--color8)] rounded-[22px] shadow-panel z-50 overflow-hidden pointer-events-auto transition-all duration-300 ease-out origin-top-right",
           "inset-x-6 md:inset-x-auto md:right-6 md:w-[var(--panel-width)]",
           isPanelHidden ? "opacity-0 scale-95 pointer-events-none translate-x-4" : "opacity-100 scale-100 translate-x-0"
         )}

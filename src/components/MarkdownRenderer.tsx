@@ -13,7 +13,6 @@ import {
   AlertCircle, 
   CheckCircle2, 
   HelpCircle, 
-  ChevronRight, 
   Zap, 
   StickyNote,
   AlertTriangle,
@@ -21,17 +20,18 @@ import {
   ClipboardList,
   Sparkles,
   Layers,
-  MessageSquareQuote
+  MessageSquareQuote,
+  type LucideIcon
 } from "lucide-react";
 import "katex/dist/katex.min.css";
 import "highlight.js/styles/tokyo-night-dark.css";
 
 interface Props {
   content: string;
-  validSlugs?: string[]; // Array of all valid slugs for existence check
+  validSlugs: string[]; // List of existing slugs
 }
 
-const calloutConfig: Record<string, { icon: any, color: string, label: string }> = {
+const calloutConfig: Record<string, { icon: LucideIcon, color: string, label: string }> = {
   info: { icon: Info, color: "text-blue-400 border-blue-500/30 bg-blue-500/5", label: "Info" },
   note: { icon: StickyNote, color: "text-slate-400 border-slate-500/30 bg-slate-500/5", label: "Note" },
   default: { icon: Layers, color: "text-teal-400 border-teal-500/30 bg-teal-500/5", label: "Note" },
@@ -70,15 +70,17 @@ export default function MarkdownRenderer({ content, validSlugs }: Props) {
   const processedContent = content
     // Fix: Ensure content after </iframe> is on a new line so markdown can parse it
     .replace(/<\/iframe>/g, "</iframe>\n\n")
-    // Fix: Aggressive Math Block Normalization
-    // 1. Find every $$ ... $$ block (using [\s\S] for multi-line matching)
-    .replace(/\$\$([\s\S]*?)\$\$/g, (match, inner) => {
-      // 2. Clean up the environments inside the block
+    // Fix: Math block normalization — only wrap standalone $$ blocks in newlines,
+    // leave inline $$ in table cells untouched to preserve table formatting
+    .replace(/\$\$([\s\S]*?)\$\$/g, (match, inner, offset, str) => {
+      const before = offset > 0 ? str[offset - 1] : "";
+      const after = offset + match.length < str.length ? str[offset + match.length] : "";
+      const isBlock = (!before || before === "\n") && (!after || after === "\n" || after === "\r");
+      if (!isBlock) return match;
+
       const cleanedInner = inner
         .replace(/\\begin\s*?\{(align|equation|alignat)\*?\}\s*?(\{[0-9]+\})?/g, "\\begin{aligned}")
         .replace(/\\end\s*?\{(align|equation|alignat)\*?\}/g, "\\end{aligned}");
-      
-      // 3. Return the block wrapped in newlines to guarantee remark-math identifies it
       return `\n\n$$\n${cleanedInner.trim()}\n$$\n\n`;
     });
 
@@ -109,69 +111,64 @@ export default function MarkdownRenderer({ content, validSlugs }: Props) {
           }]
         ]}
         components={{
-          a: ({ node, ...props }) => {
-            const href = props.href || "";
-            const isExternal = href.startsWith("http");
+          a: ({ href, children }) => {
+            const hrefStr = href || "";
+            const isExternal = hrefStr.startsWith("http") || hrefStr.startsWith("mailto:");
             
             if (!isExternal) {
-              // Internal link: check if it points to an existing note
-              // Extract slug from /notes/slug
-              const slugMatch = href.match(/\/notes\/([^#?]+)/);
-              const slug = slugMatch ? slugMatch[1] : null;
+              const slug = hrefStr.replace(/^\/notes\//, "").split("#")[0];
+              const isValid = slugSet.has(slug);
               
-              const exists = slug && slugSet.size > 0 ? slugSet.has(slug) : true;
-              
-              if (!exists) {
+              if (!isValid) {
                 return (
-                  <span 
-                    className="text-slate-500/50 cursor-help border-b border-dotted border-slate-500/30 font-medium italic" 
-                    title={`The note "${slug}" hasn't been created yet`}
-                  >
-                    {props.children}
+                  <span className="text-slate-500/60 font-bold border-b border-dashed border-slate-500/30 cursor-help transition-colors hover:text-slate-400" title="This note hasn't been created yet">
+                    {children}
                   </span>
                 );
               }
               
-              return <Link href={href} className="text-teal-400 no-underline hover:underline font-bold" {...props} />;
+              return <Link href={hrefStr} className="text-teal-400 no-underline hover:underline font-bold">{children}</Link>;
             }
             return (
               <a 
-                {...props} 
+                href={hrefStr}
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-sky-400 no-underline hover:underline font-bold"
-              />
+              >
+                {children}
+              </a>
             );
           },
-          img: ({ node, ...props }) => {
-            let src = props.src || "";
-            if (typeof src === "string" && src.startsWith("attachments/")) {
-              src = `/${src}`;
+          img: ({ src, alt, className }) => {
+            let srcStr = src || "";
+            if (typeof srcStr === "string" && srcStr.startsWith("attachments/")) {
+              srcStr = `/${srcStr}`;
             }
             
-            const isTikz = props.alt === "TikZ Diagram";
-            // Use a stable class that we will control via CSS
+            const isTikz = alt === "TikZ Diagram";
             const tikzClasses = "tikz-diagram-auto my-12 mx-auto block max-w-full transition-all duration-300";
             const standardClasses = "rounded-lg shadow-2xl mx-auto border border-[var(--color8)] my-8 block max-w-full";
 
             return (
+              // eslint-disable-next-line @next/next/no-img-element
               <img 
-                {...props} 
-                src={src} 
-                className={props.className || (isTikz ? tikzClasses : standardClasses)} 
-                alt={props.alt || "Image"} 
+                src={srcStr} 
+                className={className || (isTikz ? tikzClasses : standardClasses)} 
+                alt={alt || "Image"} 
               />
             );
           },
-          iframe: ({ node, ...props }) => {
+          iframe: ({ ...props }) => {
             return (
               <div className="flex justify-center my-8 aspect-video">
                 <iframe {...props} className="rounded-lg border border-slate-800 shadow-2xl w-full h-full" />
               </div>
             );
           },
-          blockquote: ({ node, children }) => {
+          blockquote: ({ children }) => {
             const childrenArray = Array.isArray(children) ? children : [children];
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const firstChild = childrenArray[0] as any;
             const pChildren = firstChild?.props?.children;
             const pChildrenArray = Array.isArray(pChildren) ? pChildren : [pChildren];

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useGraphStore } from "@/lib/store";
 
 export default function HomeState() {
-  const { setSelectedNode, setPanelOpen } = useGraphStore();
+  const { setPanelOpen } = useGraphStore();
 
   useEffect(() => {
     // When at root, we might want to focus Home.md

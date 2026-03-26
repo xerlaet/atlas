@@ -2,7 +2,6 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import GithubSlugger from "github-slugger";
-import crypto from "crypto";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
@@ -20,6 +19,7 @@ export interface GraphNode {
   x?: number;
   y?: number;
   z?: number;
+  isStub?: boolean;
 }
 
 export interface GraphLink {
@@ -30,10 +30,6 @@ export interface GraphLink {
 export interface GraphData {
   nodes: GraphNode[];
   links: GraphLink[];
-}
-
-function getHash(text: string) {
-  return crypto.createHash("md5").update(text).digest("hex");
 }
 
 /**
@@ -61,6 +57,18 @@ function normalizeWikiLink(link: string): string {
   return base.split("#")[0].trim();
 }
 
+/**
+ * Simple slugify for stub nodes to match the Python script's behavior
+ */
+function githubSlugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[\s_]+/g, "-")
+    .replace(/[^a-z0-9-]/g, "")
+    .replace(/-+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 let cachedData: { 
   notes: Record<string, NoteMetadata>, 
   graph: GraphData 
@@ -85,6 +93,8 @@ export async function getGraphData(): Promise<{
 
   // First pass: Build metadata
   const slugToTitle: Record<string, string> = {};
+  const stubSlugToTitle: Record<string, string> = {};
+  
   files.forEach((filePath) => {
     const relativePath = path.relative(CONTENT_DIR, filePath);
     const fileName = path.basename(filePath, ".md");
@@ -108,16 +118,21 @@ export async function getGraphData(): Promise<{
     const wikiLinkRegex = /\[\[(.*?)\]\]/g;
     let match;
     while ((match = wikiLinkRegex.exec(content)) !== null) {
-      metadata.links.push(normalizeWikiLink(match[1]));
+      const target = normalizeWikiLink(match[1]);
+      metadata.links.push(target);
     }
 
     // 2. Detect standard Markdown links [Alias](/notes/slug)
-    const markdownLinkRegex = /\[.*?\]\((\/notes\/([^\s\)]+))\)/g;
+    const markdownLinkRegex = /\[(.*?)\]\((\/notes\/([^\s\)]+))\)/g;
     while ((match = markdownLinkRegex.exec(content)) !== null) {
-      const linkSlug = match[2].split("#")[0];
-      // We'll resolve these to titles in the second pass since we need all metadata first
+      const alias = match[1];
+      const linkSlug = match[3].split("#")[0];
       if (!metadata.links.includes(linkSlug)) {
         metadata.links.push(linkSlug);
+        // Hint for stub title: prefer the alias if it's not already a known note
+        if (alias && !stubSlugToTitle[linkSlug]) {
+          stubSlugToTitle[linkSlug] = alias;
+        }
       }
     }
 
@@ -126,30 +141,65 @@ export async function getGraphData(): Promise<{
     slugToTitle[slug] = title;
   });
 
-  // Second pass: Build graph
+  // Second pass: Build graph and handle stub nodes
   const nodes: GraphNode[] = Object.values(notes).map((note) => ({
     id: note.title,
     title: note.title,
     path: note.slug,
+    isStub: false,
   }));
 
   const links: GraphLink[] = [];
+  const stubs = new Map<string, { title: string, slug: string }>();
+
   Object.values(notes).forEach((note) => {
     note.links.forEach((linkIdentifier) => {
-      // It could be a title (from WikiLink) or a slug (from Markdown link)
-      let targetTitle = "";
+      let targetId = "";
+      let isStub = false;
+      let stubTitle = "";
+      let stubSlug = "";
+
       if (titleToId[linkIdentifier]) {
-        targetTitle = linkIdentifier;
+        targetId = linkIdentifier; // titleToId maps title to slug, but node ID is title
       } else if (slugToTitle[linkIdentifier]) {
-        targetTitle = slugToTitle[linkIdentifier];
+        targetId = slugToTitle[linkIdentifier];
+      } else {
+        // This is a stub node
+        isStub = true;
+        // If linkIdentifier is a slug, we might have a hint
+        if (stubSlugToTitle[linkIdentifier]) {
+          stubTitle = stubSlugToTitle[linkIdentifier];
+          stubSlug = linkIdentifier;
+        } else {
+          // It's probably a title from a WikiLink that didn't get converted
+          stubTitle = linkIdentifier;
+          stubSlug = githubSlugify(linkIdentifier);
+        }
+        targetId = stubTitle;
       }
 
-      if (targetTitle && targetTitle !== note.title) {
+      if (targetId && targetId !== note.title) {
+        if (isStub && !titleToId[targetId]) {
+          stubs.set(targetId, { title: stubTitle, slug: stubSlug });
+        }
         links.push({
           source: note.title,
-          target: targetTitle,
+          target: targetId,
         });
       }
+    });
+  });
+
+  // Add stub nodes to the graph
+  stubs.forEach((stubInfo, id) => {
+    // If it's already in nodes, skip
+    if (nodes.find(n => n.id === id)) return;
+
+    nodes.push({
+      id: id,
+      title: stubInfo.title,
+      path: stubInfo.slug,
+      isStub: true,
     });
   });
 

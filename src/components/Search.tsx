@@ -42,12 +42,13 @@ export default function Search({ items }: SearchProps) {
       .slice(0, 8);
   }, [query, items]);
 
+  // Reset query when opening search
   useEffect(() => {
-    if (isSearchOpen) {
-      setQuery("");
-      setSelectedIndex(0);
-      setTimeout(() => inputRef.current?.focus(), 10);
-    }
+    if (!isSearchOpen) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setQuery("");
+    setSelectedIndex(0);
+    setTimeout(() => inputRef.current?.focus(), 10);
   }, [isSearchOpen]);
 
   useEffect(() => {
@@ -156,7 +157,7 @@ export default function Search({ items }: SearchProps) {
                 <SearchIcon className="w-8 h-8" />
               </div>
               <p className="text-[var(--color7)] font-light">
-                No notes found for "<span className="text-[var(--foreground)] italic">{query}</span>"
+                No notes found for &quot;<span className="text-[var(--foreground)] italic">{query}</span>&quot;
               </p>
             </div>
           )}

@@ -12,8 +12,11 @@ interface GraphStore {
   isPanelHidden: boolean;
   isReady: boolean;
   isSearchOpen: boolean;
+  isSpinning: boolean;
+  spinSpeed: number;
+  lastActiveSpinSpeed: number;
   theme: "dark" | "light";
-  
+
   setSelectedNode: (id: string | null) => void;
   setPanelOpen: (isOpen: boolean) => void;
   setPanelWidth: (width: number) => void;
@@ -25,10 +28,12 @@ interface GraphStore {
   setPanelHidden: (hidden: boolean) => void;
   setReady: (ready: boolean) => void;
   setSearchOpen: (open: boolean) => void;
+  setSpinning: (spinning: boolean) => void;
+  setSpinSpeed: (speed: number) => void;
   toggleTheme: () => void;
-}
+  }
 
-export const useGraphStore = create<GraphStore>((set) => ({
+  export const useGraphStore = create<GraphStore>((set) => ({
   selectedNode: null,
   isPanelOpen: false,
   panelWidth: 700, // Default width in px
@@ -40,8 +45,11 @@ export const useGraphStore = create<GraphStore>((set) => ({
   isPanelHidden: false,
   isReady: false,
   isSearchOpen: false,
+  isSpinning: false,
+  spinSpeed: 0,
+  lastActiveSpinSpeed: 1,
   theme: "dark",
-  
+
   setSelectedNode: (id) => set({ selectedNode: id }),
   setPanelOpen: (isOpen) => set({ isPanelOpen: isOpen }),
   setPanelWidth: (width) => set({ panelWidth: width }),
@@ -53,5 +61,12 @@ export const useGraphStore = create<GraphStore>((set) => ({
   setPanelHidden: (hidden) => set({ isPanelHidden: hidden }),
   setReady: (ready) => set({ isReady: ready }),
   setSearchOpen: (open) => set({ isSearchOpen: open }),
+  setSpinning: (spinning) => set({ isSpinning: spinning }),
+  setSpinSpeed: (speed) => set((state) => ({
+    spinSpeed: speed,
+    isSpinning: speed > 0,
+    lastActiveSpinSpeed: speed > 0 ? speed : state.lastActiveSpinSpeed,
+  })),
   toggleTheme: () => set((state) => ({ theme: state.theme === "dark" ? "light" : "dark" })),
-}));
+  }));
+

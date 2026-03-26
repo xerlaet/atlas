@@ -1,20 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
 export default function InitialRedirect() {
   const router = useRouter();
   const pathname = usePathname();
-  const [hasRedirected, setHasRedirected] = useState(false);
+  const hasRedirected = useRef(false);
 
   useEffect(() => {
-    // Only redirect if we are at the exact root and haven't redirected in this session
-    if (pathname === "/" && !hasRedirected) {
-      setHasRedirected(true);
+    if (pathname === "/" && !hasRedirected.current) {
+      hasRedirected.current = true;
       router.replace("/notes/home");
     }
-  }, [pathname, router, hasRedirected]);
+  }, [pathname, router]);
 
   return null;
 }
