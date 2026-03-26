@@ -3,7 +3,7 @@
 :root {
   /* Teal-based Dark Palette */
   --background: #020617;
-  --background-panel: rgba(15, 23, 42, 0.8); /* Restored original slate-900/80 approximate */
+  --background-panel: rgba(15, 23, 42, 0.7); /* Slate-900/70 */
   --background-darker: #01040a;
   --foreground: #94a3b8; /* Soft Slate 400 for lower contrast */
   
@@ -26,7 +26,7 @@
 .light {
   /* Soft Light Palette - More integrated, better contrast */
   --background: #f1f5f9; /* Slate 100 */
-  --background-panel: rgba(255, 255, 255, 0.85);
+  --background-panel: rgba(255, 255, 255, 0.75); /* White/75 */
   --background-darker: #e2e8f0; /* Slate 200 */
   --foreground: #1e293b; /* Slate 800 */
   

@@ -61,7 +61,7 @@ export default function NotePanel({ children }: Props) {
         ref={panelRef}
         style={{ '--panel-width': `${panelWidth}px` } as React.CSSProperties}
         className={cn(
-          "fixed top-[94px] md:top-6 bottom-6 bg-[var(--background-panel)] backdrop-blur-3xl border border-[var(--color8)] rounded-[22px] shadow-panel z-50 overflow-hidden pointer-events-auto transition-all duration-300 ease-out origin-top-right",
+          "fixed top-[94px] md:top-6 bottom-6 bg-[var(--background-panel)] backdrop-blur-xl border border-[var(--color8)] rounded-[22px] shadow-panel z-50 overflow-hidden pointer-events-auto transition-all duration-300 ease-out origin-top-right",
           "inset-x-6 md:inset-x-auto md:right-6 md:w-[var(--panel-width)]",
           isPanelHidden ? "opacity-0 scale-95 pointer-events-none translate-x-4" : "opacity-100 scale-100 translate-x-0"
         )}

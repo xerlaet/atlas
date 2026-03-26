@@ -206,7 +206,7 @@ export default function GraphUI({ searchIndex }: GraphUIProps) {
             showControls ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
           )}
         >
-            <div className="bg-[var(--background-panel)] backdrop-blur-3xl border border-[var(--color8)] p-6 rounded-[22px] shadow-panel flex flex-col gap-8 min-w-[320px]">
+            <div className="bg-[var(--background-panel)] backdrop-blur-xl border border-[var(--color8)] p-6 rounded-[22px] shadow-panel flex flex-col gap-8 min-w-[320px]">
             {/* Controls Header & Nav Actions */}
             <div className="flex flex-col gap-6 animate-in fade-in slide-in-from-top-2 duration-300">
               <div className="flex items-center justify-between border-b border-white/5 pb-4">

@@ -8,6 +8,7 @@ import rehypeRaw from "rehype-raw";
 import rehypeHighlight from "rehype-highlight";
 import Link from "next/link";
 import { useMemo } from "react";
+import SvgImage from "./SvgImage";
 import { 
   Info, 
   AlertCircle, 
@@ -141,20 +142,29 @@ export default function MarkdownRenderer({ content, validSlugs }: Props) {
             );
           },
           img: ({ src, alt, className }) => {
-            let srcStr = src || "";
-            if (typeof srcStr === "string" && srcStr.startsWith("attachments/")) {
-              srcStr = `/${srcStr}`;
-            }
+            const srcStr = typeof src === "string"
+              ? (src.startsWith("attachments/") ? `/${src}` : src)
+              : "";
             
             const isTikz = alt === "TikZ Diagram";
-            const tikzClasses = "tikz-diagram-auto my-12 mx-auto block max-w-full transition-all duration-300";
+            const isSvg = typeof srcStr === "string" && srcStr.endsWith(".svg");
             const standardClasses = "rounded-lg shadow-2xl mx-auto border border-[var(--color8)] my-8 block max-w-full";
+
+            if (isTikz || isSvg) {
+              return (
+                <SvgImage 
+                  src={srcStr}
+                  alt={alt || "Diagram"}
+                  className={className || "tikz-diagram-auto mx-auto block my-12 transition-all duration-300"}
+                />
+              );
+            }
 
             return (
               // eslint-disable-next-line @next/next/no-img-element
               <img 
                 src={srcStr} 
-                className={className || (isTikz ? tikzClasses : standardClasses)} 
+                className={className || standardClasses} 
                 alt={alt || "Image"} 
               />
             );
