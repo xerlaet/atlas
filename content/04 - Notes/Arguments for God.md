@@ -14,7 +14,7 @@
 ## Immaterial / Consciousness
 [Argument from Religious Experience](/notes/argument-from-religious-experience) (weak)
 [Hard Problem of Consciousness](/notes/hard-problem-of-consciousness) (mid)
-[NDEs](/notes/ndes) (idk)
+[Near Death Experiences](/notes/near-death-experiences) (idk)
 [Argument from Abstract Objects](/notes/argument-from-abstract-objects) (idk)
 
 ## Cosmological

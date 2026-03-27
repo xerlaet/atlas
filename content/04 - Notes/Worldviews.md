@@ -24,3 +24,5 @@ From this, God chooses to create with His will and power because it is better th
 Things that are to be taken on faith are the trinity, the incarnation, transubstantiation in the eucharist, divine revelation through the historicity of Jesus, papal infallibility and the magisterium, heaven/hell/purgatory, resurrection of the dead, efficacy of the sacraments, immaculate conception, assumption of Mary, moral truths
 
 [Islam](/notes/islam)
+
+[Protestant vs Catholic Soteriology](/notes/protestant-vs-catholic-soteriology)
