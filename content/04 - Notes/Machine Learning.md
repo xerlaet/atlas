@@ -1,6 +1,8 @@
 # Machine Learning
 ---
 
+[Transformers](/notes/transformers)
+
 ## Final Exam Review
 - attention is all you need paper
 	- cons of rnn (efficiency + effectiveness) <- memory loss plus hard to train because not parallelizable
