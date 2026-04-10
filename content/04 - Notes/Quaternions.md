@@ -1,37 +1,29 @@
 # Quaternions
 ---
 
-**Quaternions** extend [Complex Numbers](/notes/complex-numbers) to represent rotation in 3D space that avoids gimbal lock that [Euler Angles](/notes/euler-angles) suffer from
+**Quaternions** are a four-dimensional extension of [Complex Numbers](/notes/complex-numbers) used to efficiently calculate and represent 3D rotations. They are widely utilized in physics engines and 3D programming because they elegantly avoid the **Gimbal Lock** issues inherently associated with [Euler Angles](/notes/euler-angles).
 
-A quaternion is defined by
-$$
-q=w+x i+yj+zk
-$$
-$w$ is the scalar part denoting the angle of rotation
-$x,y,z$ are the vector part denoting the axis of rotation
+## Axis-Angle Representation
+`![TikZ Diagram](/attachments/tikz-02744184a58f0e6946348bafe5dd853d.svg)`
 
-![TikZ Diagram](/attachments/tikz-2691eff9d12726d3c51836472a985d1e.svg)
-
-## Misc
-Combining rotations can be done by multiplying them together (non-commutative)
+## Mathematical Properties
+A quaternion $q$ is defined by a scalar part $w$ and a vector part $x, y, z$. The fundamental relationships of the imaginary basis units dictate:
 $$
-q_{new}=q_{2}\otimes q_{1}
+\begin{aligned}
+q &= w + x i + y j + z k \\
+i^2 &= j^2 = k^2 = ijk = -1 \\
+|q| &= \sqrt{w^2 + x^2 + y^2 + z^2} = 1 \\
+q^{-1} &= q^* = w - x i - y j - z k
+\end{aligned}
 $$
 
-Convert to [Rotation Matrices](/notes/rotation-matrices) with the following formula
+## Rotation & Conversion
+- **Composition**: Combining sequential rotations is achieved via non-commutative multiplication ($q_{new} = q_2 \otimes q_1$).
+- **[Rotation Matrices](/notes/rotation-matrices)**: A normalized quaternion converts to a $3 \times 3$ transformation matrix:
 $$
 R = \begin{bmatrix}
 1 - 2(y^2 + z^2) & 2(xy - wz) & 2(xz + wy) \\
 2(xy + wz) & 1 - 2(x^2 + z^2) & 2(yz - wx) \\
 2(xz - wy) & 2(yz + wx) & 1 - 2(x^2 + y^2)
 \end{bmatrix}
-$$
-
-## Properties
-$$
-\begin{align}
-i^{2}&=j^{2}=k^{2}=ijk=-1 \\
-\lvert q \rvert &=\sqrt{w^{2}+x^{2}+y^{2}+z^{2}}=1 \\
-q^{-1}&=q^{*}=w-\xi -yj-zk
-\end{align}
 $$

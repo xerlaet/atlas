@@ -3,22 +3,87 @@
 
 [Bibliatech](https://bibliatech.com)
 
-The bible is a library - know the genre of each book and the time period that it its into with broader context
+Originally formatted as a three part TaNaK:
+- Torah (Teaching)
+- Nevi'im (Prophets)
+- Ketuvim (Writings)
 
-## Genesis
- Chapters 1 and 2 are accounts of creation and are unique from other creation stories because the world is created out of nothing. All the other creation stories have the world created through violence, destruction, or sex.
+## The Pentateuch
+[Genesis](/notes/genesis)
+[Exodus](/notes/exodus)
+[Leviticus](/notes/leviticus)
+[Numbers](/notes/numbers)
+[Deuteronomy](/notes/deuteronomy)
 
-> God, infinitely perfect and blessed in himself, in a plan of sheer goodness freely created man to make him share in his own blessed life -CCC I.I
+## The Historical Books
+[Joshua](/notes/joshua)
+[Judges](/notes/judges)
+[Ruth](/notes/ruth)
+[Samuel](/notes/samuel)
+[Kings](/notes/kings)
+[Chronicles](/notes/chronicles)
+[Ezra-Nehemiah](/notes/ezra-nehemiah)
+[Tobit](/notes/tobit)[^1]
+[Judith](/notes/judith)[^1]
+[Esther](/notes/esther)
+[Maccabees](/notes/maccabees)[^1]
 
-If the account of creation needs to be taken as a metaphor, why can't the purpose of humans also be?
+## The Wisdom Books
+[Job](/notes/job)
+[Psalms](/notes/psalms)
+[Proverbs](/notes/proverbs)
+[Ecclesiastes](/notes/ecclesiastes)
+[Song of Solomon](/notes/song-of-solomon)
+[Wisdom of Solomon](/notes/wisdom-of-solomon)[^1]
+[Sirach](/notes/sirach)[^1]
 
-Chapters 3 and 4 talk about the fall and Cain and Abel. The serpent doesn't object to God's existence or authority, just his trustworthiness in saying that the tree was off limits (Does God love you?)
+## The Prophetic Books
+[Isaiah](/notes/isaiah)
+[Jeremiah](/notes/jeremiah)
+[Lamentations](/notes/lamentations)
+[Baruch](/notes/baruch)[^1]
+[Ezekiel](/notes/ezekiel)
+[Daniel](/notes/daniel)
+[Hosea](/notes/hosea)
+[Joel](/notes/joel)
+[Amos](/notes/amos)
+[Obadiah](/notes/obadiah)
+[Jonah](/notes/jonah)
+[Micah](/notes/micah)
+[Nahum](/notes/nahum)
+[Habakkuk](/notes/habakkuk)
+[Zephaniah](/notes/zephaniah)
+[Haggai](/notes/haggai)
+[Zechariah](/notes/zechariah)
+[Malachi](/notes/malachi)
 
-Later it says Adam had many sons and daughters so that's how the human race could multiply, incest was ok because genetically they were superior and it was necessary without God creating new humans out of nothing. As for Adam and Eve, you have to believe that they were the first two true humans, maybe Adam was an evolved humanoid miraculously given a soul by God, and then Eve was a full stop miracle created from Adam.
+## The Gospels
+[Matthew](/notes/matthew)
+[Mark](/notes/mark)
+[Luke](/notes/luke)
+[John](/notes/john)
 
-**TODO**: Look into archeological evidence of early human-like creatures and see if it can align with the Catholic worldview, evaluating it in light of *Humani Generis*
+[The Acts of the Apostles](/notes/the-acts-of-the-apostles)
 
-Chapters 5 and 6 talk about descendants, and how Seth's line walked with the lord and Cain's line didn't, and intermarrying among them at least contributed to overall sin. Then Noah comes along
+## The New Testament Letters
+[Romans](/notes/romans)
+[Corinthians](/notes/corinthians)
+[Galatians](/notes/galatians)
+[Ephesians](/notes/ephesians)
+[Philippians](/notes/philippians)
+[Colossians](/notes/colossians)
+[Thessalonians](/notes/thessalonians)
+[Timothy](/notes/timothy)
+[Titus](/notes/titus)
+[Philemon](/notes/philemon)
+[Hebrews](/notes/hebrews)
 
- The great flood happens, which is probably symbolic of baptism, and Noah's family and the animals are saved. Of Noah's three sons, on of them, Ham (the father of Canaan) "sees his father's nakedness" meaning he probably slept with his mother and then his bloodline was cursed. The other two brother's didn't and were blessed.
+## The Catholic Letters
+[James](/notes/james)
+[Peter](/notes/peter)
+[John](/notes/john)
+[Jude](/notes/jude)
 
+[Revelation](/notes/revelation)
+
+[^1]: The Apocrypha

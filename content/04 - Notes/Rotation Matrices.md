@@ -1,48 +1,19 @@
 # Rotation Matrices
 ---
 
-**Rotation Matrices** are useful tools for describing rotations in $n$ dimensional space. Typically this is with frames following the [Right Hand Rule](/notes/right-hand-rule)
-$$
-v_{B}=Rv_{A}
-$$
-3D rotations can also be represented with [Quaternions](/notes/quaternions) or [Euler Angles](/notes/euler-angles)
+**Rotation Matrices** are orthogonal linear transformations used to map geometric coordinates between different reference frames. They form the core rotational component of [Transformation Matrices](/notes/transformation-matrices) and update vectors via matrix multiplication ($v_B = R v_A$).
 
-## 2D Rotation
-Given a rotation, the new coordinate frame can be expressed as
-$$
-R(\theta )=\begin{bmatrix}
-\cos \theta  & -\sin \theta  \\
-\sin \theta  & \cos \theta 
-\end{bmatrix}
-$$
-The two columns describe where the $x$ and $y$ axes will end up after the rotation
-![TikZ Diagram](/attachments/tikz-6bc82af281e9fb716f42d821de2121f2.svg)
+## Core Properties
+Valid rotation matrices belong to the Special Orthogonal Group and exhibit strict mathematical rules:
+- **Orthogonality**: Column vectors are orthogonal unit vectors, meaning $R^T R = I$.
+- **Invertibility**: The inverse of the matrix is simply its transpose ($R^{-1} = R^T$).
+- **Orientation**: The determinant strictly equals $+1$, ensuring it preserves the [Right Hand Rule](/notes/right-hand-rule).
+- **Composition**: Complex spatial rotations are formed via sequential matrix multiplication. Because multiplication is non-commutative, the order fundamentally matters.
 
-## 3D Rotation
-For any unit rotation in 3D, a similar matrix can be created (notice how the axis being rotated around doesn't move)
-$$
-\begin{align}
-R_{x}(\alpha )&=\begin{bmatrix}
-1 & 0 & 0 \\
-0 & \cos \alpha  & -\sin \alpha  \\
-0 & \sin \alpha  & \cos \alpha 
-\end{bmatrix} \\
-R_{y}(\beta )&=\begin{bmatrix}
-\cos \beta  & 0 & \sin \beta  \\
-0 & 1 & 0 \\
--\sin \beta  & 0 & \cos \beta 
-\end{bmatrix} \\
-R_{z}(\gamma )&=\begin{bmatrix}
-\cos \gamma  & -\sin \gamma  & 0 \\
-\sin \gamma  & \cos \gamma  & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-\end{align}
-$$
-![TikZ Diagram](/attachments/tikz-29baea3701f86a84579335747e7462fa.svg)
+## Dimensional Formulations
+Due to matrix complexity scaling with dimensions, specific formulations are broken out by their spatial degrees of freedom:
+- [2D Rotation](/notes/2d-rotation): Involves a single angle revolving around the 2D origin.
+- [3D Rotation](/notes/3d-rotation): Involves multiplying three separate matrices representing the principal axes, serving as a foundational alternative to [Quaternions](/notes/quaternions) and [Euler Angles](/notes/euler-angles).
 
-For a complex rotation, multiply the rotational matrices together in order. Typically they are arranged so that the rotations are applied in the order roll pitch yaw
-$$
-R=R_{z}(\gamma )R_{y}(\beta )R_{x}(\alpha )
-$$
-Rotation matrices are orthogonal meaning their inverse is their transpose
+
+

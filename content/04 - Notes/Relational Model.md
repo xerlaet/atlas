@@ -4,7 +4,7 @@
 The **Relational Model** is a foundational mathematical approach to structuring data using relations (tables) consisting of rows and columns. Introduced by E.F. Codd, it completely separates physical data storage from logical data representation and forms the basis for all [Relational Database Management Systems](/notes/relational-database-management-systems).
 
 ## Structural Anatomy
-`![TikZ Diagram](/attachments/tikz-0dfb00f95a3c648d353c7024c6a65c54.svg)`
+![TikZ Diagram](/attachments/tikz-0dfb00f95a3c648d353c7024c6a65c54.svg)
 
 ## Core Components
 - **Relation**: A mathematical term defining a two-dimensional table of data.

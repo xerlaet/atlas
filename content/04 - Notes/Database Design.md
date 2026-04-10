@@ -4,7 +4,7 @@
 A [Database](/notes/database) is a structured collection of related data with inherent meaning. A **Database Management System** (DBMS) is a specialized software environment that facilitates the reliable creation, maintenance, and controlled access to this data.
 
 ## System Architecture
-`![TikZ Diagram](/attachments/tikz-b509581909381b47490291539a1c3b88.svg)`
+![TikZ Diagram](/attachments/tikz-b509581909381b47490291539a1c3b88.svg)
 
 ## Foundations & Modeling
 - [ER Model](/notes/entity-relationship-model) - High-level conceptual data modeling

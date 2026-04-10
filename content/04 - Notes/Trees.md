@@ -21,7 +21,7 @@ The **level** of a vertex is the length of the unique path from the root to that
 
 [AVL Trees](/notes/avl-trees) are binary search trees where the height of each subtree at any node can differ by at most one
 
-[B Trees](/notes/b-trees) are trees which are guaranteed to be wider than binary trees
+[B-Trees](/notes/b-trees) are trees which are guaranteed to be wider than binary trees
 
 [Splay Trees](/notes/splay-trees) are trees in which the the last accessed node is always the root
 

@@ -1,10 +1,22 @@
 # Euler Angles
 ---
 
-**Euler Angles** are very compact in notation as they only require 3 numbers, however they can suffer from gimbal lock which is unfortunate
+**Euler Angles** define the orientation of a rigid body in 3D space using three distinct rotational values. While mathematically compact, they inherently suffer from **[Gimbal Lock](/notes/gimbal-lock)**—the loss of a degree of freedom when two rotational axes align. This limitation is why **[Quaternions](/notes/quaternions)** are frequently preferred in complex 3D computation.
 
-**Yaw** is rotation in the vertical axis (usually z)
-**Pitch** is rotation in the transverse axis (usually y)
-**Roll** is rotation in the longitudinal axis (usually x)
+## Core Rotations
+`![TikZ Diagram](/attachments/tikz-19f431a0faf748dbf7af181f517329d1.svg)`
 
-![Pasted image 20250915141116.png](/attachments/Pasted%20image%2020250915141116.png)
+- **Roll** ($\phi$): Rotation about the longitudinal axis (X-axis).
+- **Pitch** ($\theta$): Rotation about the transverse axis (Y-axis).
+- **Yaw** ($\psi$): Rotation about the vertical axis (Z-axis).
+
+## Matrix Composition
+Combining multiple Euler rotations requires sequential matrix multiplication. Because matrix multiplication is non-commutative, the exact order of rotations fundamentally changes the final orientation.
+
+- **Intrinsic Rotations**: Rotations occur about the axes of the actively rotating coordinate system (e.g., standard Z-Y-X).
+- **Extrinsic Rotations**: Rotations occur about the fixed, static world coordinate system (e.g., standard X-Y-Z).
+
+To compute the final transformation for a standard Z-Y-X sequence, multiply the individual **[Rotation Matrices](/notes/rotation-matrices)** in reverse order:
+$$
+R = R_z(\psi) R_y(\theta) R_x(\phi)
+$$
