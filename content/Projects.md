@@ -2,12 +2,14 @@
 ---
 
 ## 2026
+[nixos-config](/notes/nixos-config) (configuration files for my current Linux setup)
+[GeoView](/notes/geoview) (AI disaster visualization tool utilizing aerial imagery)
 [UGAS](/notes/ugas) (unreleased robotic research into universal hand control models)
 
 ## 2025
 [ARMOR](/notes/armor) (a self-propelling robot trained with reinforcement learning)
 [P2P-Client](/notes/p2p-client) (a simple BitTorrent client program)
-[dotfiles](/notes/dotfiles) (configuration files for my current Linux setup)
+[dotfiles](/notes/dotfiles) (configuration files for my old Linux setup)
 [StudyBuddy](/notes/studybuddy) (an all-in-one student assistance tool)
 [VEX U High Stakes](/notes/vex-u-high-stakes) (twin ring-placer robots)
 

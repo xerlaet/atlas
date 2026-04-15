@@ -1,6 +1,134 @@
 # Relational Algebra
 ---
 
+**Relational Algebra** is a 
+
+the complete set is $\{ \sigma,\pi,\rho,\cup,-,\times \}$
+not required but useful derived operations are $\{ \cap, \bowtie, \}$
+
+## Operations from Set Theory
+[Set Theory](/notes/set-theory)
+**UNION** ($\cup$)
+**INTERSECTION** ($\cap$)???
+**MINUS** ($-$)
+**CARTESIAN PRODUCT** ($\times$)
+
+## Unary Relational Operators
+**SELECT** ($\sigma$) selects rows from a relation satisfiying a condition
+$$
+\sigma_{\text{selection condition}}(R)
+$$
+
+**PROJECT** ($\pi$) selects columns from a relation
+$$
+\pi _{\text{attribute list}}(R)
+$$
+
+**RENAME** ($\rho$) renames the relation ($S$) and/or attributes ($B_{n}$)
+$$
+\rho _{S(B_{1},B_{2},\dots,B_{n})}(R) \text{ or } \rho _{S}(R) \text{ or } \rho _{(B_{1},B_{2},\dots,B_{n})}(R)
+$$
+
+## Binary Relational Operators
+**JOIN** ($\bowtie$) joints two relations
+$$
+R \bowtie_{\text{join condition}}S
+$$
+
+**THETA JOIN** ($\theta$) joins two relations based on attributes with the same domain
+$$
+A_{i}\theta B_{j},\theta \in \{ =,<,\leq ,>,\geq ,\neq  \}
+$$
+
+**NATURAL JOIN** ($*$) joins two relations automatically?
+
+**DIVISION** ($\div$) gives the attributes unique to $R$ that are part of a tuple in $S$
+$$
+R \div S
+$$
+
+## Query Trees
+A **query tree** is a tree representation of a query showing how a database would process it
+
+
+## Examples
+Ex. Select tuples from EMPLOYEE table whose salary is greater than $25,000 and department number is 4
+$$
+\sigma _{(\text{Dno}=4 \text{ AND }\text{Salary}>25,000)}(\text{EMPLOYEE})
+$$
+```sql
+SELECT *
+FROM   EMPLOYEE
+WHERE  Dn0=4 AND Salary>25000;
+```
+
+Ex. Select the sex and salary columns from the EMPLOYEE table
+$$
+\pi _{\text{Sex, Salary}}(\text{EMPLOYEE})
+$$
+```sql
+SELECT DISTINCT Sex, Salary
+FROM            Employee
+```
+
+Relational Calculus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **Relational Algebra** is a procedural query language that provides a theoretical foundation for the [Relational Model](/notes/relational-model). It consists of a set of mathematical operations that take one or more relations as input and produce a new relation as output, serving as the formal basis for [SQL](/notes/sql) optimization.
 
 ## Query Tree Structure

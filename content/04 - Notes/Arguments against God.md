@@ -22,6 +22,7 @@
 ## Naturalistic
 [Mind & Brain](/notes/mind-brain) (weak)
 [Success of Naturalism](/notes/success-of-naturalism) (idk)
+[Philosophical Zombies](/notes/philosophical-zombies) (idk)
 
 ## Historical / Textual
 [Contradictions in Scripture](/notes/contradictions-in-scripture) (idk)
