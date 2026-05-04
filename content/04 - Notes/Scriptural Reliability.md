@@ -11,3 +11,7 @@ Textual Criticism shows (by comparing the 5800+ ancient Greek manuscripts) that 
 
 ## Response
 Perhaps between 30 AD and 70 AD the stories of Jesus were passed around and minor details grew fuzzy, were forgotten, or were slightly exaggerated. The authors then took oral traditions and edited them to preach to their specific audiences - this can be seen with Mark being written first, and Matthew and Luke taking from it. For example, Matthew could smooth out mistakes "Jesus did not do many miracles there" instead of "Jesus could not do any miracles there in Nazareth because the people lacked faith", or adding apocalyptic, legendary embellishments to highlight the theological importance of the crucifixion
+
+
+[Composite Historical Critical Model](/notes/composite-historical-critical-model)
+[RHBS Model](/notes/rhbs-model)

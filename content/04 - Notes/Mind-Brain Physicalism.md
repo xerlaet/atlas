@@ -1,4 +1,4 @@
-# Mind & Brain
+# Mind-Brain Physicalism
 ---
 
 1. If God exists, the brain and soul work together

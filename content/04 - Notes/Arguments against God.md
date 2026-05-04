@@ -1,34 +1,23 @@
 # Arguments against God
 ---
 
-[Composite Historical Critical Model](/notes/composite-historical-critical-model)
-[RHBS Model](/notes/rhbs-model)
-
 ## Logical / Metaphysical
-[Sovereignty vs Free Will](/notes/sovereignty-vs-free-will) (mid)
-[Divine Simplicity](/notes/divine-simplicity) (idk)
+[Divine Simplicity](/notes/divine-simplicity) (mid against Catholics)
 
 ## Moral / Axiological
-[Problem of Evil](/notes/problem-of-evil) (mid)
-[Hell & Judgment](/notes/hell-judgment) (mid)
-[Suboptimal Reality](/notes/suboptimal-reality) (weak)
-[Divine Violence in Scripture](/notes/divine-violence-in-scripture) (idk)
-[Euthyphro Dilemma](/notes/euthyphro-dilemma)
+[The Problem of Evil](/notes/the-problem-of-evilcanvas) **(strong)**
+[The Problem of Hell and Moral Luck](/notes/the-problem-of-hell-and-moral-luck) **(strong)**
 
 ## Epistemological
-[Divine Hiddenness](/notes/divine-hiddenness) (mid)
-[Non-resistant Non-belief](/notes/non-resistant-non-belief) (mid)
+[Divine Hiddenness](/notes/divine-hiddenness) **(strong)**
+[Religious Confusion](/notes/religious-confusion) (weak)
 
 ## Naturalistic
-[Mind & Brain](/notes/mind-brain) (weak)
-[Success of Naturalism](/notes/success-of-naturalism) (idk)
-[Philosophical Zombies](/notes/philosophical-zombies) (idk)
+[The Success of Naturalism](/notes/the-success-of-naturalism) (mid)
+[Mind-Brain Physicalism](/notes/mind-brain-physicalism) (mid)
+[Poor Biological Design](/notes/poor-biological-design) (weak)
+[Philosophical Zombies](/notes/philosophical-zombies) (weak)
 
 ## Historical / Textual
-[Contradictions in Scripture](/notes/contradictions-in-scripture) (idk)
-Historical errors in Scripture
-Dependence on earlier near Eastern Myths
-
-## Catholic Specific
-- absence of veneration of saints from early church fathers - shouldn't it be consistent throughout time?
-- inconsistency of papal infallibility
+[Inconsistency of Scripture](/notes/inconsistency-of-scripture) (mid)
+[Inconsistency of Church Tradition](/notes/inconsistency-of-church-tradition) (weak)
