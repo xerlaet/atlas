@@ -1,5 +1,6 @@
 # Functions
 ---
+
 A **function** is a mapping that takes an input and produces an output. The set of inputs is the **domain** and the outputs are the **range**
 $$
 f:D\to R

@@ -1,6 +1,93 @@
 # Machine Learning
 ---
 
+Given an experience, improve on a task based on some measure
+
+**Supervised learning**: learn from known examples {data, labels}
+- image classification
+
+Feature vectors
+nominal, ordinal, numeric, hierarchical
+classification, regression
+
+$$
+h_{\theta }=\theta _{0}+\theta _{1}x_{1}+\theta _{2}x_{2}+\dots+\theta _{n}x_{n}
+$$
+
+Hypothesis classes: model blueprints
+
+Empirical risk minimization (ERM)
+$$
+\hat{f}=\text{arg min}_{h\in H} \frac{1}{n}\sum _{i=1}^{n}l(h(x^{(i)}),y^{(i)})
+$$
+Batch vs online learning (and offline?)
+
+Generalization: for $(x,y)\sim D$, $\mathbb{E}_{D}[l(\hat{f}(x),y)]$
+
+**Nearest Neighbors**
+1-Nearest: for $x$, find the nearest point $x^{(j)}$ and return $y^{(j)}$
+Voronoi Diagrams
+
+K-Nearest
+$$
+\hat{y}=\text{arg max}_{y \in Y}\sum _{i=1}^{k}\mathbb{1}(y=y^{(i)})
+$$
+
+Hamming distance, Euclidean distance, L1/L2
+Normalization, mixed distances
+average by distance as well
+irrelevant features can hurt nearest neighbors among other things
+
+**Instance based learning**:
+- easy to explain predictions, simple and no training, often good in practice
+- sensitive to irrelevant or correlated features, prediction can be expensive
+
+**Unsupervised learning**: draw insights {data}
+- language models
+**Reinforcement learning**: {state/action/reward}
+- robotics, games
+
+
+
+
+
+
+
+
+
+
+**Supervised Learning** is a subset of machine learning, where the datasets contain known labels which are fed into the model. Examples include detecting cancer given an image, translating text, or predicting stock prices a month ahead. The opposite task is **Unsupervised Learning**, which is where the answer is unknown and has to be figured out by the model. **Self-supervised Learning** is when some of the unlabeled data is leveraged to provide supervision
+
+**Regression** is a very common supervised task, general used for "how many" questions. The output will be some numerical value. **Classification** is similar to "which one" questions and will output some class value. This class value might be presented as a probability such as 90% confident an image is a cat. Classification can be complicated by the fact that multiple classes might exist in the same image
+
+**Sequence Learning** is important for video training or language where the previous information is important to remember and reference for future outputs. Similarly, some tasks will benefit from **online learning** where the environment is considered, as opposed to **offline learning** where the model is trained in isolation and then deployed
+
+**Reinforcement Learning** is when the model will take some action in an environment and be rewarded based on the action. The goal of reinforcement learning is to produce good policies. Reinforcement Learning is very general, as supervised learning can be recast as a reinforcement learning problem. The tricky part is the credit assignment problem, which is determining which actions to credit or blame for an outcome. The space of strategies is immense and should be explored. At a fully understood level, reinforcement learning becomes a Markov decision process
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [Transformers](/notes/transformers)
 
 ## Final Exam Review
