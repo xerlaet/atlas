@@ -2,9 +2,10 @@
 ---
 
 ## 2026
+[Skywarp](/notes/skywarp) (custom quad-copter drone)
 [nixos-config](/notes/nixos-config) (configuration files for my current Linux setup)
 [GeoView](/notes/geoview) (AI disaster visualization tool utilizing aerial imagery)
-[UGAS](/notes/ugas) (unreleased robotic research into universal hand control models)
+[UGAS](/notes/ugas) (robotic research into universal hand control models)
 
 ## 2025
 [ARMOR](/notes/armor) (a self-propelling robot trained with reinforcement learning)

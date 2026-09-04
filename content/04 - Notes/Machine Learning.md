@@ -1,10 +1,16 @@
 # Machine Learning
 ---
 
+**Model class** is a blueprint
+**Model** is the model that is learned from training
+
 Given an experience, improve on a task based on some measure
 
-**Supervised learning**: learn from known examples {data, labels}
-- image classification
+Setup, training/fitting, validating, testing
+
+[Supervised Learning](/notes/supervised-learning)
+[Unsupervised Learning](/notes/unsupervised-learning)
+[Reinforcement Learning](/notes/reinforcement-learning)
 
 Feature vectors
 nominal, ordinal, numeric, hierarchical
@@ -16,27 +22,11 @@ $$
 
 Hypothesis classes: model blueprints
 
-Empirical risk minimization (ERM)
-$$
-\hat{f}=\text{arg min}_{h\in H} \frac{1}{n}\sum _{i=1}^{n}l(h(x^{(i)}),y^{(i)})
-$$
 Batch vs online learning (and offline?)
 
 Generalization: for $(x,y)\sim D$, $\mathbb{E}_{D}[l(\hat{f}(x),y)]$
 
-**Nearest Neighbors**
-1-Nearest: for $x$, find the nearest point $x^{(j)}$ and return $y^{(j)}$
-Voronoi Diagrams
 
-K-Nearest
-$$
-\hat{y}=\text{arg max}_{y \in Y}\sum _{i=1}^{k}\mathbb{1}(y=y^{(i)})
-$$
-
-Hamming distance, Euclidean distance, L1/L2
-Normalization, mixed distances
-average by distance as well
-irrelevant features can hurt nearest neighbors among other things
 
 **Instance based learning**:
 - easy to explain predictions, simple and no training, often good in practice

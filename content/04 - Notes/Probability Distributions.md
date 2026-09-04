@@ -1,14 +1,17 @@
 # Probability Distributions
 ---
 
-**Probability Distributions** are [Functions](/notes/functions) that describe the probabilities a **random variable** has. They can be either discrete or continuous.
+**Probability Distributions** are [Functions](/notes/functions) that describe the probabilities a **random variable** has. They can be either discrete or continuous
 
-The **mean** ($\mu$) is the average value that is expected
-The **standard deviation** ($\sigma$) describes how spread out the data is (variance is $\sigma^{2}$)
+**Mean** ($\mu$): average expected value
+**Standard deviation** ($\sigma$): average squared distance from the mean
+**Variance** ($\sigma^{2}$): how clustered the data is
 
-The **probability mass function** (PMF), is the probability that a specific outcome occurs for discrete variables. The **probability density function** (PDF) is the same thing but for continuous variables
+**Probability mass function** (PMF): $P(X=x)$
+**Probability density function** (PDF): $P(a\leq X\leq b)$
 
-The **cumulative distribution function** (CDF) gives $F(x)=P(X\leq x)$. The **quantile** is the inverse of the CDF giving lower bounds
+**Cumulative distribution function** (CDF): $F(x)=P(X\leq x)$
+**Quantile**: $F^{-1}(p)$. Returns the smallest $x$ for which $F(x)\geq p$
 
 ## Discrete Probability Distributions
 Given a discrete probability distribution $f(x)$
@@ -32,7 +35,7 @@ $$
 \mu&=\int xf(x) \, dx  \\
 \sigma^2&=\int (x-\mu)^2f(x) \, dx \\
 P(X=x)&=0 \\
-P(X\leq x)&=\int ^X f(x) \, dx 
+P(X\leq x)&=\int ^x f(x) \, dx 
 \end{align}
 $$
 

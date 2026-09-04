@@ -1,6 +1,6 @@
 # UGAS
 ---
 
-Coming soon!
+https://irvlutd.github.io/UHAS/
 
 ![leap_hand.png](/attachments/leap_hand.png)

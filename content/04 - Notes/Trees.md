@@ -1,5 +1,6 @@
 # Trees
 ---
+
 A **tree** is a connected undirected graph with no simple circuits (minimally connected). If the graph consists of disconnected subgraphs, it is known as a **forest**
 
 There is a unique path between any two vertices in a tree

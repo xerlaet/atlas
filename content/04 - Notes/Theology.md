@@ -30,3 +30,5 @@ Do conjoined twins pose any problems for Catholic teachings?
 Much of my previous thinking has assumed standard logic as a base, what about a four point logical system where a proposition can be true and false at the same time - it escapes the self-defeating aspect of many claims. Need to look into this further
 
 [Purgatory](/notes/purgatory)
+
+When does a phenomenon go from unexplained we just don't know the science yet to it is God's doing? I guess it's just a gradient like most things but it seems hard without the aid of hindsight to know where we are on a lot of topics like consciousness or fine tuning etc.

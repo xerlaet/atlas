@@ -10,13 +10,13 @@
 [Fulfilled Prophecies](/notes/fulfilled-prophecies) **(strong)**
 [Scriptural Reliability](/notes/scriptural-reliability) (mid)
 [Argument from Religious Experience](/notes/argument-from-religious-experience) (weak)
-[Archeological Evidence](/notes/archeological-evidence) (weak)
+[Archaeological Evidence](/notes/archaeological-evidence) (?)
 
 ## Cosmological
 [The Cosmological Argument](/notes/the-cosmological-argument) (weak)
 
 ## Teleological
-[Fine-Tuning of the Universe](/notes/fine-tuning-of-the-universe) (weak)
+[Fine-Tuning of the Universe](/notes/fine-tuning-of-the-universe) **(strong)**
 [Fine-Tuning of Life](/notes/fine-tuning-of-life) (mid)
 
 ## Immaterial / Epistemological
@@ -24,7 +24,6 @@
 [Hard Problem of Consciousness](/notes/hard-problem-of-consciousness) (mid)
 [Argument from Evolutionary Reasoning](/notes/argument-from-evolutionary-reasoning) (weak)
 [Near Death Experiences](/notes/near-death-experiences) **(strong)**
-[Argument from Abstract Objects](/notes/argument-from-abstract-objects) (weak)
 
 ## Moral / Psychological
 [The Moral Argument](/notes/the-moral-argument) (weak)
