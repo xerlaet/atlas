@@ -4,8 +4,6 @@
 email is best
 one book/notebook no loose papers
 
-[CIA Triangle](/notes/cia-triangle)
-
 A solution
 **Technical aspect**: flawless protocols, infrastructure, os, applications
 **Policy aspect**: perfect policy
@@ -13,7 +11,9 @@ A solution
 
 Security is a money hole. How much should you spend?
 
-## Crypto
+[CIA Triangle](/notes/cia-triangle)
+
+## Cryptography
 [Cryptographic Algorithms](/notes/cryptographic-algorithms)
 
 Ciphertext attacks:
@@ -26,3 +26,37 @@ Performance
 - public key crypto is slow. So generally it's used in setting up secret symmetric keys
 
 Current algorithms are **computationally secure** vs **unconditional security**
+
+
+## Authentication
+### KDC vs CA
+**Key Distribution Centers** (KDC) are trusted holders of secret keys
+- fast, but has to be online
+**Certificate Authorities** (CAs) generates certificates that everyone trusts
+- can be offline and is simple/scaleable
+- if compromised, cannot decrypt conversations just impersonate nodes
+- **Certificate revocation lists** (CRLs) are pretty self explanatory
+
+KDCs preferred for LANs, CAs for WAN
+
+**Salting**: mix a random number with each hash, which prevents comparison of a guess with every hash at once
+
+What you know/have/are (passwords, cards, fingerprint scan)
+
+**Secure Remote Password** (SRP)
+
+Swap keys for different communications, and/or use different keys for authentication vs communication etc
+
+Use different keys for client->server and server->client, or different numbers (e.g. even and odd) to prevent attack where server asks client to encrypt something, client asks a second server to do it for them
+
+Client should be the first to authenticate, so they can't do an offline dictionary attack against whatever encryption you have
+
+protocol failing if attacker can get private key in a year for captured communication is bad
+
+[Diffie-Hellman Key Exchange](/notes/diffie-hellman-key-exchange)
+
+Needham-Schroeder and extended
+Otway-Rees algorithm
+Kerberos
+
+perfect forward secrecy, don't know signature key to not accuse

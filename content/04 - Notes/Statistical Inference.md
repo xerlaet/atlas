@@ -1,5 +1,6 @@
 # Statistical Inference
 ---
+
 ## Point Estimates
 $E(x)=\mu$
 

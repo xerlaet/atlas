@@ -4,10 +4,7 @@
 **Supervised learning** learns from known examples {data, labels} (e.g. image classification)
 
 ## Input space $X$
-**numeric features** are continuous values (e.g. $\text{height}\in [0,100]$)
-**nominal features** have no inherent ordering (e.g. $\text{color}\in \{ \text{red}, \text{blue}, \text{green} \}$)
-**ordinal features** are ordered (e.g. $\text{size}\in \{ \text{small}, \text{medium}, \text{large} \}$)
-**hierarchical features** are partially ordered in a hierarchy (e.g. shape)
+[Feature Vectors](/notes/feature-vectors)
 
 Standardize or normalize the data to ensure the data is in the proper range and features have the same scale
 
@@ -25,8 +22,11 @@ Classification if the elements of $Y$ are classes
 Regression if $Y$ is continuous
 
 ## Model Classes $H$
+Parametric Models (learn a parameter)
 [Linear Models](/notes/linear-models)
 [Feedforward Neural Networks](/notes/feedforward-neural-networks)
+
+Non-Parametric Models
 [kNNs](/notes/knns)
 [Decision Trees](/notes/decision-trees)
 
@@ -37,3 +37,5 @@ $$
 \hat{f}=\text{arg}\underset{h\in H}{\min} \frac{1}{n}\sum _{i=1}^{n}l(h(x^{(i)}),y^{(i)})
 $$
 
+## Evaluation
+[Model Evaluation](/notes/model-evaluation)

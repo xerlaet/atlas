@@ -1,82 +1,61 @@
 # Machine Learning
 ---
 
-**Model class** is a blueprint
-**Model** is the model that is learned from training
+[Training Pipeline](/notes/training-pipeline): Given an experience, improve on a task based on some measure
 
-Given an experience, improve on a task based on some measure
+## Learning Paradigms
+[Supervised Learning](/notes/supervised-learning) learns from known examples {data, label}
+[Unsupervised Learning](/notes/unsupervised-learning)
+[Self-Supervised Learning](/notes/self-supervised-learning)
+[Reinforcement Learning](/notes/reinforcement-learning) state $\to$ action $\to$ reward $\to$ repeat
+[Online vs Offline Learning](/notes/online-vs-offline-learning)
+
+## Problem Types
+[Classification](/notes/classification)
+[Regression](/notes/regression)
+[Sequence Learning](/notes/sequence-learning)
+[Object Detection](/notes/object-detection)
+[Image Segmentation](/notes/image-segmentation)
+
+## Architectures
+[Convolutional Neural Networks](/notes/convolutional-neural-networks)
+[Recurrent Neural Networks](/notes/recurrent-neural-networks)
+[Transformers](/notes/transformers)
+[Autoencoders](/notes/autoencoders)
+[Generative Adversarial Networks](/notes/generative-adversarial-networks)
+
+## Mechanics & Optimization
+[Gradient Descent](/notes/gradient-descent)
+[Backpropagation](/notes/backpropagation)
+[Loss Functions](/notes/loss-functions)
+[Activation Functions](/notes/activation-functions)
+
+## Fundamentals & Theory
+[Manifold Hypothesis](/notes/manifold-hypothesis)
+[Generalization](/notes/generalization)
+[Universal Approximation Theorem](/notes/universal-approximation-theorem)
+
+---
+
+**Model classes** are blueprints
+**Models** are the actual models that are learned from training
 
 Setup, training/fitting, validating, testing
-
-[Supervised Learning](/notes/supervised-learning)
-[Unsupervised Learning](/notes/unsupervised-learning)
-[Reinforcement Learning](/notes/reinforcement-learning)
-
-Feature vectors
-nominal, ordinal, numeric, hierarchical
-classification, regression
-
-$$
-h_{\theta }=\theta _{0}+\theta _{1}x_{1}+\theta _{2}x_{2}+\dots+\theta _{n}x_{n}
-$$
-
-Hypothesis classes: model blueprints
-
 Batch vs online learning (and offline?)
+
+
+[Feature Vectors](/notes/feature-vectors)
+classification, regression
 
 Generalization: for $(x,y)\sim D$, $\mathbb{E}_{D}[l(\hat{f}(x),y)]$
 
-
+Double Descent
 
 **Instance based learning**:
 - easy to explain predictions, simple and no training, often good in practice
 - sensitive to irrelevant or correlated features, prediction can be expensive
 
-**Unsupervised learning**: draw insights {data}
-- language models
-**Reinforcement learning**: {state/action/reward}
-- robotics, games
-
-
-
-
-
-
-
-
-
-
-**Supervised Learning** is a subset of machine learning, where the datasets contain known labels which are fed into the model. Examples include detecting cancer given an image, translating text, or predicting stock prices a month ahead. The opposite task is **Unsupervised Learning**, which is where the answer is unknown and has to be figured out by the model. **Self-supervised Learning** is when some of the unlabeled data is leveraged to provide supervision
-
-**Regression** is a very common supervised task, general used for "how many" questions. The output will be some numerical value. **Classification** is similar to "which one" questions and will output some class value. This class value might be presented as a probability such as 90% confident an image is a cat. Classification can be complicated by the fact that multiple classes might exist in the same image
-
-**Sequence Learning** is important for video training or language where the previous information is important to remember and reference for future outputs. Similarly, some tasks will benefit from **online learning** where the environment is considered, as opposed to **offline learning** where the model is trained in isolation and then deployed
-
-**Reinforcement Learning** is when the model will take some action in an environment and be rewarded based on the action. The goal of reinforcement learning is to produce good policies. Reinforcement Learning is very general, as supervised learning can be recast as a reinforcement learning problem. The tricky part is the credit assignment problem, which is determining which actions to credit or blame for an outcome. The space of strategies is immense and should be explored. At a fully understood level, reinforcement learning becomes a Markov decision process
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 [Transformers](/notes/transformers)
 
@@ -209,11 +188,6 @@ GANs
 Diffusion Models
 Reasoning, LSTM, RNNs
 Transformer Architecture
-
-[Autoencoders](/notes/autoencoders)
-[Generative Adversarial Networks](/notes/generative-adversarial-networks)
-[Recurrent Neural Networks](/notes/recurrent-neural-networks)
-[Transformers](/notes/transformers)
 
 
 ---

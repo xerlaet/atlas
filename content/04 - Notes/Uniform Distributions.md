@@ -1,6 +1,16 @@
 # Uniform Distributions
 ---
 
-A **uniform distribution** $\dots$
+A **uniform distribution** models an environment where all outcomes within a specific bounded interval are equally likely
 
-![Pasted image 20240308174051.png](/attachments/Pasted%20image%2020240308174051.png)
+$$
+\begin{align}
+a&=\text{minimum value} \\
+b&=\text{maximum value} \\
+\text{Support: } x &\in  [a,b] \\
+\text{PDF: }f(x)&=\frac{1}{b-a} \\
+\text{CDF: }F(x)&=\frac{x-a}{b-a} \\
+E(X)&=\frac{a+b}{2} \\
+V(X)&=\frac{(b-a)^{2}}{12}
+\end{align}
+$$

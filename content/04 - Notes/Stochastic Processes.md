@@ -1,5 +1,6 @@
 # Stochastic Processes
 ---
+
 **Stochastic processes** are random variables which evolve and change through time, and can be described as a function $X(t,\omega)$ where $t$ represents the time from the present as an integer, and $\omega$ represents the outcome of the experiment
 
 Possible values of $X(t)$ are called **states** and depending on the nature of the function, $X(t)$ can be a **discrete-state** and **discrete-time** process or a **continuous-state** and **continuous-time** process

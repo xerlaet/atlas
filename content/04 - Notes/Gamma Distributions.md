@@ -1,20 +1,22 @@
 # Gamma Distributions
 ---
 
-A **gamma distribution** is used when a procedure consists of a set of $\alpha$ exponential independent steps
+A **gamma distribution** models the continuous time or distance required for exactly $\alpha$ independent events to occur
+
 $$
 \begin{align}
-\alpha &= \text{shape parameter} \\
-\lambda &= \text{frequency parameter} \\
-f(x) &= \frac{\lambda ^{\alpha }}{\Gamma (\alpha )}x^{\alpha -1}e^{-\lambda x},x>0 \\
-E(T)&=\frac{n}{\lambda} \\
-V(T)&=\frac{n}{\lambda^2}
+\alpha &= \text{shape parameter (number of target events)} \\
+\lambda &= \text{rate parameter (average events per interval)} \\
+\text{Support: } x &\geq  0 \\
+\text{PDF: }f(x) &= \frac{\lambda  ^{\alpha }}{\Gamma (\alpha )}x^{\alpha -1}e^{-\lambda  x} \\
+E(X)&=\frac{\alpha }{\lambda } \\
+V(X)&=\frac{\alpha }{\lambda ^{2}}
 \end{align}
 $$
-A shortcut for calculating gamma distributions is to use poisson distributions
+
+[Negative Binomial Distributions](/notes/negative-binomial-distributions): the exact discrete analog
+
+**Gamma function**:
 $$
-\begin{align}
-P(T>t)=P(X<\alpha) \\
-P(T\leq t)=P(X\geq \alpha)
-\end{align}
+\Gamma (\alpha )=\int _{0}^{\infty }t^{\alpha -1}e^{-t} \, dt 
 $$

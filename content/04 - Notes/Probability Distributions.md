@@ -1,45 +1,20 @@
 # Probability Distributions
 ---
 
-**Probability Distributions** are [Functions](/notes/functions) that describe the probabilities a **random variable** has. They can be either discrete or continuous
+**Probability Distributions** are [Functions](/notes/functions) (PMFs or PDFs) that describe how probabilities are distributed across all possible values of a [random variable](/notes/random-variables)
 
-**Mean** ($\mu$): average expected value
-**Standard deviation** ($\sigma$): average squared distance from the mean
-**Variance** ($\sigma^{2}$): how clustered the data is
+## Modeling Counts and Successes
+- [Binomial Distributions](/notes/binomial-distributions) - The number of successes in $n$ [Bernoulli trials](/notes/bernoulli-distributions)
+- [Poisson Distributions](/notes/poisson-distributions) - The count of rare events within a fixed interval
 
-**Probability mass function** (PMF): $P(X=x)$
-**Probability density function** (PDF): $P(a\leq X\leq b)$
+## Modeling Waiting Time
+Waiting for the 1st Event (both are **memoryless**):
+- [Geometric Distributions](/notes/geometric-distributions) (Discrete) - Number of trials for the first success
+- [Exponential Distributions](/notes/exponential-distributions) (Continuous) - Time until the first event occurs
+Waiting for $n$ Events:
+- [Negative Binomial Distributions](/notes/negative-binomial-distributions) (Discrete) - Number of trials for $r$ successes
+- [Gamma Distributions](/notes/gamma-distributions) (Continuous) - Time until $\alpha$ events occur
 
-**Cumulative distribution function** (CDF): $F(x)=P(X\leq x)$
-**Quantile**: $F^{-1}(p)$. Returns the smallest $x$ for which $F(x)\geq p$
-
-## Discrete Probability Distributions
-Given a discrete probability distribution $f(x)$
-$$
-\begin{align}
-\mu  & =\sum x_{i}f(x_{i}) \\
-\sigma ^{2} & =\sum (x_{i}-\mu )^{2}f(x_{i}) \\
-P(X=x)&=P(x)\\
-P(X\leq x)&=\sum_{y\leq x}P(y)
-\end{align}
-$$
-
-[Binomial Distributions](/notes/binomial-distributions)
-[Negative Binomial Distributions](/notes/negative-binomial-distributions)
-[Poisson Distributions](/notes/poisson-distributions)
-
-## Continuous Probability Distributions
-Given a continuous probability distribution $f(x)$
-$$
-\begin{align}
-\mu&=\int xf(x) \, dx  \\
-\sigma^2&=\int (x-\mu)^2f(x) \, dx \\
-P(X=x)&=0 \\
-P(X\leq x)&=\int ^x f(x) \, dx 
-\end{align}
-$$
-
-[Uniform Distributions](/notes/uniform-distributions)
-[Exponential Distributions](/notes/exponential-distributions)
-[Gamma Distributions](/notes/gamma-distributions)
-[Normal Distributions](/notes/normal-distributions)
+## Foundational & Limits
+- [Uniform Distributions](/notes/uniform-distributions) (Discrete and Continuous) - Every outcome equally likely
+- [Normal Distributions](/notes/normal-distributions) (Continuous) - The classic bell curve

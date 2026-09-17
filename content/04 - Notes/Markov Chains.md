@@ -2,6 +2,7 @@
 ---
 
 A stochastic process is **Markov** if $P(\text{future}\mid \text{past and present})=P(\text{future}\mid \text{present})$
+
 A **Markov chain** is a discrete-time, discrete-state Markov stochastic process, and can be described by the formula
 $$
 P_{h}=P_{0}P^h

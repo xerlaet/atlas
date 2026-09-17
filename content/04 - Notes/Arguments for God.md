@@ -23,7 +23,7 @@
 [The Ontological Argument](/notes/the-ontological-argument) (weak)
 [Hard Problem of Consciousness](/notes/hard-problem-of-consciousness) (mid)
 [Argument from Evolutionary Reasoning](/notes/argument-from-evolutionary-reasoning) (weak)
-[Near Death Experiences](/notes/near-death-experiences) **(strong)**
+[Near Death Experiences](/notes/near-death-experiences) (weak)
 
 ## Moral / Psychological
 [The Moral Argument](/notes/the-moral-argument) (weak)
