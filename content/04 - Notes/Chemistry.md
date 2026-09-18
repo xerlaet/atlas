@@ -1,4 +1,4 @@
 # Chemistry
 ---
-**Chemistry** is the study of molecules and compounds
 
+**Chemistry** is the study of molecules and compounds

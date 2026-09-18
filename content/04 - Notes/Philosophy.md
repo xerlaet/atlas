@@ -11,7 +11,6 @@
 - [Epistemology](/notes/epistemology) - The study of knowledge and justification
 - [Logic](/notes/logic) - Formal systems of truth and reasoning
 - [Modes of Reasoning](/notes/modes-of-reasoning) - Induction, deduction, and abduction
-- [Philosophy of Science](/notes/philosophy-of-science) - Foundations and limits of inquiry
 
 ## Theology & Religion
 - [Theology](/notes/theology) - Systematic study of God and revelation

@@ -11,7 +11,4 @@ All the probabilities mean is a probability based on the knowledge base
 
 An agent should choose an action yielding the highest expected utility - [Utilitarian](/notes/utilitarian)
 
-[Probability](/notes/probability)
-**Prior** or **Unconditional probabilities** are beliefs in the absence of any other information
-**Posterior** or **Conditional probabilities** are beliefs after some evidence has been revealed
-
+Use [Probability](/notes/probability)

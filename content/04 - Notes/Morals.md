@@ -1,14 +1,14 @@
 # Morals
 ---
 
-Morals that can (maybe) be determined from the natural world:
+Do objective moral values exist? [The Moral Argument](/notes/the-moral-argument)
 
-- respect for (human) life
-	- in self defense scenarios, killing is allowed
-- a family being a basic unit of society
-- justice and fairness
-- solidarity and responsible for helping the less fortunate
-- **pursuit of truth and knowledge**
-- natural purpose and design (everything created has a purpose)
+Some morals that seem useful and I would probably stick to regardless:
+- Respect for (human?) life
+	- exceptions for self defense, just war (which is basically the same thing)
+- A family being a basic unit of society
+- Justice and fairness
+- Solidarity and responsibility for helping the less fortunate
+- The pursuit of truth and knowledge
 
-[Cheating](/notes/cheating)
+Is [Cheating](/notes/cheating) wrong?

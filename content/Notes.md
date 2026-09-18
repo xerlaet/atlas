@@ -12,12 +12,10 @@ tags:
 
 ## People & Thought
 - [History](/notes/history) - Civilization and timelines
-- [Philosophy](/notes/philosophy) - Reality, ethics, and mind
-- [Society](/notes/society) - Structures and interaction
-
-## Creation & Culture
 - [Language](/notes/language) - Systems of communication
-- [Arts](/notes/arts) - Theory and expression
+- [Philosophy](/notes/philosophy) - Reality, ethics, and mind
+- [Theology](/notes/theology) - Religion and God
+- [Society](/notes/society) - Structures and interaction
 - [Media](/notes/media) - Analysis of content
 
 ## Life Systems

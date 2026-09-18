@@ -1,10 +1,11 @@
 # Reading List
 ---
 
-https://jamesclear.com/best-books
+A list of books that I may want to read in the future
 
-The Stormlight Archive
-Physics of Consciousness
-The Constitution
-Reasonable Faith
-Unreasonable Faith
+- https://jamesclear.com/best-books
+- The Stormlight Archive
+- Physics of Consciousness
+- The Constitution
+- Reasonable Faith
+- Unreasonable Faith

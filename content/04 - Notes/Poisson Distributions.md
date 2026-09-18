@@ -1,7 +1,7 @@
 # Poisson Distributions
 ---
 
-A **Poisson distribution** models the number of independent events occurring within a fixed, continuous interval of time or space
+A **Poisson distribution** models the number of independent events occurring within a fixed, interval of time or space
 
 $$
 \begin{align}

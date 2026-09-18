@@ -4,8 +4,9 @@
 **Probability Distributions** are [Functions](/notes/functions) (PMFs or PDFs) that describe how probabilities are distributed across all possible values of a [random variable](/notes/random-variables)
 
 ## Modeling Counts and Successes
-- [Binomial Distributions](/notes/binomial-distributions) - The number of successes in $n$ [Bernoulli trials](/notes/bernoulli-distributions)
-- [Poisson Distributions](/notes/poisson-distributions) - The count of rare events within a fixed interval
+- [Bernoulli Distributions](/notes/bernoulli-distributions) - A single trial with two outcomes
+- [Binomial Distributions](/notes/binomial-distributions) - The number of successes in $n$ Bernoulli trials
+- [Poisson Distributions](/notes/poisson-distributions) - The number of rare events within a fixed interval
 
 ## Modeling Waiting Time
 Waiting for the 1st Event (both are **memoryless**):

@@ -5,7 +5,7 @@ Learning is the meta skill, akin to the wish for more wishes
 
 ## Encoding
 1. Ask "why" to deepen understanding and uncover gaps in knowledge
-2. Simplify and explain concepts in your own words to a five year old
+2. Simplify and explain concepts in your own words as if to a five year old
 
 ## Retrieval
 1. Connect ideas in a map of knowledge, utilize analogies when possible

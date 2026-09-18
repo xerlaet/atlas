@@ -1,9 +1,7 @@
 # Discrete Math
 ---
 
-Discrete math is the study of mathematical structures that are considered "discrete" rather than "continuous". It encompasses a wide array of topics such as sets, logic, graph theory, combinatorics, and number theory
-
-These concepts are fundamental for solving problems in computer science and creating algorithms
+**Discrete math** is the study of mathematical structures that are considered "discrete" rather than "continuous". Being so broad it encompasses a wide array of topics
 
 ## Logic and Proofs
 [Propositional Logic](/notes/propositional-logic)

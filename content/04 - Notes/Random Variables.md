@@ -7,16 +7,14 @@ X:\Omega\to \mathbb{R}
 $$
 
 ## Types of Random Variables
-**Discrete Random Variables** take on a finite set of distinct values
-- **Probability mass function** (PMF): Gives the exact probability of a specific value
+**Discrete Random Variables** take on a finite set of distinct values. The **probability mass function** (PMF) gives the exact probability of a specific value
 $$
 P(X=x)
 $$
 
-**Continuous Random Variables**: Take on an infinite number of values within an interval
-- **Probability density function** (PDF): Gives the probability over an interval
+**Continuous Random Variables**: Take on an infinite number of values within an interval. The **probability density function** (PDF), $f(x)$, represents density. The probability over an interval is the area under this curve
 $$
-P(a\leq X\leq b)
+P(a\leq X\leq b)=\int _{a}^{b}f(x) \, dx 
 $$
 
 ## Core Functions and Metrics
@@ -28,12 +26,15 @@ $$
 \end{align}
 $$
 
-**Cumulative distribution function** (CDF): Measures the probability that $X$ takes a value less than or equal to $x$
+>[!note]
+>For continuous variables, replace the summation $\sum$ with an integral $\int$
+
+**Cumulative distribution function** (CDF): Measures the probability that $X$ takes a value less than or equal to $x$. Importantly, this is also the integral of the PDF!
 $$
-F(x)=P(X\leq x)
+F(x)=P(X\leq x)=\int_{-\infty }^{x} f(x) \, dx 
 $$
 
-**Quantile**: Returns the smallest $x$ for which $F(x)\geq p$
+**Quantile function**: Returns the smallest $x$ for which $F(x)\geq p$
 $$
 F^{-1}(p)
 $$

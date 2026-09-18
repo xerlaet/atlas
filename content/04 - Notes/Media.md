@@ -14,8 +14,4 @@
 ## Audio & Speech
 - [Podcasts](/notes/podcasts) - Long-form discussions and interviews
 - [Music Library](/notes/music-library) - Collections and genre exploration
-
-## Interactive & Digital
-- [Gaming](/notes/gaming) - Interactive systems and narrative
-- [YouTube](/notes/youtube) - Video essays and educational content
-- [Social Media](/notes/social-media) - Analysis of digital platforms
+- [Music Theory](/notes/music-theory) - Why some music is great
