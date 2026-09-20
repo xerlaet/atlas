@@ -19,5 +19,7 @@ Also keep in mind that different religions teach different endings, they aren't 
 
 Even if you are convinced by the argument, you can't just flip a switch and start believing. It will probably require lots of prayer and acting like a believer before you actually start to believe.
 
+Also, remember kids: gambling is bad!
+
 ## Stance
 For me currently, I value being correct/living in accordance with reality over possible gains from Heaven. Maybe I'm being irrational to make that my highest standard, but I don't want to be a believer if God doesn't exist. My whole life would be a lie, as believing in God is one of the most fundamental ideas you can have. So while intriguing, I don't think this shifts the scale very much.

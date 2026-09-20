@@ -5,7 +5,7 @@ Books are great, and often overlooked in the modern era. See also: [Reading List
 
 ## In Progress
 - Fortunate Universe
-- Thinking Fast and Slow
+- [Thinking Fast and Slow](/notes/thinking-fast-and-slow)
 - [The Bible](/notes/the-bible)
 - [12 Rules for Life](/notes/12-rules-for-life)
 - [Make It Stick](/notes/make-it-stick)

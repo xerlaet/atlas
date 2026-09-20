@@ -1,4 +1,4 @@
-# Argument from Evolutionary Reasoning
+# Argument from Reason
 ---
 
 1. Evolution does not select for truth seeking abilities

@@ -5,7 +5,7 @@
 - [Divine Simplicity](/notes/divine-simplicity) - weak
 
 ## Moral & Axiological
-- [Apologetics Tree.canvas](/notes/apologetics-treecanvas) - **strong**
+- [The Problem of Evil](/notes/apologetics-treecanvas) - **strong**
 - [The Problem of Hell and Moral Luck](/notes/the-problem-of-hell-and-moral-luck) - **strong**
 
 ## Epistemological
@@ -21,3 +21,11 @@
 ## Historical & Textual
 - [Inconsistency of Scripture](/notes/inconsistency-of-scripture) - weak
 - [Inconsistency of Church Tradition](/notes/inconsistency-of-church-tradition) - weak
+
+cognitive bias arguments?
+Skeptical Theism problems
+Divine Simplicity Problems, Modal Collapse, Abstract Objects/unique necessary being, trinity, how can timeless God act in time
+Can free will exist? finite person can that be non deterministic?
+Problem of Petitionary Prayer - why pray? - cascade collapse of responsive God (kohl, philpapers 2026)
+
+If god creates all worthy universes, deceptive ones dominate - theistic multiverse skeptical challenge
