@@ -10,6 +10,7 @@
 [Worldviews](/notes/worldviews)
 [Jesus Christ](/notes/jesus-christ)
 [Free Will](/notes/free-will)
+[Scriptural Reliability](/notes/scriptural-reliability)
 
 Assuming there is an infinite future (at least in Heaven), if God exists and all of time is equally present to him (else his understanding changes with time), then God has created an actual infinite. Because of that, is a past actual infinite really impossible?
 

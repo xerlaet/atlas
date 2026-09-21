@@ -1,15 +1,21 @@
 # Fine-Tuning of Life
 ---
 
-1. Life appears to be designed and finely tuned
-2. This fine tuning is more probable under Theism than naturalism
-3. Theism is more probable than naturalism
+1. How did life arise from non-life?
+2. Many biological machines are irreducibly complex, how do you get those?
 
-## Response
-We are still learning a lot about life - we don't even fully understand a single cell
+## Analysis
+The fossil record shows points where life suddenly transform suddenly (like the Cambrian Explosion), and at the same time many species in stasis who remain identical for millions of years
 
-There seems to be many examples of bad design: the recurrent laryngeal nerve travels 15 feet in giraffes even though it only needs to go a few inches
+We are still learning a lot about life - we don't even fully understand a single cell in it's entirety
 
-Other examples: [Argument from poor design - Wikipedia](https://en.wikipedia.org/wiki/Argument_from_poor_design)
+There are several examples of bad design (e.g. the recurrent laryngeal nerve travels 15 feet in giraffes even though it only needs to travel a few inches). Here are other examples: [Argument from poor design - Wikipedia](https://en.wikipedia.org/wiki/Argument_from_poor_design)
 
-In summary, this might be a God of the Gaps fallacy, but I don't know enough about biology to be confident about that
+What about co-option? Where an organism takes several parts doing other jobs and repurposes them. I believe this can explain snake venom.
+
+The bacterial flagellum is a common example of irreducible complexity. Although pretty much every part of it is just rings and rods which are able to form naturally pretty well, and I believe you can remove several parts and it would still work.
+
+Some intermediate creatures do seem to exist in the fossil record: [Tiktaalik](https://en.wikipedia.org/wiki/Tiktaalik) and [Archaeopteryx](https://en.wikipedia.org/wiki/Archaeopteryx). Theists would say that these are fully formed creatures, and the tens of millions of years for the Cambrian Explosion isn't enough time to build entirely new animal body plans.
+
+## Stance
+I think we can all agree that evolution is real, the question is whether it's limited to just small changes in populations or can it produce entirely new animals? I think this is a decent argument for a designer, although we are still learning about the complex interactions in a cell so I wouldn't be too confident in our existing theories.

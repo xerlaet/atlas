@@ -13,13 +13,13 @@ One problem with this formulation is the absorption property of infinity. Believ
 
 This might be able to be solved with surreal numbers or just re-framing the problem in terms of regrets or epistemic value (wanting to know the truth, heaven gets you that because you can ask God for anything for all time).
 
-A second issue is that multiple deities offer an infinite reward, even a skeptic-loving God. Because they all tie at infinity, it can't tell you which God to worship - perhaps the skeptic-loving God is the right one.
+A second issue is that multiple deities offer an infinite reward, even a skeptic-loving God. Because they all tie at infinity, it can't tell you which God to worship - perhaps the skeptic-loving God is the right one. Or you have to give different infinities/surreal values to different versions of heaven.
 
 Also keep in mind that different religions teach different endings, they aren't all just "heaven".
 
-Even if you are convinced by the argument, you can't just flip a switch and start believing. It will probably require lots of prayer and acting like a believer before you actually start to believe.
+Finally, while it might be advantageous to believe, in my opinion believing because it benefits you as opposed to you thinking God exists and loves you is a terrible reason. And by only knowing that it would be advantageous, you can't just flip a switch and start believing. It will probably require lots of prayer and acting like a believer to convince you that God does exist.
 
-Also, remember kids: gambling is bad!
+Food for thought: If you have situations where you know you are more likely to win, should you still gamble? Say you are an expert sports analyst, should you place a bet for the team you think will win?
 
 ## Stance
-For me currently, I value being correct/living in accordance with reality over possible gains from Heaven. Maybe I'm being irrational to make that my highest standard, but I don't want to be a believer if God doesn't exist. My whole life would be a lie, as believing in God is one of the most fundamental ideas you can have. So while intriguing, I don't think this shifts the scale very much.
+For me, I can understand that it might be advantageous to believe in God, however Pascal's Wager is a bad reason to believe.

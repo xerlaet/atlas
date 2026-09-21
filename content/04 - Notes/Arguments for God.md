@@ -2,33 +2,33 @@
 ---
 
 ## Pragmatic
-- [Pascal's Wager](/notes/pascals-wager) - weak
+- [Pascal's Wager](/notes/pascals-wager) - Cost-benefit analysis of belief
 
 ## Ontological
-- [The Ontological Argument](/notes/the-ontological-argument) - weak
+- [Ontological Argument](/notes/ontological-argument) - Greatest conceivable being must exist
+
+## Epistemological
+- [Epistemological Argument](/notes/epistemological-argument) - Naturalism destroys rational justification
+
+## Axiological
+- [Moral Argument](/notes/moral-argument) - Objective morality requires a lawgiver
 
 ## Cosmological
-- [The Cosmological Argument](/notes/the-cosmological-argument) - weak
+- [Cosmological Argument](/notes/cosmological-argument) - The universe had an uncaused causer
 
 ## Teleological
-- [Fine-Tuning of the Universe](/notes/fine-tuning-of-the-universe) - **strong**
-- [Fine-Tuning of Life](/notes/fine-tuning-of-life) - mid
-- [Psychophysical Harmony](/notes/psychophysical-harmony) - weak
-- [Applicability of Mathematics](/notes/applicability-of-mathematics)
+X- [Fine-Tuning of the Universe](/notes/fine-tuning-of-the-universe) - Physical constants point to design
+- [Fine-Tuning of Life](/notes/fine-tuning-of-life) - Biological complexity implies a designer
+- [Psychophysical Harmony](/notes/psychophysical-harmony) - Mental perfectly aligns with the physical
+- [Applicability of Mathematics](/notes/applicability-of-mathematics) - Physical laws obey abstract Math
+
+## Psychological
+- [Hard Problem of Consciousness](/notes/hard-problem-of-consciousness) - Matter cannot produce subjective experience
+- [Near Death Experiences](/notes/near-death-experiences) - Veridical perception during clinical death
+- [Argument from Desire](/notes/argument-from-desire) - Innate existential hunger implies fulfillment
+- [Argument from Religious Experience](/notes/argument-from-religious-experience) - Personal encounters justify belief
 
 ## Historical
-- [The Resurrection](/notes/the-resurrection) - mid
-- [Miracles](/notes/miracles) - **strong**
-- [Scriptural Reliability](/notes/scriptural-reliability) - mid
-- [Fulfilled Prophecies](/notes/fulfilled-prophecies) - **strong**
-- [Archaeological Evidence](/notes/archaeological-evidence) - ?
-
-## Immaterial
-- [Hard Problem of Consciousness](/notes/hard-problem-of-consciousness) - mid
-- [Near Death Experiences](/notes/near-death-experiences) - weak
-
-## Moral & Psychological
-- [The Moral Argument](/notes/the-moral-argument) - weak
-- [Argument from Reason](/notes/argument-from-reason) - mid
-- [Argument from Desire](/notes/argument-from-desire) - weak
-- [Argument from Religious Experience](/notes/argument-from-religious-experience) - weak
+X- [Miracles](/notes/miracles) - Documented suspensions of natural law
+- [The Resurrection](/notes/the-resurrection) - Historical evidence for Jesus rising from the dead
+X- [Fulfilled Prophecies](/notes/fulfilled-prophecies) - Ancient predictions accurately realized

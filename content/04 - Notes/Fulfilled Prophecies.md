@@ -87,3 +87,9 @@ Psalm 22 - "My God, my God, why have you forsaken me", an account of a crucifixi
     > "The Lord says to my Lord: 'Sit at my right hand, until I make your enemies your footstool.'"
 - **A priest forever in the order of Melchizedek (Psalm 110:4):**
     > "The Lord has sworn and will not change his mind, 'You are a priest forever after the order of Melchizedek.'"
+
+## Analysis
+tbd
+
+## Stance
+tbd

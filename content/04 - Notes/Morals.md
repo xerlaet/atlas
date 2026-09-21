@@ -1,7 +1,7 @@
 # Morals
 ---
 
-Do objective moral values exist? [The Moral Argument](/notes/the-moral-argument)
+Do objective moral values exist? [Moral Argument](/notes/moral-argument)
 
 Some morals that seem useful and I would probably stick to regardless:
 - Respect for (human?) life

@@ -15,4 +15,4 @@
 ## Origins & Necessity
 - [Cosmology](/notes/cosmology) - The origin and evolution of the universe
 - [Fine-Tuning of the Universe](/notes/fine-tuning-of-the-universe) - The improbable balance of physical constants
-- [The Cosmological Argument](/notes/the-cosmological-argument) - Logic for a first cause or necessary being
+- [Cosmological Argument](/notes/cosmological-argument) - Logic for a first cause or necessary being
