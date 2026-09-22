@@ -1,31 +1,32 @@
 # Arguments against God
 ---
 
-## Logical & Metaphysical
-- [Divine Simplicity](/notes/divine-simplicity)
-
-## Moral & Axiological
-- [The Problem of Evil](/notes/apologetics-treecanvas)
-- [The Problem of Hell and Moral Luck](/notes/the-problem-of-hell-and-moral-luck)
+## Logical
+X- [Problem of Divine Simplicity](/notes/problem-of-divine-simplicity) - Modal Collapse and property-identity paradox
+X- [Problem of Petitionary Prayer](/notes/problem-of-petitionary-prayer) - Logical paradox of changing a perfect will
 
 ## Epistemological
-- [Divine Hiddenness](/notes/divine-hiddenness)
-- [Religious Confusion](/notes/religious-confusion)
+X- [Divine Hiddenness](/notes/divine-hiddenness) - Existence of non-resistant non-believers
+X- [Religious Confusion](/notes/religious-confusion) - Scrambled divine revelations
 
-## Naturalistic
+## Axiological
+X- [Problem of Evil](/notes/problem-of-evil) - Incompatibility of unjustified suffering and God
+X- [Problem of Hell](/notes/problem-of-hell) - Infinite punishment vs finite decision-making
+X- [Poor Biological Design](/notes/poor-biological-design) - Suboptimal anatomy, parasites, evolutionary cruelty
+
+## Natural
 - [The Success of Naturalism](/notes/the-success-of-naturalism)
-- [Mind-Brain Physicalism](/notes/mind-brain-physicalism)
-- [Poor Biological Design](/notes/poor-biological-design)
-- [Philosophical Zombies](/notes/philosophical-zombies)
+X- [Mind-Brain Physicalism](/notes/mind-brain-physicalism)
 
-## Historical & Textual
-- [Inconsistency of Scripture](/notes/inconsistency-of-scripture)
-- [Inconsistency of Church Tradition](/notes/inconsistency-of-church-tradition)
+## Historical
+X- [Inconsistency of Scripture](/notes/inconsistency-of-scripture)
+X- [Inconsistency of Church Tradition](/notes/inconsistency-of-church-tradition)
 
-cognitive bias arguments?
-Skeptical Theism problems
-Divine Simplicity Problems, Modal Collapse, Abstract Objects/unique necessary being, trinity, how can timeless God act in time
+## Ideas
 Can free will exist? finite person can that be non deterministic?
-Problem of Petitionary Prayer - why pray? - cascade collapse of responsive God (kohl, philpapers 2026)
-
-If god creates all worthy universes, deceptive ones dominate - theistic multiverse skeptical challenge
+Failed apocalyptic prophecy? (e.g. matthew 16:28)
+Gospel authorship (anonymous?)
+Christological evolution (mark to john)
+Ethics of penal substitution
+pauline disconnect (jesus jewish/work heavy apocalpytic message into hellenistic, grace-based universal religion?)
+Divine command violence?

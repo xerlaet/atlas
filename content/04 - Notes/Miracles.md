@@ -1,24 +1,31 @@
 # Miracles
 ---
 
-**Miracles** are events that suspend the natural order. Are they real? See below:
+## Foundational
+- [The Resurrection](/notes/the-resurrection) - Bodily rising of Jesus
 
-A.D. 33 [The Resurrection](/notes/the-resurrection)
+## Medical Restorations
+- [Miracle of Calanda](/notes/miracle-of-calanda) - Restoration of an amputated leg
+- [Pierre De Rudder Miracle](/notes/pierre-de-rudder-miracle) - Instant fusion of rotted bone
+- [Marie Bailly Miracle](/notes/marie-bailly-miracle) - Nobel-witnessed cure of terminal peritonitis
+- [Marlene Klepees Miracle](/notes/marlene-klepees-miracle) - Instantaneous cure of severe palsy and blindness
 
-A.D. 700-2013 [Eucharistic Miracles](/notes/eucharistic-miracles) (strong)
+## Material Anomalies
+- [The Shroud of Turin](/notes/the-shroud-of-turin) - Unexplained photographic negative burial cloth
+X- [Our Lady of Guadalupe](/notes/our-lady-of-guadalupe) - Unfading 16th-century biological tilma
+X- [Eucharistic Miracles](/notes/eucharistic-miracles) - Bread manifesting living myocardial tissue
 
-A.D. 1354 [The Shroud of Turin](/notes/the-shroud-of-turin) (mid)
-A.D. 1531 [Our Lady of Guadalupe](/notes/our-lady-of-guadalupe) (mid)
+## Mystical Phenomena
+X- [Levitations of Joseph of Cupertino](/notes/levitations-of-joseph-of-cupertino) - Mass-witnessed human flight
+X- [Padre Pio](/notes/padre-pio) - Stigmata, bilocation, and anomalous phenomena
+X- [Incorruptable Saints](/notes/incorruptable-saints) - Decades of inexplicable biological preservation
 
-A.D. 1858 [Lourdes Healings](/notes/lourdes-healings) (idk yet)
-
-A.D. 1917 [Miracle of the Sun](/notes/miracle-of-the-sun) (mid)
-A.D. 1968-1971 [Marian Apparition at Zeitoun](/notes/marian-apparition-at-zeitoun) (mid)
-
-Incorrupt Saints
+## Mass Public Anomalies
+X- [Fatima](/notes/fatima) - Mass-witnessed localized solar anomaly
+X- [Marian Apparition at Zeitoun](/notes/marian-apparition-at-zeitoun) - Mass-witnessed luminous entity
 
 ## Analysis
-very cool
+tbd
 
 ## Stance
 tbd

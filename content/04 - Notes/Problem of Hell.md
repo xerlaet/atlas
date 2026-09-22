@@ -1,4 +1,4 @@
-# The Problem of Hell and Moral Luck
+# Problem of Hell
 ---
 
 1. A finite judgment time determines an infinite future

@@ -17,7 +17,7 @@
 - [Cosmological Argument](/notes/cosmological-argument) - The universe had an uncaused causer
 
 ## Teleological
-X- [Fine-Tuning of the Universe](/notes/fine-tuning-of-the-universe) - Physical constants point to design
+- [Fine-Tuning of the Universe](/notes/fine-tuning-of-the-universe) - Physical constants point to design
 - [Fine-Tuning of Life](/notes/fine-tuning-of-life) - Biological complexity implies a designer
 - [Psychophysical Harmony](/notes/psychophysical-harmony) - Mental perfectly aligns with the physical
 - [Applicability of Mathematics](/notes/applicability-of-mathematics) - Physical laws obey abstract Math
@@ -31,4 +31,4 @@ X- [Fine-Tuning of the Universe](/notes/fine-tuning-of-the-universe) - Physical 
 ## Historical
 X- [Miracles](/notes/miracles) - Documented suspensions of natural law
 - [The Resurrection](/notes/the-resurrection) - Historical evidence for Jesus rising from the dead
-X- [Fulfilled Prophecies](/notes/fulfilled-prophecies) - Ancient predictions accurately realized
+- [Fulfilled Prophecies](/notes/fulfilled-prophecies) - Ancient predictions accurately realized
