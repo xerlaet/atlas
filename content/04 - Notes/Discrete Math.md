@@ -17,7 +17,7 @@
 [Number Theory](/notes/number-theory)
 
 ## Probability
-[Probability](/notes/probability)
+[Probability & Statistics](/notes/probability-statistics)
 [Counting Principles](/notes/counting-principles)
 [Selections](/notes/selections)
 

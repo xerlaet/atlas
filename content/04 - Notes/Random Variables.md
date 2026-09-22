@@ -26,9 +26,6 @@ $$
 \end{align}
 $$
 
->[!note]
->For continuous variables, replace the summation $\sum$ with an integral $\int$
-
 **Cumulative distribution function** (CDF): Measures the probability that $X$ takes a value less than or equal to $x$. Importantly, this is also the integral of the PDF!
 $$
 F(x)=P(X\leq x)=\int_{-\infty }^{x} f(x) \, dx 
@@ -38,3 +35,6 @@ $$
 $$
 F^{-1}(p)
 $$
+
+>[!note]
+>For continuous variables, replace the summation $\sum$ with an integral $\int$

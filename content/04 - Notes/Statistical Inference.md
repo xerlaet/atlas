@@ -1,6 +1,27 @@
 # Statistical Inference
 ---
 
+Often times, the parameters of the population are not known. In order to do probability work, you need to collect data
+
+**Population**: The entire group of interest, described by **parameters** ($\theta$)
+**Sample**: An observed subset of that group, described by **statistics** ($\hat{\theta}$). Each statistic is a [random variable](/notes/random-variables) because it is computed from random data
+
+
+Estimator $\hat{\theta}$
+
+Non-parametric makes no assumption about the family of distribution, parametric does
+
+Parameter estimation
+Confidence Intervals
+Unknown Standard Deviation
+Hypothesis Testing
+Inference about Variances
+
+Chi-square Tests
+Nonparametric statistics
+Bootstrap
+Bayesian Inference
+
 ## Point Estimates
 $E(x)=\mu$
 

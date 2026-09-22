@@ -21,7 +21,7 @@ $$
 - [Complex Numbers](/notes/complex-numbers) - Extension to the complex plane
 
 ## Chance & Data
-- [Probability](/notes/probability) - Modeling randomness and uncertainty
+- [Probability & Statistics](/notes/probability-statistics) - Modeling randomness and uncertainty
 - [Statistics](/notes/statistics) - Analysis and interpretation of data
 
 ## Computational Math

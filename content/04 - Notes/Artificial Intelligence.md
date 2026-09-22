@@ -27,4 +27,4 @@
 - [Hard Problem of Consciousness](/notes/hard-problem-of-consciousness) - Subjective experience debate
 - [Turing Test](/notes/turing-test) - Evaluating machine intelligence
 - [Logic](/notes/logic) - Formal rules of truth
-- [Probability](/notes/probability) - Mathematics of uncertainty
+- [Probability & Statistics](/notes/probability-statistics) - Mathematics of uncertainty

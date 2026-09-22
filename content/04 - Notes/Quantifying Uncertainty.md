@@ -11,4 +11,4 @@ All the probabilities mean is a probability based on the knowledge base
 
 An agent should choose an action yielding the highest expected utility - [Utilitarian](/notes/utilitarian)
 
-Use [Probability](/notes/probability)
+Use [Probability & Statistics](/notes/probability-statistics)

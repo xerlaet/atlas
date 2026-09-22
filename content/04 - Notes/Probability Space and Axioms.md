@@ -1,7 +1,9 @@
 # Probability Space and Axioms
 ---
 
-A **probability space** ($\Omega, \mathcal{F}, P$) is a mathematical model of a random experiment:
+**Experiment**: A procedure which yields one of a given set of outcomes
+
+**Probability space** ($\Omega, \mathcal{F}, P$): A mathematical model of a random experiment:
 - **Sample space** ($\Omega$): The set of all possible outcomes
 - **Event space / Sigma-field** ($\mathcal{F}$): The set of all valid combinations of events
 - **Probability measure** ($P$): A function that assigns probabilities to events
