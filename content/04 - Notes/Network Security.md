@@ -1,20 +1,17 @@
 # Network Security
 ---
 
-email is best
-one book/notebook no loose papers
+**Passive attack**: intruder eavesdrops but doesn't modify anything
+**Active attack**: intruder may transmit, replay, modify, or delete messages
+**Man in the middle** (MITM) attack: attacker acts as a relay
 
-A solution
-**Technical aspect**: flawless protocols, infrastructure, os, applications
-**Policy aspect**: perfect policy
-**Human aspect**: every user is a security expert
-
-Security is a money hole. How much should you spend?
-
-[CIA Triangle](/notes/cia-triangle)
+## Foundations
+- [Network Layers](/notes/network-layers)
 
 ## Cryptography
-[Cryptographic Algorithms](/notes/cryptographic-algorithms)
+- [Cryptographic Algorithms](/notes/cryptographic-algorithms)
+
+---
 
 Ciphertext attacks:
 - try every key to decrypt it (how to distinguish cleartext vs gibberish)
@@ -60,3 +57,29 @@ Otway-Rees algorithm
 Kerberos
 
 perfect forward secrecy, don't know signature key to not accuse
+
+Oligarchy model
+Anarchy model
+
+A solution
+**Technical aspect**: flawless protocols, infrastructure, os, applications
+**Policy aspect**: perfect policy
+**Human aspect**: every user is a security expert
+
+Security is a money hole. How much should you spend?
+
+[CIA Triangle](/notes/cia-triangle)
+
+email is best
+one book/notebook no loose papers
+
+Project
+- 1 server, 2 clients
+- main thread: accept Alice -> hand off socket -> accept bob
+- no CA/PKI to build
+- long term keys can be preloaded
+- private keys stay private
+- hosts stay uncompromised
+- server doesn't have to be authenticated by clients
+- available primatives: RSA, diffie-Hellman, keyed hashes, standard PRNGs
+- No: passwords or RSA secret transport, RSA/AES?DES/ChaCha20 for confidentiality, no CSPRNGs or TLS/SSL/SSH
