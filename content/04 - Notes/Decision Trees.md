@@ -1,31 +1,25 @@
 # Decision Trees
 ---
 
-![TikZ Diagram](/attachments/tikz-06936b889c283855011286d669a0e699.svg)
+![TikZ Diagram](/attachments/tikz-d75e09445851a57d17c438c1329fb187.svg)
 
-[Trees](/notes/trees) where each internal node tests the value of a particular feature, and each leaf node specifies a class label
+**Decision Trees**: [Trees](/notes/trees) where each internal node tests the value of a particular feature, and each leaf node specifies a class label. Generally used for classification, but it can work for regression (determining what each $x_{n}$ is)
 
-Each branch divides the features space into axis-parallel sections
+Geometrically, each branch divides the features space into axis-parallel sections
 
-Tree ensembles are cool
+## Selecting and Growing a Tree
+Ideally the tree is as shallow as possible to prevent overfitting and ensure fast inference. Since finding the globally optimal (smallest) decision tree is [NP-Hard](/notes/np-hard), a practical solution is to use a [greedy heuristic](/notes/greedy-algorithms): at each step, pick the feature split that provides the highest immediate [Information Gain](/notes/information-gain)
 
-To avoid overfitting, don't grow a very large tree to begin with. Alternatively, grow a large tree, then prune back greedily to improve on the **validation set**
+## Overfitting & Regularization
+If left unchecked, they will keep splitting until every leaf contains exactly one training sample (100% training accuracy, terrible generalization)
 
-## Selecting a Tree
-Ideally the tree is as short as possible to remain more generalizable and be faster and returning an answer. However that is NP-Hard
+To combat overfitting, use these strategies:
+- **Pre-pruning**: Stop the tree by setting hyperparameters upfront (e.g. max depth, minimum samples to split a node)
+- **Post-pruning**: Grow an overfitted true, then prune back greedily to improve on the validation set
 
-A more practical solution is to use a heuristic for picking trees, one of which is how much information is gained:
-$$
-\text{Info Gain}=H(Y)-H(Y\mid X)
-$$
-$$
-\begin{align}
-H(Y)=&-\sum_{y\in Y} P(y)\log _{2}P(y) \\
-H(Y|x)=&-\sum _{y\in Y}P(y\mid x)\log _{2}P(y\mid x) \\
-H(Y|X)=&-\sum _{x\in X}P(x)H(Y\mid x)
-\end{align}
-$$
+## Tree Ensembles
+Since single decision trees are often unstable, often people will use **ensembles**: combining hundreds of trees to create a robust model
 
-A high entropy ($H(Y)\sim 1$) means the probability is near random, whereas a low entropy is near certain
-
-Trees are generally for classification, but it can work for regression (determining what each $x_{n}$ is)
+There are two primary ways to ensemble trees:
+- **Bagging**: Train trees in parallel each on a random subset of data. The final prediction is an average (regression) or majority vote (classification)
+- **Boosting**: Train trees sequentially, where each tree is trained to predict the errors made by the previous tree. The prediction is the sum of all trees
