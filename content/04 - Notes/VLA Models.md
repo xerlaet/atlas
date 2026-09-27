@@ -1,26 +1,18 @@
 # VLA Models
 ---
 
-LLMs predict one token at a time, trained in an auto regressive manner
+![TikZ Diagram](/attachments/tikz-01fdd1ce5f916df6c29d31056bf50cc6.svg)
 
-Introduce image tokens that come from a vision encoder
+**Vision-Language-Action** (VLA) models are foundation models that process visual observations and natural language instructions end-to-end to directly output low-level robotic motor commands. 
 
-Diffusion models are trained to remove noise from an image
+This contrasts with traditional pipelined robotics, which separates vision (object detection), language (planning), and control (kinematics) into distinct subsystems. VLAs are typically initialized from Vision-Language Models (VLMs) pretrained on internet-scale image-text corpora, then finetuned on robotic expert trajectories via behavioral cloning.
 
-## VLA
-A **vision language action** (VLA) model starts with a pretrained VLM and is able to take as input an image and a command and generate an action for a robot to follow
+## Action Generation Paradigms
+Instead of predicting single-step movements (which causes hesitant, jittery control), VLAs predict **Action Chunks** (a sequence of future actions) to prevent compounding errors. The mechanism for decoding these chunks generally falls into three categories:
+1. **Discrete Token VLAs**: The continuous action space is discretized. The VLM vocabulary is expanded with additional tokens that represent physical actions
+2. **Generative Head VLAs**: Uses an additional network framework akin to a diffusion model (or Flow-Matching) to generate continuous action trajectories from noise
+3. **Hierarchical Design**: The VLM predicts an intermediate representation (e.g., spatial coordinates or task constraints), which is passed to a specialized 3D policy to predict the final joint kinematics
 
-**Discrete Token VLA** has additional tokens that represent actions
-
-**Generative Head VLA** has an additional network with a similar framework to a diffusion model to generate actions
-
-**Custom VLA** is a catch all category for other custom approaches
-
-Hierarchical design, VLM predicts an intermediate representation which is sent to a specialized 3D policy to predict the task
-
-### HAMSTER
-Might be fed lots of pixel point predictions (Robopoint), visual question answering (VQA), simulated robotic actions (RLBench), real world data (DROID)
-
-Images -> point clouds -> virtual images -> predicted heatmaps -> gripper pose
-
-**VLA-0** predicts the action directly as text
+## Notable Implementations
+- [X-VLA](/notes/x-vla): Uses soft-prompts and flow-matching for cross-embodiment generalization.
+- **VLA-0**: Predicts the action directly as text rather than specialized action tokens.

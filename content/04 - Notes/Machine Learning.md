@@ -4,36 +4,36 @@
 [Training Pipeline](/notes/training-pipeline): Given an experience, improve on a task based on some measure
 
 ## Learning Paradigms
-[Supervised Learning](/notes/supervised-learning) learns from known examples {data, label}
-[Unsupervised Learning](/notes/unsupervised-learning)
-[Self-Supervised Learning](/notes/self-supervised-learning)
-[Reinforcement Learning](/notes/reinforcement-learning) state $\to$ action $\to$ reward $\to$ repeat
-[Online vs Offline Learning](/notes/online-vs-offline-learning)
+- [Supervised Learning](/notes/supervised-learning) learns from known examples {data, label}
+- [Unsupervised Learning](/notes/unsupervised-learning)
+- [Self-Supervised Learning](/notes/self-supervised-learning)
+- [Reinforcement Learning](/notes/reinforcement-learning) state $\to$ action $\to$ reward $\to$ repeat
+- [Online vs Offline Learning](/notes/online-vs-offline-learning)
 
 ## Problem Types
-[Classification](/notes/classification)
-[Regression](/notes/regression)
-[Sequence Learning](/notes/sequence-learning)
-[Object Detection](/notes/object-detection)
-[Image Segmentation](/notes/image-segmentation)
+- [Classification](/notes/classification)
+- [Regression](/notes/regression)
+- [Sequence Learning](/notes/sequence-learning)
+- [Object Detection](/notes/object-detection)
+- [Image Segmentation](/notes/image-segmentation)
 
 ## Architectures
-[Convolutional Neural Networks](/notes/convolutional-neural-networks)
-[Recurrent Neural Networks](/notes/recurrent-neural-networks)
-[Transformers](/notes/transformers)
-[Autoencoders](/notes/autoencoders)
-[Generative Adversarial Networks](/notes/generative-adversarial-networks)
+- [Convolutional Neural Networks](/notes/convolutional-neural-networks)
+- [Recurrent Neural Networks](/notes/recurrent-neural-networks)
+- [Transformers](/notes/transformers)
+- [Autoencoders](/notes/autoencoders)
+- [Generative Adversarial Networks](/notes/generative-adversarial-networks)
 
 ## Mechanics & Optimization
-[Gradient Descent](/notes/gradient-descent)
-[Backpropagation](/notes/backpropagation)
-[Loss Functions](/notes/loss-functions)
-[Activation Functions](/notes/activation-functions)
+- [Gradient Descent](/notes/gradient-descent)
+- [Backpropagation](/notes/backpropagation)
+- [Loss Functions](/notes/loss-functions)
+- [Activation Functions](/notes/activation-functions)
 
 ## Fundamentals & Theory
-[Manifold Hypothesis](/notes/manifold-hypothesis)
-[Generalization](/notes/generalization)
-[Universal Approximation Theorem](/notes/universal-approximation-theorem)
+- [Manifold Hypothesis](/notes/manifold-hypothesis)
+- [Generalization](/notes/generalization)
+- [Universal Approximation Theorem](/notes/universal-approximation-theorem)
 
 ---
 
