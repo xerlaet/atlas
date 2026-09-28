@@ -22,7 +22,6 @@ $$
 
 ## Chance & Data
 - [Probability & Statistics](/notes/probability-statistics) - Modeling randomness and uncertainty
-- [Statistics](/notes/statistics) - Analysis and interpretation of data
 
 ## Computational Math
 - [Asymptotic Notation](/notes/asymptotic-notation) - Scaling and complexity

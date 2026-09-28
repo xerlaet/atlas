@@ -1,36 +1,32 @@
 # Supervised Learning
 ---
 
-**Supervised learning** learns from known examples {data, labels} (e.g. image classification)
+**Supervised learning** learns from a dataset of known input-output pairs to predict outcomes for unseen data (e.g. image classification)
 
-## Input space $X$
-[Feature Vectors](/notes/feature-vectors)
+## Mathematical Framework
+**Input Space** ($X$): The domain of all possible input [Feature Vectors](/notes/feature-vectors)
+**Output Space** ($Y$): The domain of target labels (e.g. [Classification](/notes/classification) vs [Regression](/notes/regression))
+**Hypothesis Space** ($H$): The set of all possible functions the algorithm can learn
 
-Standardize or normalize the data to ensure the data is in the proper range and features have the same scale
+## Feature Preprocessing
+Raw input vectors often require scaling to ensure features are in the proper range and share the same scale, which stabilizes and speeds up training
 
-Standardize:
+**Standardization** ($Z$-score): Centers data at a mean of 0 with a standard deviation of 1
 $$
 x_{j}=\frac{x_{j}-\mu}{\sigma }
 $$
-Normalize:
+**Normalization** (Min-Max): Bounds data to a specific fixed range, typically $[0,1]$
 $$
 x_{j}=\frac{x_{j}-\min(x)}{\max(x)-\min(x)}
 $$
 
-## Output Space $Y$
-Classification if the elements of $Y$ are classes
-Regression if $Y$ is continuous
-
 ## Model Classes $H$
-Parametric Models (learn a parameter)
-[Linear Models](/notes/linear-models)
-[Feedforward Neural Networks](/notes/feedforward-neural-networks)
+**Parametric Models**: Assume a specific functional form with a fixed, finite number of parameters to learn (e.g. [Linear Models](/notes/linear-models), [Feedforward Neural Networks](/notes/feedforward-neural-networks))
 
-Non-Parametric Models
-[kNNs](/notes/knns)
-[Decision Trees](/notes/decision-trees)
+**Non-Parametric Models**: Don't make strong assumptions about the functional form. Instead the model's capacity and structure grows with the training data (e.g. [k-Nearest Neighbors](/notes/k-nearest-neighbors), [Decision Trees](/notes/decision-trees))
 
-The goal is the find the model $h$ that best approximates $f$
+## Learning Objective
+The goal is the find the model $h\in H$ that best approximates the underlying function $f:X\to Y$
 
 One way to do that is with **empirical risk minimization** (ERM)
 $$

@@ -1,39 +1,40 @@
 # Machine Learning
 ---
 
-[Training Pipeline](/notes/training-pipeline): Given an experience, improve on a task based on some measure
+- [Decision Trees](/notes/decision-trees)
+- [k-Nearest Neighbors](/notes/k-nearest-neighbors)
+- [Deep Learning](/notes/deep-learning) - Deep neural network architectures
+- [Training Pipeline](/notes/training-pipeline) - Given an experience, improve on a task based on some measure
 
-## Learning Paradigms
-- [Supervised Learning](/notes/supervised-learning) learns from known examples {data, label}
-- [Unsupervised Learning](/notes/unsupervised-learning)
-- [Self-Supervised Learning](/notes/self-supervised-learning)
-- [Reinforcement Learning](/notes/reinforcement-learning) state $\to$ action $\to$ reward $\to$ repeat
-- [Online vs Offline Learning](/notes/online-vs-offline-learning)
-
-## Problem Types
-- [Classification](/notes/classification)
-- [Regression](/notes/regression)
-- [Sequence Learning](/notes/sequence-learning)
-- [Object Detection](/notes/object-detection)
-- [Image Segmentation](/notes/image-segmentation)
-
-## Architectures
-- [Convolutional Neural Networks](/notes/convolutional-neural-networks)
-- [Recurrent Neural Networks](/notes/recurrent-neural-networks)
-- [Transformers](/notes/transformers)
-- [Autoencoders](/notes/autoencoders)
-- [Generative Adversarial Networks](/notes/generative-adversarial-networks)
-
-## Mechanics & Optimization
-- [Gradient Descent](/notes/gradient-descent)
-- [Backpropagation](/notes/backpropagation)
-- [Loss Functions](/notes/loss-functions)
-- [Activation Functions](/notes/activation-functions)
+## Data & Evaluation
+- [Data Preprocessing](/notes/data-preprocessing) - Cleaning and formatting raw inputs
+- [Feature Engineering](/notes/feature-engineering) - Extracting useful signals from data
+- [Evaluation Metrics](/notes/evaluation-metrics) - Quantifying model accuracy and errors
+- [Cross-Validation](/notes/cross-validation) - Estimating model performance on subsets
 
 ## Fundamentals & Theory
-- [Manifold Hypothesis](/notes/manifold-hypothesis)
-- [Generalization](/notes/generalization)
-- [Universal Approximation Theorem](/notes/universal-approximation-theorem)
+- [Bias-Variance Tradeoff](/notes/bias-variance-tradeoff) - Balancing model underfitting and overfitting
+- [Generalization](/notes/generalization) - Performing well on unseen data
+- [Manifold Hypothesis](/notes/manifold-hypothesis) - High-dimensional data on lower dimensions
+- [Universal Approximation Theorem](/notes/universal-approximation-theorem) - Neural networks represent any function
+- [Machine Learning Paradigms](/notes/machine-learning-paradigms) - Frameworks for how machines can learn
+
+## Problem Types
+- [Classification](/notes/classification) - Predicting discrete class labels
+- [Regression](/notes/regression) - Predicting continuous numerical outputs
+- [Clustering](/notes/clustering) - Grouping similar unlabeled data points
+- [Dimensionality Reduction](/notes/dimensionality-reduction) - Compressing data retaining key information
+- [Sequence Learning](/notes/sequence-learning) - Processing time-series or text data
+- [Object Detection](/notes/object-detection) - Locating and classifying image elements
+- [Image Segmentation](/notes/image-segmentation) - Classifying images at pixel level
+
+## Mechanics & Optimization
+- [Gradient Descent](/notes/gradient-descent) - Minimizing loss via downhill steps
+- [Backpropagation](/notes/backpropagation) - Computing gradients for network weights
+- [Loss Functions](/notes/loss-functions) - Measure of prediction error
+- [Activation Functions](/notes/activation-functions) - Introducing non-linearity into neural networks
+- [Regularization](/notes/regularization) - Penalizing complexity to prevent overfitting
+
 
 ---
 
@@ -42,7 +43,6 @@
 
 Setup, training/fitting, validating, testing
 Batch vs online learning (and offline?)
-
 
 [Feature Vectors](/notes/feature-vectors)
 classification, regression
@@ -56,8 +56,6 @@ Double Descent
 - sensitive to irrelevant or correlated features, prediction can be expensive
 
 ---
-
-[Transformers](/notes/transformers)
 
 ## Final Exam Review
 - attention is all you need paper
