@@ -15,7 +15,10 @@ $$
 Regression by weight
 
 Voronoi Diagrams
-Hamming distance, Euclidean distance, L1/L2
+
+[Manhattan Distance](/notes/manhattan-distance)
+[Euclidean Distance](/notes/euclidean-distance)
+
 Normalization, mixed distances
 average by distance as well
 irrelevant features can hurt nearest neighbors among other things

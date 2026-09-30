@@ -1,10 +1,11 @@
 # Inconsistency of Scripture
 ---
 
-Are there contradictions in scripture?
+- Conflicting accounts of the resurrection
+- Divergent theological frameworks between Paul and James or John and the Synoptic Gospels
+- Death of Judas
 
-Dependence on earlier near Eastern Myths
+## Analysis
+Dependence on earlier near Eastern Myths?
 
-
-## Response
-I don't think so
+Could these simply be complementary perspectives? And perhaps they had fallible human editors?

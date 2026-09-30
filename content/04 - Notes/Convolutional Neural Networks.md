@@ -28,6 +28,6 @@ Pooling (max, average, ...) layers use larger strides to down-sample
 
 Use a [Softmax Function](/notes/softmax-function) or one-hot encoding for the final classification
 
-[Cross Entropy](/notes/cross-entropy)
+[Cross-Entropy](/notes/cross-entropy)
 
 [Gradient Descent](/notes/gradient-descent) vs Adam or other optimization techniques

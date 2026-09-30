@@ -3,7 +3,7 @@
 
 ## Existence & Reality
 - [Ontology](/notes/ontology) - The study of what it means "to be"
-- [Mind-Brain Physicalism](/notes/mind-brain-physicalism) - The relationship between consciousness and matter
+- [Mind-Brain Interaction](/notes/mind-brain-interaction) - The relationship between consciousness and matter
 - [Hard Problem of Consciousness](/notes/hard-problem-of-consciousness) - Why and how physical processes give rise to experience
 - [Free Will](/notes/free-will) - The nature of agency, choice, and determinism
 

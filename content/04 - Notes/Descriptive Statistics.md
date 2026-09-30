@@ -1,32 +1,46 @@
 # Descriptive Statistics
 ---
 
-$$
-\text{MSE}=E[(\hat{\theta }-\theta )^{2}]=\text{var}(\hat{\theta })+\text{bias}^{2}
-$$
-Because MSE combines both, it's a good performance metric
-
 ## Sample Metrics
-For a sample, mean = $\bar{X}$, Std Dev = $s$, Var = $s^{2}$
+For a sample of $n$ observations $X_1, X_2, \dots, X_n$:
+
+**Sample Mean** ($\bar{X}$):
 $$
-s^{2}=\frac{1}{n-1}\sum _{i=1}^{n}(X_{i}-\hat{X})^{2}
+\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i
 $$
+**Sample Variance** ($s^2$):
+$$
+s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (X_i - \bar{X})^2,\text{when }n=1\text{ then }s^{2}=\frac{0}{0}
+$$
+**Sample Standard Deviation** ($s$): expresses spread in the original units:
+$$
+s = \sqrt{s^2}
+$$
+**Standard Error** (SE): uncertainty of the sample statistic
+$$
+SE=\frac{s}{\sqrt{n}}
+$$
+[Mean Squared Error](/notes/mean-squared-error)
 
 ## Order Statistics
-**Median**: The central value, exceeded by half of observations and preceded by half
+**Quartiles**: Split ordered data into equal parts: $Q_{x}=\left\lceil np_{x} \right\rceil$
+- **First quartile** ($Q_{1}$): 25th percentile
+- **Second quartile / Median** ($Q_{2}$): 50th percentile; splits the observations in half
+- **Third quartile** ($Q_{3}$): 25th percentile
 
-quartiles split the population into four equal parts
+**Interquartile Range** (IQR): $Q_{3}-Q_{1}$
 
-**Interquartile range**: Difference between first and third quartiles: $IQR=Q_{3}-Q_{1}$
-
-Outliers are typically outside of $1.5(\hat{Q}_{3}-\hat{Q}_{1})$. If the data is normally distributed, this means 99.3% of the population will not be an outlier
+**Outlier**: Typically anything outside $[Q_{1}-1.5\cdot\text{IQR},Q_{3}+1.5\cdot\text{IQR}]$
 
 ## Shape
-Shape of a distribution (symmetric, right-skewed, left-skewed (based on median <\/> mean))
+The relative position of the **Mean** and **Median** indicates skewness:
+* **Symmetric**: $\text{Mean} \approx \text{Median}$ (Distribution is balanced around the center).
+* **Right-Skewed**: $\text{Mean} > \text{Median}$ (Long tail extends to the right/high values).
+* **Left-Skewed**: $\text{Mean} < \text{Median}$ (Long tail extends to the left/low values).
 
 ## Graphical Statistics
-- [Histograms](/notes/histograms)
-- [Stem-and-leaf Plots](/notes/stem-and-leaf-plots)
-- [Boxplots](/notes/boxplots)
-- [Timeplots](/notes/timeplots)
-- [Scatterplots](/notes/scatterplots)
+- [Histograms](/notes/histograms) - Data grouped into equal-width bins/intervals
+- [Stem-and-leaf Plots](/notes/stem-and-leaf-plots) - Separate values by leading and trailing digits
+- [Boxplots](/notes/boxplots) - Visual five-number summary (minimum, $Q_{1}$, median, $Q_{3}$, maximum)
+- [Timeplots](/notes/timeplots) - Observations plotted chronologically
+- [Scatterplots](/notes/scatterplots) - 2D Cartesian plot 

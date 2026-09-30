@@ -11,7 +11,7 @@ $$
 - Low entropy ($H\approx 0$): The node is pure, all samples belong to one class
 
 ## Information Gain for Decision Trees
-First calculate the entropy of a node $Y$ (where $y$ is a specific class (e.g. "yes" or "no") and $P(y)$ is the proportion of the dataset belonging to $y$):
+First calculate the [Entropy](/notes/entropy) of a node $Y$ (where $y$ is a specific class (e.g. "yes" or "no") and $P(y)$ is the proportion of the dataset belonging to $y$):
 $$
 H(Y)=-\sum_{y\in Y} P(y)\log _{2}P(y)
 $$
