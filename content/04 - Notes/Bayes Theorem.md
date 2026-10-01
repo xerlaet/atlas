@@ -20,5 +20,4 @@ $$
 **Marginal probability** ($P(B)$): The baseline probability of the event occurring
 **Posterior** ($P(A\mid B)$): The updated belief after observing the evidence
 
-**Sensitivity** (True Positive Rate): $P(\text{Tests positive}\mid \text{Is Sick})$
-**Specificity** (True Negative Rate): $P(\text{Tests Negative}\mid \text{Is Healthy})$
+[Classification Evaluation Metrics](/notes/classification-evaluation-metrics)

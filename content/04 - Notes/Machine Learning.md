@@ -9,7 +9,7 @@
 ## Data & Evaluation
 - [Data Preprocessing](/notes/data-preprocessing) - Cleaning and formatting raw inputs
 - [Feature Engineering](/notes/feature-engineering) - Extracting useful signals from data
-- [Evaluation Metrics](/notes/evaluation-metrics) - Quantifying model accuracy and errors
+- [Classification Evaluation Metrics](/notes/classification-evaluation-metrics) - Quantifying model accuracy and errors
 - [Cross-Validation](/notes/cross-validation) - Estimating model performance on subsets
 
 ## Fundamentals & Theory
