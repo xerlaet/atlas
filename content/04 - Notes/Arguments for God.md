@@ -32,7 +32,3 @@
 X- [Miracles](/notes/miracles) - Documented suspensions of natural law
 - [The Resurrection](/notes/the-resurrection) - Historical evidence for Jesus rising from the dead
 - [Fulfilled Prophecies](/notes/fulfilled-prophecies) - Ancient predictions accurately realized
-
-Counters?
-- Christological evolution (mark to john)
-- Gospel authorship (anonymous?)
