@@ -4,7 +4,6 @@
 ## Logical
 - [Problem of Divine Simplicity](/notes/problem-of-divine-simplicity) - Modal Collapse and property-identity paradox
 - [Problem of Petitionary Prayer](/notes/problem-of-petitionary-prayer) - Logical paradox of changing a perfect will
-X- [Incoherence of Divine Attributes](/notes/incoherence-of-divine-attributes) - Logical paradoxes from trait combinations
 X- [Argument from Ultimate Responsibility](/notes/argument-from-ultimate-responsibility) - Our free will is not meaningful
 
 ## Epistemological

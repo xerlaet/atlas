@@ -6,6 +6,7 @@ Often times, the parameters of the population are not known. In order to do prob
 **Population**: The entire group of interest, described by **parameters** ($\theta$)
 **Sample**: An observed subset of that group, described by **statistics** ($\hat{\theta}$). Each statistic is a [random variable](/notes/random-variables) because it is computed from random data
 
+[QQ Plots](/notes/qq-plots) - Map sampled quantiles onto expected quantiles
 
 Estimator $\hat{\theta}$
 
