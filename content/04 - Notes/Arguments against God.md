@@ -11,7 +11,7 @@ X- [Argument from Ultimate Responsibility](/notes/argument-from-ultimate-respons
 - [Religious Confusion](/notes/religious-confusion) - Scrambled divine revelations and Churches
 
 ## Axiological
-X- [Problem of Evil](/notes/problem-of-evil) - Incompatibility of unjustified suffering and God
+- [Problem of Evil](/notes/problem-of-evil) - Incompatibility of unjustified suffering and God
 X- [Problem of Hell](/notes/problem-of-hell) - Infinite punishment vs finite decision-making
 X- [Poor Biological Design](/notes/poor-biological-design) - Suboptimal anatomy, parasites, evolutionary cruelty
 X- [Moral Evolution of the Biblical God](/notes/moral-evolution-of-the-biblical-god) - The Bible doesn't show a timeless standard
