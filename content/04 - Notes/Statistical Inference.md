@@ -8,7 +8,21 @@ Often times, the parameters of the population are not known. In order to do prob
 
 [QQ Plots](/notes/qq-plots) - Map sampled quantiles onto expected quantiles
 
-Estimator $\hat{\theta}$
+## Parameter Estimation
+**Estimator** ($\hat{\theta}$): Maps sample data onto parameter space 
+
+The $k$-th **population moment** is $\mu_{k}=E(X^{k})$
+The $k$-th **sample moment** is $m_{k}=\frac{1}{n}\sum_{i=1}^{n}X_{i}^{k}$
+
+The first sample moment is the sample mean $\bar{X}$
+
+There are two primary ways to estimate unknown parameters $\boldsymbol{\theta} = (\theta_1, \dots, \theta_k)$ from sample data
+- [Method of Moments](/notes/method-of-moments) - set theoretical moments equal to empirical moments
+- [Maximum Likelihood Estimation](/notes/maximum-likelihood-estimation) - maximize probability of the sample occurring
+
+
+---
+
 
 Non-parametric makes no assumption about the family of distribution, parametric does
 
@@ -22,9 +36,6 @@ Chi-square Tests
 Nonparametric statistics
 Bootstrap
 Bayesian Inference
-
-## Point Estimates
-$E(x)=\mu$
 
 ## T Interval
 

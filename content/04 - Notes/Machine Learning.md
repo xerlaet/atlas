@@ -1,10 +1,10 @@
 # Machine Learning
 ---
 
+- [Training Pipeline](/notes/training-pipeline) - Given an experience, improve on a task based on some measure
 - [Decision Trees](/notes/decision-trees)
 - [k-Nearest Neighbors](/notes/k-nearest-neighbors)
 - [Deep Learning](/notes/deep-learning) - Deep neural network architectures
-- [Training Pipeline](/notes/training-pipeline) - Given an experience, improve on a task based on some measure
 
 ## Data & Evaluation
 - [Data Preprocessing](/notes/data-preprocessing) - Cleaning and formatting raw inputs
@@ -35,6 +35,7 @@
 - [Activation Functions](/notes/activation-functions) - Introducing non-linearity into neural networks
 - [Regularization](/notes/regularization) - Penalizing complexity to prevent overfitting
 
+Batch normalization
 
 ---
 
