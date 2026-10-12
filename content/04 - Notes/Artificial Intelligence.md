@@ -5,7 +5,7 @@
 
 ## Core Sub-Disciplines
 - [Machine Learning](/notes/machine-learning) - Statistical pattern recognition
-- [Artificial Neural Networks](/notes/artificial-neural-networks) - Deep learning architectures
+- [Neural Networks](/notes/neural-networks) - Deep learning architectures
 - [Natural Language Processing](/notes/natural-language-processing) - Human language processing
 - [Computer Vision](/notes/computer-vision) - Visual data interpretation
 

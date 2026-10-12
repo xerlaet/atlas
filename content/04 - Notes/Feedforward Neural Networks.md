@@ -5,7 +5,7 @@ aliases:
 # Feedforward Neural Networks
 ---
 
-**Feedforward Neural Networks** (FNNs) are the simplest and most foundational architecture of [Artificial Neural Networks](/notes/artificial-neural-networks). In these models, data flows strictly in one forward direction—from the input layer, through intermediate layers, to the output layer—without forming any cycles or feedback loops.
+**Feedforward Neural Networks** (FNNs) are the simplest and most foundational architecture of [Neural Networks](/notes/neural-networks). In these models, data flows strictly in one forward direction—from the input layer, through intermediate layers, to the output layer—without forming any cycles or feedback loops.
 
 ## Network Architecture
 ![TikZ Diagram](/attachments/tikz-4c9e8c214fefad125a888f9cd3418076.svg)

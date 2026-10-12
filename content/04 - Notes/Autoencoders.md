@@ -1,5 +1,6 @@
 # Autoencoders
 ---
+
 The idea is to create an architecture with a bottleneck ensuring a lower-dimensional representation of the original data
 
 Consists of an encoder and a decoder. The encoder compresses data into a lower-dimensional representation (latent space which has the most important features). The decoder then decompresses the representation back to the original domain

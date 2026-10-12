@@ -5,8 +5,11 @@ aliases:
 # Recurrent Neural Networks
 ---
 
-**Recurrent Neural Networks** (RNNs) are a class of [Artificial Neural Networks](/notes/artificial-neural-networks) designed specifically for processing sequential data. Unlike feedforward networks, RNNs possess internal memory through feedback loops, allowing past inputs to influence the processing of current inputs.
+**Recurrent Neural Networks** (RNNs) are a class of [Neural Networks](/notes/neural-networks) designed specifically for processing sequential data. Unlike feedforward networks, RNNs possess internal memory through feedback loops, allowing past inputs to influence the processing of current inputs.
 
+- [Long Short-Term Memory](/notes/long-short-term-memory) - RNNs with long-term memory
+- [Gated Recurrent Units](/notes/gated-recurrent-units) - Streamlined LSTM alternative
+	
 ## Unrolled Architecture
 ![TikZ Diagram](/attachments/tikz-aee2246318965dd42fca3539dc57948a.svg)
 

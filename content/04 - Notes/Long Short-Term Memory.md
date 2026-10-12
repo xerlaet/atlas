@@ -30,4 +30,4 @@ h_t &= o_t * \tanh(C_t)
 $$
 
 ## Architectural Evolution
-LSTMs successfully allow neural networks to process long sequences like paragraphs of text or long audio clips. However, due to their computational intensity, they are frequently replaced by the streamlined [GRUs](/notes/gated-recurrent-units) or the highly parallelizable [Transformer](/notes/transformer-models).
+LSTMs successfully allow neural networks to process long sequences like paragraphs of text or long audio clips. However, due to their computational intensity, they are frequently replaced by the streamlined [GRUs](/notes/gated-recurrent-units) or the highly parallelizable [Transformer](/notes/transformers).

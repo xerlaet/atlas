@@ -49,6 +49,3 @@ $$
 3. Measures the error in the confidence when an object is present
 4. Measures the error in the confidence when no object is present
 5. Calculate the error for class probabilities for the cell with the object
-
-## Precision/Recall
-[Precision Recall](/notes/precision-recall)
