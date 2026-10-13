@@ -3,11 +3,11 @@
 
 Each layer will look at, add to, and remove relevant header information for the protocols at that layer
 
-[Application Layer](/notes/application-layer) (HTTP, DNS, IMAP)
-[Transport Layer](/notes/transport-layer) (TCP, UDP)
-[Network Layer](/notes/network-layer) (IP, routing protocols)
-[Link Layer](/notes/link-layer) (Ethernet, 802.11 WiFi)
-[Physical Layer](/notes/physical-layer) (bits on the wire)
+1. [Physical Layer](/notes/physical-layer) (bits on the wire)
+2. [Link Layer](/notes/link-layer) (Ethernet, 802.11 WiFi)
+3. [Network Layer](/notes/network-layer) (IP, routing protocols)
+4. [Transport Layer](/notes/transport-layer) (TCP, UDP)
+5. [Application Layer](/notes/application-layer) (HTTP, DNS, IMAP)
 
 Less reliability as you go down the layers
 

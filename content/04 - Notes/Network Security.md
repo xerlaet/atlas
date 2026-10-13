@@ -11,6 +11,9 @@
 ## Cryptography
 - [Cryptographic Algorithms](/notes/cryptographic-algorithms)
 
+[Communication Session Establishment](/notes/communication-session-establishment)
+[IPsec](/notes/ipsec)
+
 ---
 
 Ciphertext attacks:
