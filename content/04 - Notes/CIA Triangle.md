@@ -1,9 +1,8 @@
 # CIA Triangle
 ---
 
-confidentiality, integrity, availability
+The three fundamental goals of information security
 
-Authentication diagram
-
-Integrity check diagram
-
+- **Confidentiality** - Only authorized entities can access information
+- **Integrity** - Information remains accurate, complete, and unaltered without authorization
+- **Availability** - Information and systems remain accessible to authorized entities when needed

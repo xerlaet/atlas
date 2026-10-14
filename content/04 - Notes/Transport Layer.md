@@ -1,29 +1,30 @@
 # Transport Layer
 ---
 
-The **Transport Layer** provides communication between processes by breaking messages into **segments** and passing those onto the [Network Layer](/notes/network-layer)
+Provides **process-to-process communication** by encapsulating application data into segments and passing them to the [Internet Layer](/notes/internet-layer)
 
-[UDP](/notes/udp) is used for fast communication with minimal reliability guarantees
-[TCP](/notes/tcp) is used when reliability is desired
+## Protocols
+- [UDP](/notes/udp): Connectionless, low overhead, with no built-in guarantees of delivery, ordering, or duplicate protection
+- [TCP](/notes/tcp): Connection-oriented, provides reliable, ordered byte-stream delivery using acknowledgments, retransmissions, and flow and congestion control
+- [RDT](/notes/rdt): Models how reliable data transfer can be built over an unreliable channel
 
-If the channel was reliable UDP would be just fine, however since channels aren't always reliable something like TCP makes it so
+**Note**: UDP is suitable when the application can tolerate loss or handle reliability itself. TCP provides reliability because IP does not guarantee delivery
 
-[RDT](/notes/rdt) is the protocol?
+## Multiplexing & Demultiplexing
+- **Multiplexing**: Collects data from multiple application sockets for transmission
+- **Demultiplexing**: Uses transport-layer headers to deliver received segments to the correct socket
+- **Ports**: Identify application endpoints on a host
+- **IP addresses**: Identify network interfaces and enable delivery between hosts
 
-**Multiplexing** is grouping messages from multiple sockets together to send as a unit
-**Demultiplexing** is undoing the grouping to deliver segments to correct sockets
-TCP de-multiplexes uses the 4-tuple of source/destination IP and Port
-UDP de-multiplexes using destination port only
+| Protocol | Demultiplexing |
+|---|---|
+| UDP | Primarily uses the destination IP address and destination port |
+| TCP | Uses the connection's 4-tuple: source IP, source port, destination IP, destination port |
 
-However replying will still require the IP addresses from the Network Layer
+Replies use the peer's source IP address and port as the destination
 
-multiplexing and demultiplexing happens at all layers? move up in notes?
-
-
-The IP addresses and port numbers are used to distinguish where packets should go
-
-Checksums
-
-
-
-
+## Checksums
+- Detect corruption in transport-layer data and headers
+- UDP uses a checksum for error detection; it is optional in IPv4 but generally required in IPv6
+- TCP uses a checksum to detect corruption
+- Checksums do not provide error correction or protection against intentional modification

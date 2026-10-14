@@ -17,8 +17,7 @@ They are able to provide services like web and video streaming, email, etc
 [Wireless and Mobile Networks](/notes/wireless-and-mobile-networks)
 
 ## Security
-[Cyber Security](/notes/cyber-security)
-
+[IP Security](/notes/ip-security)
 
 > [!important]
 The slowest link will determine how fast packets are actually sent
@@ -38,3 +37,10 @@ Forwarding just sends a packet forward, routing sends a packet to a specific des
 forwarding (switches) is implemented in hardware, routing (routers) use algorithms and tables in software
 
 **Packet Switching** breaks messages into packages and sends them on demand, vs **Circuit Switching** where it guarantees performance but can support very few with wasted bandwidth
+
+## New Connection
+1. **DHCP** - Obtain an IP address and network configuration, if needed
+2. **DNS** - Resolve the domain name to an IP address
+3. **ARP** - Resolve the next-hop IPv4 address to a link-layer address, if needed on the local network
+4. **TCP** - Establish a connection with a handshake
+5. **HTTP** - Send the application request

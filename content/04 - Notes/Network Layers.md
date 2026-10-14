@@ -1,23 +1,19 @@
 # Network Layers
 ---
 
-Each layer will look at, add to, and remove relevant header information for the protocols at that layer
+Each layer provides services to the layer above it and communicates with its peer layer on the destination, with **encapsulation** as data moves down the stack
 
-1. [Physical Layer](/notes/physical-layer) (bits on the wire)
-2. [Link Layer](/notes/link-layer) (Ethernet, 802.11 WiFi)
-3. [Network Layer](/notes/network-layer) (IP, routing protocols)
-4. [Transport Layer](/notes/transport-layer) (TCP, UDP)
-5. [Application Layer](/notes/application-layer) (HTTP, DNS, IMAP)
+![TikZ Diagram](/attachments/tikz-9fdc882acb50fb546744ba92ff3b8647.svg)
 
-Less reliability as you go down the layers
+- **OSI Model**: Based on conceptual networking responsibilities
+- **TCP/IP Model**: Based on actual protocols
 
-Other ways of visualizing the layers include the OSI Model and TCP/IP Model
-
-
-![Pasted image 20250902101818.png](/attachments/Pasted%20image%2020250902101818.png)
-
-## New Connection Scenario
-Run DHCP to get an IP address
-Run DNS to get IP address of Google (ARP first)
-Run HTTP
-- TCP handshake first
+| OSI Model                              | Function                                 | TCP/IP Model                           |
+| -------------------------------------- | ---------------------------------------- | -------------------------------------- |
+| [Application](/notes/application-layer) (7) | Network services (HTTP, DNS, IMAP)       | [Application](/notes/application-layer) (4) |
+| Presentation (6)                       | Data representation, encryption          |                                        |
+| Session (5)                            | Manages communication sessions           |                                        |
+| [Transport](/notes/transport-layer) (4)     | Process-to-process delivery (TCP, UDP)   | [Transport](/notes/transport-layer) (3)     |
+| [Network](/notes/internet-layer) (3)        | Addressing and routing (IP)              | [Internet](/notes/internet-layer) (2)       |
+| [Data Link](/notes/link-layer) (2)          | Local network delivery (Ethernet, Wi-Fi) | [Link](/notes/link-layer) (1)               |
+| Physical (1)                           | Transmits bits over a medium             |                                        |

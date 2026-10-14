@@ -1,5 +1,6 @@
 # Processes
 ---
+
 A **process** is an abstraction of a program in execution. Unlike the program which just occupies space, a process needs a CPU, memory, and I/O. 
 
 Examples of information that the CPU needs are

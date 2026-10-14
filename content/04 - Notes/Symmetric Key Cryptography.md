@@ -1,26 +1,25 @@
 # Symmetric Key Cryptography
 ---
 
-[DES](/notes/des)
-[AES](/notes/aes)
-
-Assume everyone knows the algorithm
+Both parties share a secret key used for encryption and decryption
 $$
-Y=E_{K}(X),X=D_{K}(Y)
+P \xrightarrow{E_K} C \xrightarrow{D_K} P
 $$
+The main challenge is securely distributing the key
 
-**Electronic Codebook Book** (ECB): $c_{i}=E_{K_{1}}(m_{1})$
-Advantages: errors or changed bits in a block only affect that block
-Disadvantages: repetitions in the plain text will repeat in the cipher text
+## Classical Ciphers
+- [Caesar Cipher](/notes/caesar-cipher) - Shifts letters by a fixed amount
+- [Mono-Alphabetic Cipher](/notes/mono-alphabetic-cipher) - Replaces each letter with a fixed substitute
+- [Poly-Alphabetic Cipher](/notes/poly-alphabetic-cipher) - Uses multiple substitution alphabets
+- [One-Time Pad](/notes/one-time-pad) - Uses a truly random, single-use key
+- [Rail Fence Cipher](/notes/rail-fence-cipher) - Rearranges letters using a zigzag pattern
+- [Product Cipher](/notes/product-cipher) - Combines substitution and permutation operations
 
-**Cipher Block Chaining** (CBC): $c_{i}=E_{K_{1}}(m_{i} \oplus c_{i-1})$
-Advantages: changing the document will require work to re-encrypt it
-Disadvantages: attackers can still change any two blocks to something random
+## Modern Block Ciphers
+- [DES](/notes/des) - Legacy cipher with an insecure 56-bit key
+- [Triple-DES](/notes/triple-des) - Applies DES three times; deprecated
+- [AES](/notes/aes) - Modern block cipher with 128-bit blocks and 128-, 192-, or 256-bit keys
 
-CRC can help avoid this problem
-
-**Counter** (CTR): $c_{i}=m_{i}\oplus E_{k_{1}}(IV+i-1)$
-Advantages: easy to update the document based on just one block
-Disadvantages: if the $(m,c)$ pair is discovered, the IV encryption string shouldn't be used again
-
-**XOR Encrypt XOR** (XEX): $c_{i}=B_{\text{mod}}E_{K_{2}}\oplus (E_{K_{2}}\oplus m_{i})$ - you can use the disk block address as the IV number
+## Stream Ciphers
+- [Stream Cipher](/notes/stream-cipher) - Encrypts data using a pseudorandom keystream
+- [RC4](/notes/rc4) - Deprecated stream cipher with exploitable weaknesses

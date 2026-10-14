@@ -3,53 +3,42 @@
 
 The **Link Layer** has the responsibility to transfer a datagram between physically adjacent nodes over a link
 
-It is primarily implemented on a network adapter chip, known as the **network interface controller** (NIC)
+Primarily implemented by the **network interface controller (NIC)**
 
-It is in charge of flow control, error detection and correction, and half-duplex or full-duplex communication
+## Responsibilities
+- **Framing**: Encapsulates network-layer datagrams into frames
+- **Addressing**: Uses [MAC addresses](/notes/mac-address) to identify interfaces on a local network
+- **Error detection**: Detects corrupted frames using checksums or [CRCs](/notes/cyclic-redundancy-check)
+- **Error correction**: Corrects transmission errors when supported by the protocol
+- **Medium access control**: Coordinates access to shared communication channels
+- **Flow control**: Coordinates transmission rates when supported by the protocol
 
-[Error Corrections](/notes/error-corrections)
-- single bit parity - detect an odd number of errors - bursts of errors can make P(undetected errors) ~~ 50%
-- 2D bit parity (even or odd) can detect and correct 1 bit errors
-- internet checksum
-- [Cyclic Redundancy Check](/notes/cyclic-redundancy-check)
+## Error Detection & Correction
+- **Single-bit parity**: Detects odd numbers of bit errors
+- **2D parity**: Can detect and correct a single-bit error
+- **Internet checksum**: Detects errors in network and transport headers and data
+- **CRC**: Detects many common transmission errors
 
-## Multiple Access Channel Access Protocols
-**Channel Partitioning** partitions a channel for different traffic (best at high loads)
-- Time Division Multiple Access splits a channel into rounds and each station gets slots
-- Frequency Division Multiple Access splits a channel into different frequencies
-CDMA
+See [Error Corrections](/notes/error-corrections)
 
-**Random Access** just send data whenever (best at low loads)
-- ALOHA, Slotted ALOHA
-- CSMA(/CD in ethernet +/CA in 802.11) (newer and better)
-
-**Taking Turns** takes turns (best of both worlds)
-- polling (bluetooth)
-- token passing
-
-collision detection is fine for wired, collision avoidance is needed for wireless
-Cable access network
+## Multiple Access Protocols
+Coordinate access to a shared communication channel
+- **Channel partitioning**: Divides channel resources among stations
+  - TDMA: Assigns time slots
+  - FDMA: Assigns frequency bands
+  - CDMA: Separates transmissions using codes
+- **Random access**: Stations compete to transmit
+  - ALOHA, Slotted ALOHA
+  - CSMA: Transmits based on channel sensing
+  - CSMA/CD: Detects collisions in shared Ethernet
+  - CSMA/CA: Attempts to avoid collisions in Wi-Fi
+- **Taking turns**: Stations transmit in an organized sequence
+  - Polling
+  - Token passing
 
 ## LANs
-[MAC Address](/notes/mac-address)
-[ARP](/notes/arp)
-
-[Ethernet](/notes/ethernet)
-
-[VLANs](/notes/vlans)
-
-A general rule of thumb is for every 10 switches have a router
-
-### Switches vs. Routers
-Both are store and forward (routers are network layer and switches are link layer)
-Both have forwarding tables. Switches are self learning while routers compute the forwarding table with algorithms and IP addresses
-
-[Switches](/notes/switches)
-[Routers](/notes/routers)
-
-## Data Centers
-![Pasted image 20251028104836.png](/attachments/Pasted%20image%2020251028104836.png)
-
-Increased reliability via redundancy
-
-A load balancer receives external client requests and directs the workflow
+- [Ethernet](/notes/ethernet): Wired LAN technology
+- [MAC Address](/notes/mac-address): Identifies a network interface at the link layer
+- [ARP](/notes/arp): Resolves IPv4 addresses to MAC addresses on a local network
+- [VLANs](/notes/vlans): Logically partitions a Layer 2 network
+- [Switches](/notes/switches): Forward frames using MAC addresses

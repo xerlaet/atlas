@@ -1,12 +1,19 @@
 # Hash Cryptography
 ---
 
-## Hashing Functions
-[MD5](/notes/md5) (broken)
-[SHA-256](/notes/sha-256)
+Hash functions map arbitrary-length data to a fixed-length digest, primarily for **integrity verification**
 
-Used to check downloaded or received data, or for a password file
+## Properties
+- **One-way**: Computationally infeasible to recover the original input
+- **Collision resistance**: Computationally infeasible to find two inputs with the same hash
+- **Avalanche effect**: A small input change drastically changes the digest
+- **Salting**: mix a random number with each hash, which prevents comparison of a guess with every hash at once
 
-A keyed hash function uses the text and key in combination to produce the hash
+## Applications
+- **Integrity**: Verify downloaded or received files
+- **Password storage**: Store salted password hashes
+- **Authentication**: [HMAC](/notes/hmac) combines a secret key with a hash function
 
-A standard for hash functions is that the probability of finding a collision should be roughly $\frac{1}{2^{\text{bit length}}}$
+## Algorithms
+- [MD5](/notes/md5) - Broken; vulnerable to collision attacks
+- [SHA-256](/notes/sha-256) - Secure, widely used cryptographic hash function

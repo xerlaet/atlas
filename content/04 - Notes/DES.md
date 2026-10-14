@@ -1,12 +1,24 @@
 # DES
 ---
 
-Was the most widely used block cipher in the world, and was adopted in 1977 by NBS (now NIST). Had controversy over the potential of a backdoor
+The **Data Encryption Standard**, a symmetric block cipher standardized in 1977 and widely used before being superseded by stronger algorithms
 
-Encrypts 64-bit blocks with a 56-bit key
+## Algorithm
+- Block size = 64 bits
+- Key size = 56 effective bits (64 bits including 8 parity bits)
+- Structure = 16-round Feistel network
+- Each round combines expansion, key mixing, substitution, and permutation
+$$
+\begin{align}
+L_i &= R_{i-1} \\
+R_i &= L_{i-1} \oplus F(R_{i-1}, K_i)
+\end{align}
+$$
+- $L_i$, $R_i$ = Left and right halves after round $i$
+- $K_i$ = Round key
+- $F$ = Round function
 
-Was brute force decrypted in 22 hours in 1999
-
-DES took $2^{56}$? steps, 2-DES is only double at $2^{57}$
-
-Triple-DES was a replacement that applied DES three times to each block
+## Security
+- 56-bit key is vulnerable to brute force (decrypted in 22 hours in 1999)
+- Superseded by [Triple-DES](/notes/triple-des)
+- DES is considered insecure and should not be used ($2^{56}$ steps to brute force)
