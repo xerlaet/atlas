@@ -8,8 +8,10 @@
 - [Convolutional Neural Networks](/notes/convolutional-neural-networks) - Convolutions for spatial structure
 - [Recurrent Neural Networks](/notes/recurrent-neural-networks) - Recurrent hidden states
 - [Transformers](/notes/transformers) - Self-attention utilizing networks
+- [Graph Neural Networks](/notes/graph-neural-networks) - ?
 - [Autoencoders](/notes/autoencoders) - Encoder-decoder networks to reconstruct inputs
 - [Generative Adversarial Networks](/notes/generative-adversarial-networks) - Generator-discriminator system of networks
+- [Diffusion Models](/notes/diffusion-models) - ?
 
 ## Building Blocks
 - [Activation Functions](/notes/activation-functions) - Element-wise non-linear transformations

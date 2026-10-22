@@ -19,3 +19,15 @@ $$
 Injects randomness during training to break brittle dependencies between units
 
 **Dropout**: randomly zero out activations with probability $p$ during each training pass
+
+## Feature Preprocessing
+Raw input vectors often require scaling to ensure features are in the proper range and share the same scale, which stabilizes and speeds up training
+
+**Standardization** ($Z$-score): Centers data at a mean of 0 with a standard deviation of 1
+$$
+x_{j}=\frac{x_{j}-\mu}{\sigma }
+$$
+**Normalization** (Min-Max): Bounds data to a specific fixed range, typically $[0,1]$
+$$
+x_{j}=\frac{x_{j}-\min(x)}{\max(x)-\min(x)}
+$$

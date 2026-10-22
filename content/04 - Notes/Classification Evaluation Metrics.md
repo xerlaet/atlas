@@ -9,3 +9,7 @@ flashcard_uid: dc8a4f70
 | Positive |          True Positive (TP)           |       False Negative (FN)<br>(Type II Error)        | **Sensitivity/Recall**<br>$\frac{TP}{TP+FN}$ |
 | Negative | False Positive (FP)<br>(Type I Error) |                 True Negative (TN)                  |    **Specificity**<br>$\frac{TN}{TN+FP}$     |
 |          |  **Precision**<br>$\frac{TP}{TP+FP}$  | **Negative Predictive Value**<br>$\frac{TN}{TN+FN}$ | **Accuracy**<br>$\frac{TP+TN}{TP+TN+FP+FN}$  |
+
+$$
+\text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+$$
