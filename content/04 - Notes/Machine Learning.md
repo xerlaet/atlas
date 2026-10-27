@@ -12,8 +12,8 @@
 - [Generative Modeling](/notes/generative-modeling) - Create new media
 
 ## Learning Paradigms
-- [Supervised Learning](/notes/supervised-learning) - Learning from labeled example data
-- [Unsupervised Learning](/notes/unsupervised-learning) - Finding patterns in unlabeled data
+- [Supervised Learning](/notes/supervised-learning) - Learning from labeled data
+- [Unsupervised Learning](/notes/unsupervised-learning) - Learning from unlabeled data
 - [Reinforcement Learning](/notes/reinforcement-learning) - Learning via state, action, reward
 
 ## Model Families

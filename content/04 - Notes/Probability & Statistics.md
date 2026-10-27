@@ -17,7 +17,7 @@ Statistics is [inductive](/notes/inductive-reasoning) (Data $\to$ Parameters)
 ## Statistics
 - [Sampling and Study Design](/notes/sampling-and-study-design) - How to gather data properly
 - [Descriptive Statistics](/notes/descriptive-statistics) - How to summarize and visualize gathered data
-- [Statistical Inference](/notes/statistical-inference) - How to use data to guess truths about the population
+- [Statistical Inference](/notes/statistical-inference) - Estimate population quantities, quantify uncertainty, and test claims using sample data
 
 ## Computational Methods
 - [Stochastic Processes](/notes/stochastic-processes) - Systems of random variables through time
