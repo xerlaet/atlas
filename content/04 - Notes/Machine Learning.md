@@ -20,6 +20,7 @@
 - [Neural Networks](/notes/neural-networks) - Learn features through gradient descent
 - [Decision Trees](/notes/decision-trees) - Recursive spatial partitioning
 - [k-Nearest Neighbors](/notes/k-nearest-neighbors) - Instance-based local distance matching
+- [Naive Bayes](/notes/naive-bayes) - Simple Bayesian Classification
 
 ## Core Concepts
 - [Manifold Hypothesis](/notes/manifold-hypothesis) - Data often lies in a lower-dimensional structure

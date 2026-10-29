@@ -4,17 +4,15 @@
 An **agent** learns to make decisions by interacting with an **environment** and receiving rewards, seeking to maximize cumulative rewards. Commonly trained in simulation before deployment on physical hardware.
 
 ## Core Loop
-![TikZ Diagram](/attachments/tikz-587d678e3ae7b6d2e51392f62614aec5.svg)
-
-1. **Observe**: Agent receives the current state $s_t$
-2. **Act**: Agent selects action $a_t$ using policy $\pi$
-3. **Transition**: Environment produces next state $s_{t+1}$ and reward $r_t$
-4. **Learn**: Agent improves its policy using collected experience
-
-Interactions are commonly modeled as a [Markov Decision Process](/notes/markov-decision-process)
+![TikZ Diagram](/attachments/tikz-b7974439d393bb2ef1397e78f5bc4070.svg)
+1. **Observe**: Policy receives observation $o_t$
+2. **Act**: Policy $\pi_\theta$ selects action $a_t$
+3. **Transition**: Environment moves to $s_{t+1}$ and returns $o_{t+1}$, reward $r_t$
+4. **Learn**: RL algorithm uses collected experience to update the policy
+5. **Repeat**: Policy uses $o_{t+1}$ for the next action
 
 ## Objective
-Learn a **policy** $\pi_\theta$ that maximizes the **expected return** (cumulative discounted reward)
+Learn a **policy** $\pi_\theta$ that maximizes the **expected return** (usually discounted)
 $$
 \underbrace{G_t=\sum_{k=0}^{\infty}\gamma^k r_{t+k}}_{\text{Discounted Return}}
 \qquad
@@ -25,12 +23,17 @@ $$
 - [Bellman Equations](/notes/bellman-equations): Recursive relationships between rewards and values
 
 ## Policies
-A **policy** maps states to actions, either deterministically or stochastically
+A **policy** maps the information available to the agent to an action or a distribution over actions. Let $x_t$ denote its input:
+- **Reactive**: $x_t=o_t$ (or $s_t$ in a fully observable formulation).
+- **Memory-based**: $x_t$ includes a history summary, recurrent hidden state, or belief about the environment state.
+- **Goal-conditioned**: $x_t$ also includes a goal or command, such as desired walking velocity.
+
 $$
-\underbrace{a_t=\mu_\theta(s_t)}_{\text{Deterministic}}
+\underbrace{a_t=\mu_\theta(x_t)}_{\text{Deterministic}}
 \qquad
-\underbrace{a_t\sim\pi_\theta(\cdot\mid s_t)}_{\text{Stochastic}}
+\underbrace{a_t\sim\pi_\theta(\cdot\mid x_t)}_{\text{Stochastic}}
 $$
+A fully general history-dependent policy can condition on $h_t=(o_0,a_0,r_0,\ldots,o_t)$ when rewards are observed. Practical policies often use only a subset or a learned summary of this history. Here $h_t$ means interaction history, not the environment's hidden state $s_t$.
 
 | Classification        | Approaches                                                                                                                                                                          |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
