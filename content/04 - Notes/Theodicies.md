@@ -3,6 +3,8 @@
 
 **Theodicy**: An attempt to explain why God allows evil and suffering
 
+- **Archon Abandonment Theodicy**: Archons are put in charge of things, they fail and evil/the lack of care comes about from it
+
 ## Agency & Moral Value
 - **Free Will Defense**: The genuine capacity to freely choose between good and evil is of supreme importance. Hence moral evil and suffering from it must be allowed.
 - **Soul Making**: Humans were created to grow into divine likeness. The world is filled with obstacles, risks, and hardships that enable humans to develop deep virtues.
