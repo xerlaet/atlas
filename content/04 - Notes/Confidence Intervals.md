@@ -105,4 +105,4 @@ It is wider than the mean's confidence interval because a future observation has
 - [Inference for Means](/notes/inference-for-means) — $z$, one-sample $t$, paired $t$, Welch, and pooled intervals.
 - [Inference for Proportions](/notes/inference-for-proportions) — Wald and Wilson intervals; two-proportion differences.
 - [Inference for Variances](/notes/inference-for-variances) — asymmetric chi-square intervals under normality.
-- [Bootstrap](/notes/bootstrap) — simulation-based interval construction.
+- [Bootstrapping](/notes/bootstrapping) — simulation-based interval construction.

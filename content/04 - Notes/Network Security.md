@@ -17,3 +17,8 @@ Security is a money hole. How much should you spend?
 
 ## Network Protocols
 - [IP Security](/notes/ip-security) - Securing network-layer communication
+- [TLS](/notes/tls)
+- [SSH](/notes/ssh)
+
+[Firewalls](/notes/firewalls)
+

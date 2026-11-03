@@ -84,4 +84,4 @@ In contrast, the MLE is $x_{(n)}=\max_i x_i$. For data $1,1,10$, MoM gives $\hat
 - Consistency follows when sample moments converge and the moment-to-parameter inverse is continuous at the truth. It is not automatic for every moment system.
 - MoM and MLE sometimes agree, as in the normal and exponential examples, but need not agree in general.
 
-An estimate alone does not quantify its uncertainty; use sampling theory or an appropriate [Bootstrap](/notes/bootstrap) to obtain a standard error or [interval](/notes/confidence-intervals).
+An estimate alone does not quantify its uncertainty; use sampling theory or an appropriate [Bootstrapping](/notes/bootstrapping) to obtain a standard error or [interval](/notes/confidence-intervals).

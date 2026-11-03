@@ -23,3 +23,9 @@ Statistics is [inductive](/notes/inductive-reasoning) (Data $\to$ Parameters)
 - [Stochastic Processes](/notes/stochastic-processes) - Systems of random variables through time
 - [Markov Chains](/notes/markov-chains) - linked under stochastic processes
 - [Monte Carlo Estimation](/notes/monte-carlo-estimation) - Algorithms for repeated random sampling
+
+[Bootstrapping](/notes/bootstrapping)
+
+
+
+> Exam 2 on Tuesday, Nov. 3.  It will cover Chapters 8, 9.1--9.3, 9.4.1--9.4.3, plus Bootstrap (10.3). The test has 20 multiple choice questions, and is closed book, closed notes. It will include a formula sheet.  I have posted a practice exam in eLearning.  You have unlimited attempts and please do the practice exam before the exam day, after which it will become unavailable.

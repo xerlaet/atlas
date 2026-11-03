@@ -3,18 +3,16 @@
 
 **Statistical inference** uses sample data to learn about a population or data-generating process, while quantifying uncertainty. It bridges [describing data](/notes/descriptive-statistics) and drawing conclusions beyond the observed sample.
 
-Parent: [Probability & Statistics](/notes/probability-statistics)
-
 ## Population, Sample, and Model
 
-| Term | Meaning | Example |
-| --- | --- | --- |
-| **Population** | The entire group or process of interest | All items produced by a factory |
-| **Parameter** $\theta$ | A numerical feature of the population or model | Mean lifetime $\mu$, variance $\sigma^2$, defect rate $p$ |
-| **Sample** $X_1,\dots,X_n$ | Observations collected from that population | Lifetimes of $n$ sampled items |
-| **Statistic** $T(X_1,\dots,X_n)$ | A function of the sample that does not depend on unknown parameters | Sample mean $\bar X$, sample variance $S^2$ |
-| **Estimator** $\hat\theta$ | A statistic used to estimate a parameter | $\hat p=X/n$ |
-| **Estimate** $\hat\theta(x_1,\dots,x_n)$ | The numerical value after observing the data | $\hat p=0.08$ |
+| Term                                     | Meaning                                                             | Example                                                   |
+| ---------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------- |
+| **Population**                           | The entire group or process of interest                             | All items produced by a factory                           |
+| **Parameter** $\theta$                   | A numerical feature of the population or model                      | Mean lifetime $\mu$, variance $\sigma^2$, defect rate $p$ |
+| **Sample** $X_1,\dots,X_n$               | Observations collected from that population                         | Lifetimes of $n$ sampled items                            |
+| **Statistic** $T(X_1,\dots,X_n)$         | A function of the sample that does not depend on unknown parameters | Sample mean $\bar X$, sample variance $S^2$               |
+| **Estimator** $\hat\theta$               | A statistic used to estimate a parameter                            | $\hat p=X/n$                                              |
+| **Estimate** $\hat\theta(x_1,\dots,x_n)$ | The numerical value after observing the data                        | $\hat p=0.08$                                             |
 
 An estimator is a [random variable](/notes/random-variables) **before** sampling; an estimate is its realized value. Uppercase $X_i,\bar X,S$ denotes random quantities; lowercase $x_i,\bar x,s$ denotes observed values.
 
@@ -89,22 +87,22 @@ A biased estimator can be consistent. Among unbiased estimators of the same para
 
 ## Choosing a Procedure
 
-| Question | Starting point |
-| --- | --- |
-| What is a population mean? | [Inference for Means#One Mean — Unknown Population Standard Deviation](/notes/inference-for-means#one-mean-unknown-population-standard-deviation) |
-| Do two independent groups have different means? | [Inference for Means#Two Independent Means — Welch's Method](/notes/inference-for-means#two-independent-means-welchs-method) |
-| Did the same subjects change? | [Inference for Means#Paired Samples](/notes/inference-for-means#paired-samples) |
-| What fraction of a population has a property? | [Inference for Proportions](/notes/inference-for-proportions) |
-| How variable is a normally distributed population? | [Inference for Variances](/notes/inference-for-variances) |
-| Do categorical counts fit a model, or are categorical variables associated? | [Chi-Square Tests](/notes/chi-square-tests) |
-| Is an analytic standard error difficult to obtain? | [Bootstrap](/notes/bootstrap) |
-| How should prior information be combined with data? | [Bayesian Inference](/notes/bayesian-inference) |
+| Question                                                                    | Starting point                                                           |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| What is a population mean?                                                  | [Inference for Means#One Mean — Unknown Population Standard Deviation](/notes/inference-for-means#one-mean-unknown-population-standard-deviation) |
+| Do two independent groups have different means?                             | [Inference for Means#Two Independent Means — Welch's Method](/notes/inference-for-means#two-independent-means-welchs-method)           |
+| Did the same subjects change?                                               | [Inference for Means#Paired Samples](/notes/inference-for-means#paired-samples)                                   |
+| What fraction of a population has a property?                               | [Inference for Proportions](/notes/inference-for-proportions)                                            |
+| How variable is a normally distributed population?                          | [Inference for Variances](/notes/inference-for-variances)                                              |
+| Do categorical counts fit a model, or are categorical variables associated? | [Chi-Square Tests](/notes/chi-square-tests)                                                     |
+| Is an analytic standard error difficult to obtain?                          | [Bootstrapping](/notes/bootstrapping)                                                            |
+| How should prior information be combined with data?                         | [Bayesian Inference](/notes/bayesian-inference)                                                   |
 
 ## Parametric and Nonparametric Inference
 
 **Parametric methods** specify a distributional family described by a fixed, finite-dimensional parameter, such as $N(\mu,\sigma^2)$.
 
-**Nonparametric methods** do not restrict the population to such a family. Examples include the empirical distribution, the nonparametric [Bootstrap](/notes/bootstrap), and rank-based tests such as the sign, Wilcoxon, and Mann–Whitney tests.
+**Nonparametric methods** do not restrict the population to such a family. Examples include the empirical distribution, the nonparametric [Bootstrapping](/notes/bootstrapping), and rank-based tests such as the sign, Wilcoxon, and Mann–Whitney tests.
 
 Nonparametric does **not** mean assumption-free. Independence, exchangeability, continuity, or symmetry may still be required. Rank-based tests do not automatically test equality of means or medians; interpretation depends on the test and assumptions.
 

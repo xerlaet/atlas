@@ -1,18 +1,30 @@
-# TCP
+# Transmission Control Protocol
 ---
 
-**Transmission control protocol** is one of the main protocols first built for the internet
+![TikZ Diagram](/attachments/tikz-1c7e6f6dbc75aa35d7ca0311bb32f0dc.svg)
+
+One of the main protocols first built for the internet
 - reliable, in-order delivery
 - congestion control
 - flow control
 - connection setup
 
-## Structure
-![Pasted image 20251006225315.png](/attachments/Pasted%20image%2020251006225315.png)
+| Flag    | Meaning                                                                               |
+| ------- | ------------------------------------------------------------------------------------- |
+| **AE**  | Accurate ECN: works with ECE/CWR for negotiated, more detailed congestion feedback.   |
+| **CWR** | Congestion Window Reduced: in classic ECN, signals a response to congestion feedback. |
+| **ECE** | ECN-Echo: in classic ECN, echoes congestion; also participates in ECN setup.          |
+| **URG** | Urgent pointer is meaningful.                                                         |
+| **ACK** | Acknowledgment number is meaningful.                                                  |
+| **PSH** | Requests prompt delivery to the receiving application; not a message boundary.        |
+| **RST** | Resets or rejects a connection.                                                       |
+| **SYN** | Synchronizes initial sequence numbers during connection setup.                        |
+| **FIN** | Sender has no more data; the opposite direction can remain open.                      |
+
+---
 
 ## Reliable Data Transfer
 RTT is estimated using a exponential weighted moving average:
-
 $$
 RTT_{\text{estimated}}=(1-\alpha )RTT_{\text{estimated}}+\alpha RTT_{\text{sample}}
 $$
@@ -26,7 +38,6 @@ the receiver should send cumulative ACKs
 receiver advertises their free buffer space in rwnd field: **receive window** which sender then limits unACKed data to
 
 ## Connection Management
-
 TCP uses a triple handshake to establish a connection (a two way handshake can result in a half open client or duplicate data)
 
 FIN bit closes a connection
@@ -49,4 +60,3 @@ TCP CUBIC approaches it exponentially
 Delays occur as arrival rate rate approaches capacity
 
 if the sequence number is exhausted, modern secure options will send a FIN package to terminate the connection
-

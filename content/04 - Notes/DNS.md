@@ -1,6 +1,8 @@
 # DNS
 ---
 
+![TikZ Diagram](/attachments/tikz-ee5c83437cb02b626c77676a2cfd102c.svg)
+
 A **Domain Name System** is a distributed database implemented in a hierarchy that provides hostname to IP address translation
 
 First your computer checks your hosts file, then it checks various other places. Each server it talks to will either give the correct information, or return a different address to try asking

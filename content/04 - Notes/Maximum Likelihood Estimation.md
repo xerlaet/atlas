@@ -105,7 +105,7 @@ $$
 \approx\frac1{\sqrt{nI_1(\hat\theta)}},\qquad
 \hat\theta\pm z_{1-\alpha/2}\widehat{\operatorname{SE}}(\hat\theta).
 $$
-Here $z_q$ is the standard-normal $q$-quantile. The resulting **Wald interval** is approximate and can perform poorly for small samples or near boundaries. Profile-likelihood intervals or an appropriate [Bootstrap](/notes/bootstrap) can provide alternatives.
+Here $z_q$ is the standard-normal $q$-quantile. The resulting **Wald interval** is approximate and can perform poorly for small samples or near boundaries. Profile-likelihood intervals or an appropriate [Bootstrapping](/notes/bootstrapping) can provide alternatives.
 
 ## Invariance
 
